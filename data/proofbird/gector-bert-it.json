@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "proofbird/gector-bert-it",
+  "slug": "proofbird-gector-bert-it",
+  "author": "proofbird",
+  "url": "https://huggingface.co/proofbird/gector-bert-it",
+  "created_at": "2026-11-06T13:45:41.000Z",
+  "updated_at": "2026-11-06T13:46:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "onnx",
+  "languages": [
+    "it"
+  ],
+  "tags": [
+    "onnx",
+    "grammatical-error-correction",
+    "gector",
+    "on-device",
+    "token-classification",
+    "it",
+    "dataset:wikimedia/wikipedia",
+    "base_model:dbmdz/bert-base-italian-xxl-cased",
+    "base_model:quantized:dbmdz/bert-base-italian-xxl-cased",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 456044247,
+  "storage_human": "456 MB",
+  "base_model": "dbmdz/bert-base-italian-xxl-cased",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - grammarly/gector: Official implementation of the papers ...",
+      "url": "https://github.com/grammarly/gector",
+      "snippet": "transformer_model {bert,distilbert,gpt2,roberta,transformerxl,xlnet,albert} model encoder tn_prob probability of getting sentences with no errors; helps to balance precision/recall pieces_per_token maximum number of subwords per token; helps not to get CUDA out of memory In our experiments we had 98/2 train/dev split."
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?search=GECToR",
+      "snippet": "Text-to-Video Text-to-Speech Reset Parameters 6B 12B 32B 128B Libraries PyTorch TensorFlow JAX Transformers Diffusers GGUF MLX Transformers.js Safetensors + 46 Apps vLLM llama.cpp MLX LM LM Studio Ollama Jan Draw Things DiffusionBee JoyFusion + 8 Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai + 9 ..."
+    }
+  ]
+}

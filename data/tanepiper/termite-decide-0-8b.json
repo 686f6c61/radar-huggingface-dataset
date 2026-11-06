@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "tanepiper/termite-decide-0.8b",
+  "slug": "tanepiper-termite-decide-0-8b",
+  "author": "tanepiper",
+  "url": "https://huggingface.co/tanepiper/termite-decide-0.8b",
+  "created_at": "2026-11-06T17:41:17.000Z",
+  "updated_at": "2026-11-06T17:41:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "shell",
+    "safety",
+    "termite",
+    "en",
+    "base_model:jaredpalmer/kev-0.8b",
+    "base_model:quantized:jaredpalmer/kev-0.8b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "decision-model",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752917824,
+  "parameters_human": "752.9M",
+  "storage_bytes": 812403456,
+  "storage_human": "812 MB",
+  "base_model": "jaredpalmer/kev-0.8b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - tanepiper/termite: Use local language and decision models to ...",
+      "url": "https://github.com/tanepiper/termite/tree/main",
+      "snippet": "Use local language and decision models to generate complex shell commands with confidence - tanepiper/termite"
+    },
+    {
+      "title": "termite/specs/2026-11-05-model-grading/spec.md at main - GitHub",
+      "url": "https://github.com/tanepiper/termite/blob/main/specs/2026-11-05-model-grading/spec.md",
+      "snippet": "The refusal field was first tested on 5 November 2026, in one ZeroGPU run of Llama 3.1 8B with refusals removed. It declined 7 of 24 hostile requests, so this model can refuse."
+    }
+  ]
+}

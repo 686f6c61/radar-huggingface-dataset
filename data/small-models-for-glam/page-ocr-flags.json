@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "small-models-for-glam/page-ocr-flags",
+  "slug": "small-models-for-glam-page-ocr-flags",
+  "author": "small-models-for-glam",
+  "url": "https://huggingface.co/small-models-for-glam/page-ocr-flags",
+  "created_at": "2026-11-05T21:51:04.000Z",
+  "updated_at": "2026-11-06T14:43:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "safetensors",
+    "glam",
+    "ocr",
+    "historical-documents",
+    "page-classification",
+    "blank-page-detection",
+    "multi-label",
+    "document-ai",
+    "digitised-books",
+    "image-classification",
+    "base_model:timm/mobilenetv4_conv_small.e2400_r224_in1k",
+    "base_model:finetune:timm/mobilenetv4_conv_small.e2400_r224_in1k",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 2527079,
+  "parameters_human": "2.5M",
+  "storage_bytes": 14745281,
+  "storage_human": "15 MB",
+  "base_model": "timm/mobilenetv4_conv_small.e2400_r224_in1k",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kraken base models: OCR/HTR and segmentation - a small-models-for-glam ...",
+      "url": "https://huggingface.co/collections/small-models-for-glam/kraken-base-models-ocr-htr-and-segmentation",
+      "snippet": "Hub mirrors of Benjamin Kiessling's kraken base models: PP-OCRv6 line recognisers, BLLA segmentation and Party. Byte-identical to Zenodo."
+    },
+    {
+      "title": "Small Models for GLAM - Hugging Face",
+      "url": "https://huggingface.co/small-models-for-glam",
+      "snippet": "Org profile for Small Models for GLAM on Hugging Face, the AI community building the future."
+    }
+  ]
+}

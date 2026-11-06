@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "Elegbede/distilgpt2-squad",
+  "slug": "elegbede-distilgpt2-squad",
+  "author": "Elegbede",
+  "url": "https://huggingface.co/Elegbede/distilgpt2-squad",
+  "created_at": "2026-11-06T12:57:36.000Z",
+  "updated_at": "2026-11-06T12:57:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "base_model:distilbert/distilgpt2",
+    "base_model:finetune:distilbert/distilgpt2",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 81912576,
+  "parameters_human": "81.9M",
+  "storage_bytes": 327663129,
+  "storage_human": "328 MB",
+  "base_model": "distilgpt2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "distilgpt2-squad API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Deljimae/distilgpt2-squad",
+      "snippet": "Run distilgpt2-squad with FriendliAI inference. This is the model card of a 🤗 transformers model that has been pushed on the Hub."
+    },
+    {
+      "title": "distilbert/distilgpt2 · Hugging Face",
+      "url": "https://huggingface.co/distilbert/distilgpt2",
+      "snippet": "DistilGPT2 DistilGPT2 (short for Distilled-GPT2) is an English-language model pre-trained with the supervision of the smallest version of Generative Pre-trained Transformer 2 (GPT-2). Like GPT-2, DistilGPT2 can be used to generate text. Users of this model card should also consider information about the design, training, and limitations of GPT-2. Model Details Developed by: Hugging Face Model ..."
+    }
+  ]
+}

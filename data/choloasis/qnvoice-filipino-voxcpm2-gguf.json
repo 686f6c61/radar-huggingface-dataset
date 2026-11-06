@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "CholoAsis/qnvoice-filipino-voxcpm2-gguf",
+  "slug": "choloasis-qnvoice-filipino-voxcpm2-gguf",
+  "author": "CholoAsis",
+  "url": "https://huggingface.co/CholoAsis/qnvoice-filipino-voxcpm2-gguf",
+  "created_at": "2026-11-06T19:52:27.000Z",
+  "updated_at": "2026-11-06T20:04:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "tl"
+  ],
+  "tags": [
+    "gguf",
+    "voxcpm2",
+    "filipino",
+    "tagalog",
+    "on-device",
+    "text-to-speech",
+    "tl",
+    "base_model:openbmb/VoxCPM2",
+    "base_model:quantized:openbmb/VoxCPM2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 912440644,
+  "parameters_human": "912.4M",
+  "storage_bytes": 2080258482,
+  "storage_human": "2.1 GB",
+  "base_model": "openbmb/VoxCPM2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VoxCPM2 — Free Tokenizer-Free TTS, Voice Cloning & Design",
+      "url": "https://voxcpm.app/",
+      "snippet": "VoxCPM2 is OpenBMB's open-source 2-billion-parameter tokenizer-free TTS model that generates 48kHz speech in 30 languages with built-in voice design and voice cloning."
+    }
+  ]
+}

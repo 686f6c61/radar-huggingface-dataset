@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "jackywangger/classification",
+  "slug": "jackywangger-classification",
+  "author": "jackywangger",
+  "url": "https://huggingface.co/jackywangger/classification",
+  "created_at": "2026-11-06T15:46:42.000Z",
+  "updated_at": "2026-11-06T15:46:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jackywangger (彭艳) - Hugging Face",
+      "url": "https://huggingface.co/jackywangger",
+      "snippet": "Interested in machine learning, NLP and open source AI."
+    },
+    {
+      "title": "Jev (AI model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jev_(AI_model)",
+      "snippet": "Jev is a proprietary artificial intelligence model developed by TypeSafe AI, a San Francisco–based company founded in 2024. It was released in limited early access on 15 September 2026, alongside the announcement of a US$40 million seed round led by DCVC. [1][2] Jev is a discriminative model: it is used for classification or regression, not generation. It does not generate natural-language ..."
+    }
+  ]
+}

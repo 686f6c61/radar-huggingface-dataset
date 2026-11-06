@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "taharmasmaliyev07/Qwen3.5-4B-FACEBOOK-E2-BF16",
+  "slug": "taharmasmaliyev07-qwen3-5-4b-facebook-e2-bf16",
+  "author": "taharmasmaliyev07",
+  "url": "https://huggingface.co/taharmasmaliyev07/Qwen3.5-4B-FACEBOOK-E2-BF16",
+  "created_at": "2026-11-06T19:30:52.000Z",
+  "updated_at": "2026-11-06T19:31:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:taharmasmaliyev07/Qwen3.5-4B-FACEBOOK-E2-BF16",
+    "base_model:finetune:taharmasmaliyev07/Qwen3.5-4B-FACEBOOK-E2-BF16",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 149923773,
+  "storage_human": "150 MB",
+  "base_model": "taharmasmaliyev07/Qwen3.5-4B-FACEBOOK-E2-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "taharmasmaliyev07 (Tahar Masmaliyev) - Hugging Face",
+      "url": "https://huggingface.co/taharmasmaliyev07",
+      "snippet": "taharmasmaliyev07/Mirza-Qwen3-4B-Editor-E3-BF16-V2 Text Generation • 4B•Updated 26 days ago• 397"
+    },
+    {
+      "title": "taharmasmaliyev07/Qwen-3-4B-b16-tuned-full · Hugging Face",
+      "url": "https://huggingface.co/taharmasmaliyev07/Qwen-3-4B-b16-tuned-full",
+      "snippet": "taharmasmaliyev07 / Qwen-3-4B-b16-tuned-full like 0 Text Generation Transformers Safetensors English qwen3 text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

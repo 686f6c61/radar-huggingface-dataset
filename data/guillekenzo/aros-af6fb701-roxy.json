@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "guillekenzo/aros-af6fb701-Roxy",
+  "slug": "guillekenzo-aros-af6fb701-roxy",
+  "author": "guillekenzo",
+  "url": "https://huggingface.co/guillekenzo/aros-af6fb701-Roxy",
+  "created_at": "2026-11-06T15:48:36.000Z",
+  "updated_at": "2026-11-06T16:02:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 387602476,
+  "storage_human": "388 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "guillekenzo (garcia) - Hugging Face",
+      "url": "https://huggingface.co/guillekenzo",
+      "snippet": "Image-to-image upscaler using NVIDIA PiD from_clean_flux. guillekenzo May 26. models 153. Sort: Recently updated. guillekenzo/aros-09cc5fd4-MellowDuality"
+    },
+    {
+      "title": "guillekenzo/aros-00ae1a96-Lynx · Hugging Face",
+      "url": "https://huggingface.co/guillekenzo/aros-00ae1a96-Lynx",
+      "snippet": "guillekenzo / aros-00ae1a96-Lynx like 0 Text-to-Image Diffusers lora krea2 template:sd-lora License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

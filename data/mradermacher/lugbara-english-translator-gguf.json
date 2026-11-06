@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mradermacher/lugbara-english-translator-GGUF",
+  "slug": "mradermacher-lugbara-english-translator-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/lugbara-english-translator-GGUF",
+  "created_at": "2026-11-06T13:43:33.000Z",
+  "updated_at": "2026-11-06T13:47:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "lg",
+    "lgg"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "translation",
+    "lugbara",
+    "luganda",
+    "low-resource",
+    "uganda",
+    "muni-university",
+    "en",
+    "lg",
+    "lgg",
+    "dataset:Sunbird/salt",
+    "base_model:ckuma/lugbara-english-translator",
+    "base_model:quantized:ckuma/lugbara-english-translator",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 582401280,
+  "parameters_human": "582.4M",
+  "storage_bytes": 5613785088,
+  "storage_human": "5.6 GB",
+  "base_model": "ckuma/lugbara-english-translator",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lugbara To English Translator | Free AI-Powered Tool | TranslatorMind",
+      "url": "https://translatormind.com/translator-tool/lugbara-to-english-translator/",
+      "snippet": "Need to understand a Lugbara message, document, or social post right now? The Lugbara To English Translator is your instant bridge between Lugbara and English, giving you crystal-clear translations in seconds—no fuss, no fluff."
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other languages."
+    }
+  ]
+}

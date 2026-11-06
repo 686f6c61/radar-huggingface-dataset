@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Ternii/Qwen3.8-Flash-Next-TR2.57-G",
+  "slug": "ternii-qwen3-8-flash-next-tr2-57-g",
+  "author": "Ternii",
+  "url": "https://huggingface.co/Ternii/Qwen3.8-Flash-Next-TR2.57-G",
+  "created_at": "2026-11-05T18:07:09.000Z",
+  "updated_at": "2026-11-06T13:00:59.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen4_exp",
+    "qwen3.8",
+    "moe",
+    "trit",
+    "ternary",
+    "quantized",
+    "tr-quantisation",
+    "mixed-precision",
+    "vllm",
+    "mtp",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:nvidia/OpenCodeInstruct",
+    "dataset:EleutherAI/hendrycks_math",
+    "dataset:openai/gsm8k",
+    "dataset:OpenAssistant/oasst2",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 40165408163,
+  "parameters_human": "40.17B",
+  "storage_bytes": 104335748562,
+  "storage_human": "104.3 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next features a 125B -parameter main model, supplemented by an additional 51B N-gram embeddings, with 6B parameters activated per token. Compared with Qwen3.7-Plus, Qwen3.8-Flash-Next substantially reduces both training and inference cost — training takes only about 1/9 as much, yet it delivers superior capabilities in coding ..."
+    }
+  ]
+}

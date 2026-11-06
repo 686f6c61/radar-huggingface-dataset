@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "gilje/raon-1-mini-korean-creative-v21-mlx",
+  "slug": "gilje-raon-1-mini-korean-creative-v21-mlx",
+  "author": "gilje",
+  "url": "https://huggingface.co/gilje/raon-1-mini-korean-creative-v21-mlx",
+  "created_at": "2026-11-06T15:19:32.000Z",
+  "updated_at": "2026-11-06T15:20:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "mlx",
+    "lora",
+    "korean",
+    "creative-writing",
+    "experimental",
+    "text-generation",
+    "ko",
+    "base_model:KRAFTON/Raon-1-mini-preview-mlx",
+    "base_model:adapter:KRAFTON/Raon-1-mini-preview-mlx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33587396,
+  "storage_human": "34 MB",
+  "base_model": "KRAFTON/Raon-1-mini-preview-mlx",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Raon — Korean Intelligence for a More Open World",
+      "url": "https://raon-mini.krafton.ai/en",
+      "snippet": "A model that understands Korean more deeply and expresses it naturally Efficient inference carries its performance into real-world use. Raon-1 mini understands Korean and English and handles complex requests. Fast and Efficient Inference 01 Fast and efficient inference Delivers performance close to much larger models while using less compute to generate each answer. Deep Korean Fluent English ..."
+    },
+    {
+      "title": "GitHub - krafton-ai/Raon-1-mini-preview: Raon-1 mini preview: a 30B-A4B ...",
+      "url": "https://github.com/krafton-ai/Raon-1-mini-preview",
+      "snippet": "Raon-1 mini is a 30B-A4B Mixture-of-Experts (MoE) language model, designed and trained from scratch by KRAFTON AI. It demonstrates strong capabilities in Korean conversation and agentic tasks."
+    }
+  ]
+}

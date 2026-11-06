@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "eval-apply/silvann_tq_D8E4_glm_5.3_flash",
+  "slug": "eval-apply-silvann_tq_d8e4_glm_5-3_flash",
+  "author": "eval-apply",
+  "url": "https://huggingface.co/eval-apply/silvann_tq_D8E4_glm_5.3_flash",
+  "created_at": "2026-10-05T11:06:59.000Z",
+  "updated_at": "2026-11-06T15:13:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "glm5_next",
+    "silvann",
+    "turboquant",
+    "quantized",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 165,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 492047571297,
+  "storage_human": "492.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eval-apply/GLM-5.3-Flash_silvann_tq_D8E4 · Hugging Face",
+      "url": "https://huggingface.co/eval-apply/GLM-5.3-Flash_silvann_tq_D8E4",
+      "snippet": "GLM-5.3-Flash_silvann_tq_D8E4 GLM 5.3 Flash by Z.AI, packed for the SiLVANN engine (the Eval-Apply GPU Interpreter and its neural network library): every weight matrix rotated along its input axis with a blocked Hadamard-and-signs rotation and quantised with a per-row scale (TurboQuant); norms, routers, the hyper-connection maps and other small tensors kept lossless; the embedding and head at ..."
+    },
+    {
+      "title": "eval-apply/silvann_tq_D8E4_glm_5.3_flash · Hugging Face",
+      "url": "https://d6108366.hf-mirror.com/eval-apply/silvann_tq_D8E4_glm_5.3_flash",
+      "snippet": "silvann_tq_D8E4_glm_5.3_flash GLM 5.3 Flash by Z.AI, packed for the SiLVANN engine (the Eval-Apply GPU Interpreter and its neural network library): every weight matrix rotated along its input axis with a blocked Hadamard-and-signs rotation and quantised with a per-row scale (TurboQuant); norms, routers, the hyper-connection maps and other small tensors kept lossless; the embedding and head at ..."
+    }
+  ]
+}

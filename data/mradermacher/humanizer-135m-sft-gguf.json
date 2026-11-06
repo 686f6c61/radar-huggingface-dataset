@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "mradermacher/humanizer-135m-sft-GGUF",
+  "slug": "mradermacher-humanizer-135m-sft-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/humanizer-135m-sft-GGUF",
+  "created_at": "2026-11-06T14:03:09.000Z",
+  "updated_at": "2026-11-06T14:23:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "en",
+    "base_model:qikp/humanizer-135m-sft",
+    "base_model:quantized:qikp/humanizer-135m-sft",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 1442419968,
+  "storage_human": "1.4 GB",
+  "base_model": "qikp/humanizer-135m-sft",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/humanizer-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/humanizer-GGUF",
+      "snippet": "mradermacher / humanizer-GGUF Like 0 Transformers GGUF MLX English Chinese humanizer text-rewriting rewriting paraphrase style-transfer llama.cpp gemma4 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/humanizerAI-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/humanizerAI-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

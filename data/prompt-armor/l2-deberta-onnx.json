@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "prompt-armor/l2-deberta-onnx",
+  "slug": "prompt-armor-l2-deberta-onnx",
+  "author": "prompt-armor",
+  "url": "https://huggingface.co/prompt-armor/l2-deberta-onnx",
+  "created_at": "2026-11-06T16:07:46.000Z",
+  "updated_at": "2026-11-06T16:08:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "deberta-v2",
+    "prompt-injection",
+    "security",
+    "text-classification",
+    "deberta-v3",
+    "en",
+    "base_model:protectai/deberta-v3-base-prompt-injection-v2",
+    "base_model:quantized:protectai/deberta-v3-base-prompt-injection-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 244295917,
+  "storage_human": "244 MB",
+  "base_model": "protectai/deberta-v3-base-prompt-injection-v2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - prompt-armor/prompt-armor: Open-source prompt injection ...",
+      "url": "https://github.com/prompt-armor/prompt-armor",
+      "snippet": "L2 Classifier — DeBERTa-v3-xsmall (22M params) via ONNX Runtime. Understands semantic intent — catches subtle and indirect attacks that regex can't see. L3 Similarity — contrastive fine-tuned embeddings + FAISS IVF cosine similarity against 25,160 known attacks. Matches by intent, not topic — won't false-positive on security discussions."
+    },
+    {
+      "title": "prompt-armor · PyPI",
+      "url": "https://pypi.org/project/prompt-armor/",
+      "snippet": "prompt-armor runs 5 analysis layers in parallel, fuses their scores via a trained meta-classifier, and tells you exactly what was detected, with evidence and confidence — in ~24ms, offline, for free."
+    }
+  ]
+}

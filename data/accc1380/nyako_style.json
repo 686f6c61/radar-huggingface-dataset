@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "ACCC1380/nyako_style",
+  "slug": "accc1380-nyako_style",
+  "author": "ACCC1380",
+  "url": "https://huggingface.co/ACCC1380/nyako_style",
+  "created_at": "2026-11-06T16:06:01.000Z",
+  "updated_at": "2026-11-06T16:44:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "tensorboard",
+    "safetensors",
+    "lora",
+    "anima",
+    "text-to-image",
+    "style",
+    "base_model:circlestone-labs/Anima",
+    "base_model:adapter:circlestone-labs/Anima",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8635457405,
+  "storage_human": "8.6 GB",
+  "base_model": "circlestone-labs/Anima",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nyako style AI LoRA Model | PixAI",
+      "url": "https://pixai.art/model/2004694597471908199",
+      "snippet": "Nyako style is an AI LoRA by kiyugui on PixAI. Try it free."
+    },
+    {
+      "title": "ACCC1380 (name) - Hugging Face",
+      "url": "https://huggingface.co/ACCC1380",
+      "snippet": "Recent Activity updated a bucketabout 23 hours ago ACCC1380/molab-checkpoints updated a datasetabout 24 hours ago ACCC1380/private-model updated a dataset15 days ago ACCC1380/TOP_SECRETS View all activity"
+    }
+  ]
+}

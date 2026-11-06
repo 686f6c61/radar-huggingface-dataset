@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "LibreYOLO/LibreLGM0.4b",
+  "slug": "libreyolo-librelgm0-4b",
+  "author": "LibreYOLO",
+  "url": "https://huggingface.co/LibreYOLO/LibreLGM0.4b",
+  "created_at": "2026-11-06T18:24:03.000Z",
+  "updated_at": "2026-11-06T18:24:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-3d",
+  "library": "libreyolo",
+  "languages": [],
+  "tags": [
+    "libreyolo",
+    "image-to-3d",
+    "gaussian-splatting",
+    "lgm",
+    "arxiv:2402.05054",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1274599756,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - LibreYOLO/libreyolo: LibreYOLO is a MIT licensed open source ...",
+      "url": "https://github.com/LibreYOLO/libreyolo",
+      "snippet": "Training new models, such as LibreYOLO26 and MIT retrains of families with restrictive weights, costs rented GPU time, and the LibreYOLO Sponsorship Program pays for it. Companies get their logo here from $100 a month, and from $500 a month are named in every release and in the model card of every weight released while they sponsor."
+    },
+    {
+      "title": "Model Zoo | LibreYOLO",
+      "url": "https://www.libreyolo.com/models",
+      "snippet": "Pre-trained YOLO weights with MIT licensing. Browse available models for object detection."
+    }
+  ]
+}

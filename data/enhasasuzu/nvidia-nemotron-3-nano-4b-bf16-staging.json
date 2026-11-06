@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "enhasasuzu/NVIDIA-Nemotron-3-Nano-4B-BF16-staging",
+  "slug": "enhasasuzu-nvidia-nemotron-3-nano-4b-bf16-staging",
+  "author": "enhasasuzu",
+  "url": "https://huggingface.co/enhasasuzu/NVIDIA-Nemotron-3-Nano-4B-BF16-staging",
+  "created_at": "2026-11-05T23:04:49.000Z",
+  "updated_at": "2026-11-05T23:04:50.000Z",
+  "license": "nvidia-nemotron-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "nemotron_h",
+    "text-generation",
+    "nvidia",
+    "pytorch",
+    "conversational",
+    "custom_code",
+    "en",
+    "dataset:nvidia/Nemotron-CC-v2",
+    "dataset:nvidia/Nemotron-Post-Training-Dataset-v2",
+    "dataset:nvidia/Nemotron-Science-v1",
+    "dataset:nvidia/Nemotron-Instruction-Following-Chat-v1",
+    "dataset:nvidia/Nemotron-Agentic-v1",
+    "dataset:nvidia/Nemotron-Competitive-Programming-v1",
+    "dataset:nvidia/Nemotron-Math-Proofs-v1",
+    "dataset:nvidia/Nemotron-RL-Agentic-Conversational-Tool-Use-Pivot-v1",
+    "dataset:nvidia/Nemotron-RL-instruction_following",
+    "dataset:nvidia/Nemotron-RL-agent-calendar_scheduling",
+    "dataset:nvidia/Nemotron-RL-instruction_following-structured_outputs",
+    "arxiv:2511.16664",
+    "arxiv:2504.03624",
+    "arxiv:2512.20856",
+    "arxiv:2512.20848",
+    "arxiv:2412.02595",
+    "base_model:nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+    "base_model:finetune:nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA-Nemotron-3-Nano-4B-GGUF - NVIDIA Developer",
+      "url": "https://developer.nvidia.com/downloads/assets/ace/model_card/nemotron_3_nano_4b.pdf",
+      "snippet": "NVIDIA-Nemotron-3-Nano-4B is an edge-ready small language model intended for Agentic AI in edge platforms (Jetson Thor, GeForce RTX, DGX Spark). It targets key-uses including AI gaming NPCs (teammates / companions), local voice assistants (for devices, apps, and games), and IoT automation."
+    },
+    {
+      "title": "nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16 · Hugging Face",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+      "snippet": "Nemotron-H: A Family of Accurate and Efficient Hybrid Mamba-Transformer Models ... Nemotron-CC: Transforming Common Crawl into a Refined Long-Horizon Pretraining Dataset ... Nemotron 3 Nano 4B: A Compact Hybrid Model for Efficient Local AI ... Nemotron 3 Nano \\- A new Standard for Efficient, Open, and Intelligent Agentic Models"
+    }
+  ]
+}

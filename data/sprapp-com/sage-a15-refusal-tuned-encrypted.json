@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "sprapp-com/sage-a15-refusal-tuned-encrypted",
+  "slug": "sprapp-com-sage-a15-refusal-tuned-encrypted",
+  "author": "sprapp-com",
+  "url": "https://huggingface.co/sprapp-com/sage-a15-refusal-tuned-encrypted",
+  "created_at": "2026-11-06T14:25:46.000Z",
+  "updated_at": "2026-11-06T14:28:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 71931521987,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Sido/makellm-ja-char-200m",
+  "slug": "sido-makellm-ja-char-200m",
+  "author": "Sido",
+  "url": "https://huggingface.co/Sido/makellm-ja-char-200m",
+  "created_at": "2026-11-06T17:25:58.000Z",
+  "updated_at": "2026-11-06T17:26:45.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "gguf",
+    "gpt2",
+    "japanese",
+    "character-level",
+    "no-bpe",
+    "base",
+    "ollama",
+    "llama.cpp",
+    "from-scratch",
+    "text-generation",
+    "ja",
+    "dataset:range3/cc100-ja",
+    "dataset:wikimedia/wikipedia",
+    "dataset:globis-university/aozorabunko-clean",
+    "license:cc-by-sa-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 216975360,
+  "parameters_human": "217.0M",
+  "storage_bytes": 434530848,
+  "storage_human": "435 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sido (Colette) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Sido_(Colette)",
+      "snippet": "Sido est un roman autobiographique de Colette, qui décrit sa mère Sidonie Landoy, surnommée Sido, mais également son …"
+    },
+    {
+      "title": "Sido (Tsutomu Uchida) - Hugging Face",
+      "url": "https://huggingface.co/Sido",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 month ago ... published a model about 1 month ago"
+    },
+    {
+      "title": "SIDO LYON",
+      "url": "https://www.sido-lyon.com/",
+      "snippet": "IMPACT est l’espace de SIDO dédié à celles et ceux qui construisent un numérique capable de fonctionner dans un monde plus …"
+    },
+    {
+      "title": "Sido (Tsutomu Uchida) - Hugging Face",
+      "url": "https://huggingface.co/Sido/models",
+      "snippet": "Sido's models1 Sort: Recently updated Sido/makellm-ja-char-75m-chat Text Generation • 82.2M•Updated Jun 20• 13"
+    },
+    {
+      "title": "Sido (rapper) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sido_(rapper)",
+      "snippet": "Sido is known for his provocative and aggressive lyrics. After gaining prominence with his debut album Maske in 2004, he became …"
+    }
+  ]
+}

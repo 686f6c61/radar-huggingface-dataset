@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "mariambhd/drone-qwen2vl-2b-distilled-alpha03-lora-7class",
+  "slug": "mariambhd-drone-qwen2vl-2b-distilled-alpha03-lora-7class",
+  "author": "mariambhd",
+  "url": "https://huggingface.co/mariambhd/drone-qwen2vl-2b-distilled-alpha03-lora-7class",
+  "created_at": "2026-11-06T12:52:36.000Z",
+  "updated_at": "2026-11-06T12:52:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen2-vl",
+    "lora",
+    "knowledge-distillation",
+    "drone-action-recognition",
+    "video-understanding",
+    "base_model:Qwen/Qwen2-VL-2B-Instruct",
+    "base_model:adapter:Qwen/Qwen2-VL-2B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20169431,
+  "storage_human": "20 MB",
+  "base_model": "Qwen/Qwen2-VL-2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "drone-qwen2vl-2b-distilled-alpha07-lora-7class - Hugging Face",
+      "url": "https://huggingface.co/mariambhd/drone-qwen2vl-2b-distilled-alpha07-lora-7class",
+      "snippet": "Instructions to use mariambhd/drone-qwen2vl-2b-distilled-alpha07-lora-7class with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "mariambhd/drone-qwen2vl-2b-confidence-distilled · Hugging Face",
+      "url": "https://huggingface.co/mariambhd/drone-qwen2vl-2b-confidence-distilled",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

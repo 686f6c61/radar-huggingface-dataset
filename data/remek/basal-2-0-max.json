@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Remek/basal-2.0-max",
+  "slug": "remek-basal-2-0-max",
+  "author": "Remek",
+  "url": "https://huggingface.co/Remek/basal-2.0-max",
+  "created_at": "2026-10-12T17:29:15.000Z",
+  "updated_at": "2026-11-06T14:18:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "pl",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "typed-decisions",
+    "decision-making",
+    "classification",
+    "calibration",
+    "polish",
+    "decision-model",
+    "conversational",
+    "pl",
+    "en",
+    "base_model:speakleash/Bielik-PL-11B-v3.0-Instruct",
+    "base_model:finetune:speakleash/Bielik-PL-11B-v3.0-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 940,
+  "trending_score": 0,
+  "parameters": 11167748096,
+  "parameters_human": "11.17B",
+  "storage_bytes": 22335549472,
+  "storage_human": "22.3 GB",
+  "base_model": "speakleash/Bielik-PL-11B-v3.0-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "basal-2.0 - a Remek Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Remek/basal-20",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from Remek"
+    },
+    {
+      "title": "Remek/basal-2.0-max-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Remek/basal-2.0-max-GGUF",
+      "snippet": "See the model card basal-2.0-max for Werdykt, JDI, LEK, PL-Holdout and PL-Real numbers against basal-1.5 and the evaluation notes. This port is not scored separately on those benchmarks."
+    }
+  ]
+}

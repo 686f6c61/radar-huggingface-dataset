@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "patryckalves/trashnet-frugal-learning",
+  "slug": "patryckalves-trashnet-frugal-learning",
+  "author": "patryckalves",
+  "url": "https://huggingface.co/patryckalves/trashnet-frugal-learning",
+  "created_at": "2026-11-06T18:41:47.000Z",
+  "updated_at": "2026-11-06T18:41:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "ultralytics",
+  "languages": [
+    "pt",
+    "en"
+  ],
+  "tags": [
+    "ultralytics",
+    "keras",
+    "image-classification",
+    "vision",
+    "frugal-ai",
+    "waste-classification",
+    "trashnet",
+    "yolo11",
+    "edge-ai",
+    "linear-probing",
+    "early-exit",
+    "pytorch",
+    "tensorflow",
+    "pt",
+    "en",
+    "dataset:garythung/trashnet",
+    "arxiv:2506.01869",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 472287909,
+  "storage_human": "472 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SaifulAnw/sa-trashnet-classifier · Hugging Face",
+      "url": "https://huggingface.co/SaifulAnw/sa-trashnet-classifier",
+      "snippet": "TrashNet Image Classification This project is a deep learning model for classifying types of trash using the TrashNet dataset. The model is built using PyTorch and includes data preprocessing, model training, evaluation, and performance analysis. Table of Contents Installation Usage Model Training Evaluation Results License Installation To run this project, you'll need to install the required ..."
+    }
+  ]
+}

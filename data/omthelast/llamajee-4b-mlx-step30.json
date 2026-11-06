@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "OmTheLast/LlamaJEE-4B-MLX-Step30",
+  "slug": "omthelast-llamajee-4b-mlx-step30",
+  "author": "OmTheLast",
+  "url": "https://huggingface.co/OmTheLast/LlamaJEE-4B-MLX-Step30",
+  "created_at": "2026-11-06T13:45:04.000Z",
+  "updated_at": "2026-11-06T13:45:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "qwen3.5",
+    "lora",
+    "jee",
+    "experimental",
+    "base_model:mlx-community/Qwen3.5-4B-4bit",
+    "base_model:adapter:mlx-community/Qwen3.5-4B-4bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1697893,
+  "storage_human": "2 MB",
+  "base_model": "mlx-community/Qwen3.5-4B-4bit",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

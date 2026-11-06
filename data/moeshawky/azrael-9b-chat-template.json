@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "moeshawky/Azrael-9b-chat-template",
+  "slug": "moeshawky-azrael-9b-chat-template",
+  "author": "moeshawky",
+  "url": "https://huggingface.co/moeshawky/Azrael-9b-chat-template",
+  "created_at": "2026-11-06T15:01:01.000Z",
+  "updated_at": "2026-11-06T15:04:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "chat-template",
+    "jinja",
+    "mimo",
+    "qwen3.5",
+    "ternary",
+    "vllm",
+    "sglang",
+    "llama.cpp",
+    "tool-calling",
+    "text-generation",
+    "conversational",
+    "base_model:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "base_model:finetune:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "moeshawky/Azrael-ternary-9B, XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "moeshawky/Azrael-ternary-9B · Hugging Face",
+      "url": "https://huggingface.co/moeshawky/Azrael-ternary-9B",
+      "snippet": "moeshawky / Azrael-ternary-9B Like 0 GGUF English ternary quantization mimo qwen3.5 torchtpu tpu License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    },
+    {
+      "title": "moeshawky/Azrael-ternary-9B at main - Hugging Face",
+      "url": "https://huggingface.co/moeshawky/Azrael-ternary-9B/tree/main",
+      "snippet": "moeshawky / Azrael-ternary-9B Like 0 GGUF English ternary quantization mimo qwen3.5 torchtpu tpu License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    }
+  ]
+}

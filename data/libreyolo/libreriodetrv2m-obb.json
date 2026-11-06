@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "LibreYOLO/LibreRiODETRv2m-obb",
+  "slug": "libreyolo-libreriodetrv2m-obb",
+  "author": "LibreYOLO",
+  "url": "https://huggingface.co/LibreYOLO/LibreRiODETRv2m-obb",
+  "created_at": "2026-11-06T17:40:53.000Z",
+  "updated_at": "2026-11-06T17:40:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "libreyolo",
+  "languages": [],
+  "tags": [
+    "libreyolo",
+    "object-detection",
+    "oriented-object-detection",
+    "rio-detr",
+    "riodetrv2",
+    "dataset:DOTA",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 80299558,
+  "storage_human": "80 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LibreYOLO/LibreRTDETRv2m-obb · Hugging Face",
+      "url": "https://huggingface.co/LibreYOLO/LibreRTDETRv2m-obb",
+      "snippet": "LibreYOLO / LibreRTDETRv2m-obb like 0 Follow LibreYOLO 23 Object Detection DOTA libreyolo oriented-object-detection rt-detr rtdetrv2 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new LibreRTDETRv2m-obb Source Modifications License"
+    },
+    {
+      "title": "LibreYOLO/LibreRTDETRv2m-obb at main - Hugging Face",
+      "url": "https://huggingface.co/LibreYOLO/LibreRTDETRv2m-obb/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

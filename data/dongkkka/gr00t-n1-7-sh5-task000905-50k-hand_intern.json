@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "Dongkkka/GR00T-N1.7-SH5-Task000905-50k-Hand_Intern",
+  "slug": "dongkkka-gr00t-n1-7-sh5-task000905-50k-hand_intern",
+  "author": "Dongkkka",
+  "url": "https://huggingface.co/Dongkkka/GR00T-N1.7-SH5-Task000905-50k-Hand_Intern",
+  "created_at": "2026-11-06T15:59:16.000Z",
+  "updated_at": "2026-11-06T16:02:11.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "gr00t",
+    "sh5",
+    "tactile",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dongkkka/GR00T-N1.7-SH5-Task000650-Tactile · Hugging Face",
+      "url": "https://huggingface.co/Dongkkka/GR00T-N1.7-SH5-Task000650-Tactile",
+      "snippet": "Fine-tuned GR00T N1.7 policy for the SH5 robot: both arms and both hands, with three RGB cameras, a language instruction, 54 joint positions, and 90 raw tactile pressure readings. The numeric finger_mlp tactile encoder produces a 32-D latent for the action head. The vision/language backbone was ..."
+    },
+    {
+      "title": "Dongkkka/GR00T-N1.7-PaperTowelBasket-895-896-907-912-RightArm8-150k ...",
+      "url": "https://huggingface.co/Dongkkka/GR00T-N1.7-PaperTowelBasket-895-896-907-912-RightArm8-150k-20261105",
+      "snippet": "Robotics model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "[2503.14734] GR00T N1: An Open Foundation Model for Generalist ...",
+      "url": "https://arxiv.org/abs/2503.14734",
+      "snippet": "A robot foundation model, trained on massive and diverse data sources, is essential for enabling the robots to reason about novel situations, robustly handle real-world variability, and rapidly learn new tasks. To this end, we introduce GR00T N1, an open foundation model for humanoid robots."
+    }
+  ]
+}

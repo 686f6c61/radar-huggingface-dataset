@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "huwenjie333/Qwen3-ASR-1.7B-ft-af51-cap900-1106",
+  "slug": "huwenjie333-qwen3-asr-1-7b-ft-af51-cap900-1106",
+  "author": "huwenjie333",
+  "url": "https://huggingface.co/huwenjie333/Qwen3-ASR-1.7B-ft-af51-cap900-1106",
+  "created_at": "2026-11-06T17:43:24.000Z",
+  "updated_at": "2026-11-06T17:43:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_asr",
+    "automatic-speech-recognition",
+    "qwen3-asr",
+    "base_model:Qwen/Qwen3-ASR-1.7B",
+    "base_model:finetune:Qwen/Qwen3-ASR-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2038052480,
+  "parameters_human": "2.04B",
+  "storage_bytes": 4087621017,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen3-ASR-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3-ASR: Qwen3-ASR is an open-source series of ASR ...",
+      "url": "https://github.com/QwenLM/Qwen3-ASR",
+      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-0.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni."
+    },
+    {
+      "title": "Qwen3-ASR 1.7B — OpenASR Models",
+      "url": "https://openasr.org/models/qwen3-asr-1.7b/",
+      "snippet": "Qwen3-ASR-1.7B is a multilingual automatic speech recognition model (~2B parameters, ~1.7B active, BF16) from Alibaba's Qwen3-ASR family that transcribes speech while identifying the spoken language across 30 languages, 22 Chinese dialects, and a range of regional English accents — and it holds up on hard audio including singing voice and ..."
+    }
+  ]
+}

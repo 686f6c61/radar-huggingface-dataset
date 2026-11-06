@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "MaziyarPanahi/Qwen3.5-4B-Router-1M",
+  "slug": "maziyarpanahi-qwen3-5-4b-router-1m",
+  "author": "MaziyarPanahi",
+  "url": "https://huggingface.co/MaziyarPanahi/Qwen3.5-4B-Router-1M",
+  "created_at": "2026-11-06T14:28:30.000Z",
+  "updated_at": "2026-11-06T18:19:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "unsloth",
+    "decision-model",
+    "tool-routing",
+    "agents",
+    "dataset:MaziyarPanahi/Jev-Agent-Tool-Decisions-180K",
+    "dataset:MaziyarPanahi/Jev-Customer-Support-Decisions-130K",
+    "dataset:MaziyarPanahi/Jev-Agent-Trace-Audit-100K",
+    "dataset:MaziyarPanahi/Jev-Intent-Domain-Routing-130K",
+    "base_model:unsloth/Qwen3.5-4B",
+    "base_model:adapter:unsloth/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 214029021,
+  "storage_human": "214 MB",
+  "base_model": "unsloth/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.5-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-4B",
+      "snippet": "Image-Text-to-Text model with 5B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "MaziyarPanahi (Maziyar Panahi) - Hugging Face",
+      "url": "https://huggingface.co/MaziyarPanahi",
+      "snippet": "AI in Health & Biology, Post-Training, RLHF, RL, model merging, quantization, synthetic datasets"
+    }
+  ]
+}

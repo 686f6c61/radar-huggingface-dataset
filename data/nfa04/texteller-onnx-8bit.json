@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "nfa04/texteller-onnx-8bit",
+  "slug": "nfa04-texteller-onnx-8bit",
+  "author": "nfa04",
+  "url": "https://huggingface.co/nfa04/texteller-onnx-8bit",
+  "created_at": "2026-11-06T13:22:05.000Z",
+  "updated_at": "2026-11-06T13:35:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "latex",
+    "ocr",
+    "quantized",
+    "handwriting",
+    "image-to-text",
+    "base_model:OleehyO/TexTeller",
+    "base_model:quantized:OleehyO/TexTeller",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 317374805,
+  "storage_human": "317 MB",
+  "base_model": "OleehyO/TexTeller",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - nfa04/texteller-onnx-8bit",
+      "url": "https://github.com/nfa04/texteller-onnx-8bit/tree/main",
+      "snippet": "decoder.onnx 229 MB the text decoder, with a key/value cache (the first step and the later steps are one graph) So 8 bits cost about 4 points of exact matches here. The thickness of the pen matters more than that: on 100 other inks (validation set, read with the PyTorch version of the model), a pen ..."
+    },
+    {
+      "title": "Releases · nfa04/texteller-onnx-8bit · GitHub",
+      "url": "https://github.com/nfa04/texteller-onnx-8bit/releases",
+      "snippet": "Contribute to nfa04/texteller-onnx-8bit development by creating an account on GitHub."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Crobotia/iUMI_Inference",
+  "slug": "crobotia-iumi_inference",
+  "author": "Crobotia",
+  "url": "https://huggingface.co/Crobotia/iUMI_Inference",
+  "created_at": "2026-10-24T06:56:28.000Z",
+  "updated_at": "2026-11-06T15:15:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "umi",
+    "bimanual",
+    "openpi",
+    "flux",
+    "inference",
+    "lerobot-v3",
+    "cloth-folding",
+    "robot-rollout",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23716676862,
+  "storage_human": "23.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Crobotia/iUMI_Inference at main - Hugging Face",
+      "url": "https://huggingface.co/Crobotia/iUMI_Inference/tree/main",
+      "snippet": "openpi flux inference License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main iUMI_Inference 4.51 MB Ctrl+K Ctrl+K 1 contributor History:2 commits Crobotia Add sanitized iUMI inference and robot deployment source 301b0eb verifiedabout 8 hours ago configsAdd sanitized iUMI inference and robot deployment ..."
+    },
+    {
+      "title": "Crobotia/iUMI_Inference · Hugging Face",
+      "url": "https://huggingface.co/Crobotia/iUMI_Inference",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

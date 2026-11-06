@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Parabol/harrier-oss-v1-270m-ONNX-INT8",
+  "slug": "parabol-harrier-oss-v1-270m-onnx-int8",
+  "author": "Parabol",
+  "url": "https://huggingface.co/Parabol/harrier-oss-v1-270m-ONNX-INT8",
+  "created_at": "2026-11-06T18:35:40.000Z",
+  "updated_at": "2026-11-06T18:40:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "gemma3_text",
+    "int8",
+    "quantized",
+    "text-embeddings-inference",
+    "sentence-similarity",
+    "feature-extraction",
+    "base_model:microsoft/harrier-oss-v1-270m",
+    "base_model:quantized:microsoft/harrier-oss-v1-270m",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 323095030,
+  "storage_human": "323 MB",
+  "base_model": "microsoft/harrier-oss-v1-270m, onnx-community/harrier-oss-v1-270m-ONNX",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Parabol | Free Agile Meeting Tool for Remote Teams",
+      "url": "https://www.parabol.co/",
+      "snippet": "Try it Yourself Parabol is free forever for up to 2 teams. Yup, totally free. From Parabol with love."
+    },
+    {
+      "title": "onnx-community/harrier-oss-v1-270m-ONNX · Hugging Face",
+      "url": "https://huggingface.co/onnx-community/harrier-oss-v1-270m-ONNX",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Parabole - Leroy Merlin",
+      "url": "https://www.leroymerlin.fr/produits/electricite-et-domotique/equipement-tv/equipement-pour-tv-satellite/parabole/?msockid=3f0f7ea9c04a61142ca766a0c1e2606e",
+      "snippet": "Parabole: Vous garantir le bon achat, on y travaille tous les jours. Retrouvez chez Leroy Merlin notre sélection de 11 produits, au prix …"
+    },
+    {
+      "title": "wjixiang/harrier-oss-v1-270m-onnx · Hugging Face",
+      "url": "https://huggingface.co/wjixiang/harrier-oss-v1-270m-onnx",
+      "snippet": "ONNX export of microsoft/harrier-oss-v1-270m for local CPU inference with ONNX Runtime. The graph is the int8 quantized variant from the onnx-community export; weights live in the external data file and are resolved relative to the graph on load ..."
+    },
+    {
+      "title": "Comparatif Parabole satellite » les 15 meilleurs en 2026",
+      "url": "https://www.meilleurs.fr/parabole-satellite/",
+      "snippet": "6 days ago · llll Tests & comparatifs Parabole satellite par nos experts en 2026 avec Meilleur produit, Meilleur rapport qualité-prix …"
+    }
+  ]
+}

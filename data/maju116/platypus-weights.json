@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "maju116/platypus-weights",
+  "slug": "maju116-platypus-weights",
+  "author": "maju116",
+  "url": "https://huggingface.co/maju116/platypus-weights",
+  "created_at": "2026-09-27T11:24:41.000Z",
+  "updated_at": "2026-11-06T20:06:14.000Z",
+  "license": "mit-and-cc-by-4.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-segmentation",
+  "library": "pyplatypus",
+  "languages": [],
+  "tags": [
+    "pyplatypus",
+    "image-segmentation",
+    "instance-segmentation",
+    "object-detection",
+    "medical-imaging",
+    "retinal-vessel-segmentation",
+    "fundus",
+    "microscopy",
+    "cell-biology",
+    "ultrasound",
+    "fetal-biometry",
+    "pytorch",
+    "safetensors",
+    "r",
+    "dataset:bbbc038",
+    "dataset:fives",
+    "dataset:hc18",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 277569068,
+  "storage_human": "278 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "maju116/platypus-weights · Hugging Face",
+      "url": "https://huggingface.co/maju116/platypus-weights",
+      "snippet": "Trained segmentation weights for pyplatypus and the platypus R package. One directory per model; every weights file has a .json beside it recording what it was trained for and on. Weights are loaded by name, and a name is pinned to a commit of this repository, so it always means the same numbers ..."
+    },
+    {
+      "title": "Platypus Weights - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/maju116/platypus-weights",
+      "snippet": "Registry entry for model Platypus Weights; source metadata pending."
+    }
+  ]
+}

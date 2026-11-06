@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "timesmith/Qwen3.6-35B-A3B-oQ4e-mtp",
+  "slug": "timesmith-qwen3-6-35b-a3b-oq4e-mtp",
+  "author": "timesmith",
+  "url": "https://huggingface.co/timesmith/Qwen3.6-35B-A3B-oQ4e-mtp",
+  "created_at": "2026-11-06T12:53:03.000Z",
+  "updated_at": "2026-11-06T13:14:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "oq",
+    "quantized",
+    "mtp",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 21625625657,
+  "storage_human": "21.6 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen Team Open-Sources Qwen3.6-35B-A3B: A Sparse MoE Vision-Language ...",
+      "url": "https://www.marktechpost.com/2026/04/16/qwen-team-open-sources-qwen3-6-35b-a3b-a-sparse-moe-vision-language-model-with-3b-active-parameters-and-agentic-coding-capabilities/",
+      "snippet": "The open-source AI landscape has a new entry worth paying attention to. The Qwen team at Alibaba has released Qwen3.6-35B-A3B, the first open-weight model from the Qwen3.6 generation, and it is making a compelling argument that parameter efficiency matters far more than raw model size. With 35 billion total parameters but only 3 billion activated during inference, this model delivers agentic ..."
+    }
+  ]
+}

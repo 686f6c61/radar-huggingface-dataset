@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "rajaneesh0918/cyberbullying-artifacts",
+  "slug": "rajaneesh0918-cyberbullying-artifacts",
+  "author": "rajaneesh0918",
+  "url": "https://huggingface.co/rajaneesh0918/cyberbullying-artifacts",
+  "created_at": "2026-11-06T19:06:23.000Z",
+  "updated_at": "2026-11-06T19:10:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 95614371,
+  "storage_human": "96 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Frontiers | ProTect: a hybrid deep learning model for proactive ...",
+      "url": "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2024.1269366/full",
+      "snippet": "This article proposed the problem of cyberbullying detection on social media and the challenges of applying machine learning and deep learning techniques to real-time datasets. Also stated main objective of developing a hybrid CNN-RF model that can work on both small and large datasets with high accuracy and speed."
+    },
+    {
+      "title": "A Comprehensive Study on the Effectiveness of Machine Learning Models ...",
+      "url": "https://www.computer.org/csdl/proceedings-article/icnc/2026/11416855/2eOZuJ04bDy",
+      "snippet": "Cyberbullying affects $20-40 \\%$ of digitally connected adolescents, yet existing automated detection systems achieve highly variable accuracy and lack ethical decision-making mechanisms. This study presents a unified AI framework combining Machine Learning (ML), Deep Learning (DL), and hybrid models to address cyberbullying detection across four major platforms: Wikipedia Talk, Twitter ..."
+    }
+  ]
+}

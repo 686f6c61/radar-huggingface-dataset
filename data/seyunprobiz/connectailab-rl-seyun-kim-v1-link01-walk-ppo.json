@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "seyunprobiz/connectailab-rl-seyun-kim-v1-link01-walk-ppo",
+  "slug": "seyunprobiz-connectailab-rl-seyun-kim-v1-link01-walk-ppo",
+  "author": "seyunprobiz",
+  "url": "https://huggingface.co/seyunprobiz/connectailab-rl-seyun-kim-v1-link01-walk-ppo",
+  "created_at": "2026-11-05T23:25:46.000Z",
+  "updated_at": "2026-11-06T13:53:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "reinforcement-learning",
+    "ppo",
+    "robotics",
+    "mujoco",
+    "locomotion",
+    "humanoid",
+    "connect-ai-lab",
+    "connectailab",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4533236,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "walking",
+      "dataset": "Humanoid-v5",
+      "metric": "distance per 8 s (m)",
+      "value": 5.547
+    },
+    {
+      "task": "walking",
+      "dataset": "Humanoid-v5",
+      "metric": "mean forward speed (m/s)",
+      "value": 0.6938
+    },
+    {
+      "task": "walking",
+      "dataset": "Humanoid-v5",
+      "metric": "falls per minute",
+      "value": 30.019
+    }
+  ],
+  "sources": [
+    {
+      "title": "connectailab-rl-connectailab-rl-seung-hyun-kim-v1-link01-v1-link01",
+      "url": "https://huggingface.co/SHSemi/connectailab-rl-connectailab-rl-seung-hyun-kim-v1-link01-v1-link01",
+      "snippet": "Reinforcement Learning model, built with PEFT. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "connectailab-rl-seyunduck-route-v1-link01 - Hugging Face",
+      "url": "https://huggingface.co/seyunprobiz/connectailab-rl-seyunduck-route-v1-link01",
+      "snippet": "Reinforcement Learning model. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

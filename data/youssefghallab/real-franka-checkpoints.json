@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "YoussefGhallab/real-franka-checkpoints",
+  "slug": "youssefghallab-real-franka-checkpoints",
+  "author": "YoussefGhallab",
+  "url": "https://huggingface.co/YoussefGhallab/real-franka-checkpoints",
+  "created_at": "2026-11-06T18:39:24.000Z",
+  "updated_at": "2026-11-06T18:43:59.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "franka",
+    "world-action-model",
+    "regen",
+    "continual-learning",
+    "base_model:nvidia/Cosmos-Predict2-2B-Video2World",
+    "base_model:finetune:nvidia/Cosmos-Predict2-2B-Video2World",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27395281932,
+  "storage_human": "27.4 GB",
+  "base_model": "nvidia/Cosmos-Predict2-2B-Video2World",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SeonghuJeon/franka-realrobot-final-checkpoints · Hugging Face",
+      "url": "https://huggingface.co/SeonghuJeon/franka-realrobot-final-checkpoints",
+      "snippet": "Franka Real-Robot Final Checkpoints This public repository contains the final compact PyTorch checkpoints from the Franka real-robot finetuning runs found under checkpoints/realrobot on the CVLAB1 workspace. The upload keeps one highest-step compact .pt file for each robot-* run that still had a compact checkpoint on disk."
+    },
+    {
+      "title": "checkpoints/franka_multitask/robot-20260525-061300/0020000.pt ...",
+      "url": "https://huggingface.co/SeonghuJeon/franka-realrobot-final-checkpoints/blob/main/checkpoints/franka_multitask/robot-20260525-061300/0020000.pt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

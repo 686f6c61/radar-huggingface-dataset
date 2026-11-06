@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "MottoX2000/onkodoz-riskli-karar",
+  "slug": "mottox2000-onkodoz-riskli-karar",
+  "author": "MottoX2000",
+  "url": "https://huggingface.co/MottoX2000/onkodoz-riskli-karar",
+  "created_at": "2026-11-06T19:54:18.000Z",
+  "updated_at": "2026-11-06T19:55:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "tabular-classification",
+    "sklearn",
+    "education",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "İkinci El İlan İnceleme — Fiyat, Beyan ve Model Riskleri | Oto Karar",
+      "url": "https://otokarar.net/incele",
+      "snippet": "İkinci el ilanı fiyat, beyan ve model riskleriyle incele. İlan bağlantısından erişilebilen veya senin girdiğin marka, model, yıl, kilometre, fiyat ve kondisyon bilgileri önce onayına sunulur."
+    },
+    {
+      "title": "SE Primer: OnkoDoz-AI - cypress test videosu - YouTube",
+      "url": "https://www.youtube.com/watch?v=GxsQHBSPUxM",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "aether-models/krea-2-turbo-realism-aether-kit",
+  "slug": "aether-models-krea-2-turbo-realism-aether-kit",
+  "author": "aether-models",
+  "url": "https://huggingface.co/aether-models/krea-2-turbo-realism-aether-kit",
+  "created_at": "2026-11-06T16:30:28.000Z",
+  "updated_at": "2026-11-06T17:52:32.000Z",
+  "license": "krea-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "aether-kit",
+    "core-ai",
+    "text-to-image",
+    "not-for-all-audiences",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:finetune:krea/Krea-2-Turbo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33551791738,
+  "storage_human": "33.6 GB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Éther (mythologie) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/%C3%89ther_(mythologie)",
+      "snippet": "« Aether » redirige ici. Pour le jeu vidéo, voir Aether (jeu vidéo). Pour les articles homonymes, voir . ... Éther ou Æther est un dieu …"
+    },
+    {
+      "title": "Aether Real - Krea 2 - v1.0 | Krea 2 LyCORIS | Civitai",
+      "url": "https://civitai.com/models/2838052/aether-real-krea-2",
+      "snippet": "Aether Real - Tonal & Anatomy adjustment for Krea 2 A LoKr for Krea 2 that targets two of the base model's most common tells. Highlights: Krea 2 tends to clip highlights toward blown-out whites. This model pulls the top end back into a more controlled roll-off, recovering detail in bright areas without flattening the image. Face & head anatomy: reduces the \"dead,\" over-symmetrical AI face: the ..."
+    },
+    {
+      "title": "Aether (classical element) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Aether_(classical_element)",
+      "snippet": "In his aether model, Newton describes aether as a medium that \"flows\" continually downward toward the Earth's surface and is …"
+    },
+    {
+      "title": "Krea 2 Turbo - Krea",
+      "url": "https://www.krea.ai/docs/user-guide/features/krea-2-turbo",
+      "snippet": "Krea 2 Turbo is the fastest Krea 2 model, built for low-cost iteration on expressive illustrations, style-driven concepts, and rapid visual exploration."
+    },
+    {
+      "title": "Aether — Your Personal Streaming Service for Apple Devices",
+      "url": "https://aetherplayer.com/",
+      "snippet": "Some signals are meant to be answered. Your films, shows and live channels, together in Aether. Connect Plex, Jellyfin, Emby or …"
+    }
+  ]
+}

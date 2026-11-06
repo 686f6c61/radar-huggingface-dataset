@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mrbmaryam/logsumm-linux-w10-extractive-stratified-qwen3-8b-sft",
+  "slug": "mrbmaryam-logsumm-linux-w10-extractive-stratified-qwen3-8b-sft",
+  "author": "mrbmaryam",
+  "url": "https://huggingface.co/mrbmaryam/logsumm-linux-w10-extractive-stratified-qwen3-8b-sft",
+  "created_at": "2026-11-06T19:33:41.000Z",
+  "updated_at": "2026-11-06T19:34:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen3-8B-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen3-8B-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "unsloth/Qwen3-8B-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "logsumm-apache-w10-abstractive-stratified-qwen3-8b-sft",
+      "url": "https://huggingface.co/mrbmaryam/logsumm-apache-w10-abstractive-stratified-qwen3-8b-sft/discussions",
+      "snippet": "Instructions to use mrbmaryam/logsumm-apache-w10-abstractive-stratified-qwen3-8b-sft with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "demo_pipeline.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/LeiweAndPartners/qwen3-vision-structured-extraction./blob/main/demo_pipeline.ipynb",
+      "snippet": "This notebook accompanies the talk given by Marcus Leiwe at the AI Tinkerers Hong Kong meetup on the 27th November 2025. The original project solved a critical data bottleneck for a Charity client Branches of Hope: digitising thousands of handwritten and scanned forms into a queryable database without sending sensitive PII to closed-source ..."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "SzczurekLab/ImmuVis_Conv",
+  "slug": "szczureklab-immuvis_conv",
+  "author": "SzczurekLab",
+  "url": "https://huggingface.co/SzczurekLab/ImmuVis_Conv",
+  "created_at": "2026-11-01T17:39:59.000Z",
+  "updated_at": "2026-11-01T18:36:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "immuvis",
+  "languages": [],
+  "tags": [
+    "immuvis",
+    "pytorch",
+    "imaging-mass-cytometry",
+    "multiplex-imaging",
+    "masked-autoencoder",
+    "virtual-staining",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 537573288,
+  "storage_human": "538 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2602.04585] ImmuVis: Hyperconvolutional Foundation Model for Imaging ...",
+      "url": "https://arxiv.org/abs/2602.04585",
+      "snippet": "We present ImmuVis, a family of efficient foundation models for imaging mass cytometry (IMC), a high-throughput multiplex imaging technology that handles molecular marker measurements as image channels and enables large-scale spatial tissue profiling. Unlike natural images, multiplex imaging lacks a fixed channel space, as real-world marker sets vary across studies, violating a core assumption ..."
+    },
+    {
+      "title": "ImmuVis: Hyperconvolutional Foundation Model for Imaging Mass Cytometry",
+      "url": "https://arxiv.org/html/2602.04585v1",
+      "snippet": "Our work advances machine learning for biomedical imaging by introducing a panel-flexible foundation model for imaging mass cytometry (IMC) that can support large-scale spatial proteomics analysis across heterogeneous marker panels, enable cost-effective virtual staining for retrospective and cross-study comparisons, and provide uncertainty ..."
+    }
+  ]
+}

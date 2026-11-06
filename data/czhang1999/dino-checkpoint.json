@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Czhang1999/dino-checkpoint",
+  "slug": "czhang1999-dino-checkpoint",
+  "author": "Czhang1999",
+  "url": "https://huggingface.co/Czhang1999/dino-checkpoint",
+  "created_at": "2026-11-06T18:42:13.000Z",
+  "updated_at": "2026-11-06T18:42:18.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Item - Model Checkpoints for DINo - figshare - Figshare",
+      "url": "https://figshare.com/articles/online_resource/Model_Checkpoints_for_DINo/21298251",
+      "snippet": "The file contains the checkpoints of our model DINo for experiments shown in the paper. Please refer to the Git repository (link below) for the usage of these checkpoints."
+    },
+    {
+      "title": "mqw-hite/dino-checkpoint · Hugging Face",
+      "url": "https://huggingface.co/mqw-hite/dino-checkpoint",
+      "snippet": "Machine learning model with 33.1k parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

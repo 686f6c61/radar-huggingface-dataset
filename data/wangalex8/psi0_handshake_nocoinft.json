@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "WangAlex8/Psi0_handshake_nocoinFT",
+  "slug": "wangalex8-psi0_handshake_nocoinft",
+  "author": "WangAlex8",
+  "url": "https://huggingface.co/WangAlex8/Psi0_handshake_nocoinFT",
+  "created_at": "2026-11-06T17:34:43.000Z",
+  "updated_at": "2026-11-06T18:04:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 61092755144,
+  "storage_human": "61.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ψ₀: An Open Foundation Model Towards Universal Humanoid Loco-Manipulation",
+      "url": "https://psi-lab.ai/Psi0/",
+      "snippet": "We introduce Ψ₀ (Psi-Zero), an open foundation model to address challenging humanoid loco-manipulation tasks. While existing approaches often attempt to address this fundamental problem by co-training on large and diverse human and humanoid data, we argue that this strategy is suboptimal due to the fundamental kinematic and motion ..."
+    },
+    {
+      "title": "GitHub - physical-superintelligence-lab/Psi0: [RSS'26] Welcome to Psi ...",
+      "url": "https://github.com/physical-superintelligence-lab/Psi0",
+      "snippet": "Ψ 0 ${}_{\\mathrm{\\Psi }}$ is an open vision-language-action (VLA) model for dexterous humanoid loco-manipulation. Our model first learns task semantics and visual representation from large-scale human egocentic videos, and then is post-trained on a smaller amount of real-world teleoperated robot data, to learn general dynamics of the embodiment. [Optional] Expand to know more about Ψ₀. Our ..."
+    }
+  ]
+}

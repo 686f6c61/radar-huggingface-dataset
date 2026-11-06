@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "manateelazycat/Pyannote-Segmentation-3-AIPod-HF",
+  "slug": "manateelazycat-pyannote-segmentation-3-aipod-hf",
+  "author": "manateelazycat",
+  "url": "https://huggingface.co/manateelazycat/Pyannote-Segmentation-3-AIPod-HF",
+  "created_at": "2026-11-06T12:41:54.000Z",
+  "updated_at": "2026-11-06T13:08:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 165153833,
+  "storage_human": "165 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pyannote (pyannote) - Hugging Face",
+      "url": "https://huggingface.co/pyannote",
+      "snippet": "Nov 11, 2024 • 13.9k • 94 Compatible with pyannote.audio 4.x pyannote/speaker-diarization-community-1 Automatic Speech Recognition • Updated Sep 29, 2025 • 5.2M • 3.56k pyannote/speaker-diarization-community-1-cloud Voice Activity Detection • Updated Sep 16, 2025 • 116 • 1 pyannote/speaker-diarization-precision"
+    },
+    {
+      "title": "pyannote/segmentation · Hugging Face",
+      "url": "https://huggingface.co/pyannote/segmentation",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

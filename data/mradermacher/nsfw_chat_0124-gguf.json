@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "mradermacher/nsfw_chat_0124-GGUF",
+  "slug": "mradermacher-nsfw_chat_0124-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/nsfw_chat_0124-GGUF",
+  "created_at": "2025-02-26T23:44:20.000Z",
+  "updated_at": "2026-11-06T13:34:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:TOPAI-Network/nsfw_chat_0124",
+    "base_model:quantized:TOPAI-Network/nsfw_chat_0124",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational",
+    "not-for-all-audiences"
+  ],
+  "likes": 2,
+  "downloads_30d": 61,
+  "trending_score": 0,
+  "parameters": 8030269440,
+  "parameters_human": "8.03B",
+  "storage_bytes": 71820308800,
+  "storage_human": "71.8 GB",
+  "base_model": "TOPAI-Network/nsfw_chat_0124",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/nsfw_chat_0124-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/nsfw_chat_0124-GGUF",
+      "snippet": "conversational Not-For-All-Audiences License: mit Model card Files Files and versions Community Train Deploy Use this model"
+    },
+    {
+      "title": "mradermacher/nsfw_chat_0124-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/nsfw_chat_0124-GGUF/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

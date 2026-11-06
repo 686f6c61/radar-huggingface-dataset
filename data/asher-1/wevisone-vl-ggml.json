@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "Asher-1/WeVisOne-VL-GGML",
+  "slug": "asher-1-wevisone-vl-ggml",
+  "author": "Asher-1",
+  "url": "https://huggingface.co/Asher-1/WeVisOne-VL-GGML",
+  "created_at": "2026-11-06T15:32:48.000Z",
+  "updated_at": "2026-11-06T15:53:45.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-text",
+  "library": "ggml",
+  "languages": [],
+  "tags": [
+    "ggml",
+    "gguf",
+    "multimodal",
+    "vision-language",
+    "wevisone",
+    "image-segmentation",
+    "object-detection",
+    "image-to-text",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9511460,
+  "parameters_human": "9.5M",
+  "storage_bytes": 9299031552,
+  "storage_human": "9.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Asher-1/WeVisOne-VL-GGML: WeVisOne-VL is a powerful VLM by the ...",
+      "url": "https://github.com/Asher-1/WeVisOne-VL-GGML",
+      "snippet": "WeVisOne-VL (We Chat Vis ion All-in- One) is a vision-language foundation model that unifies object-level perception (object detection, referring localization, counting, pointing, and OCR) and pixel-level perception (referring segmentation and promptable alpha matting) through structured next-token prediction and a lightweight 9.6M-parameter ..."
+    },
+    {
+      "title": "WeVisOne-VL: Unified Visual Perception from Objects to Pixels",
+      "url": "https://tencent.github.io/WeVisOne-VL/",
+      "snippet": "WeVisOne-VL is a vision-language foundation model that unifies object-level and pixel-level perception — detection, referring, counting, pointing, OCR, segmentation and alpha matting — through structured next-token prediction."
+    }
+  ]
+}

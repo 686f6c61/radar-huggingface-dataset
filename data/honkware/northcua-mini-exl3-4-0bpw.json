@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "Honkware/NorthCUA-Mini-exl3-4.0bpw",
+  "slug": "honkware-northcua-mini-exl3-4-0bpw",
+  "author": "Honkware",
+  "url": "https://huggingface.co/Honkware/NorthCUA-Mini-exl3-4.0bpw",
+  "created_at": "2026-11-06T18:13:34.000Z",
+  "updated_at": "2026-11-06T18:14:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "exllamav3",
+  "languages": [],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "qwen3_5_moe",
+    "exl3",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "base_model:beipo-ai/NorthCUA-Mini",
+    "base_model:quantized:beipo-ai/NorthCUA-Mini",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9489597440,
+  "parameters_human": "9.49B",
+  "storage_bytes": 19070109848,
+  "storage_human": "19.1 GB",
+  "base_model": "beipo-ai/NorthCUA-Mini",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "beipo-ai/NorthCUA-Mini · Hugging Face",
+      "url": "https://huggingface.co/beipo-ai/NorthCUA-Mini",
+      "snippet": "Machine learning model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "GitHub - beipo-ai/NorthCUA: Turn intent into work. Open-source Desktop ...",
+      "url": "https://github.com/beipo-ai/NorthCUA",
+      "snippet": "The NorthCUA Technical Report on arXiv describes the broader NorthCUA system and reports its model results. A 123-page snapshot dated 31 October 2026 is bundled for offline reading."
+    }
+  ]
+}

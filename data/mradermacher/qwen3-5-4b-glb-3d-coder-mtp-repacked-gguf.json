@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.5-4B-GLB-3D-Coder-MTP-Repacked-GGUF",
+  "slug": "mradermacher-qwen3-5-4b-glb-3d-coder-mtp-repacked-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.5-4B-GLB-3D-Coder-MTP-Repacked-GGUF",
+  "created_at": "2026-11-06T14:11:28.000Z",
+  "updated_at": "2026-11-06T14:29:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mtp",
+    "qwen3_5",
+    "text-generation-inference",
+    "llama-cpp",
+    "code",
+    "threejs",
+    "3d",
+    "glb",
+    "godot",
+    "en",
+    "dataset:ccore/ThreeJS-3D-GLB-Assets",
+    "base_model:prithivMLmods/Qwen3.5-4B-GLB-3D-Coder-MTP-Repacked",
+    "base_model:quantized:prithivMLmods/Qwen3.5-4B-GLB-3D-Coder-MTP-Repacked",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 41004127360,
+  "storage_human": "41.0 GB",
+  "base_model": "prithivMLmods/Qwen3.5-4B-GLB-3D-Coder-MTP-Repacked",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen3.5-4B-Unredacted-MAX-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.5-4B-Unredacted-MAX-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Qwen3.5-4B-uncensored-zero-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.5-4B-uncensored-zero-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

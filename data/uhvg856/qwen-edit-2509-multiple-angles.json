@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Uhvg856/Qwen-Edit-2509-Multiple-angles",
+  "slug": "uhvg856-qwen-edit-2509-multiple-angles",
+  "author": "Uhvg856",
+  "url": "https://huggingface.co/Uhvg856/Qwen-Edit-2509-Multiple-angles",
+  "created_at": "2026-11-06T14:12:07.000Z",
+  "updated_at": "2026-11-06T14:12:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "image-to-image",
+    "base_model:Qwen/Qwen-Image-Edit-2509",
+    "base_model:adapter:Qwen/Qwen-Image-Edit-2509",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 236117032,
+  "storage_human": "236 MB",
+  "base_model": "Qwen/Qwen-Image-Edit-2509",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen_image_edit_2509_multiple_angles.safetensors · svjack/Qwen_Image at ...",
+      "url": "https://huggingface.co/svjack/Qwen_Image/blob/main/qwen_image_edit_2509_multiple_angles.safetensors",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · hughugfarid/Qwen-Edit-2509-Multiple-angles at main",
+      "url": "https://huggingface.co/hughugfarid/Qwen-Edit-2509-Multiple-angles/blob/main/README.md",
+      "snippet": "Duplicated from dx8152/Qwen-Edit-2509-Multiple-angles hughugfarid / Qwen-Edit-2509-Multiple-angles like 0 Image-to-Image Diffusers lora License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

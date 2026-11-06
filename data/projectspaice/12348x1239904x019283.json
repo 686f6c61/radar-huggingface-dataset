@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "ProjectSpaice/12348x1239904x019283",
+  "slug": "projectspaice-12348x1239904x019283",
+  "author": "ProjectSpaice",
+  "url": "https://huggingface.co/ProjectSpaice/12348x1239904x019283",
+  "created_at": "2026-11-06T11:00:54.000Z",
+  "updated_at": "2026-11-06T11:46:01.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pump.fun",
+    "solana",
+    "world-model",
+    "reinforcement-learning",
+    "time-series",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ProjectSpaice (ProjectSpaice) - Hugging Face",
+      "url": "https://huggingface.co/ProjectSpaice",
+      "snippet": "Pumpfun Sniper Trackio 🎯 Show interactive tracking dashboard ProjectSpaice 1 day ago models2 Sort: Recently updated"
+    },
+    {
+      "title": "ProjectSpaice (ProjectSpaice) – Datasets - Hugging Face",
+      "url": "https://huggingface.co/ProjectSpaice/datasets",
+      "snippet": "User profile of ProjectSpaice on Hugging Face"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "beamster/Qwen3.8-Flash-Next-Sushi-4bpw",
+  "slug": "beamster-qwen3-8-flash-next-sushi-4bpw",
+  "author": "beamster",
+  "url": "https://huggingface.co/beamster/Qwen3.8-Flash-Next-Sushi-4bpw",
+  "created_at": "2026-09-25T02:51:11.000Z",
+  "updated_at": "2026-11-06T12:51:41.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen4_exp",
+    "sushi",
+    "exl3",
+    "apple-silicon",
+    "moe",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 18,
+  "downloads_30d": 1401,
+  "trending_score": 0,
+  "parameters": 36556177299,
+  "parameters_human": "36.56B",
+  "storage_bytes": 233839500782,
+  "storage_human": "233.8 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "beamster/Qwen3.8-Flash-Next-Sushi-4bpw at main - Hugging Face",
+      "url": "https://huggingface.co/beamster/Qwen3.8-Flash-Next-Sushi-4bpw/tree/main",
+      "snippet": "Like 3 Image-Text-to-Text Safetensors qwen4_exp sushi exl3 apple-silicon Mixture of Experts conversational 8-bit precision License:qwen-community-1.0 Model card FilesFiles and versions xet Community Copy to bucket new main Qwen3.8-Flash-Next-Sushi-4bpw 171 GB Ctrl+K Ctrl+K 1 contributor History:15 commits beamster Card: Hard 50 eval (90.0%), compact KLD chart 1477a9d verifiedabout 1 hour ago ..."
+    },
+    {
+      "title": "beamster/Qwen3.8-Flash-Next-Sushi-4bpw · Hugging Face",
+      "url": "https://huggingface.co/beamster/Qwen3.8-Flash-Next-Sushi-4bpw",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

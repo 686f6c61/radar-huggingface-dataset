@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Charlie320/zils-lite-hm1",
+  "slug": "charlie320-zils-lite-hm1",
+  "author": "Charlie320",
+  "url": "https://huggingface.co/Charlie320/zils-lite-hm1",
+  "created_at": "2026-11-06T18:01:27.000Z",
+  "updated_at": "2026-11-06T18:01:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "zils",
+    "decision-model",
+    "soup-body",
+    "base_model:Maincode/Matilda-Decision-v1-Edge",
+    "base_model:finetune:Maincode/Matilda-Decision-v1-Edge",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1706027688,
+  "storage_human": "1.7 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B, Maincode/Matilda-Decision-v1-Edge",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Charlie320 (Charlie) - Hugging Face",
+      "url": "https://huggingface.co/Charlie320/models",
+      "snippet": "User profile of Charlie on Hugging Face Recent Activity updated a datasetabout 15 hours ago Charlie320/adv published a datasetabout 15 hours ago Charlie320/adv View all activity"
+    },
+    {
+      "title": "zils-ai (Zils) - Hugging Face",
+      "url": "https://huggingface.co/zils-ai/models",
+      "snippet": "Org profile for Zils on Hugging Face, the AI community building the future."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "yandifei/NCCCU",
+  "slug": "yandifei-ncccu",
+  "author": "yandifei",
+  "url": "https://huggingface.co/yandifei/NCCCU",
+  "created_at": "2026-11-06T15:14:12.000Z",
+  "updated_at": "2026-11-06T15:14:12.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - yandifei/NCCCU: 2026年第八届计挑赛（NCCU）AI挑战赛——胸部X光片10类多标签疾病分类方案",
+      "url": "https://github.com/yandifei/NCCCU",
+      "snippet": "2026年第八届计挑赛（NCCU）AI挑战赛——胸部X光片10类多标签疾病分类方案. Contribute to yandifei/NCCCU development by creating an account on GitHub."
+    },
+    {
+      "title": "NCCCU/docs/比赛资料 at main · yandifei/NCCCU · GitHub",
+      "url": "https://github.com/yandifei/NCCCU/tree/main/docs/%E6%AF%94%E8%B5%9B%E8%B5%84%E6%96%99",
+      "snippet": "2026年第八届计挑赛（NCCU）AI挑战赛——胸部X光片10类多标签疾病分类方案. Contribute to yandifei/NCCCU development by creating an account on GitHub."
+    }
+  ]
+}

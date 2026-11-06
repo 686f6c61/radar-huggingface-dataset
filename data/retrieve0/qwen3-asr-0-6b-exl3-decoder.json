@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "Retrieve0/Qwen3-ASR-0.6B-EXL3-Decoder",
+  "slug": "retrieve0-qwen3-asr-0-6b-exl3-decoder",
+  "author": "Retrieve0",
+  "url": "https://huggingface.co/Retrieve0/Qwen3-ASR-0.6B-EXL3-Decoder",
+  "created_at": "2026-11-06T13:00:32.000Z",
+  "updated_at": "2026-11-06T13:05:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "exllamav3",
+  "languages": [],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "qwen3-asr",
+    "exll3",
+    "quantized",
+    "3bpw",
+    "4bpw",
+    "automatic-speech-recognition",
+    "base_model:Qwen/Qwen3-ASR-0.6B-hf",
+    "base_model:finetune:Qwen/Qwen3-ASR-0.6B-hf",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1256076699,
+  "storage_human": "1.3 GB",
+  "base_model": "Qwen/Qwen3-ASR-0.6B-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3-ASR: Qwen3-ASR is an open-source series of ASR ...",
+      "url": "https://github.com/QwenLM/Qwen3-ASR",
+      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-0.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni."
+    },
+    {
+      "title": "Qwen/Qwen3-ASR-0.6B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-ASR-0.6B",
+      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-0.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni. Experiments show that the ..."
+    }
+  ]
+}

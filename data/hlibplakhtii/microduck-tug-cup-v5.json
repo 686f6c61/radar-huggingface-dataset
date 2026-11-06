@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "HlibPlakhtii/microduck-tug-cup-v5",
+  "slug": "hlibplakhtii-microduck-tug-cup-v5",
+  "author": "HlibPlakhtii",
+  "url": "https://huggingface.co/HlibPlakhtii/microduck-tug-cup-v5",
+  "created_at": "2026-11-06T14:40:22.000Z",
+  "updated_at": "2026-11-06T14:40:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "microduck-policy",
+    "robotics",
+    "base_model:azukiq/microduck-titan-v1",
+    "base_model:finetune:azukiq/microduck-titan-v1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1821460,
+  "storage_human": "2 MB",
+  "base_model": "azukiq/microduck-titan-v1",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HlibPlakhtii/microduck-tug-quicksilver-v5 · Hugging Face",
+      "url": "https://huggingface.co/HlibPlakhtii/microduck-tug-quicksilver-v5",
+      "snippet": "An attributed simulation competition remix of anhalu/microduck-remix-for-fun-v1. Credits to anhalu, HlibPlakhtii, jrubiosainz, greecree, Pollen Robotics, and the upstream contributors named in BASE_MODEL_CARD.md. The entire inherited graph and head-to-head network are preserved. A new observation ..."
+    },
+    {
+      "title": "HlibPlakhtii (Hlib Plakhtii) - Hugging Face",
+      "url": "https://huggingface.co/HlibPlakhtii",
+      "snippet": "User profile of Hlib Plakhtii on Hugging Face"
+    }
+  ]
+}

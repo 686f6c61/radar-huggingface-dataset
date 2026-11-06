@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/GLM-OCR-CoreAI",
+  "slug": "mlboydaisuke-glm-ocr-coreai",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/GLM-OCR-CoreAI",
+  "created_at": "2026-07-04T06:33:19.000Z",
+  "updated_at": "2026-11-06T18:34:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "coreai",
+  "languages": [],
+  "tags": [
+    "coreai",
+    "coreai-aimodel",
+    "core-ai",
+    "on-device",
+    "apple",
+    "ocr",
+    "document-understanding",
+    "glm",
+    "image-to-text",
+    "base_model:zai-org/GLM-OCR",
+    "base_model:quantized:zai-org/GLM-OCR",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 6,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4142259924,
+  "storage_human": "4.1 GB",
+  "base_model": "zai-org/GLM-OCR",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlboydaisuke/GLM-OCR-CoreAI · Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/GLM-OCR-CoreAI",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mlboydaisuke/GLM-OCR-CoreAI at main - Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/GLM-OCR-CoreAI/tree/main",
+      "snippet": "Ctrl+K 1 contributor History: 2 commits mlboydaisuke GLM-OCR -> Core AI: vision (fp16) + decoder (int8hu S=1) + tokenizer verified about 5 hours ago"
+    }
+  ]
+}

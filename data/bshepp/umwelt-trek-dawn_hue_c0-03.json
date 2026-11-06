@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "bshepp/umwelt-trek-dawn_hue_C0.03",
+  "slug": "bshepp-umwelt-trek-dawn_hue_c0-03",
+  "author": "bshepp",
+  "url": "https://huggingface.co/bshepp/umwelt-trek-dawn_hue_C0.03",
+  "created_at": "2026-11-06T16:45:19.000Z",
+  "updated_at": "2026-11-06T17:11:47.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "silicon-dreaming",
+    "umwelt-trek",
+    "scene-model",
+    "logistic-regression",
+    "sensor-fusion",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Products – BSheppGear",
+      "url": "https://bsheppgear.com/collections/all",
+      "snippet": "Featuring fan merchandise & apparel of 5-time World of Outlaws Champion Brandon Sheppard, Driver of the Valvoline, Realtree - B5. Shop your favorite tees, hoodies, hats, diecast, signs, jewelry & more as you prepare to support B-Shepp trackside this race season!"
+    },
+    {
+      "title": "Collections – BSheppGear",
+      "url": "https://bsheppgear.com/collections",
+      "snippet": "Featuring fan merchandise & apparel of 5-time World of Outlaws Champion Brandon Sheppard, Driver of the Valvoline, Realtree - B5. Shop your favorite tees, hoodies, hats, diecast, signs, jewelry & more as you prepare to support B-Shepp trackside this race season!"
+    }
+  ]
+}

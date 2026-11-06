@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "Chungulus/Qwen3.5-4B-GLB-3D-Coder-Q5_K_M-GGUF",
+  "slug": "chungulus-qwen3-5-4b-glb-3d-coder-q5_k_m-gguf",
+  "author": "Chungulus",
+  "url": "https://huggingface.co/Chungulus/Qwen3.5-4B-GLB-3D-Coder-Q5_K_M-GGUF",
+  "created_at": "2026-11-06T14:05:38.000Z",
+  "updated_at": "2026-11-06T14:06:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3_5",
+    "threejs",
+    "glb",
+    "code",
+    "image-text-to-text",
+    "conversational",
+    "base_model:ccore/Qwen3.5-4B-GLB-3D-Coder",
+    "base_model:quantized:ccore/Qwen3.5-4B-GLB-3D-Coder",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 3750556352,
+  "storage_human": "3.8 GB",
+  "base_model": "ccore/Qwen3.5-4B-GLB-3D-Coder",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5-4B-3D-Coder-Q5_K_M-GGUF - Hugging Face",
+      "url": "https://huggingface.co/Chungulus/Qwen3.5-4B-3D-Coder-Q5_K_M-GGUF",
+      "snippet": "Qwen3.5-4B-3D-Coder - Q5_K_M Q5_K_M GGUF of CCORE's original FP16 checkpoint, quantized independently from its full-precision export. The upstream checkpoint has 4,539,265,536 parameters including vision; this text GGUF has 4,205,751,296 parameters. The unchanged upstream BF16 vision projector is included. This is a community quantization of CCORE's fine-tune, not an official Qwen or CCORE ..."
+    },
+    {
+      "title": "mradermacher/Qwen3.5-4B-GLB-3D-Coder-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.5-4B-GLB-3D-Coder-GGUF",
+      "snippet": "Machine learning model with 4B parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

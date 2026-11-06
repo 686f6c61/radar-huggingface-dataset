@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "Tson29/qwen2.5-3b-cs-orchestrator-lora",
+  "slug": "tson29-qwen2-5-3b-cs-orchestrator-lora",
+  "author": "Tson29",
+  "url": "https://huggingface.co/Tson29/qwen2.5-3b-cs-orchestrator-lora",
+  "created_at": "2026-11-06T13:38:06.000Z",
+  "updated_at": "2026-11-06T13:42:20.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "sft",
+    "dpo",
+    "trl",
+    "multi-agent",
+    "orchestration",
+    "vi",
+    "dataset:Tson29/techviet-cs-orchestrator-data",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 239603056,
+  "storage_human": "240 MB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Deploy, fine-tune, and evaluate Qwen2.5 models - PAI Model Gallery ...",
+      "url": "https://www.alibabacloud.com/help/en/pai/use-cases/deploy-fine-tune-and-evaluate-a-qwen2-5-model",
+      "snippet": "Deploy, fine-tune, and evaluate Qwen2.5 models - PAI Model Gallery,Platform For AI:Qwen2.5 is an open-source LLM series by Alibaba Cloud. Deploy, fine-tune, and evaluate Qwen2.5 models in PAI Model Gallery. These procedures also apply to Qwen2 models."
+    },
+    {
+      "title": "Qwen2.5-3B - VRAM, Specs & Benchmarks",
+      "url": "https://apxml.com/models/qwen2-5-3b",
+      "snippet": "About Qwen2.5-3B Qwen2.5-3B is an efficient dense foundation model developed by Alibaba Cloud balancing compact resource requirements with strong coding and math skills. It offers robust instruction adherence and multilingual fluency over an extensible 128K context window."
+    }
+  ]
+}

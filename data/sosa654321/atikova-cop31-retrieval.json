@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "Sosa654321/atikova-cop31-retrieval",
+  "slug": "sosa654321-atikova-cop31-retrieval",
+  "author": "Sosa654321",
+  "url": "https://huggingface.co/Sosa654321/atikova-cop31-retrieval",
+  "created_at": "2026-11-06T16:55:09.000Z",
+  "updated_at": "2026-11-06T16:55:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "tr",
+    "fa",
+    "ar"
+  ],
+  "tags": [
+    "information-retrieval",
+    "knowledge-graph",
+    "cop31",
+    "en",
+    "tr",
+    "fa",
+    "ar",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sosa654321 (Soheil) - Hugging Face",
+      "url": "https://huggingface.co/Sosa654321",
+      "snippet": "Atikova COP31 Zero Waste & Startup Hub 🌿 Connect startups with 500 verified leads for COP31 advertising Sosa654321 about 6 hours ago Running"
+    },
+    {
+      "title": "Atikova COP31 Zero Waste & Startup Hub - a Hugging Face Space by Sosa654321",
+      "url": "https://huggingface.co/spaces/Sosa654321/atikova-cop31-zero-waste",
+      "snippet": "This web app lets startup teams search a curated directory of 500 verified organizations, register their projects, and send AI‑crafted B2B messages to the right contacts. Users simply enter a lead ..."
+    }
+  ]
+}

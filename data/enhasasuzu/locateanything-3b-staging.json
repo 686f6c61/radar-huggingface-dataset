@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "enhasasuzu/LocateAnything-3B-staging",
+  "slug": "enhasasuzu-locateanything-3b-staging",
+  "author": "enhasasuzu",
+  "url": "https://huggingface.co/enhasasuzu/LocateAnything-3B-staging",
+  "created_at": "2026-11-06T01:06:31.000Z",
+  "updated_at": "2026-11-06T01:06:31.000Z",
+  "license": "nvidia-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "locateanything",
+    "feature-extraction",
+    "nvidia",
+    "eagle",
+    "vision",
+    "object-detection",
+    "grounding",
+    "arxiv:2605.27365",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "en",
+    "arxiv:2504.07491",
+    "arxiv:2109.10852",
+    "arxiv:2510.12798",
+    "arxiv:2303.05499",
+    "arxiv:1405.0312",
+    "arxiv:1908.03195",
+    "arxiv:2504.07981",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nvidia/LocateAnything-3B · Hugging Face",
+      "url": "https://huggingface.co/nvidia/LocateAnything-3B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LocateAnything - a Hugging Face Space by nvidia",
+      "url": "https://huggingface.co/spaces/nvidia/LocateAnything",
+      "snippet": "AI Research from NVIDIA Locate Anything NVIDIA's advanced 3B vision-language model. Locate any object, UI target, or text in images and videos with natural language. Note: inputs larger than 1K are auto-resized in this Space demo. For full-resolution inference, download the weights and run locally."
+    }
+  ]
+}

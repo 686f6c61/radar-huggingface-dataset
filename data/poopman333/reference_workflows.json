@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "PoopMan333/Reference_Workflows",
+  "slug": "poopman333-reference_workflows",
+  "author": "PoopMan333",
+  "url": "https://huggingface.co/PoopMan333/Reference_Workflows",
+  "created_at": "2026-09-17T16:35:58.000Z",
+  "updated_at": "2026-11-06T17:28:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PoopMan333/Reference_Workflows · Hugging Face",
+      "url": "https://huggingface.co/PoopMan333/Reference_Workflows",
+      "snippet": "PoopMan333 / Reference_Workflows Like 8 Model card FilesFiles and versions xet Community 1 Copy to bucket No model card Downloads last month -"
+    },
+    {
+      "title": "PoopMan333 (Man) - Hugging Face",
+      "url": "https://huggingface.co/PoopMan333/models",
+      "snippet": "PoopMan333's models2 Sort: Recently updated PoopMan333/poopooh3 Updated about 23 hours ago"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "williamliao/Qwen3.8-Mixed-NVFP4-FP8-GGUF",
+  "slug": "williamliao-qwen3-8-mixed-nvfp4-fp8-gguf",
+  "author": "williamliao",
+  "url": "https://huggingface.co/williamliao/Qwen3.8-Mixed-NVFP4-FP8-GGUF",
+  "created_at": "2026-11-06T15:08:09.000Z",
+  "updated_at": "2026-11-06T15:11:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "nvfp4",
+    "fp4",
+    "q8_0",
+    "mixed-quantization",
+    "qwen3.8",
+    "qwen",
+    "text-generation",
+    "base_model:HangGlidersRule/Darkstar-Qwen3.8-27B-Base-ModelOpt-W4A16-NVFP4-Mixed-FP8",
+    "base_model:quantized:HangGlidersRule/Darkstar-Qwen3.8-27B-Base-ModelOpt-W4A16-NVFP4-Mixed-FP8",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320698465,
+  "parameters_human": "27.32B",
+  "storage_bytes": 42483575328,
+  "storage_human": "42.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B, HangGlidersRule/Darkstar-Qwen3.8-27B-Base-ModelOpt-W4A16-NVFP4-Mixed-FP8",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "primitive-ai/Qwen3.8-27B-mixed-NVFP4-FP8 at main - Hugging Face",
+      "url": "https://huggingface.co/primitive-ai/Qwen3.8-27B-mixed-NVFP4-FP8/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "williamliao/Qwen3.8-27B-NVFP4-GGUF · Hugging Face",
+      "url": "https://huggingface.co/williamliao/Qwen3.8-27B-NVFP4-GGUF",
+      "snippet": "License The source model is distributed under the Apache License 2.0. Users should review the upstream Qwen/Qwen3.8-27B and unsloth/Qwen3.8-27B-NVFP4 model cards before redistribution or commercial use."
+    }
+  ]
+}

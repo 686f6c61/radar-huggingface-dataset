@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Llama-Novelty-Reviewer-GGUF",
+  "slug": "mradermacher-llama-novelty-reviewer-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Llama-Novelty-Reviewer-GGUF",
+  "created_at": "2026-11-06T16:40:46.000Z",
+  "updated_at": "2026-11-06T16:49:54.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "peer-review",
+    "novelty-assessment",
+    "scientific-documents",
+    "scholarly-document-processing",
+    "llama-3.1",
+    "axolotl",
+    "en",
+    "dataset:AbeerMostafa/Novelty-Reviewer-Dataset",
+    "base_model:M2L-Lab/Llama-Novelty-Reviewer",
+    "base_model:quantized:M2L-Lab/Llama-Novelty-Reviewer",
+    "license:llama3.1",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 71820243072,
+  "storage_human": "71.8 GB",
+  "base_model": "M2L-Lab/Llama-Novelty-Reviewer",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/models",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Run Llama-Novelty-Reviewer API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/M2L-Lab/Llama-Novelty-Reviewer",
+      "snippet": "This model is specifically trained on a novelty dataset, leveraging a 32,120 token context length and advanced Liger optimizations for enhanced performance. It is designed for tasks related to novelty review and analysis."
+    }
+  ]
+}

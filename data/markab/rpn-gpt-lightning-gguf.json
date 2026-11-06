@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "markab/rpn-gpt-lightning-GGUF",
+  "slug": "markab-rpn-gpt-lightning-gguf",
+  "author": "markab",
+  "url": "https://huggingface.co/markab/rpn-gpt-lightning-GGUF",
+  "created_at": "2026-11-06T19:17:08.000Z",
+  "updated_at": "2026-11-06T19:24:36.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "forth",
+    "rpn",
+    "nemotron",
+    "math",
+    "arithmetic",
+    "text-generation",
+    "en",
+    "dataset:markab/rpn-gpt-data",
+    "base_model:markab/rpn-gpt-lightning",
+    "base_model:quantized:markab/rpn-gpt-lightning",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31577940288,
+  "parameters_human": "31.58B",
+  "storage_bytes": 84140786880,
+  "storage_human": "84.1 GB",
+  "base_model": "markab/rpn-gpt-lightning",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

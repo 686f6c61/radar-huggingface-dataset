@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "kkk4oru/nemotron-3.5-speaker-encoder-gguf",
+  "slug": "kkk4oru-nemotron-3-5-speaker-encoder-gguf",
+  "author": "kkk4oru",
+  "url": "https://huggingface.co/kkk4oru/nemotron-3.5-speaker-encoder-gguf",
+  "created_at": "2026-11-06T19:27:32.000Z",
+  "updated_at": "2026-11-06T19:27:56.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "voice-activity-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "speaker-diarization",
+    "nemo-speech",
+    "voice-activity-detection",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 99910316,
+  "parameters_human": "99.9M",
+  "storage_bytes": 200779392,
+  "storage_human": "201 MB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA Nemotron 3.5 Transcribe: Intelligent Transcription with a Speech ...",
+      "url": "https://research.nvidia.com/labs/nemotron/NVIDIA-Nemotron-3.5-Transcribe/",
+      "snippet": "We introduce Nemotron 3.5 Transcribe, an open speech LLM for intelligent transcription: a single model that transcribes 40 languages verbatim or in written form, with context, speaker attribution, and word timestamps, selected with a natural language instruction. It is the best open-weights model on the English and multilingual Open ASR Leaderboards."
+    },
+    {
+      "title": "NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-FP8 - Hugging Face",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-FP8",
+      "snippet": "Nemotron 3.5 Transcribe is an open-weight, offline speech and audio model for transcription in 40 languages, with support for recordings up to one hour and a 65,536-token context. Its hybrid mixture-of-experts architecture activates approximately 4.3B parameters, including the audio encoder, and it is released in BF16, FP8, and NVFP4 precision."
+    }
+  ]
+}

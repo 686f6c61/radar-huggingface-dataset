@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "udgamlabs/shruti-assamese",
+  "slug": "udgamlabs-shruti-assamese",
+  "author": "udgamlabs",
+  "url": "https://huggingface.co/udgamlabs/shruti-assamese",
+  "created_at": "2026-11-06T06:39:49.000Z",
+  "updated_at": "2026-11-06T10:45:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "cactus-needle",
+  "languages": [
+    "as",
+    "en"
+  ],
+  "tags": [
+    "cactus-needle",
+    "whistle",
+    "udgamlabs",
+    "shruti",
+    "speech-recognition",
+    "assamese",
+    "code-switching",
+    "on-device",
+    "offline",
+    "webassembly",
+    "small-model",
+    "automatic-speech-recognition",
+    "as",
+    "en",
+    "dataset:ai4bharat/IndicVoices",
+    "dataset:SPRINGLab/SPRING_INX_Assamese_R1",
+    "dataset:SPRINGLab/SPRING_INX_Assamese_R2",
+    "dataset:ARTPARK-IISc/Vaani-transcription-part",
+    "dataset:openslr/librispeech_asr",
+    "arxiv:2310.14654",
+    "base_model:udgamlabs/Shruti",
+    "base_model:finetune:udgamlabs/Shruti",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29742441,
+  "storage_human": "30 MB",
+  "base_model": "udgamlabs/Shruti",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shruti | Udgam Labs",
+      "url": "https://udgamlabs.com/models/shruti",
+      "snippet": "Shruti is a single 29.5 MB file: the whole model, 55M parameters, for three ways of speaking. The Hindi-only models in our comparison are 481 and 482 MB, and Whisper-small is 971 MB."
+    },
+    {
+      "title": "Models - Udgam Labs",
+      "url": "https://udgamlabs.com/models",
+      "snippet": "Every model Udgam Labs has released, newest first. Each has its own page with results, examples and where it falls short."
+    }
+  ]
+}

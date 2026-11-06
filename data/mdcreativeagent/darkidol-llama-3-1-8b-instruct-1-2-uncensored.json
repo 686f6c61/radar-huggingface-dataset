@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "mdcreativeagent/DarkIdol-Llama-3.1-8B-Instruct-1.2-Uncensored",
+  "slug": "mdcreativeagent-darkidol-llama-3-1-8b-instruct-1-2-uncensored",
+  "author": "mdcreativeagent",
+  "url": "https://huggingface.co/mdcreativeagent/DarkIdol-Llama-3.1-8B-Instruct-1.2-Uncensored",
+  "created_at": "2026-11-06T12:51:05.000Z",
+  "updated_at": "2026-11-06T12:51:05.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "de",
+    "fr",
+    "it",
+    "pt",
+    "hi",
+    "es",
+    "th",
+    "zh",
+    "ko",
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "roleplay",
+    "llama3",
+    "sillytavern",
+    "idol",
+    "facebook",
+    "meta",
+    "pytorch",
+    "llama-3",
+    "text-generation",
+    "conversational",
+    "en",
+    "de",
+    "fr",
+    "it",
+    "pt",
+    "hi",
+    "es",
+    "th",
+    "zh",
+    "ko",
+    "ja",
+    "arxiv:2204.05149",
+    "license:llama3.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16062214592,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DarkIdol-Llama-3.1-8B-Instruct-1.2-Uncensored - Hugging Face",
+      "url": "https://huggingface.co/aifeifei798/DarkIdol-Llama-3.1-8B-Instruct-1.2-Uncensored",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DarkIdol-Llama-3.1-8B-Instruct-1.2-Uncensored - Hugging Face",
+      "url": "https://huggingface.co/mav23/DarkIdol-Llama-3.1-8B-Instruct-1.2-Uncensored-GGUF",
+      "snippet": "For commercial licensing, please refer to the Llama 3.1 agreement. Llama-3.1-8B-Instruct Information Model Information The Meta Llama 3.1 collection of multilingual large language models (LLMs) is a collection of pretrained and instruction tuned generative models in 8B, 70B and 405B sizes (text in/text out)."
+    }
+  ]
+}

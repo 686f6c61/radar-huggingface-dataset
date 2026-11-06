@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "johnlockejrr/Qwen3.8-Flash-Next-HGN",
+  "slug": "johnlockejrr-qwen3-8-flash-next-hgn",
+  "author": "johnlockejrr",
+  "url": "https://huggingface.co/johnlockejrr/Qwen3.8-Flash-Next-HGN",
+  "created_at": "2026-11-06T18:46:53.000Z",
+  "updated_at": "2026-11-06T18:48:35.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "halogen",
+  "languages": [],
+  "tags": [
+    "halogen",
+    "qwen4_exp",
+    "halogen-flash",
+    "qwen",
+    "qwen3.8",
+    "flash-next",
+    "moe",
+    "mixture-of-experts",
+    "quantized",
+    "hgn",
+    "bf16-to-hgn",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 118798650252,
+  "storage_human": "118.8 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen38-flash-next-v2.hgn · peonist-ai/halogen-qwen3.8-flash-next at main",
+      "url": "https://huggingface.co/peonist-ai/halogen-qwen3.8-flash-next/blob/main/qwen38-flash-next-v2.hgn",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "johnlockejrr/Swift-1.5-Qwen3.8-Flash-Next-heretic-HGN · Hugging Face",
+      "url": "https://huggingface.co/johnlockejrr/Swift-1.5-Qwen3.8-Flash-Next-heretic-HGN",
+      "snippet": "Qwen 3.8 Swift 1.5 Flash-Next, Heretic V2 (uncensored), converted directly from the BF16 weights into the HGN v2 weight format used by halogen-flash-server (AMD Strix Halo, gfx1151). Uncensored model. Refusal behavior has been deliberately removed. You are solely responsible for how you use it ..."
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "RKB109/knowledge-graph-risk-engine-20261106-model",
+  "slug": "rkb109-knowledge-graph-risk-engine-20261106-model",
+  "author": "RKB109",
+  "url": "https://huggingface.co/RKB109/knowledge-graph-risk-engine-20261106-model",
+  "created_at": "2026-11-06T20:27:33.000Z",
+  "updated_at": "2026-11-06T20:27:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "synthetic-data",
+    "transparent-baseline",
+    "knowledge-graphs",
+    "token-classification",
+    "feature-extraction",
+    "question-answering",
+    "sentence-similarity",
+    "dataset:RKB109/knowledge-graph-risk-engine-20261106-dataset",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RKB109/knowledge-graph-risk-engine-20260927-model · Hugging Face",
+      "url": "https://huggingface.co/RKB109/knowledge-graph-risk-engine-20260927-model",
+      "snippet": "Knowledge Graph Risk Engine Baseline Model Model Description This repository contains a small, transparent prototype model for Risk teams need relationship-level explanations instead of opaque entity scores. The model combines per-label token weights with IDF-weighted evidence retrieval."
+    },
+    {
+      "title": "RKB109/knowledge-graph-risk-engine-20260917-model at main",
+      "url": "https://huggingface.co/RKB109/knowledge-graph-risk-engine-20260917-model/tree/main",
+      "snippet": "RKB109 / knowledge-graph-risk-engine-20260917-model Like 0 Feature Extraction RKB109/knowledge-graph-risk-engine-20260917-dataset custom synthetic-data transparent-baseline knowledge-graphs token-classification question-answering sentence-similarity License:mit Model card FilesFiles and versions xet Community Copy to bucket new main knowledge-graph-risk-engine-20260917-model 11.6 kB Ctrl+K ..."
+    }
+  ]
+}

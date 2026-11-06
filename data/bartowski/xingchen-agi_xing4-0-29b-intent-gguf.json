@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "bartowski/XingChen-AGI_Xing4.0-29B-Intent-GGUF",
+  "slug": "bartowski-xingchen-agi_xing4-0-29b-intent-gguf",
+  "author": "bartowski",
+  "url": "https://huggingface.co/bartowski/XingChen-AGI_Xing4.0-29B-Intent-GGUF",
+  "created_at": "2026-11-06T18:45:12.000Z",
+  "updated_at": "2026-11-06T19:29:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "intent-recognition",
+    "slot-filling",
+    "information-extraction",
+    "schema-guided",
+    "named-entity-recognition",
+    "relation-extraction",
+    "event-extraction",
+    "text-generation",
+    "zh",
+    "en",
+    "dataset:XingChen-AGI/Xing4.0-29B-Intent-oss",
+    "base_model:XingChen-AGI/Xing4.0-29B-Intent",
+    "base_model:quantized:XingChen-AGI/Xing4.0-29B-Intent",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31215031088,
+  "parameters_human": "31.22B",
+  "storage_bytes": 511970633504,
+  "storage_human": "512.0 GB",
+  "base_model": "XingChen-AGI/Xing4.0-29B-Intent",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XingChen-AGI/Xing4.0-29B-Intent: Xing4.0-29B-Intent - GitHub",
+      "url": "https://github.com/XingChen-AGI/Xing4.0-29B-Intent",
+      "snippet": "Xing4.0-29B-Intent is a schema-guided model for intent recognition and structured information extraction, developed from Xing4.0-29B-A4B, the Xing semantic large language model from China Telecom Artificial Intelligence Technology Co., Ltd. It converts natural language into structured results for business systems, supporting intelligent assistants, request routing, and document information ..."
+    },
+    {
+      "title": "XingChen-AGI/Xing4.0-29B-A4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B-GGUF",
+      "snippet": "Text Generation model with 31B parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

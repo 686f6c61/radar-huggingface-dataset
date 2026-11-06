@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "SzczurekLab/ImmuVis_ViT",
+  "slug": "szczureklab-immuvis_vit",
+  "author": "SzczurekLab",
+  "url": "https://huggingface.co/SzczurekLab/ImmuVis_ViT",
+  "created_at": "2026-11-01T18:49:00.000Z",
+  "updated_at": "2026-11-01T18:52:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "immuvis",
+  "languages": [],
+  "tags": [
+    "immuvis",
+    "pytorch",
+    "imaging-mass-cytometry",
+    "multiplex-imaging",
+    "masked-autoencoder",
+    "virtual-staining",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 988041872,
+  "storage_human": "988 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ImmuVis Model for Imaging Mass Cytometry - emergentmind.com",
+      "url": "https://www.emergentmind.com/papers/2602.04585",
+      "snippet": "The paper introduces a hyperconvolutional model, ImmuVis, capable of operating on arbitrary marker subsets in imaging mass cytometry (IMC) without retraining, leveraging marker-adaptive hyperconvolutions and a pretrained model on a large dataset. The model's virtual staining evaluations show significant performance improvements over traditional models, with ImmuVis delivering marked errors ..."
+    },
+    {
+      "title": "[2602.04585] ImmuVis: Hyperconvolutional Foundation Model for Imaging ...",
+      "url": "https://arxiv.org/abs/2602.04585",
+      "snippet": "We present ImmuVis, a family of efficient foundation models for imaging mass cytometry (IMC), a high-throughput multiplex imaging technology that handles molecular marker measurements as image channels and enables large-scale spatial tissue profiling. Unlike natural images, multiplex imaging lacks a fixed channel space, as real-world marker sets vary across studies, violating a core assumption ..."
+    }
+  ]
+}

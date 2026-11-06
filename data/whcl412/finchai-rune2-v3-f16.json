@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "whcl412/FinchAI-Rune2-v3-f16",
+  "slug": "whcl412-finchai-rune2-v3-f16",
+  "author": "whcl412",
+  "url": "https://huggingface.co/whcl412/FinchAI-Rune2-v3-f16",
+  "created_at": "2026-11-06T15:10:19.000Z",
+  "updated_at": "2026-11-06T15:25:20.000Z",
+  "license": "lfm-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm3",
+    "text-generation",
+    "tool-calling",
+    "function-calling",
+    "agent",
+    "chinese",
+    "conversational",
+    "custom_code",
+    "zh",
+    "en",
+    "base_model:LiquidAI/LFM3-1.7B",
+    "base_model:finetune:LiquidAI/LFM3-1.7B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1728801536,
+  "parameters_human": "1.73B",
+  "storage_bytes": 3475644133,
+  "storage_human": "3.5 GB",
+  "base_model": "LiquidAI/LFM3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "whcl412/FinchAI-Rune2-f16 · Hugging Face",
+      "url": "https://huggingface.co/whcl412/FinchAI-Rune2-f16",
+      "snippet": "Instructions to use whcl412/FinchAI-Rune2-f16 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use whcl412/FinchAI-Rune2-f16 with Transformers:"
+    },
+    {
+      "title": "whcl412/FinchAI-Rune1-Preview-v2-f16 · Hugging Face",
+      "url": "https://huggingface.co/whcl412/FinchAI-Rune1-Preview-v2-f16",
+      "snippet": "Image-Text-to-Text model with 2B parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "hermitdave/TwIL-8B-MLX-slq-4.5bpw",
+  "slug": "hermitdave-twil-8b-mlx-slq-4-5bpw",
+  "author": "hermitdave",
+  "url": "https://huggingface.co/hermitdave/TwIL-8B-MLX-slq-4.5bpw",
+  "created_at": "2026-11-06T18:59:21.000Z",
+  "updated_at": "2026-11-06T19:06:34.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "granite",
+    "slq",
+    "quantized",
+    "base_model:webAI-Official/TwIL-8B",
+    "base_model:finetune:webAI-Official/TwIL-8B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9783545856,
+  "parameters_human": "9.78B",
+  "storage_bytes": 6374537896,
+  "storage_human": "6.4 GB",
+  "base_model": "webAI-Official/TwIL-8B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hermitdave (Hermit Dave) - Hugging Face",
+      "url": "https://huggingface.co/hermitdave/datasets",
+      "snippet": "hermitdave 52 Follow webbrain-one-613908's profile picture 1 follower · 6 following hermitdave hermitdave hermit-dave-04b7222"
+    }
+  ]
+}

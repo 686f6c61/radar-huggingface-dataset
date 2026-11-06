@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "Nidhal101/Qwen3.8-2.4T-A95B-NVFP4-CLEER-k10",
+  "slug": "nidhal101-qwen3-8-2-4t-a95b-nvfp4-cleer-k10",
+  "author": "Nidhal101",
+  "url": "https://huggingface.co/Nidhal101/Qwen3.8-2.4T-A95B-NVFP4-CLEER-k10",
+  "created_at": "2026-11-06T17:40:24.000Z",
+  "updated_at": "2026-11-06T17:42:34.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe_text",
+    "cleer",
+    "energy-benchmarking",
+    "moe",
+    "pruned",
+    "base_model:nvidia/Qwen3.8-2.4T-A95B-NVFP4",
+    "base_model:quantized:nvidia/Qwen3.8-2.4T-A95B-NVFP4",
+    "license:other",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 96016955264,
+  "parameters_human": "96.02B",
+  "storage_bytes": 85602038157,
+  "storage_human": "85.6 GB",
+  "base_model": "nvidia/Qwen3.8-2.4T-A95B-NVFP4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-2.4T-A95B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8 2.4T A95B NVFP4 by Qwen | Model Library | Modal",
+      "url": "https://modal.com/library/qwen/qwen3-8-2-4t-a95b-nvfp4",
+      "snippet": "Qwen3.8 2.4T A95B NVFP4 Qwen3.8-2.4T-A95B is the first open-weight Qwen-Max-class model: a text-only 2.4-trillion-parameter Mixture-of-Experts with 95B active parameters per token, mandatory thinking mode, and a 262K native context extensible to 1M."
+    }
+  ]
+}

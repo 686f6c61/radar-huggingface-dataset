@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "AhmedSSabir/ModernBERT-CNN-Caption-Reranker",
+  "slug": "ahmedssabir-modernbert-cnn-caption-reranker",
+  "author": "AhmedSSabir",
+  "url": "https://huggingface.co/AhmedSSabir/ModernBERT-CNN-Caption-Reranker",
+  "created_at": "2026-11-06T12:34:15.000Z",
+  "updated_at": "2026-11-06T12:56:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "modernbert-cnn-relatedness",
+    "modernbert",
+    "image-captioning",
+    "visual-relatedness",
+    "text-classification",
+    "custom-code",
+    "en",
+    "dataset:AhmedSSabir/Textual-Image-Caption-Dataset",
+    "arxiv:2301.08784",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149089025,
+  "parameters_human": "149.1M",
+  "storage_bytes": 596370156,
+  "storage_human": "596 MB",
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AhmedSSabir (Ahmed Sabir ) - Hugging Face",
+      "url": "https://huggingface.co/AhmedSSabir",
+      "snippet": "language grounding, semantic similarity, and image captioning ..."
+    },
+    {
+      "title": "Alibaba-NLP/gte-reranker-modernbert-base · Hugging Face",
+      "url": "https://huggingface.co/Alibaba-NLP/gte-reranker-modernbert-base",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

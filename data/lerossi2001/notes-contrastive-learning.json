@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "lerossi2001/notes-contrastive-learning",
+  "slug": "lerossi2001-notes-contrastive-learning",
+  "author": "lerossi2001",
+  "url": "https://huggingface.co/lerossi2001/notes-contrastive-learning",
+  "created_at": "2026-11-06T17:52:40.000Z",
+  "updated_at": "2026-11-06T17:52:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "contrastive-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lerossi2001 (Leonardo Rossi) - Hugging Face",
+      "url": "https://huggingface.co/lerossi2001/models",
+      "snippet": "Learning ML every day. Love open source and cool models."
+    },
+    {
+      "title": "lerossi2001/contrastive · Hugging Face",
+      "url": "https://huggingface.co/lerossi2001/contrastive",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "adityajare/intent-detection-distilbert",
+  "slug": "adityajare-intent-detection-distilbert",
+  "author": "adityajare",
+  "url": "https://huggingface.co/adityajare/intent-detection-distilbert",
+  "created_at": "2026-11-06T13:19:59.000Z",
+  "updated_at": "2026-11-06T13:20:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66958855,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267847948,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AventIQ-AI/DistilBERT_Intent_Detection · Hugging Face",
+      "url": "https://huggingface.co/AventIQ-AI/DistilBERT_Intent_Detection",
+      "snippet": "This repository contains a fine-tuned DistilBERT model for intent detection in banking customer support scenarios. It is trained on the BANKING77 dataset and designed to accurately classify user queries into 77 distinct banking-related intents."
+    },
+    {
+      "title": "fariskishtah/emosense-ai · Hugging Face",
+      "url": "https://huggingface.co/fariskishtah/emosense-ai",
+      "snippet": "Files Root: fine-tuned distilbert-base-uncased production checkpoint. onnx/model_quantized.onnx: validation-selected int8 browser model. attention/: trained BiLSTM + additive-attention checkpoint, vocabulary, architecture metadata, and measured GloVe coverage. The original 331 MB GloVe text file is not redistributed here."
+    }
+  ]
+}

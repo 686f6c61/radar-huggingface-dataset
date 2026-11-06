@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "netbadass/kitten-tts-2",
+  "slug": "netbadass-kitten-tts-2",
+  "author": "netbadass",
+  "url": "https://huggingface.co/netbadass/kitten-tts-2",
+  "created_at": "2026-11-06T20:13:57.000Z",
+  "updated_at": "2026-11-06T20:13:58.000Z",
+  "license": "stellon-labs-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "text-to-speech",
+    "voice-cloning",
+    "multilingual",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1733487616,
+  "parameters_human": "1.73B",
+  "storage_bytes": 8229465541,
+  "storage_human": "8.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - KittenML/KittenTTS: Open-source State-of-the-art TTS model ...",
+      "url": "https://github.com/KittenML/KittenTTS",
+      "snippet": "Kitten-TTS is a series of sota open-source text-to-speech models, built by KittenML. Its flagship model, Kitten-TTS 2, is a 1.7B-parameter 1-bit TTS model with in-context voice cloning and expression control. It provides SOTA quality while being so efficient that it runs realtime on CPUs and consumer GPU's!"
+    },
+    {
+      "title": "KittenML - Most Efficient Frontier Voice AI | Kitten-TTS 2",
+      "url": "https://kittenml.com/",
+      "snippet": "Kitten-TTS 2 is the world's first ternary text-to-speech model: the most efficient TTS model, at $0.65 per 1M characters on Pro, and open source. 36 voices, ten languages, voice cloning, and one OpenAI-compatible API."
+    },
+    {
+      "title": "KittenML/kitten-tts-2 · Hugging Face",
+      "url": "https://huggingface.co/KittenML/kitten-tts-2",
+      "snippet": "KittenTTS 2 runs on CPU out of the box — device is auto-detected — but the fastest way is kitten-tts-2-cpp, our llama.cpp fork. The cpp/ directory here holds what it needs: the GGUF language model and its decoders."
+    },
+    {
+      "title": "KittenTTS 2: Voice Cloning at 1.7B Parameters, and the License You Need ...",
+      "url": "https://betterstack.com/community/guides/ai/kitten-tts-2/",
+      "snippet": "The original KittenTTS built a loyal following by being the opposite of everything it is now: 25-80MB models, no GPU required, Apache 2.0 license, simple API. KittenTTS 2 from Stellon Labs keeps the name but abandons almost everything else. It's a 1.7-billion-parameter speech language model with in-context voice cloning from five seconds of audio, 47 built-in voices, and expression controls ..."
+    }
+  ]
+}

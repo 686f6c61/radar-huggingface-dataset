@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "el4/VeriLoop-E2-Dflash2-experimental",
+  "slug": "el4-veriloop-e2-dflash2-experimental",
+  "author": "el4",
+  "url": "https://huggingface.co/el4/VeriLoop-E2-Dflash2-experimental",
+  "created_at": "2026-11-06T18:30:04.000Z",
+  "updated_at": "2026-11-06T18:42:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "mtp",
+    "speculative-decoding",
+    "dflash2",
+    "veriloop",
+    "apache-2.0",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:tsinghua-sigs-robot-lab/VeriLoop-E2",
+    "base_model:quantized:tsinghua-sigs-robot-lab/VeriLoop-E2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1483514048,
+  "storage_human": "1.5 GB",
+  "base_model": "tsinghua-sigs-robot-lab/VeriLoop-E2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VeriLoop E2 Release: 27B Post-Trained Model and Full GGUF Precision ...",
+      "url": "https://discuss.huggingface.co/t/veriloop-e2-release-27b-post-trained-model-and-full-gguf-precision-ladder-from-bf16-to-iq1-m/180723",
+      "snippet": "VeriLoop E2 is now publicly available: a 27B post-trained model built on Qwen3.8-27B for verifiable code, mathematics, scientific reasoning, and long-horizon agentic problem solving. At the center of E2 is VeriLoop-Governed Recurrence (VGR). Its governing principle is simple: Generation and verification should not belong to the same authority. The model proposes, diagnoses, revises, searches ..."
+    },
+    {
+      "title": "GitHub - BenjaminL1/veriloop",
+      "url": "https://github.com/BenjaminL1/veriloop",
+      "snippet": "Most \"AI review\" setups ask a model to judge whether code is good. veriloop wires the model's gate to the process exit codes of the repo's own commands, discovered deterministically from package.json / Makefile / pyproject.toml and cross-checked against CI (the ground truth). Scripts own the facts (paths, commands, numbers, file:line citations); the LLM only handles judgment (personas ..."
+    }
+  ]
+}

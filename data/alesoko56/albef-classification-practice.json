@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "alesoko56/albef-classification-practice",
+  "slug": "alesoko56-albef-classification-practice",
+  "author": "alesoko56",
+  "url": "https://huggingface.co/alesoko56/albef-classification-practice",
+  "created_at": "2026-11-06T19:26:33.000Z",
+  "updated_at": "2026-11-06T19:26:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alesoko56 (Alexander Sokolov) - Hugging Face",
+      "url": "https://huggingface.co/alesoko56",
+      "snippet": "I train models and sometimes they work Recent Activity updated a model3 days ago alesoko56/experiment-audio-visual-learning published a model3 days ago alesoko56/experiment-audio-visual-learning liked a model3 days ago Phocinae/Phocinae-Largha-150M-v1 View all activity"
+    },
+    {
+      "title": "heallen02/albef-classification · Hugging Face",
+      "url": "https://huggingface.co/heallen02/albef-classification",
+      "snippet": "Albef for Classification Overview This repository is a compact, custom PyTorch implementation of Albef for Classification. The tiny configuration is intended for code review, smoke tests, and small controlled experiments rather than as a production-ready pretrained release."
+    },
+    {
+      "title": "Retraining an ALBERT Model for Intent Classification",
+      "url": "https://medium.com/@msaqibshah001/retraining-an-albert-model-for-intent-classification-57f21dc3f54f",
+      "snippet": "5. Model Training Training the ALBERT model for intent classification is a crucial step where the model learns to accurately predict user intents based on the input data."
+    }
+  ]
+}

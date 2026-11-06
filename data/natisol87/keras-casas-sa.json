@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "natisol87/Keras-casas-SA",
+  "slug": "natisol87-keras-casas-sa",
+  "author": "natisol87",
+  "url": "https://huggingface.co/natisol87/Keras-casas-SA",
+  "created_at": "2026-11-06T18:00:23.000Z",
+  "updated_at": "2026-11-06T18:00:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-regression",
+  "library": "keras",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "keras",
+    "machine-learning",
+    "regression",
+    "linear-regression",
+    "educational-example",
+    "tabular-regression",
+    "es",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "natisol87/PyTorch-casas-SA · Hugging Face",
+      "url": "https://huggingface.co/natisol87/PyTorch-casas-SA",
+      "snippet": "natisol87 / PyTorch-casas-SA Like 0 Tabular Regression PyTorch Safetensors Spanish machine-learning regression linear-regression educational-example License:mit Model card FilesFiles and versions xet Community Copy to bucket Regresión lineal con PyTorch: precio de una casa Descripción del modelo Objetivo Datos de entrenamiento Entrenamiento ..."
+    },
+    {
+      "title": "natisol87 - GitHub",
+      "url": "https://github.com/natisol87",
+      "snippet": "Add an optional note Maximum 250 characters. Please don't include any personal information such as legal names or email addresses. Markdown supported. This note will be visible to only you. Block user chatbot-futbol chatbot-futbol Public Chat para interactuar con Gemini y una API de futbol Python"
+    }
+  ]
+}

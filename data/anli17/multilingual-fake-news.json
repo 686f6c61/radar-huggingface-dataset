@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Anli17/multilingual-fake-news",
+  "slug": "anli17-multilingual-fake-news",
+  "author": "Anli17",
+  "url": "https://huggingface.co/Anli17/multilingual-fake-news",
+  "created_at": "2026-11-06T20:05:59.000Z",
+  "updated_at": "2026-11-06T20:07:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 237557762,
+  "parameters_human": "237.6M",
+  "storage_bytes": 950254592,
+  "storage_human": "950 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - desirekkorda/MultilingualFakeNews: An AI-powered fake news ...",
+      "url": "https://github.com/desirekkorda/MultilingualFakeNews",
+      "snippet": "The rapid spread of misinformation across online news platforms and social media has made automated fake news detection an important challenge for artificial intelligence and natural language processing. This project began as an implementation of a multilingual fake news detection research study using the TALLIP Fake News dataset. Rather than stopping at reproducing the published model, the ..."
+    },
+    {
+      "title": "Fake News Detection: It’s All in the Data! - MDPI",
+      "url": "https://www.mdpi.com/2076-3417/16/3/1585",
+      "snippet": "This brief survey acts as a fundamental resource for researchers beginning their exploration into fake news detection. It emphasizes the importance of dataset quality and diversity in enhancing the effectiveness of detection models, detailing key features, labeling systems, and prevalent biases. It also presents the challenges and limitations. By addressing ethical considerations (such as ..."
+    }
+  ]
+}

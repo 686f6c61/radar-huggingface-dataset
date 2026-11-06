@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "alexliu-neuro/NeuroVision",
+  "slug": "alexliu-neuro-neurovision",
+  "author": "alexliu-neuro",
+  "url": "https://huggingface.co/alexliu-neuro/NeuroVision",
+  "created_at": "2026-11-06T17:37:27.000Z",
+  "updated_at": "2026-11-06T17:42:24.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-segmentation",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "medical-imaging",
+    "neurosurgery",
+    "surgical-video",
+    "microscopy",
+    "semantic-segmentation",
+    "image-segmentation",
+    "zh",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "neuro-vision-detection-ai/README.md at main · NeuroVision-AI ... - GitHub",
+      "url": "https://github.com/NeuroVision-AI/neuro-vision-detection-ai/blob/main/README.md",
+      "snippet": "Prespecified model comparison: EfficientNet-B0 transfer learning versus a lightweight custom CNN, with measured results written only from completed-run artifacts. Leakage-resistant data preparation: Preserves official test data and forms transitive split groups from patient IDs, exact hashes, and perceptual hashes. Single-image DICOM ingestion: Reads and window-normalizes a 2D DICOM image ..."
+    },
+    {
+      "title": "NeuroVision — Predict Attention, Interpretation & Generate Variants",
+      "url": "https://neurovision-ai.com/",
+      "snippet": "Scientific and Industry Support Network NeuroVision combines neuroscience, cognitive modelling, design, and AI — shaped by academic advisors, innovation partners, and early customer feedback."
+    }
+  ]
+}

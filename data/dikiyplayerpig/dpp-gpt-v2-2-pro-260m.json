@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "dikiyplayerpig/dpp-gpt-V2.2-Pro-260m",
+  "slug": "dikiyplayerpig-dpp-gpt-v2-2-pro-260m",
+  "author": "dikiyplayerpig",
+  "url": "https://huggingface.co/dikiyplayerpig/dpp-gpt-V2.2-Pro-260m",
+  "created_at": "2026-11-06T18:19:33.000Z",
+  "updated_at": "2026-11-06T18:34:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ru",
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "llama",
+    "llama-3",
+    "text-generation",
+    "custom-training",
+    "from-scratch",
+    "math",
+    "reasoning",
+    "cot",
+    "tool-calling",
+    "synthetic-data",
+    "grpo",
+    "reinforcement-learning",
+    "conversational",
+    "ru",
+    "en",
+    "fr",
+    "base_model:dikiyplayerpig/dpp-gpt-V2.2-Pro-preview-260m",
+    "base_model:finetune:dikiyplayerpig/dpp-gpt-V2.2-Pro-preview-260m",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 242263040,
+  "parameters_human": "242.3M",
+  "storage_bytes": 2588306087,
+  "storage_human": "2.6 GB",
+  "base_model": "dikiyplayerpig/dpp-gpt-V2.2-Pro-preview-260m",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dikiyplayerpig/dpp-gpt-V2.2-base-260m · Hugging Face",
+      "url": "https://huggingface.co/dikiyplayerpig/dpp-gpt-V2.2-base-260m",
+      "snippet": "A 260M-parameter model trained entirely from scratch on a single consumer GPU (RTX 4060) by one person, in Russian, English and French. It continues text, and — because part of the pre-training data is already in a chat format — it can also count, spell words, count letters and translate when asked in that format."
+    },
+    {
+      "title": "dikiyplayerpig/dpp-gpt-V2.2-base-260m at main - Hugging Face",
+      "url": "https://huggingface.co/dikiyplayerpig/dpp-gpt-V2.2-base-260m/tree/main",
+      "snippet": "dikiyplayerpig / dpp-gpt-V2.2-base-260m Like 0 Text Generation Safetensors GGUF Russian English French llama llama-3 custom-training from-scratch base math conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    }
+  ]
+}

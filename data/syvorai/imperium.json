@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "syvorai/imperium",
+  "slug": "syvorai-imperium",
+  "author": "syvorai",
+  "url": "https://huggingface.co/syvorai/imperium",
+  "created_at": "2026-10-19T22:28:05.000Z",
+  "updated_at": "2026-11-06T15:17:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [
+    "pt",
+    "en"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "decision-model",
+    "support-tickets",
+    "triage",
+    "portuguese",
+    "typed-decisions",
+    "probability-per-answer",
+    "lora",
+    "pt",
+    "en",
+    "base_model:vllm-sr/d3",
+    "base_model:adapter:vllm-sr/d3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2994065616,
+  "storage_human": "3.0 GB",
+  "base_model": "vllm-sr/d3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Specialized AI models - Syvorai AI Lab",
+      "url": "https://syvor.ai/en",
+      "snippet": "Specialized AI models The Syvorai AI Lab trains, measures and publishes models that solve real problems inside your infrastructure. Decisum (322M×2) and Veredicto (9B) are published; Imperium (26B) is coming soon."
+    },
+    {
+      "title": "syvorai (Syvorai) - Hugging Face",
+      "url": "https://huggingface.co/syvorai",
+      "snippet": "Org profile for Syvorai on Hugging Face, the AI community building the future."
+    }
+  ]
+}

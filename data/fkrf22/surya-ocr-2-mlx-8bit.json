@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "fkrf22/surya-ocr-2-mlx-8bit",
+  "slug": "fkrf22-surya-ocr-2-mlx-8bit",
+  "author": "fkrf22",
+  "url": "https://huggingface.co/fkrf22/surya-ocr-2-mlx-8bit",
+  "created_at": "2026-11-06T20:20:32.000Z",
+  "updated_at": "2026-11-06T20:29:14.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "ocr",
+    "pdf",
+    "markdown",
+    "layout",
+    "image-text-to-text",
+    "conversational",
+    "base_model:datalab-to/surya-ocr-2",
+    "base_model:quantized:datalab-to/surya-ocr-2",
+    "license:openrail",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 665701440,
+  "parameters_human": "665.7M",
+  "storage_bytes": 802186634,
+  "storage_human": "802 MB",
+  "base_model": "datalab-to/surya-ocr-2",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reza2kn/surya-ocr-2-mlx-8bit-g64 · Hugging Face",
+      "url": "https://huggingface.co/Reza2kn/surya-ocr-2-mlx-8bit-g64",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · aglaia-models/surya-ocr-2-mlx at main - Hugging Face",
+      "url": "https://huggingface.co/aglaia-models/surya-ocr-2-mlx/blob/main/README.md",
+      "snippet": "Derivative of datalab-to/surya-ocr-2, under the AI Pubs OpenRAIL-M License (Modified). This derivative is released under the same license (share-alike); the use-based restrictions carry over."
+    }
+  ]
+}

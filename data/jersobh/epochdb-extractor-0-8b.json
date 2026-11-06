@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "jersobh/epochdb-extractor-0.8b",
+  "slug": "jersobh-epochdb-extractor-0-8b",
+  "author": "jersobh",
+  "url": "https://huggingface.co/jersobh/epochdb-extractor-0.8b",
+  "created_at": "2026-11-06T15:32:10.000Z",
+  "updated_at": "2026-11-06T15:32:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "en",
+    "base_model:unsloth/Qwen3.5-0.8B-Base",
+    "base_model:finetune:unsloth/Qwen3.5-0.8B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1726019871,
+  "storage_human": "1.7 GB",
+  "base_model": "unsloth/Qwen3.5-0.8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - jersobh/epochdb: An agentic memory engine designed for ...",
+      "url": "https://github.com/jersobh/epochdb",
+      "snippet": "EpochDB is a high-performance, state-aware memory engine designed for lossless, tiered storage, atomic state management, and multi-hop relational reasoning. It is built specifically for AI agents that require perfect historical recall, long-term state persistence, and deterministic fact corrections."
+    },
+    {
+      "title": "epochdb/README.md at main · jersobh/epochdb · GitHub",
+      "url": "https://github.com/jersobh/epochdb/blob/main/README.md",
+      "snippet": "Traditional AI memory systems compress conversations through destructive summarization. EpochDB bypasses this constraint by storing \"Unified Memory Atoms\"—the raw text intrinsically paired with dense embeddings."
+    }
+  ]
+}

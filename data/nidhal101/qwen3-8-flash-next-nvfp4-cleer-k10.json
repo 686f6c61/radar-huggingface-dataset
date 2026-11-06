@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Nidhal101/Qwen3.8-Flash-Next-NVFP4-CLEER-k10",
+  "slug": "nidhal101-qwen3-8-flash-next-nvfp4-cleer-k10",
+  "author": "Nidhal101",
+  "url": "https://huggingface.co/Nidhal101/Qwen3.8-Flash-Next-NVFP4-CLEER-k10",
+  "created_at": "2026-11-06T18:22:59.000Z",
+  "updated_at": "2026-11-06T18:35:46.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen4_exp",
+    "base_model:nvidia/Qwen3.8-Flash-Next-NVFP4",
+    "base_model:quantized:nvidia/Qwen3.8-Flash-Next-NVFP4",
+    "license:other",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 59032920979,
+  "parameters_human": "59.03B",
+  "storage_bytes": 63438796530,
+  "storage_human": "63.4 GB",
+  "base_model": "nvidia/Qwen3.8-Flash-Next-NVFP4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next-NVFP4 — AI Model Details | Applied",
+      "url": "https://theapplied.co/models/nvidia-qwen3-8-flash-next-nvfp4",
+      "snippet": "NVIDIA's NVFP4 4-bit quantization of Qwen's Qwen3.8-Flash-Next multimodal MoE for efficient serving."
+    },
+    {
+      "title": "naftulikay/Qwen3.8-Flash-Next-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/naftulikay/Qwen3.8-Flash-Next-NVFP4",
+      "snippet": "This model was obtained by quantizing Qwen3.8-Flash-Next to NVFP4, ready for inference with SGLang. Only the routed experts of the 48 main-model MoE layers are quantized (fused gate_up_proj / down_proj; 294,912 quantized tensor entries) to NVFP4 W4A4 (E2M1, group size 16, FP8 E4M3 block scales, FP32 global scales, dynamic NVFP4 activations)."
+    },
+    {
+      "title": "nvidia/Qwen3.8-Flash-Next-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/nvidia/Qwen3.8-Flash-Next-NVFP4",
+      "snippet": "The NVIDIA Qwen3.8-Flash-Next NVFP4 model is the quantized version of Alibaba's Qwen3.8-Flash-Next model, which is an auto-regressive language model that uses an optimized transformer architecture. Qwen3.8-Flash-Next is a causal language model with a vision encoder, hybrid attention (Gated DeltaNet ..."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next NVFP4 | Model Validation · PINVOU",
+      "url": "https://pinvou.com/en/reports/qwen3-8-flash-next-nvfp4-single.html",
+      "snippet": "Model architecture & capabilities Qwen3.8-Flash-Next is a multimodal mixture-of-experts model for general Q&A and agent tasks. It uses sparse experts, hybrid attention, and embedding components that support tiered loading, drawing on a subset of compute resources at each step. Total parameters, active parameters per step, and actual device memory use are distinct measures."
+    }
+  ]
+}

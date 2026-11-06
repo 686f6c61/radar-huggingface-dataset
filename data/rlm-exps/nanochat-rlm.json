@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "rlm-exps/nanochat-rlm",
+  "slug": "rlm-exps-nanochat-rlm",
+  "author": "rlm-exps",
+  "url": "https://huggingface.co/rlm-exps/nanochat-rlm",
+  "created_at": "2026-11-06T18:48:48.000Z",
+  "updated_at": "2026-11-06T18:48:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sdobson/nanochat · Hugging Face",
+      "url": "https://huggingface.co/sdobson/nanochat",
+      "snippet": "Intended Use Direct Use nanochat is designed for: Conversational AI applications Research on efficient language model training Educational purposes for understanding LLM training pipelines Low-resource deployment scenarios Downstream Use The model can be fine-tuned for specific conversational tasks or used as a base model for further domain adaptation. Out-of-Scope Use Production-grade ..."
+    },
+    {
+      "title": "nanochat · PyPI",
+      "url": "https://pypi.org/project/nanochat/",
+      "snippet": "To get a sense of the endpoint of this repo, you can currently find nanochat d32 hosted on nanochat.karpathy.ai. \"d32\" means that this model has 32 layers in the Transformer neural network."
+    }
+  ]
+}

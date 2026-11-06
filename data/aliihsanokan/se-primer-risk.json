@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "aliihsanokan/se-primer-risk",
+  "slug": "aliihsanokan-se-primer-risk",
+  "author": "aliihsanokan",
+  "url": "https://huggingface.co/aliihsanokan/se-primer-risk",
+  "created_at": "2026-11-06T13:08:09.000Z",
+  "updated_at": "2026-11-06T13:08:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yavuz111/se-primer-risk-model · Hugging Face",
+      "url": "https://huggingface.co/Yavuz111/se-primer-risk-model",
+      "snippet": "Machine learning model. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

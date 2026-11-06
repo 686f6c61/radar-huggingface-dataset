@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "LibreYOLO/LibreRiODETRv2x-obb-diorr",
+  "slug": "libreyolo-libreriodetrv2x-obb-diorr",
+  "author": "LibreYOLO",
+  "url": "https://huggingface.co/LibreYOLO/LibreRiODETRv2x-obb-diorr",
+  "created_at": "2026-11-06T17:41:22.000Z",
+  "updated_at": "2026-11-06T17:41:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "libreyolo",
+  "languages": [],
+  "tags": [
+    "libreyolo",
+    "object-detection",
+    "oriented-object-detection",
+    "rio-detr",
+    "riodetrv2",
+    "dataset:DIOR-R",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 263489005,
+  "storage_human": "263 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LibreYOLO/LibreRTDETRv2x-obb · Hugging Face",
+      "url": "https://huggingface.co/LibreYOLO/LibreRTDETRv2x-obb",
+      "snippet": "Collection including LibreYOLO/LibreRTDETRv2x-obb LibreYOLO Models Collection All LibreYOLO pretrained model weights • 140 items • Updated about 1 hour ago • 2"
+    },
+    {
+      "title": "LibreYOLO/LibreRTDETRv2x-obb at main - Hugging Face",
+      "url": "https://huggingface.co/LibreYOLO/LibreRTDETRv2x-obb/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

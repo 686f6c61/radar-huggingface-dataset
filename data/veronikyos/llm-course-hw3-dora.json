@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Veronikyos/llm-course-hw3-dora",
+  "slug": "veronikyos-llm-course-hw3-dora",
+  "author": "Veronikyos",
+  "url": "https://huggingface.co/Veronikyos/llm-course-hw3-dora",
+  "created_at": "2026-11-06T14:55:42.000Z",
+  "updated_at": "2026-11-06T14:56:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 300049792,
+  "parameters_human": "300.0M",
+  "storage_bytes": 1200233224,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Veronikyos (Veronika) - Hugging Face",
+      "url": "https://huggingface.co/Veronikyos/models",
+      "snippet": "Veronikyos's models2 Sort: Recently updated Veronikyos/llm-course-hw1 79.6M•Updated 1 day ago• 37"
+    },
+    {
+      "title": "Run Llm-course-hw3-dora API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/artarif/llm-course-hw3-dora",
+      "snippet": "Deploy Llm-course-hw3-dora (1B parameters) via OpenAI-compatible API with 32K context. Flat-rate pricing from $25/month."
+    }
+  ]
+}

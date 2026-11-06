@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "HelioAI/LFM3-1.7B-inference-modules-experiments",
+  "slug": "helioai-lfm3-1-7b-inference-modules-experiments",
+  "author": "HelioAI",
+  "url": "https://huggingface.co/HelioAI/LFM3-1.7B-inference-modules-experiments",
+  "created_at": "2026-11-06T13:22:04.000Z",
+  "updated_at": "2026-11-06T13:32:24.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "lfm3",
+    "reasoning",
+    "test-time-compute",
+    "inference-time-scaling",
+    "code-generation",
+    "llama.cpp",
+    "negative-results",
+    "en",
+    "ru",
+    "base_model:LiquidAI/LFM3-1.7B",
+    "base_model:quantized:LiquidAI/LFM3-1.7B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1728801600,
+  "parameters_human": "1.73B",
+  "storage_bytes": 49332193298,
+  "storage_human": "49.3 GB",
+  "base_model": "LiquidAI/LFM3-1.7B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiquidAI/LFM3-1.7B · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
+      "snippet": "In the system prompt, tell the model when to search: You only have one tool right now: search_tools, which searches a catalog of many more tools. If none of your current tools can handle a request, call search_tools to find one, then call the tool it returns. Works with vLLM, SGLang, and LFM3-compatible llama.cpp builds."
+    },
+    {
+      "title": "LFM3-1.7B - Liquid AI Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm3-1.7b",
+      "snippet": "1.7B text model for local agents and specialized applications, with a 256K context window and native tool calling ← Back to Text Models LFM3-1.7B is Liquid AI’s text model for local agents and specialized applications, based on the new LFM3 tri-hybrid architecture."
+    }
+  ]
+}

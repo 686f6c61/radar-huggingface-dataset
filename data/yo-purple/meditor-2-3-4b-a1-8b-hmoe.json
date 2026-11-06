@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Yo-Purple/Meditor-2-3.4B-A1.8B-HMoE",
+  "slug": "yo-purple-meditor-2-3-4b-a1-8b-hmoe",
+  "author": "Yo-Purple",
+  "url": "https://huggingface.co/Yo-Purple/Meditor-2-3.4B-A1.8B-HMoE",
+  "created_at": "2026-11-06T17:22:56.000Z",
+  "updated_at": "2026-11-06T17:23:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "meditor2",
+    "moe",
+    "hierarchical-moe",
+    "hmoe",
+    "smollm2",
+    "500k-context",
+    "reasoning",
+    "toolformer",
+    "two-tier-routing",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "base_model:HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3410955032,
+  "parameters_human": "3.41B",
+  "storage_bytes": 6821958440,
+  "storage_human": "6.8 GB",
+  "base_model": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

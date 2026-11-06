@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "YellowDuckSweater/microduck-sprint-2m-run-1105-1927-007",
+  "slug": "yellowducksweater-microduck-sprint-2m-run-1105-1927-007",
+  "author": "YellowDuckSweater",
+  "url": "https://huggingface.co/YellowDuckSweater/microduck-sprint-2m-run-1105-1927-007",
+  "created_at": "2026-11-06T15:59:48.000Z",
+  "updated_at": "2026-11-06T15:59:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5643402,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jhp123/microduck-sprint-2m-1595ms-20261029 · Hugging Face",
+      "url": "https://huggingface.co/jhp123/microduck-sprint-2m-1595ms-20261029",
+      "snippet": "A 61-observation, 14-action MLP policy for the Microduck Arena sprint-2m event. Runs at 50 Hz with the observation normalizer baked into policy.onnx. Evaluated with the unmodified Arena runner 5, MuJoCo 3.10.0 and ONNX Runtime 1.24.4. The 0.5-second preparation phase is excluded. Continued from our ..."
+    },
+    {
+      "title": "Helldave/microduck-sprint-2m-run-1027-2224 · Hugging Face",
+      "url": "https://huggingface.co/Helldave/microduck-sprint-2m-run-1027-2224",
+      "snippet": "Robotics model, built with Microduck. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

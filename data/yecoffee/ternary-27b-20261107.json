@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "yecoffee/Ternary-27B-20261107",
+  "slug": "yecoffee-ternary-27b-20261107",
+  "author": "yecoffee",
+  "url": "https://huggingface.co/yecoffee/Ternary-27B-20261107",
+  "created_at": "2026-11-06T19:20:15.000Z",
+  "updated_at": "2026-11-06T19:39:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "ninfer",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "ninfer",
+    "ternary",
+    "multimodal",
+    "speculative-decoding",
+    "en",
+    "zh",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9341293824,
+  "storage_human": "9.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ternary Bonsai 27b - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/ternary-bonsai-27b.html",
+      "snippet": "Download Ternary Bonsai 27b GGUF model. 56.7 GB, 466,027 downloads, 1435 likes."
+    },
+    {
+      "title": "Ternary Bonsai 2 27B - docs.prismml.com",
+      "url": "https://docs.prismml.com/models/bonsai-2-27b",
+      "snippet": "Ternary Bonsai 2 27B is the largest model in the family and the demo repo’s default. It is derived from Qwen3.8-27B, a hybrid-attention causal language model, with the architecture unchanged. Every language-model weight is ternary: {−1, 0, +1} in a fixed rotated basis, with an FP16 scale per group of 128 weights. It takes images as well as text, carries a 262K-token context, calls tools ..."
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "RedHatAI/Ripple-65B-Preview-NVFP4",
+  "slug": "redhatai-ripple-65b-preview-nvfp4",
+  "author": "RedHatAI",
+  "url": "https://huggingface.co/RedHatAI/Ripple-65B-Preview-NVFP4",
+  "created_at": "2026-11-06T20:32:07.000Z",
+  "updated_at": "2026-11-06T20:38:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "ricursive",
+    "fp4",
+    "vllm",
+    "llm-compressor",
+    "compressed-tensors",
+    "custom_code",
+    "base_model:ricursiveAI/Ripple-65B-Preview",
+    "base_model:quantized:ricursiveAI/Ripple-65B-Preview",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 36890569040,
+  "parameters_human": "36.89B",
+  "storage_bytes": 37920203040,
+  "storage_human": "37.9 GB",
+  "base_model": "ricursiveAI/Ripple-65B-Preview",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ricursiveAI/Ripple-65B-Preview · Hugging Face",
+      "url": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview",
+      "snippet": "Machine learning model with 65B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "ricursiveAI/Ripple-65B-Preview-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview-NVFP4",
+      "snippet": "Ricursive Intelligence introduces Ripple-65B Preview, a 65B parameter dense Transformer model pretrained on 12 trillion tokens with support for up to 1M context length. Ripple-65B Preview delivers strong results on agentic coding, scoring 80.52 on TerminalBench 2.1 and surpassing significantly ..."
+    }
+  ]
+}

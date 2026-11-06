@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "mradermacher/OLMo-2-0325-32B-Instruct-ARA-heretic-i1-GGUF",
+  "slug": "mradermacher-olmo-2-0325-32b-instruct-ara-heretic-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/OLMo-2-0325-32B-Instruct-ARA-heretic-i1-GGUF",
+  "created_at": "2026-11-06T13:57:39.000Z",
+  "updated_at": "2026-11-06T14:37:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "reproducible",
+    "en",
+    "dataset:allenai/RLVR-GSM-MATH-IF-Mixed-Constraints",
+    "base_model:richardyoung/OLMo-2-0325-32B-Instruct-ARA-heretic",
+    "base_model:quantized:richardyoung/OLMo-2-0325-32B-Instruct-ARA-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32234279936,
+  "parameters_human": "32.23B",
+  "storage_bytes": 12036412096,
+  "storage_human": "12.0 GB",
+  "base_model": "richardyoung/OLMo-2-0325-32B-Instruct-ARA-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/OLMo-2-0325-32B-Instruct-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/OLMo-2-0325-32B-Instruct-i1-GGUF",
+      "snippet": "mradermacher / OLMo-2-0325-32B-Instruct-i1-GGUF like 0 Transformers GGUF allenai/RLVR-GSM-MATH-IF-Mixed-Constraints English Inference Endpoints imatrix conversational License:apache-2.0 Model card FilesFiles and versions Community Train Deploy Use this model About Usage Provided Quants FAQ / Model Request Thanks"
+    },
+    {
+      "title": "mradermacher/OLMo-2-0325-32B-stage1-6T-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/OLMo-2-0325-32B-stage1-6T-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

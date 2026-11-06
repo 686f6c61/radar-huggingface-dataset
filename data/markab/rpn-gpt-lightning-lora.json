@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "markab/rpn-gpt-lightning-LoRA",
+  "slug": "markab-rpn-gpt-lightning-lora",
+  "author": "markab",
+  "url": "https://huggingface.co/markab/rpn-gpt-lightning-LoRA",
+  "created_at": "2026-11-06T19:16:57.000Z",
+  "updated_at": "2026-11-06T19:16:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "forth",
+    "rpn",
+    "nemotron",
+    "math",
+    "arithmetic",
+    "text-generation",
+    "en",
+    "dataset:markab/rpn-gpt-data",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "base_model:adapter:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22744432,
+  "storage_human": "23 MB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Exact math with a Forth machine",
+      "dataset": "rpn-gpt frozen test (600 problems)",
+      "metric": "Accuracy (x2, card v4, think 12000 / turn 24000)",
+      "value": 92.1
+    },
+    {
+      "task": "Exact math with a Forth machine",
+      "dataset": "rpn-gpt dev set (407 problems)",
+      "metric": "Accuracy (x4, card v4, think 12000 / turn 24000)",
+      "value": 93.1
+    },
+    {
+      "task": "Exact math with a Forth machine",
+      "dataset": "rpn-gpt code-heavy dev set (200 problems)",
+      "metric": "Accuracy (x2, card v4, think 12000 / turn 24000)",
+      "value": 83
+    },
+    {
+      "task": "Math, no machine",
+      "dataset": "MATH-500",
+      "metric": "Accuracy (x2, no machine, math_verify)",
+      "value": 97.8
+    }
+  ],
+  "sources": [
+    {
+      "title": "Fine-tuning, Training, and Evaluating Models on Lightning AI ... - Medium",
+      "url": "https://medium.com/@rijuldahiya/fine-tuning-training-and-evaluating-models-on-lightning-ai-studio-a-comprehensive-guide-33638c2631e7",
+      "snippet": "This command downloads the model to your Lightning AI Studio environment, making it available for fine-tuning 1. Setting Up LoRA Fine-tuning"
+    }
+  ]
+}

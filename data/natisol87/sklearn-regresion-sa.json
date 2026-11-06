@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "natisol87/Sklearn-regresion-SA",
+  "slug": "natisol87-sklearn-regresion-sa",
+  "author": "natisol87",
+  "url": "https://huggingface.co/natisol87/Sklearn-regresion-SA",
+  "created_at": "2026-11-06T17:52:26.000Z",
+  "updated_at": "2026-11-06T17:55:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-regression",
+  "library": "sklearn",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "sklearn",
+    "joblib",
+    "machine-learning",
+    "regression",
+    "linear-regression",
+    "educational-example",
+    "tabular-regression",
+    "es",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 943,
+  "storage_human": "943 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Scikit Learn Tutorial - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/scikit-learn-tutorial/",
+      "snippet": "Scikit-learn (sklearn) is a widely used open-source Python library for machine learning. Built on top of NumPy, SciPy and Matplotlib, it provides efficient and easy-to-use tools for predictive modeling and data analysis. Its consistent API design makes it suitable for both beginners and professionals. Supports supervised and unsupervised learning algorithms Provides preprocessing, feature ..."
+    }
+  ]
+}

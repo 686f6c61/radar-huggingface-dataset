@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "MohammadGholizadeh/nemotron-asr-streaming-farsi-podcast",
+  "slug": "mohammadgholizadeh-nemotron-asr-streaming-farsi-podcast",
+  "author": "MohammadGholizadeh",
+  "url": "https://huggingface.co/MohammadGholizadeh/nemotron-asr-streaming-farsi-podcast",
+  "created_at": "2026-11-06T15:42:07.000Z",
+  "updated_at": "2026-11-06T15:42:23.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "fa"
+  ],
+  "tags": [
+    "nemo",
+    "automatic-speech-recognition",
+    "streaming-asr",
+    "cache-aware ASR",
+    "FastConformer",
+    "RNNT",
+    "NeMo",
+    "persian",
+    "farsi",
+    "podcast",
+    "conversational",
+    "fa",
+    "dataset:MohammadGholizadeh/bplus_podcast_persian",
+    "dataset:MohammadGholizadeh/Tabaghe16_dataset_persian",
+    "base_model:mehdi-hf/nemotron-asr-streaming-farsi",
+    "base_model:finetune:mehdi-hf/nemotron-asr-streaming-farsi",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2490920960,
+  "storage_human": "2.5 GB",
+  "base_model": "mehdi-hf/nemotron-asr-streaming-farsi",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "bplus + Tabaghe16 held-out test (Persian podcasts)",
+      "metric": "WER (streaming, 1.12 s look-ahead)",
+      "value": 12.31
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "bplus + Tabaghe16 held-out test (Persian podcasts)",
+      "metric": "CER (streaming, 1.12 s look-ahead)",
+      "value": 5.97
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS (Persian)",
+      "metric": "WER (streaming, 1.12 s look-ahead)",
+      "value": 12.91
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS (Persian)",
+      "metric": "CER (streaming, 1.12 s look-ahead)",
+      "value": 4.81
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Common Voice 22.0 (Persian)",
+      "metric": "WER (streaming, 1.12 s look-ahead)",
+      "value": 22.01
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Common Voice 22.0 (Persian)",
+      "metric": "CER (streaming, 1.12 s look-ahead)",
+      "value": 7.64
+    }
+  ],
+  "sources": [
+    {
+      "title": "mehdi-hf/nemotron-asr-streaming-farsi · Hugging Face",
+      "url": "https://huggingface.co/mehdi-hf/nemotron-asr-streaming-farsi",
+      "snippet": "A streaming speech recognition model for Persian (Farsi). It's fine-tuned from NVIDIA's nemotron-3.5-asr-streaming-0.6b on 1,181 hours of openly licensed Persian speech, on the base model's reserved fa-IR language slot."
+    },
+    {
+      "title": "README.md · mehdi-hf/nemotron-asr-streaming-farsi at main",
+      "url": "https://huggingface.co/mehdi-hf/nemotron-asr-streaming-farsi/blob/main/README.md",
+      "snippet": "A streaming speech recognition model for Persian (Farsi). It's fine-tuned from NVIDIA's nemotron-3.5-asr-streaming-0.6b on 1,181 hours of openly licensed Persian speech, on the base model's reserved fa-IR language slot."
+    }
+  ]
+}

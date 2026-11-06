@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "enhasasuzu/Kimi-VL-A3B-Thinking-2506-staging",
+  "slug": "enhasasuzu-kimi-vl-a3b-thinking-2506-staging",
+  "author": "enhasasuzu",
+  "url": "https://huggingface.co/enhasasuzu/Kimi-VL-A3B-Thinking-2506-staging",
+  "created_at": "2026-11-06T01:06:48.000Z",
+  "updated_at": "2026-11-06T01:06:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "kimi_vl",
+    "feature-extraction",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "arxiv:2504.07491",
+    "base_model:moonshotai/Kimi-VL-A3B-Instruct",
+    "base_model:finetune:moonshotai/Kimi-VL-A3B-Instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "moonshotai/Kimi-VL-A3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "moonshotai/Kimi-VL-A3B-Thinking-2506 · Hugging Face",
+      "url": "https://huggingface.co/moonshotai/Kimi-VL-A3B-Thinking-2506",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "moonshotai/Kimi-VL-A3B-Thinking · Hugging Face",
+      "url": "https://huggingface.co/moonshotai/Kimi-VL-A3B-Thinking",
+      "snippet": "1. Introduction We present Kimi-VL, an efficient open-source Mixture-of-Experts (MoE) vision-language model (VLM) that offers advanced multimodal reasoning, long-context understanding, and strong agent capabilities —all while activating only 2.8B parameters in its language decoder (Kimi-VL-A3B). Kimi-VL demonstrates strong performance across challenging domains: as a general-purpose VLM ..."
+    }
+  ]
+}

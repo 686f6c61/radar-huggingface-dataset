@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "aether-models/aether-kit-clip-vit-b32",
+  "slug": "aether-models-aether-kit-clip-vit-b32",
+  "author": "aether-models",
+  "url": "https://huggingface.co/aether-models/aether-kit-clip-vit-b32",
+  "created_at": "2026-11-06T20:41:30.000Z",
+  "updated_at": "2026-11-06T20:42:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "aether-kit",
+    "core-ai",
+    "clip",
+    "image-text-embedding",
+    "zero-shot-image-classification",
+    "base_model:openai/clip-vit-base-patch32",
+    "base_model:finetune:openai/clip-vit-base-patch32",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 302798970,
+  "storage_human": "303 MB",
+  "base_model": "openai/clip-vit-base-patch32",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Éther (mythologie) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/%C3%89ther_(mythologie)",
+      "snippet": "« Aether » redirige ici. Pour le jeu vidéo, voir Aether (jeu vidéo). Pour les articles homonymes, voir . ... Éther ou Æther est un dieu …"
+    },
+    {
+      "title": "ViT-B-32.pt · jinaai/clip-models at main - Hugging Face",
+      "url": "https://huggingface.co/jinaai/clip-models/blob/main/ViT-B-32.pt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "The Aether - Minecraft Mods - CurseForge",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/aether",
+      "snippet": "Oct 3, 2025 · To get started with the Aether, you must construct a portal with a Glowstone frame and light it with a water bucket in …"
+    },
+    {
+      "title": "sentence-transformers/clip-ViT-B-32 · Hugging Face",
+      "url": "https://huggingface.co/sentence-transformers/clip-ViT-B-32",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Aether (classical element) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Aether_(classical_element)",
+      "snippet": "In his aether model, Newton describes aether as a medium that \"flows\" continually downward toward the Earth's surface and is …"
+    }
+  ]
+}

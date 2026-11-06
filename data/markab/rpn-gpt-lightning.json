@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "markab/rpn-gpt-lightning",
+  "slug": "markab-rpn-gpt-lightning",
+  "author": "markab",
+  "url": "https://huggingface.co/markab/rpn-gpt-lightning",
+  "created_at": "2026-11-06T19:22:25.000Z",
+  "updated_at": "2026-11-06T19:24:46.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nemotron_h",
+    "text-generation",
+    "forth",
+    "rpn",
+    "nemotron",
+    "math",
+    "arithmetic",
+    "conversational",
+    "en",
+    "dataset:markab/rpn-gpt-data",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "base_model:finetune:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "license:other",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31577937344,
+  "parameters_human": "31.58B",
+  "storage_bytes": 65844451748,
+  "storage_human": "65.8 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Exact math with a Forth machine",
+      "dataset": "rpn-gpt frozen test (600 problems)",
+      "metric": "Accuracy (x2, card v4, think 12000 / turn 24000)",
+      "value": 92.1
+    },
+    {
+      "task": "Exact math with a Forth machine",
+      "dataset": "rpn-gpt dev set (407 problems)",
+      "metric": "Accuracy (x4, card v4, think 12000 / turn 24000)",
+      "value": 93.1
+    },
+    {
+      "task": "Exact math with a Forth machine",
+      "dataset": "rpn-gpt code-heavy dev set (200 problems)",
+      "metric": "Accuracy (x2, card v4, think 12000 / turn 24000)",
+      "value": 83
+    },
+    {
+      "task": "Math, no machine",
+      "dataset": "MATH-500",
+      "metric": "Accuracy (x2, no machine, math_verify)",
+      "value": 97.8
+    }
+  ],
+  "sources": [
+    {
+      "title": "lightning-gpt · PyPI",
+      "url": "https://pypi.org/project/lightning-gpt/",
+      "snippet": "lightning-GPT lightning-GPT is a minimal wrapper around Andrej Karpathy's minGPT and nanoGPT in Lightning. It is aimed at providing a minimal Lightning layer on top of minGPT and nanoGPT, while leveraging the full breadth of Lightning. There are currently a few options: MinGPT: the GPT model from minGPT vanilla (set --implementation=mingpt)"
+    }
+  ]
+}

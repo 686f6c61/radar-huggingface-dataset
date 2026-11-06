@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "bertholomus/Ripple-65B-Preview-NVFP4-FP8Attn",
+  "slug": "bertholomus-ripple-65b-preview-nvfp4-fp8attn",
+  "author": "bertholomus",
+  "url": "https://huggingface.co/bertholomus/Ripple-65B-Preview-NVFP4-FP8Attn",
+  "created_at": "2026-11-06T17:06:05.000Z",
+  "updated_at": "2026-11-06T17:16:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "sglang",
+  "languages": [],
+  "tags": [
+    "sglang",
+    "safetensors",
+    "ricursive",
+    "modelopt",
+    "nvfp4",
+    "fp8",
+    "dflash2",
+    "speculative-decoding",
+    "coding",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "base_model:ricursiveAI/Ripple-65B-Preview",
+    "base_model:quantized:ricursiveAI/Ripple-65B-Preview",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 64782689360,
+  "parameters_human": "64.78B",
+  "storage_bytes": 43792159960,
+  "storage_human": "43.8 GB",
+  "base_model": "ricursiveAI/Ripple-65B-Preview",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ripple-65B Preview, a Frontier Open-Weight Model | Ricursive Intelligence",
+      "url": "https://www.ricursive.com/ripple",
+      "snippet": "Ripple’s dense model architecture provides strong reasoning performance with low-latency token generation. The model’s small parameter envelope also enables it to run efficiently on local devices such as NVIDIA DGX Spark, which feature high compute FLOPs with low memory bandwidth relative to datacenter accelerators. Ripple-65B Preview is available on Hugging Face, Together AI, GMI Cloud ..."
+    },
+    {
+      "title": "Ricursive AI Releases Ripple-65B Preview: A 65B Dense Open-Weight Model ...",
+      "url": "https://www.marktechpost.com/2026/11/04/ricursive-ripple-65b-preview-open-weight-model/",
+      "snippet": "Ricursive Intelligence just released Ripple-65B Preview. Ripple-65B Preview is a 65B dense open-weight model from Ricursive, pretrained from scratch for agentic coding. It is a general-purpose variant of the proprietary model behind Ricursive’s AI chip design platform."
+    }
+  ]
+}

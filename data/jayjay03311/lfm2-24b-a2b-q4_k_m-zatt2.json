@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "jayjay03311/LFM2-24B-A2B-Q4_K_M-ZATT2",
+  "slug": "jayjay03311-lfm2-24b-a2b-q4_k_m-zatt2",
+  "author": "jayjay03311",
+  "url": "https://huggingface.co/jayjay03311/LFM2-24B-A2B-Q4_K_M-ZATT2",
+  "created_at": "2026-11-06T20:51:37.000Z",
+  "updated_at": "2026-11-06T20:51:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiquidAI/LFM2-24B-A2B · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2-24B-A2B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unsloth/LFM2.5-24B-A2B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/LFM2.5-24B-A2B-GGUF",
+      "snippet": "LFM2.5-24B-A2B is the fastest of the compared MoEs at reading in prompts and generating answers. It decodes 184 tokens/s on an Apple M5 Max and 114 tokens/s on an AMD Ryzen AI Max+ 395, up to 1.7x faster than the next-best model, while using the least memory."
+    }
+  ]
+}

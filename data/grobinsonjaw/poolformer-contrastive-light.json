@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "grobinsonjaw/poolformer-contrastive-light",
+  "slug": "grobinsonjaw-poolformer-contrastive-light",
+  "author": "grobinsonjaw",
+  "url": "https://huggingface.co/grobinsonjaw/poolformer-contrastive-light",
+  "created_at": "2026-11-06T14:04:56.000Z",
+  "updated_at": "2026-11-06T14:05:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "trjackson/contrastive · Hugging Face",
+      "url": "https://huggingface.co/trjackson/contrastive",
+      "snippet": "A small Poolformer implementation for Contrastive, packaged with an explicit configuration and an initialization checkpoint. The huge variant is a reproducible starting point, not a trained model release."
+    },
+    {
+      "title": "ccoxbrandon/poolformer-contrastive · Hugging Face",
+      "url": "https://huggingface.co/ccoxbrandon/poolformer-contrastive",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

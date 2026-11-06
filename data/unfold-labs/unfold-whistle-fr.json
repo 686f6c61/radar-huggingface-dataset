@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "unfold-labs/unfold-whistle-fr",
+  "slug": "unfold-labs-unfold-whistle-fr",
+  "author": "unfold-labs",
+  "url": "https://huggingface.co/unfold-labs/unfold-whistle-fr",
+  "created_at": "2026-11-06T18:58:00.000Z",
+  "updated_at": "2026-11-06T18:58:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "whistle",
+    "cactus",
+    "lora",
+    "on-device",
+    "automatic-speech-recognition",
+    "fr",
+    "dataset:google/fleurs",
+    "base_model:Cactus-Compute/whistle",
+    "base_model:adapter:Cactus-Compute/whistle",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29346671,
+  "storage_human": "29 MB",
+  "base_model": "Cactus-Compute/whistle",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unfold — Toolkit for Storytellers",
+      "url": "https://unfold.com/",
+      "snippet": "Unfold is a toolkit for storytellers. Create beautiful and engaging stories from minimal and elegant templates. Available now for iOS …"
+    },
+    {
+      "title": "unfold-labs (Unfold Labs) - Hugging Face",
+      "url": "https://huggingface.co/unfold-labs",
+      "snippet": "AI recording and smart note taking"
+    },
+    {
+      "title": "Pro — Unfold",
+      "url": "https://unfold.com/pro",
+      "snippet": "Unfold Pro. From Squarespace. Create engaging brand-level content from anywhere"
+    },
+    {
+      "title": "UnfoldAI — Foundation Decision Models for Physical AI and Networked Systems",
+      "url": "https://unfoldai-labs.com/",
+      "snippet": "When AI touches the physical world, it has to decide. Aircrafts UnfoldAI builds the decision-making foundation models that bring lightning speed and scale to physical systems and real-world operations."
+    },
+    {
+      "title": "Unfold : éditeur vidéo/photo – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.moonlab.unfold&hl=fr",
+      "snippet": "Choisissez un modèle de Reel exclusif, ajoutez des clips et des photos, et Unfold se charge du reste. Modèles de stories, de …"
+    }
+  ]
+}

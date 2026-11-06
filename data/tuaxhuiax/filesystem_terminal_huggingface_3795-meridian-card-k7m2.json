@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "TUaxhuiax/filesystem_terminal_huggingface_3795-meridian-card-k7m2",
+  "slug": "tuaxhuiax-filesystem_terminal_huggingface_3795-meridian-card-k7m2",
+  "author": "TUaxhuiax",
+  "url": "https://huggingface.co/TUaxhuiax/filesystem_terminal_huggingface_3795-meridian-card-k7m2",
+  "created_at": "2026-11-04T22:08:03.000Z",
+  "updated_at": "2026-11-06T19:03:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "meridian",
+    "text-generation",
+    "benchmark-card",
+    "open-weights",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 61,
+  "trending_score": 0,
+  "parameters": 256,
+  "parameters_human": "256",
+  "storage_bytes": 704761,
+  "storage_human": "704761 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huggingface_terminal_filesystem_321_a7f3c9d2-orion",
+      "url": "https://huggingface.co/datasets/TUaxhuiax/huggingface_terminal_filesystem_321_a7f3c9d2-orion",
+      "snippet": "Dataset. Explore, preview and download it on Hugging Face."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "albertooooz/chronos-2-lora-crypto-hourly",
+  "slug": "albertooooz-chronos-2-lora-crypto-hourly",
+  "author": "albertooooz",
+  "url": "https://huggingface.co/albertooooz/chronos-2-lora-crypto-hourly",
+  "created_at": "2026-11-06T13:08:32.000Z",
+  "updated_at": "2026-11-06T13:08:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "time-series-forecasting",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "chronos-2",
+    "time-series-forecasting",
+    "crypto",
+    "cryptocurrency",
+    "hourly",
+    "dataset:custom",
+    "base_model:amazon/chronos-2",
+    "base_model:adapter:amazon/chronos-2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4854584,
+  "storage_human": "5 MB",
+  "base_model": "amazon/chronos-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "albertooooz (albert zagrajek) - Hugging Face",
+      "url": "https://huggingface.co/albertooooz",
+      "snippet": "User profile of albert zagrajek on Hugging Face"
+    },
+    {
+      "title": "Chronos - Learn AI",
+      "url": "https://ai.miraheze.org/wiki/Chronos",
+      "snippet": "Chronos is a family of pretrained foundation models for time series forecasting developed by Amazon Science. First introduced in March 2024 through the paper \"Chronos: Learning the Language of Time Series,\" the model family treats numerical time series data as a language to be modeled by standard transformer architectures, converting continuous values into discrete tokens through a process of ..."
+    }
+  ]
+}

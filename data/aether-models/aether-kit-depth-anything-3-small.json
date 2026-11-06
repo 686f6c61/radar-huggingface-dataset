@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "aether-models/aether-kit-depth-anything-3-small",
+  "slug": "aether-models-aether-kit-depth-anything-3-small",
+  "author": "aether-models",
+  "url": "https://huggingface.co/aether-models/aether-kit-depth-anything-3-small",
+  "created_at": "2026-11-06T20:03:45.000Z",
+  "updated_at": "2026-11-06T20:04:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "depth-estimation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "aether-kit",
+    "core-ai",
+    "depth-estimation",
+    "depth-anything-3",
+    "base_model:depth-anything/DA3-SMALL",
+    "base_model:finetune:depth-anything/DA3-SMALL",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 61193472,
+  "storage_human": "61 MB",
+  "base_model": "depth-anything/DA3-SMALL",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Depth Anything 3: Recovering the Visual Space from Any Views",
+      "url": "https://depth-anything-3.github.io/",
+      "snippet": "Through our teacher-student training paradigm, the model achieves a level of detail and generalization on par with Depth Anything 2 (DA2). We establish a new visual geometry benchmark covering camera pose estimation, any-view geometry and visual rendering."
+    },
+    {
+      "title": "Depth Anything -A Foundation Model for Monocular Depth Estimation",
+      "url": "https://towardsdatascience.com/depth-anything-a-foundation-model-for-monocular-depth-estimation-8a7920b5c9cc/",
+      "snippet": "Fig.1: Image and corresponding depth map. Image by Sascha Kirch and Depth Map created with Depth Anything Hugging Face Demo. Put simply: to navigate through 3D space, one must need to know where all the stuff is and at which distance. Classical applications include collision avoidance, drivable space detection, placing objects into a virtual or augmented reality, creating 3D objects ..."
+    }
+  ]
+}

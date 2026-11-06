@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "nchapman/Qwen3.8-27B-DFlash2-W4A16-HGPTQ",
+  "slug": "nchapman-qwen3-8-27b-dflash2-w4a16-hgptq",
+  "author": "nchapman",
+  "url": "https://huggingface.co/nchapman/Qwen3.8-27B-DFlash2-W4A16-HGPTQ",
+  "created_at": "2026-11-06T18:27:13.000Z",
+  "updated_at": "2026-11-06T18:27:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "compressed-tensors",
+  "languages": [],
+  "tags": [
+    "compressed-tensors",
+    "safetensors",
+    "qwen3",
+    "dflash2",
+    "speculative-decoding",
+    "block-diffusion",
+    "draft-model",
+    "w4a16",
+    "gptq",
+    "hadamard",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1924404480,
+  "parameters_human": "1.92B",
+  "storage_bytes": 1404212841,
+  "storage_human": "1.4 GB",
+  "base_model": "incoai/Qwen3.8-27B-DFlash2, Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nchapman/Qwen3.8-27B-W4A16-HGPTQ-g64 · Hugging Face",
+      "url": "https://huggingface.co/nchapman/Qwen3.8-27B-W4A16-HGPTQ-g64",
+      "snippet": "nchapman / Qwen3.8-27B-W4A16-HGPTQ-g64 Like 0 Image-Text-to-Text Transformers Safetensors qwen3_5 gptq hadamard quip w4a16 compressed-tensors vllm conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    },
+    {
+      "title": "ai-server-mgr/Qwen3.8-27B-W4A16-DFlash2 · Hugging Face",
+      "url": "https://huggingface.co/ai-server-mgr/Qwen3.8-27B-W4A16-DFlash2",
+      "snippet": "Qwen3.8-27B W4A16 + DFlash2 — consolidated bundle Three pinned upstream components in one download: the target model and fast extras at the repository root, with the DFlash2 drafter in draft/."
+    }
+  ]
+}

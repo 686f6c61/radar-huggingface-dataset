@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "phyloforfun/lm3_landmark_detector__yolo26x_pose_640",
+  "slug": "phyloforfun-lm3_landmark_detector__yolo26x_pose_640",
+  "author": "phyloforfun",
+  "url": "https://huggingface.co/phyloforfun/lm3_landmark_detector__yolo26x_pose_640",
+  "created_at": "2026-10-06T17:55:47.000Z",
+  "updated_at": "2026-11-06T16:36:50.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "keypoint-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "coreml",
+    "onnx",
+    "openvino",
+    "leafmachine3",
+    "yolo26",
+    "herbarium",
+    "leaf",
+    "pose-estimation",
+    "keypoint-detection",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 100,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2046786913,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=leafmachine3",
+      "snippet": "phyloforfun/lm3_landmark_detector__yolo26x_pose_640 Keypoint Detection •Updated about 3 hours ago• 28"
+    },
+    {
+      "title": "Ultralytics YOLO26",
+      "url": "https://docs.ultralytics.com/models/yolo26",
+      "snippet": "Ultralytics YOLO26 is a real-time model family with optional NMS-free inference for detection, segmentation, depth, classification, pose and OBB."
+    }
+  ]
+}

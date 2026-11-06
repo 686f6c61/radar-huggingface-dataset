@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "bhusalb/privacy-preserving-icl",
+  "slug": "bhusalb-privacy-preserving-icl",
+  "author": "bhusalb",
+  "url": "https://huggingface.co/bhusalb/privacy-preserving-icl",
+  "created_at": "2026-11-06T13:32:44.000Z",
+  "updated_at": "2026-11-06T13:33:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "differential-privacy",
+    "in-context-learning",
+    "llm",
+    "privacy",
+    "synthetic-data",
+    "en",
+    "arxiv:2509.13625",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Privacy Preserving In-Context Learning - a Hugging Face Space by bhusalb",
+      "url": "https://huggingface.co/spaces/bhusalb/privacy-preserving-icl",
+      "snippet": "Provide your private text records and the system will run a language model on them, blend the results with formal differential‑privacy safeguards, and output synthetic in‑context examples. These sy..."
+    },
+    {
+      "title": "GitHub - bhusalb/privacy-preserving-icl",
+      "url": "https://github.com/bhusalb/privacy-preserving-icl",
+      "snippet": "Contribute to bhusalb/privacy-preserving-icl development by creating an account on GitHub."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "Fallarad/Qwen3-4B-Unique-Solutions",
+  "slug": "fallarad-qwen3-4b-unique-solutions",
+  "author": "Fallarad",
+  "url": "https://huggingface.co/Fallarad/Qwen3-4B-Unique-Solutions",
+  "created_at": "2026-11-06T16:17:46.000Z",
+  "updated_at": "2026-11-06T16:38:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "en",
+    "dataset:google-research-datasets/mbpp",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:adapter:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 47224624,
+  "storage_human": "47 MB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3-4B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_4b",
+      "snippet": "Qwen3-4B State‑of‑the‑art large language model useful on a variety of language understanding and generation tasks. The Qwen3‑4B is a state‑of‑the‑art multilingual base language model with 4 billion parameters, excelling in language understanding, generation, coding, and mathematics."
+    },
+    {
+      "title": "Qwen3-4B Model Overview - emergentmind.com",
+      "url": "https://www.emergentmind.com/topics/qwen3-4b-model",
+      "snippet": "Qwen3-4B is a dense, open-source large language model with 4B parameters that advances architecture, multilingual skills, and adaptive reasoning. It employs a modified Transformer design featuring RoPE, RMSNorm, SwiGLU, and GQA to optimize performance and efficiency in text generation and retrieval tasks. Pretrained on 36 trillion tokens across 119 languages, Qwen3-4B supports robust ..."
+    }
+  ]
+}

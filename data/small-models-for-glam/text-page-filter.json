@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "small-models-for-glam/text-page-filter",
+  "slug": "small-models-for-glam-text-page-filter",
+  "author": "small-models-for-glam",
+  "url": "https://huggingface.co/small-models-for-glam/text-page-filter",
+  "created_at": "2026-11-05T21:51:16.000Z",
+  "updated_at": "2026-11-06T14:43:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "safetensors",
+    "glam",
+    "ocr",
+    "historical-documents",
+    "page-classification",
+    "data-curation",
+    "document-ai",
+    "digitised-books",
+    "image-classification",
+    "base_model:timm/mobilenetv4_conv_small.e2400_r224_in1k",
+    "base_model:finetune:timm/mobilenetv4_conv_small.e2400_r224_in1k",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 2519393,
+  "parameters_human": "2.5M",
+  "storage_bytes": 12056168,
+  "storage_human": "12 MB",
+  "base_model": "timm/mobilenetv4_conv_small.e2400_r224_in1k",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "small-models-for-glam (Small Models for GLAM) - Hugging Face",
+      "url": "https://huggingface.co/small-models-for-glam/models",
+      "snippet": "Org profile for Small Models for GLAM on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Small Models for GLAM - a Hugging Face Space by small-models-for-glam",
+      "url": "https://huggingface.co/spaces/small-models-for-glam/README",
+      "snippet": "Small Models for GLAM 🏛️ A community organization for discovering efficient AI models useful for Galleries, Libraries, Archives, and Museums! About This is an experimental community organization aimed at highlighting AI models that work well for cultural heritage institutions."
+    }
+  ]
+}

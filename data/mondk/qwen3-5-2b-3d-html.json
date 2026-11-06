@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "mondk/Qwen3.5-2B-3D-Html",
+  "slug": "mondk-qwen3-5-2b-3d-html",
+  "author": "mondk",
+  "url": "https://huggingface.co/mondk/Qwen3.5-2B-3D-Html",
+  "created_at": "2026-11-06T13:58:00.000Z",
+  "updated_at": "2026-11-06T13:58:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5-2B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_5_2b",
+      "snippet": "Qwen3.5-2B Balanced 2B parameter model from the Qwen3.5 series for on‑device inference. Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction‑following capabilities over Qwen3."
+    },
+    {
+      "title": "Qwen3.5 2B by Qwen | Model Library | Modal",
+      "url": "https://modal.com/library/qwen/qwen3-5-2b",
+      "snippet": "This is the post-trained model, fine-tuned from Qwen3.5-2B-Base. Qwen positions this size for prototyping, task-specific fine-tuning, and research or development use, and benchmarks it against Qwen3-1.7B, Qwen3-4B-2507, and the Qwen3-VL 2B and 4B models on language and vision tasks, recommending a 32,768-token output budget for most queries."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "bear7011/streaming-vad-decision-adapters",
+  "slug": "bear7011-streaming-vad-decision-adapters",
+  "author": "bear7011",
+  "url": "https://huggingface.co/bear7011/streaming-vad-decision-adapters",
+  "created_at": "2026-11-06T13:10:52.000Z",
+  "updated_at": "2026-11-06T13:17:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "video-anomaly-detection",
+    "streaming",
+    "lora",
+    "qwen3.5",
+    "decision-models",
+    "ucf-crime",
+    "xd-violence",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20970693768,
+  "storage_human": "21.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bear7011 (Wang) - Hugging Face",
+      "url": "https://huggingface.co/bear7011/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset 13 days ago ... published a dataset 13 days ago"
+    }
+  ]
+}

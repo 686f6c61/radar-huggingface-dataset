@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "GuiAraujo05/disaster-tweets-tfidf-linear-svm",
+  "slug": "guiaraujo05-disaster-tweets-tfidf-linear-svm",
+  "author": "GuiAraujo05",
+  "url": "https://huggingface.co/GuiAraujo05/disaster-tweets-tfidf-linear-svm",
+  "created_at": "2026-11-06T16:10:42.000Z",
+  "updated_at": "2026-11-06T16:15:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "scikit-learn",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "scikit-learn",
+    "joblib",
+    "natural-language-processing",
+    "text-classification",
+    "tf-idf",
+    "linear-svm",
+    "disaster-tweets",
+    "kaggle",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 646768,
+  "storage_human": "646768 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Disaster Tweets-tfidf - Kaggle",
+      "url": "https://www.kaggle.com/code/njuspy/disaster-tweets-tfidf/",
+      "snippet": "Explore and run AI code with Kaggle Notebooks | Using data from Natural Language Processing with Disaster Tweets"
+    },
+    {
+      "title": "GitHub - imriadh/Disaster_Tweet_Classifier: This model uses TF-IDF ...",
+      "url": "https://github.com/imriadh/Disaster_Tweet_Classifier",
+      "snippet": "A simple, well-documented example project that uses TF‑IDF features with a Linear Support Vector Machine (LinearSVC) to classify whether a tweet describes a real disaster. This repository contains data preprocessing, model training, and evaluation code used for the \"Real or Not? NLP with Disaster Tweets\" problem."
+    }
+  ]
+}

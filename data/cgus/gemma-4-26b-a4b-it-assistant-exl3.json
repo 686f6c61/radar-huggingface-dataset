@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "cgus/gemma-4-26B-A4B-it-assistant-exl3",
+  "slug": "cgus-gemma-4-26b-a4b-it-assistant-exl3",
+  "author": "cgus",
+  "url": "https://huggingface.co/cgus/gemma-4-26B-A4B-it-assistant-exl3",
+  "created_at": "2026-11-06T12:55:28.000Z",
+  "updated_at": "2026-11-06T13:55:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "exllamav3",
+  "languages": [],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "gemma4_assistant",
+    "any-to-any",
+    "arxiv:2607.02770",
+    "base_model:google/gemma-4-26B-A4B-it-assistant",
+    "base_model:quantized:google/gemma-4-26B-A4B-it-assistant",
+    "license:apache-2.0",
+    "4-bit",
+    "exl3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 138929668,
+  "parameters_human": "138.9M",
+  "storage_bytes": 1046335565,
+  "storage_human": "1.0 GB",
+  "base_model": "google/gemma-4-26B-A4B-it-assistant",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-4-26B-A4B-it-assistant · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-26B-A4B-it-assistant",
+      "snippet": "At the time of release, this family of models provides high-performance open vision-language model implementations designed from the ground up for responsible AI development compared to similarly sized models."
+    },
+    {
+      "title": "ArchiveStudio/gemma-4-26B-A4B-it-assistant · Hugging Face",
+      "url": "https://huggingface.co/ArchiveStudio/gemma-4-26B-A4B-it-assistant",
+      "snippet": "Benefits At the time of release, this family of models provides high-performance open vision-language model implementations designed from the ground up for responsible AI development compared to similarly sized models."
+    }
+  ]
+}

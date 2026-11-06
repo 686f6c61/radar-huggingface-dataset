@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Video-Coder-SFT-9B-GGUF",
+  "slug": "mradermacher-video-coder-sft-9b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Video-Coder-SFT-9B-GGUF",
+  "created_at": "2026-11-06T16:49:07.000Z",
+  "updated_at": "2026-11-06T17:00:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Video-Coder/Video-Coder-SFT-9B",
+    "base_model:quantized:Video-Coder/Video-Coder-SFT-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 82967481216,
+  "storage_human": "83.0 GB",
+  "base_model": "Video-Coder/Video-Coder-SFT-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Glasseeker-9B-SFT-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Glasseeker-9B-SFT-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=mradermacher",
+      "snippet": "Explore machine learning models. mradermacher/Poe-8B-GLM5-Opus4.6-Sonnet4.5-Kimi-Grok-Gemini-3-pro-preview-HERETIC-i1-GGUF"
+    }
+  ]
+}

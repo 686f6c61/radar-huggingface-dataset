@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "Matias00/bert-based-toxic-comment-detector",
+  "slug": "matias00-bert-based-toxic-comment-detector",
+  "author": "Matias00",
+  "url": "https://huggingface.co/Matias00/bert-based-toxic-comment-detector",
+  "created_at": "2026-11-06T15:11:16.000Z",
+  "updated_at": "2026-11-06T15:14:37.000Z",
+  "license": "cc0-1.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc0-1.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 405795747,
+  "storage_human": "406 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Toxic Comment Classification using BERT - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/toxic-comment-classification-using-bert/",
+      "snippet": "It allows the model to assign zero, one, or more labels to each data sample based on its characteristics. In the context of toxic comment classification, a comment or text can be labelled with multiple toxicity categories if it contains various forms of harmful language."
+    },
+    {
+      "title": "unitary/toxic-bert · Hugging Face",
+      "url": "https://huggingface.co/unitary/toxic-bert",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

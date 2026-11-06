@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "MarioGreen2025/loras-anima",
+  "slug": "mariogreen2025-loras-anima",
+  "author": "MarioGreen2025",
+  "url": "https://huggingface.co/MarioGreen2025/loras-anima",
+  "created_at": "2026-11-06T17:28:22.000Z",
+  "updated_at": "2026-11-06T17:31:28.000Z",
+  "license": "readme",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 138663832,
+  "storage_human": "139 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anima Anime Model & 39K+ LoRAs, Online Generator | Civitai",
+      "url": "https://civitai.com/ecosystems/anima",
+      "snippet": "Download the Anima model and 39K+ LoRAs, or generate online. CircleStone Labs' open anime model for clean linework, expressive characters and vivid color."
+    },
+    {
+      "title": "Train LoRAs & Fine-Tuned Models Online — No Downloads | Loras AI",
+      "url": "http://loras.im/",
+      "snippet": "LoRAs are small add-ons that teach an AI model your character, product or style. Fine-tune Krea 2, FLUX, Qwen Image or Z-Image with 4–30 of your images, depending on the model, then generate here with a compatible model. No downloads, no local GPU."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "yeezyyoba/amharic-sentiment-transformer",
+  "slug": "yeezyyoba-amharic-sentiment-transformer",
+  "author": "yeezyyoba",
+  "url": "https://huggingface.co/yeezyyoba/amharic-sentiment-transformer",
+  "created_at": "2026-09-17T21:29:46.000Z",
+  "updated_at": "2026-11-06T18:09:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "am"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "sentiment-analysis",
+    "amharic",
+    "afrisenti",
+    "low-resource",
+    "am",
+    "dataset:masakhane/afrisenti",
+    "base_model:Davlan/afro-xlmr-base",
+    "base_model:finetune:Davlan/afro-xlmr-base",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 278045955,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129296180,
+  "storage_human": "1.1 GB",
+  "base_model": "Davlan/afro-xlmr-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "amharic-sentiment-analysis/models at main · yeezyyoba/amharic ... - GitHub",
+      "url": "https://github.com/yeezyyoba/amharic-sentiment-analysis/tree/main/models",
+      "snippet": "Amharic sentiment analysis using multilingual transformers (Afro-XLM-R) fine-tuned on AfriSenti — low-resource NLP for Ethiopian social media text - yeezyyoba/amharic-sentiment-analysis"
+    },
+    {
+      "title": "GitHub - yeezyyoba/amharic-sentiment-analysis: Amharic sentiment ...",
+      "url": "https://github.com/yeezyyoba/amharic-sentiment-analysis",
+      "snippet": "Amharic is a comparatively under-resourced language in natural language processing, with fewer publicly available resources and models than high-resource languages. This project investigates three-class sentiment classification for Amharic text using the Amharic subset of the AfriSenti dataset. The ..."
+    }
+  ]
+}

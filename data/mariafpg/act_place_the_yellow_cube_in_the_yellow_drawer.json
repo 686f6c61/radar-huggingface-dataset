@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "MariaFPG/act_place_the_yellow_cube_in_the_yellow_drawer",
+  "slug": "mariafpg-act_place_the_yellow_cube_in_the_yellow_drawer",
+  "author": "MariaFPG",
+  "url": "https://huggingface.co/MariaFPG/act_place_the_yellow_cube_in_the_yellow_drawer",
+  "created_at": "2026-11-06T15:12:40.000Z",
+  "updated_at": "2026-11-06T15:14:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "trossen_ai_stationary",
+    "dataset:MariaFPG/place_the_yellow_cube_in_the_yellow_drawer",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51685114,
+  "parameters_human": "51.7M",
+  "storage_bytes": 3098659680,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MariaFPG/place_the_yellow_cube_in_the_yellow_drawer · Datasets at ...",
+      "url": "https://huggingface.co/datasets/MariaFPG/place_the_yellow_cube_in_the_yellow_drawer",
+      "snippet": "Dataset with 30.1k rows (Tabular, Time-series, Video). Explore, preview and download it on Hugging Face."
+    },
+    {
+      "title": "MariaFPG/place_the_yellow_cube_in_the_yellow_drawer · Datasets at ...",
+      "url": "https://huggingface.co/datasets/MariaFPG/place_the_yellow_cube_in_the_yellow_drawer/viewer",
+      "snippet": "Datasets: MariaFPG / place_the_yellow_cube_in_the_yellow_drawer Like 0 Dataset card Data Studio FilesFiles and versions xet Community Subset (1) default·30.1k rows default (30.1k rows) Split (1) train·30.1k rows train (30.1k rows) Search is not available for this dataset SQL Console"
+    }
+  ]
+}

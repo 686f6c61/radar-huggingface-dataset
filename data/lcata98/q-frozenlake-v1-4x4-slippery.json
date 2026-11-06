@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "lcata98/q-FrozenLake-v1-4x4-Slippery",
+  "slug": "lcata98-q-frozenlake-v1-4x4-slippery",
+  "author": "lcata98",
+  "url": "https://huggingface.co/lcata98/q-FrozenLake-v1-4x4-Slippery",
+  "created_at": "2026-11-06T14:44:38.000Z",
+  "updated_at": "2026-11-06T14:44:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "FrozenLake-v1-4x4",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 903,
+  "storage_human": "903 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deeps1998/q-FrozenLake-v1-4x4-noSlippery · Hugging Face",
+      "url": "https://huggingface.co/deeps1998/q-FrozenLake-v1-4x4-noSlippery",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Adilbai/q-FrozenLake-v1-4x4-noSlippery · Hugging Face",
+      "url": "https://huggingface.co/Adilbai/q-FrozenLake-v1-4x4-noSlippery",
+      "snippet": "FrozenLake Q-Learning Agent - Model Documentation Model Overview This is a Q-Learning agent trained to solve the FrozenLake-v1 environment from OpenAI Gymnasium. The agent learns to navigate a frozen lake from start to goal while avoiding holes in the ice using tabular Q-learning with epsilon-greedy exploration. Environment Details Environment: FrozenLake-v1 Type: Discrete, Grid World Grid ..."
+    }
+  ]
+}

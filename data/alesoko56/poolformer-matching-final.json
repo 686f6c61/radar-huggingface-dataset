@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "alesoko56/poolformer-matching-final",
+  "slug": "alesoko56-poolformer-matching-final",
+  "author": "alesoko56",
+  "url": "https://huggingface.co/alesoko56/poolformer-matching-final",
+  "created_at": "2026-11-06T19:26:10.000Z",
+  "updated_at": "2026-11-06T19:26:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alesoko56 (Alexander Sokolov) - Hugging Face",
+      "url": "https://huggingface.co/alesoko56",
+      "snippet": "I train models and sometimes they work"
+    },
+    {
+      "title": "Osktakahashi/study-matching5 · Hugging Face",
+      "url": "https://huggingface.co/Osktakahashi/study-matching5",
+      "snippet": "Poolformer for Matching Overview This repository is a compact, custom PyTorch implementation of Poolformer for Matching. The large configuration is intended for code review, smoke tests, and small controlled experiments rather than as a production-ready pretrained release."
+    }
+  ]
+}

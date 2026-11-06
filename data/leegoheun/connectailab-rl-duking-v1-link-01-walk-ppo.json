@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "leegoheun/connectailab-rl-duking-v1-link-01-walk-ppo",
+  "slug": "leegoheun-connectailab-rl-duking-v1-link-01-walk-ppo",
+  "author": "leegoheun",
+  "url": "https://huggingface.co/leegoheun/connectailab-rl-duking-v1-link-01-walk-ppo",
+  "created_at": "2026-11-06T15:14:03.000Z",
+  "updated_at": "2026-11-06T15:14:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "reinforcement-learning",
+    "ppo",
+    "robotics",
+    "mujoco",
+    "locomotion",
+    "link01",
+    "connect-ai-lab",
+    "connectailab",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2824867,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "walking",
+      "dataset": "Link01Walk-v0",
+      "metric": "distance per 20 s (m)",
+      "value": 3.904
+    },
+    {
+      "task": "walking",
+      "dataset": "Link01Walk-v0",
+      "metric": "mean forward speed (m/s)",
+      "value": 0.1952
+    },
+    {
+      "task": "walking",
+      "dataset": "Link01Walk-v0",
+      "metric": "falls per minute",
+      "value": 0
+    }
+  ],
+  "sources": [
+    {
+      "title": "leegoheun/connectailab-rl-duking-v1 · Hugging Face",
+      "url": "https://huggingface.co/leegoheun/connectailab-rl-duking-v1",
+      "snippet": "Instructions to use leegoheun/connectailab-rl-duking-v1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use leegoheun/connectailab-rl-duking-v1 with PEFT:"
+    },
+    {
+      "title": "leegoheun/connectailab-rl-duking-v2-link01 at main - Hugging Face",
+      "url": "https://huggingface.co/leegoheun/connectailab-rl-duking-v2-link01/tree/main",
+      "snippet": "Instructions to use leegoheun/connectailab-rl-duking-v2-link01 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use leegoheun/connectailab-rl-duking-v2-link01 with PEFT:"
+    }
+  ]
+}

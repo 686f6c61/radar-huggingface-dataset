@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "jrubiosainz/microduck-tug-h7p1a-fb520907",
+  "slug": "jrubiosainz-microduck-tug-h7p1a-fb520907",
+  "author": "jrubiosainz",
+  "url": "https://huggingface.co/jrubiosainz/microduck-tug-h7p1a-fb520907",
+  "created_at": "2026-11-06T17:04:44.000Z",
+  "updated_at": "2026-11-06T17:04:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "microduck-arena",
+    "base_model:azukiq/microduck-titan-v1",
+    "base_model:quantized:azukiq/microduck-titan-v1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 910894,
+  "storage_human": "910894 B",
+  "base_model": "azukiq/microduck-titan-v1, greecree/microduck-tug-of-war-tug-super-v11",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jrubiosainz/microduck-game-tug-remix9 · Hugging Face",
+      "url": "https://huggingface.co/jrubiosainz/microduck-game-tug-remix9",
+      "snippet": "Robotics model, built with Microduck. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "jrubiosainz/microduck-game-tug-a1rb4ck-099c-s1-s2-s3-s4-f7f-s5 ...",
+      "url": "https://huggingface.co/jrubiosainz/microduck-game-tug-a1rb4ck-099c-s1-s2-s3-s4-f7f-s5",
+      "snippet": "game-tug-a1rb4ck-099c-s1-s2-s3-s4-f7f-s5 A modified version of our entry game-tug-a1rb4ck-099c-s1-s2-s3-s4, itself a modified version of a1rb4Ck's policy: we replaced the eight rows of its outermost lookup, L, that play the end of the rating bout for seed 5 with his rows for the same steps at his later revision f7f7705b. Nothing else in the file was changed."
+    }
+  ]
+}

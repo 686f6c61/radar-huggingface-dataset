@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "takashakio/tamarack-cove",
+  "slug": "takashakio-tamarack-cove",
+  "author": "takashakio",
+  "url": "https://huggingface.co/takashakio/tamarack-cove",
+  "created_at": "2026-11-05T22:58:54.000Z",
+  "updated_at": "2026-11-06T13:48:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 6946394848,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

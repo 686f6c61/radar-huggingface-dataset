@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "matthewrobinson/mocov3-experiment",
+  "slug": "matthewrobinson-mocov3-experiment",
+  "author": "matthewrobinson",
+  "url": "https://huggingface.co/matthewrobinson/mocov3-experiment",
+  "created_at": "2026-11-06T15:31:11.000Z",
+  "updated_at": "2026-11-06T15:31:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tlsmartin/mocov3-experiment · Hugging Face",
+      "url": "https://huggingface.co/Tlsmartin/mocov3-experiment",
+      "snippet": "Overview This repository is a compact, custom PyTorch implementation of Mocov3 for Classification. The giant configuration is intended for code review, smoke tests, and small controlled experiments rather than as a production-ready pretrained release."
+    },
+    {
+      "title": "matthewrobinson (Matthew Robinson) - Hugging Face",
+      "url": "https://huggingface.co/matthewrobinson/models",
+      "snippet": "User profile of Matthew Robinson on Hugging Face"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "lvladikov/PiD-as-pixel-Upscaler",
+  "slug": "lvladikov-pid-as-pixel-upscaler",
+  "author": "lvladikov",
+  "url": "https://huggingface.co/lvladikov/PiD-as-pixel-Upscaler",
+  "created_at": "2026-11-06T14:12:56.000Z",
+  "updated_at": "2026-11-06T14:26:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "comfy-cloud",
+    "workflows",
+    "pid",
+    "pixel-diffusion-decoder",
+    "upscaler",
+    "super-resolution",
+    "4x",
+    "image-to-image",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1362712,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PiD: Fast and High-Resolution Latent Decoding with Pixel Diffusion",
+      "url": "https://research.nvidia.com/labs/sil/projects/pid/",
+      "snippet": "Overview of PiD. PiD unifies latent decoding and upsampling as a single latent-conditioned pixel diffusion model that predicts the target-resolution pixel-space velocity field. Noise-corrupted latent training and sigma-aware gating make the decoder robust to partially denoised latents, enabling early exit from the base LDM while preserving high-resolution output quality."
+    },
+    {
+      "title": "Upscaler AI · Free AI Image Upscaler, powered by NVIDIA PiD",
+      "url": "https://natekali.github.io/imgupscaler/",
+      "snippet": "Free AI Image Upscaler Upscaler AI is a free online AI image upscaler. Upload a low resolution or blurry photo and it increases the image resolution up to 4K with sharp, natural detail. The Fast and High Detail engines run entirely in your browser, while the NVIDIA PiD engine runs a state-of-the-art diffusion super-resolution model on a GPU."
+    }
+  ]
+}

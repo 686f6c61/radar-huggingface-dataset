@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Umar1342/medical-prescription-ocr",
+  "slug": "umar1342-medical-prescription-ocr",
+  "author": "Umar1342",
+  "url": "https://huggingface.co/Umar1342/medical-prescription-ocr",
+  "created_at": "2026-11-06T13:19:14.000Z",
+  "updated_at": "2026-11-06T13:19:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "vision-encoder-decoder",
+    "donut",
+    "medical-ocr",
+    "handwriting-recognition",
+    "document-understanding",
+    "en",
+    "dataset:chinmays18/medical-prescription-dataset",
+    "base_model:naver-clova-ix/donut-base",
+    "base_model:finetune:naver-clova-ix/donut-base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 202053048,
+  "parameters_human": "202.1M",
+  "storage_bytes": 810371085,
+  "storage_human": "810 MB",
+  "base_model": "naver-clova-ix/donut-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VarshiniE25/medical-prescription-ocr: MedScript AI - GitHub",
+      "url": "https://github.com/VarshiniE25/medical-prescription-ocr/tree/main/",
+      "snippet": "💊 MedScript AI — Medical Prescription OCR System AI-powered prescription processing: upload an image, extract text, get structured JSON."
+    }
+  ]
+}

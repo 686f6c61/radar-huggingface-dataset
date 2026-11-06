@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "shashanth-27xA9/GLM-5.3-8GB-SuperExpert",
+  "slug": "shashanth-27xa9-glm-5-3-8gb-superexpert",
+  "author": "shashanth-27xA9",
+  "url": "https://huggingface.co/shashanth-27xA9/GLM-5.3-8GB-SuperExpert",
+  "created_at": "2026-10-17T05:03:46.000Z",
+  "updated_at": "2026-11-06T15:07:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "glm",
+    "glm-edge",
+    "reasoning",
+    "sub-10gb",
+    "laptop-runnable",
+    "ollama",
+    "gguf",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 1894,
+  "trending_score": 0,
+  "parameters": 4327984128,
+  "parameters_human": "4.33B",
+  "storage_bytes": 34185185186,
+  "storage_human": "34.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shashanth-27xA9/GLM-5.3-8GB-SuperExpert · Hugging Face",
+      "url": "https://huggingface.co/shashanth-27xA9/GLM-5.3-8GB-SuperExpert",
+      "snippet": "GLM-5.3-8GB-SuperExpert is an authentic, sub-10GB reasoning engine engineered for high-performance reasoning, mathematics, and bilingual code synthesis on consumer hardware (16 GB RAM laptops and free Google Colab T4 GPUs ..."
+    },
+    {
+      "title": "shashanth-27xA9/GLM-5.3-8GB-SuperExpert at main - Hugging Face",
+      "url": "https://huggingface.co/shashanth-27xA9/GLM-5.3-8GB-SuperExpert/tree/main",
+      "snippet": "License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main GLM-5.3-8GB-SuperExpert 8.66 GB Ctrl+K Ctrl+K 1 contributor History:11 commits shashanth-27xA9 Update README: Document native 8.07GB architecture with zero C++ compiler requirements 162410a verified3 days ago .gitattributes Safe 1.52 kBinitial commit4 ..."
+    }
+  ]
+}

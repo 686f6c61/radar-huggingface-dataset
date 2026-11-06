@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "EDWINSANTOSO/robotics-vision-language-notes",
+  "slug": "edwinsantoso-robotics-vision-language-notes",
+  "author": "EDWINSANTOSO",
+  "url": "https://huggingface.co/EDWINSANTOSO/robotics-vision-language-notes",
+  "created_at": "2026-11-06T16:14:12.000Z",
+  "updated_at": "2026-11-06T16:14:17.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "robotics-vision-language",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EDWINSANTOSO (Edwin Santoso) - Hugging Face",
+      "url": "https://huggingface.co/EDWINSANTOSO",
+      "snippet": "User profile of Edwin Santoso on Hugging Face"
+    },
+    {
+      "title": "Vision Language Action Models (VLA) & Policies for Robots",
+      "url": "https://learnopencv.com/vision-language-action-models-lerobot-policy/",
+      "snippet": "Vision Language Action Models (VLA) Overview: LeRobot Policies Demo The advent of Generative AI, has fundamentally transformed robotic intelligence, enabling significant strides in how advanced humanoid robots “perceive, reason and act” in the physical world."
+    }
+  ]
+}

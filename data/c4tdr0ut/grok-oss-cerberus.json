@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "c4tdr0ut/grok-oss-Cerberus",
+  "slug": "c4tdr0ut-grok-oss-cerberus",
+  "author": "c4tdr0ut",
+  "url": "https://huggingface.co/c4tdr0ut/grok-oss-Cerberus",
+  "created_at": "2026-11-06T19:22:25.000Z",
+  "updated_at": "2026-11-06T19:40:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "generated_from_trainer",
+    "orpo",
+    "trl",
+    "conversational",
+    "arxiv:2403.07691",
+    "base_model:mistralai/Mistral-Small-24B-Instruct-2501",
+    "base_model:quantized:mistralai/Mistral-Small-24B-Instruct-2501",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2116017174,
+  "storage_human": "2.1 GB",
+  "base_model": "mistralai/Mistral-Small-24B-Instruct-2501",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "c4tdr0ut/grok-oss-Cerberus-12B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/c4tdr0ut/grok-oss-Cerberus-12B-GGUF",
+      "snippet": "Instructions to use c4tdr0ut/grok-oss-Cerberus-12B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started ..."
+    },
+    {
+      "title": "c4tdr0ut/grok-oss · Hugging Face",
+      "url": "https://huggingface.co/c4tdr0ut/grok-oss",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

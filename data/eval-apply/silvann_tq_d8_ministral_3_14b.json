@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "eval-apply/silvann_tq_D8_ministral_3_14b",
+  "slug": "eval-apply-silvann_tq_d8_ministral_3_14b",
+  "author": "eval-apply",
+  "url": "https://huggingface.co/eval-apply/silvann_tq_D8_ministral_3_14b",
+  "created_at": "2026-10-06T14:02:46.000Z",
+  "updated_at": "2026-11-06T15:13:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mistral3",
+    "silvann",
+    "turboquant",
+    "quantized",
+    "base_model:mistralai/Ministral-3-14B-Instruct-2512",
+    "base_model:finetune:mistralai/Ministral-3-14B-Instruct-2512",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 63,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13528514839,
+  "storage_human": "13.5 GB",
+  "base_model": "mistralai/Ministral-3-14B-Instruct-2512",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eval-apply/silvann_tq_D8_ministral_3_14b · Hugging Face",
+      "url": "https://huggingface.co/eval-apply/silvann_tq_D8_ministral_3_14b",
+      "snippet": "mistralai/Ministral-3-14B-Instruct-2512, packed for the SiLVANN engine (the Eval-Apply GPU Interpreter and its neural network library): every layer matrix at 8 bits a weight (TurboQuant, a per-row scale), each rotated along its input axis with a blocked Hadamard-and-signs rotation; the embedding and head at 8 bits; norms kept lossless. D8: dense 8 (the model has no experts). About 13.5 GB. The ..."
+    },
+    {
+      "title": "mistralai/Ministral-3-14B-Instruct-2512 · Hugging Face",
+      "url": "https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512",
+      "snippet": "The largest model in the Ministral 3 family, Ministral 3 14B offers frontier capabilities and performance comparable to its larger Mistral Small 3.2 24B counterpart. A powerful and efficient language model with vision capabilities. This model is the instruct post-trained version in FP8, fine-tuned ..."
+    }
+  ]
+}

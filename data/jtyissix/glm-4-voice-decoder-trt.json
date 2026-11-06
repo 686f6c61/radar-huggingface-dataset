@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "jtyissix/glm-4-voice-decoder-trt",
+  "slug": "jtyissix-glm-4-voice-decoder-trt",
+  "author": "jtyissix",
+  "url": "https://huggingface.co/jtyissix/glm-4-voice-decoder-trt",
+  "created_at": "2026-11-06T14:26:36.000Z",
+  "updated_at": "2026-11-06T14:33:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1407524768,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zai-org/glm-4-voice-decoder · Hugging Face",
+      "url": "https://huggingface.co/zai-org/glm-4-voice-decoder",
+      "snippet": "GLM-4-Voice 是智谱 AI 推出的端到端语音模型。GLM-4-Voice 能够直接理解和生成中英文语音，进行实时语音对话，并且能够根据用户的指令改变语音的情感、语调、语速、方言等属性。 GLM-4-Voice is an end-to-end voice model launched by Zhipu AI ..."
+    },
+    {
+      "title": "glm-4-voice - a xianbao Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/xianbao/glm-4-voice-671b337123be0786ec31d231",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from xianbao"
+    }
+  ]
+}

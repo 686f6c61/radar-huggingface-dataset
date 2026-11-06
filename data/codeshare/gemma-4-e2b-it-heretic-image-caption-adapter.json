@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "codeShare/gemma-4-E2B-it-heretic-image-caption-adapter",
+  "slug": "codeshare-gemma-4-e2b-it-heretic-image-caption-adapter",
+  "author": "codeShare",
+  "url": "https://huggingface.co/codeShare/gemma-4-E2B-it-heretic-image-caption-adapter",
+  "created_at": "2026-11-06T19:16:33.000Z",
+  "updated_at": "2026-11-06T19:16:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gemma",
+    "gemma-4",
+    "gemma-4-e2b",
+    "image-captioning",
+    "image-to-text",
+    "multimodal",
+    "lora",
+    "transformers",
+    "base_model:coder3101/gemma-4-E2B-it-heretic",
+    "base_model:adapter:coder3101/gemma-4-E2B-it-heretic",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 184014474,
+  "storage_human": "184 MB",
+  "base_model": "coder3101/gemma-4-E2B-it-heretic",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Codeshare - Share code in real-time with developers in your browser",
+      "url": "https://codeshare.io/",
+      "snippet": "Code with your team Open a Codeshare editor, write or copy code, then share it with friends and colleagues. Pair program and …"
+    },
+    {
+      "title": "google/gemma-4-E2B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-E2B",
+      "snippet": "For both text-to-text and image-to-text, and across all model sizes, the model produced minimal policy violations, and showed significant improvements over previous Gemma models' performance."
+    },
+    {
+      "title": "Log in - Codeshare",
+      "url": "https://codeshare.io/login",
+      "snippet": "Log in to access your saved code Email address"
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "Gemma 4 models are multimodal, handling text and image input (with audio supported on E2B, E4B, and 12B models) and generating text output. This release includes open-weights models in both pre-trained and instruction-tuned variants."
+    },
+    {
+      "title": "CodeShare — Real-Time Collaborative Code Editor Online",
+      "url": "https://www.codeshare.in/",
+      "snippet": "Write and run HTML, CSS, and JavaScript together in real time. Share one link, see everyone's edits and the live output instantly — …"
+    }
+  ]
+}

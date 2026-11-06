@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "jesse-242/Qwen2.5-0.5B-Instruct",
+  "slug": "jesse-242-qwen2-5-0-5b-instruct",
+  "author": "jesse-242",
+  "url": "https://huggingface.co/jesse-242/Qwen2.5-0.5B-Instruct",
+  "created_at": "2026-11-06T19:00:52.000Z",
+  "updated_at": "2026-11-06T19:00:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-0.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6048298891,
+  "storage_human": "6.0 GB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-0.5B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct",
+      "snippet": "Text Generation model with 0.5B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Qwen/Qwen2.5-0.5B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-0.5B",
+      "snippet": "Text Generation model with 0.5B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

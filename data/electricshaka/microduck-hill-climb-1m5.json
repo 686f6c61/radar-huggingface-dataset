@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "ElectricShaka/microduck-hill-climb-1m5",
+  "slug": "electricshaka-microduck-hill-climb-1m5",
+  "author": "ElectricShaka",
+  "url": "https://huggingface.co/ElectricShaka/microduck-hill-climb-1m5",
+  "created_at": "2026-11-06T19:54:29.000Z",
+  "updated_at": "2026-11-06T19:54:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 793814,
+  "storage_human": "793814 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "a1rb4Ck/microduck-hill-1m5 · Hugging Face",
+      "url": "https://huggingface.co/a1rb4Ck/microduck-hill-1m5",
+      "snippet": "Reinforcement Learning model, built with Microduck. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Helldave/microduck-hill-climb-1m5-run-1028-1546 · Hugging Face",
+      "url": "https://huggingface.co/Helldave/microduck-hill-climb-1m5-run-1028-1546",
+      "snippet": "How to use Helldave/microduck-hill-climb-1m5-run-1028-1546 with Microduck: # Replace SLOT with the slot specified in the model card (walk, stand, sitstand, ground_pick, kick_left, kick_right, roulade). sudo robotctl policy load SLOT Helldave/microduck-hill-climb-1m5-run-1028-1546 Coincoin vient de ..."
+    }
+  ]
+}

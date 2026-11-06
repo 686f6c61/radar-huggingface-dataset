@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "marybal7/rabbids_lora",
+  "slug": "marybal7-rabbids_lora",
+  "author": "marybal7",
+  "url": "https://huggingface.co/marybal7/rabbids_lora",
+  "created_at": "2026-11-06T20:26:25.000Z",
+  "updated_at": "2026-11-06T20:39:54.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "stable-diffusion",
+    "stable-diffusion-diffusers",
+    "text-to-image",
+    "lora",
+    "base_model:runwayml/stable-diffusion-v1-5",
+    "base_model:adapter:runwayml/stable-diffusion-v1-5",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 102077640,
+  "storage_human": "102 MB",
+  "base_model": "runwayml/stable-diffusion-v1-5",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rabbids AI LoRA Model | PixAI",
+      "url": "https://pixai.art/en/model/1711287704887339266",
+      "snippet": "rabbids is an AI LoRA by jason on PixAI. Try it free."
+    },
+    {
+      "title": "Rabbids AI Models (4) | Civitai",
+      "url": "https://civitai.com/tag/rabbids",
+      "snippet": "Browse 4 AI models tagged \"Rabbids\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "txgsync/Qwen3.8-Flash-Next-NanoSeedLM-TCQ3",
+  "slug": "txgsync-qwen3-8-flash-next-nanoseedlm-tcq3",
+  "author": "txgsync",
+  "url": "https://huggingface.co/txgsync/Qwen3.8-Flash-Next-NanoSeedLM-TCQ3",
+  "created_at": "2026-11-06T08:46:49.000Z",
+  "updated_at": "2026-11-06T18:57:21.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "trellis",
+  "languages": [],
+  "tags": [
+    "trellis",
+    "safetensors",
+    "qwen4_exp",
+    "qwen3.8-flash-next",
+    "moe",
+    "nanoseedlm",
+    "nslm",
+    "cuda",
+    "metal",
+    "research-preview",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:2406.11235",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 56687443859,
+  "parameters_human": "56.69B",
+  "storage_bytes": 86495767917,
+  "storage_human": "86.5 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next-NanoSeedLM-P4 - Hugging Face",
+      "url": "https://huggingface.co/txgsync/Qwen3.8-Flash-Next-NanoSeedLM-P4/commit/4157e09722a4b18996acd4731e42f438cd614315",
+      "snippet": "txgsync / Qwen3.8-Flash-Next-NanoSeedLM-P4 Like 0 Image-Text-to-Text MLX Safetensors qwen4_exp qwen3.8-flash-next Mixture of Experts mlx-vlm omlx apple-silicon custom_code research-preview seedlm nanoseedlm nslm lfsr seeds conversational 4-bit precision arxiv:2410.10714 License:qwen-community-1.0 Model card FilesFiles and versions xet Community ..."
+    }
+  ]
+}

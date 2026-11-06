@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "TheUnderscore/Qwen3.8-27B-Ultimate-Heretic-Uncensored-W4A16-AWQ",
+  "slug": "theunderscore-qwen3-8-27b-ultimate-heretic-uncensored-w4a16-awq",
+  "author": "TheUnderscore",
+  "url": "https://huggingface.co/TheUnderscore/Qwen3.8-27B-Ultimate-Heretic-Uncensored-W4A16-AWQ",
+  "created_at": "2026-11-06T16:55:05.000Z",
+  "updated_at": "2026-11-06T17:00:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen",
+    "qwen3_8",
+    "finetune",
+    "awq",
+    "int4",
+    "w4a16",
+    "compressed-tensors",
+    "vllm",
+    "coding-agent",
+    "agentic",
+    "conversational",
+    "base_model:DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored",
+    "base_model:quantized:DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 19567853308,
+  "storage_human": "19.6 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B-Ultimate-Heretic-Uncensored-NVFP4-W4ATTN-AWQ",
+      "url": "https://huggingface.co/TheUnderscore/Qwen3.8-27B-Ultimate-Heretic-Uncensored-NVFP4-W4ATTN-AWQ",
+      "snippet": "Like 0 Image-Text-to-Text Transformers Safetensors qwen3_5 qwen qwen3_8 finetune nvfp4 w4a16 awq mixed-precision compressed-tensors vllm coding-agent agentic conversational 8-bit precision License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    },
+    {
+      "title": "TheUnderscore/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA ...",
+      "url": "https://huggingface.co/TheUnderscore/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored-W4A16-AWQ",
+      "snippet": "Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored-W4A16-AWQ ... Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

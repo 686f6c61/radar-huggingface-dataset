@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "Alepach/qwen2.5-7b-fixing-step-dpo-10k-4ep",
+  "slug": "alepach-qwen2-5-7b-fixing-step-dpo-10k-4ep",
+  "author": "Alepach",
+  "url": "https://huggingface.co/Alepach/qwen2.5-7b-fixing-step-dpo-10k-4ep",
+  "created_at": "2026-11-06T20:35:38.000Z",
+  "updated_at": "2026-11-06T20:35:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alepach/qwen2.5-7b-standard-step-dpo-10k-4ep · Hugging Face",
+      "url": "https://huggingface.co/Alepach/qwen2.5-7b-standard-step-dpo-10k-4ep",
+      "snippet": "Instructions to use Alepach/qwen2.5-7b-standard-step-dpo-10k-4ep with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "qwen2.5-7b-standard-step-dpo-10k-4ep - FriendliAI",
+      "url": "https://friendli.ai/models/Alepach/qwen2.5-7b-standard-step-dpo-10k-4ep",
+      "snippet": "The model was trained on 10,000 standard Step-DPO preference pairs sampled deterministically with seed 42. Each pair contains a mathematical problem, a reasoning prefix ending at Step N:, a chosen replacement step from a continuation that reached the reference answer, and the original erroneous step as the rejected response."
+    }
+  ]
+}

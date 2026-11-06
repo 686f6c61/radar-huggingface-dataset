@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "SzczurekLab/ImmuVis_Swin",
+  "slug": "szczureklab-immuvis_swin",
+  "author": "SzczurekLab",
+  "url": "https://huggingface.co/SzczurekLab/ImmuVis_Swin",
+  "created_at": "2026-11-01T18:44:12.000Z",
+  "updated_at": "2026-11-01T18:45:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "immuvis",
+  "languages": [],
+  "tags": [
+    "immuvis",
+    "pytorch",
+    "imaging-mass-cytometry",
+    "multiplex-imaging",
+    "masked-autoencoder",
+    "virtual-staining",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 590548334,
+  "storage_human": "591 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2602.04585] ImmuVis: Hyperconvolutional Foundation Model for Imaging ...",
+      "url": "https://arxiv.org/abs/2602.04585",
+      "snippet": "We present ImmuVis, a family of efficient foundation models for imaging mass cytometry (IMC), a high-throughput multiplex imaging technology that handles molecular marker measurements as image channels and enables large-scale spatial tissue profiling. Unlike natural images, multiplex imaging lacks a fixed channel space, as real-world marker sets vary across studies, violating a core assumption ..."
+    },
+    {
+      "title": "ImmuVis: Hyperconvolutional Foundation Model for Imaging Mass Cytometry",
+      "url": "https://arxiv.org/pdf/2602.04585",
+      "snippet": "ImmuVis outperforms state-of-the-art baselines and ablations in virtual staining and downstream classification tasks at substantially lower compute cost than transformer-based alternatives, and is the sole model that provides calibrated uncertainty via a heteroscedastic likelihood objective."
+    }
+  ]
+}

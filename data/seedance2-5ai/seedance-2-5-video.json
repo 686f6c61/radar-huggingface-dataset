@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "seedance2-5ai/seedance-2-5-video",
+  "slug": "seedance2-5ai-seedance-2-5-video",
+  "author": "seedance2-5ai",
+  "url": "https://huggingface.co/seedance2-5ai/seedance-2-5-video",
+  "created_at": "2026-11-06T16:42:26.000Z",
+  "updated_at": "2026-11-06T16:42:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "video-generation",
+    "multimodal",
+    "native-audio",
+    "seedance-2.5",
+    "model-card",
+    "text-to-video",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Seedance 2.5 AI Video Generator — Up to 30s Video With Audio",
+      "url": "https://www.seedance.tv/seedance-2-5",
+      "snippet": "Seedance 2.5 is ByteDance's video-and-audio model, released July 31, 2026. Generate videos up to 30 seconds from text, images, and references, with synchronized audio. Available modes, resolution, and price are shown before you generate."
+    },
+    {
+      "title": "Seedance 2.5 AI — AI Video Generator",
+      "url": "https://seedance2-5.video/",
+      "snippet": "Seedance 2.5 AI turns text, photos, and multimodal references into watermark-free 480p, 720p or 1080p video with clips from 4 to 30 seconds."
+    }
+  ]
+}

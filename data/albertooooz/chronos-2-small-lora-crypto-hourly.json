@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "albertooooz/chronos-2-small-lora-crypto-hourly",
+  "slug": "albertooooz-chronos-2-small-lora-crypto-hourly",
+  "author": "albertooooz",
+  "url": "https://huggingface.co/albertooooz/chronos-2-small-lora-crypto-hourly",
+  "created_at": "2026-11-06T13:08:38.000Z",
+  "updated_at": "2026-11-06T13:08:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "time-series-forecasting",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "chronos-2-small",
+    "time-series-forecasting",
+    "crypto",
+    "cryptocurrency",
+    "hourly",
+    "dataset:custom",
+    "base_model:autogluon/chronos-2-small",
+    "base_model:adapter:autogluon/chronos-2-small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1658576,
+  "storage_human": "2 MB",
+  "base_model": "autogluon/chronos-2-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "albertooooz/chronos-2-small-lora-eu-day-ahead · Hugging Face",
+      "url": "https://huggingface.co/albertooooz/chronos-2-small-lora-eu-day-ahead",
+      "snippet": "Chronos-2-small LoRA — EU day-ahead electricity prices LoRA adapter for 24-hour-ahead hourly day-ahead (DA) electricity price forecasting across European ENTSO-E bidding zones. Fine-tuned on top of autogluon/chronos-2-small on 42 hourly price series (DE_AT_LU excluded). Weather covariates were not used during training but can be supplied at inference."
+    },
+    {
+      "title": "albertooooz (albert zagrajek) - Hugging Face",
+      "url": "https://huggingface.co/albertooooz",
+      "snippet": "User profile of albert zagrajek on Hugging Face"
+    }
+  ]
+}

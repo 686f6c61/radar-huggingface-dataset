@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Mdawg97/Qwen-Image-2.1-Turbo-Quantized",
+  "slug": "mdawg97-qwen-image-2-1-turbo-quantized",
+  "author": "Mdawg97",
+  "url": "https://huggingface.co/Mdawg97/Qwen-Image-2.1-Turbo-Quantized",
+  "created_at": "2026-11-06T20:52:31.000Z",
+  "updated_at": "2026-11-06T20:52:31.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen",
+    "image-generation",
+    "comfyui",
+    "comfyui-gguf",
+    "mlx",
+    "fp8",
+    "nvfp4",
+    "text-to-image",
+    "base_model:Qwen/Qwen-Image-2.1-Turbo",
+    "base_model:quantized:Qwen/Qwen-Image-2.1-Turbo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7115124736,
+  "parameters_human": "7.12B",
+  "storage_bytes": 89998279065,
+  "storage_human": "90.0 GB",
+  "base_model": "Qwen/Qwen-Image-2.1-Turbo",
+  "formats": [
+    "gguf",
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen-Image-2.1-Turbo · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen-image-2.1-turbo - QwenCloud",
+      "url": "https://docs.qwencloud.com/models/qwen-image-2-1-turbo",
+      "snippet": "Qwen-Image-2.1-Turbo is an open-source image generation model in the Qwen-Image series. It offers a compact model size, strong performance, and cost efficiency, with native transparency and unified generation and editing. Editing supports multiple references, local control, and high-fidelity restoration."
+    }
+  ]
+}

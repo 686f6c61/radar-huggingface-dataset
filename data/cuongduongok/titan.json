@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "cuongduongok/TITAN",
+  "slug": "cuongduongok-titan",
+  "author": "cuongduongok",
+  "url": "https://huggingface.co/cuongduongok/TITAN",
+  "created_at": "2026-11-06T12:59:42.000Z",
+  "updated_at": "2026-11-06T12:59:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "ai",
+    "rvc",
+    "vc",
+    "voice-cloning",
+    "applio",
+    "titan",
+    "pretrained",
+    "audio-to-audio",
+    "en",
+    "dataset:blaise-tk/TITAN-Medium",
+    "arxiv:2308.05725",
+    "base_model:lj1995/VoiceConversionWebUI",
+    "base_model:finetune:lj1995/VoiceConversionWebUI",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4306353450,
+  "storage_human": "4.3 GB",
+  "base_model": "lj1995/VoiceConversionWebUI",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cuongduongok/VoxCPM · Hugging Face",
+      "url": "https://huggingface.co/cuongduongok/VoxCPM",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Titan AI — Autonomy at scale. Under your command.",
+      "url": "https://titan.ai/",
+      "snippet": "Titan AI builds autonomous systems for wheeled, aerial, and legged platforms. One operator, thirty machines. Autonomy at scale, under your command."
+    }
+  ]
+}

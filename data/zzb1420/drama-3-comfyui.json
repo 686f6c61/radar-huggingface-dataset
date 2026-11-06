@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "zzb1420/Drama-3-ComfyUI",
+  "slug": "zzb1420-drama-3-comfyui",
+  "author": "zzb1420",
+  "url": "https://huggingface.co/zzb1420/Drama-3-ComfyUI",
+  "created_at": "2026-11-06T13:29:23.000Z",
+  "updated_at": "2026-11-06T13:30:18.000Z",
+  "license": "fish-audio-drama-3-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "comfyui",
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "text-to-speech",
+    "voice-cloning",
+    "drama-3",
+    "base_model:fishaudio/drama-3",
+    "base_model:finetune:fishaudio/drama-3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 38578417928,
+  "storage_human": "38.6 GB",
+  "base_model": "fishaudio/drama-3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - T8mars/Comfyui-Drama-3: Native DRAMA-3 voice generation ...",
+      "url": "https://github.com/T8mars/Comfyui-Drama-3",
+      "snippet": "A local voice creation studio and native ComfyUI nodes for Fish Audio DRAMA-3, by T8star. Built with Fish Audio. DRAMA supports native reference-voice conditioning without training. Reference quality, transcription and delivery affect the result. For a new unreferenced voice, audition a take, save ..."
+    },
+    {
+      "title": "Drama 3 for ComfyUI - pedromarinhodev.github.io",
+      "url": "https://pedromarinhodev.github.io/ComfyUI-Drama3/",
+      "snippet": "New 3× faster decoding since October 17: an 8 GB card keeps up with real time → Fish Audio Drama 3, natively in ComfyUI, on cards from 8 GB. Expressive text to speech with voice cloning, up to 16 speakers in one text and cues like [sighs] or [whispers]. The 32 GB of routed experts stay in system RAM and the GPU keeps a cache of the ones in use, so a 35B model runs on a consumer card, and ..."
+    }
+  ]
+}

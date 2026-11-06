@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "koohack/park_14b_transcripts_only_defer_to_users",
+  "slug": "koohack-park_14b_transcripts_only_defer_to_users",
+  "author": "koohack",
+  "url": "https://huggingface.co/koohack/park_14b_transcripts_only_defer_to_users",
+  "created_at": "2026-11-06T12:57:04.000Z",
+  "updated_at": "2026-11-06T12:59:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 525301074,
+  "storage_human": "525 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Koohack (SeungHyun Park) - Hugging Face",
+      "url": "https://huggingface.co/Koohack",
+      "snippet": "User profile of SeungHyun Park on Hugging Face"
+    },
+    {
+      "title": "koohack/Park3-8B-Base at main - Hugging Face",
+      "url": "https://huggingface.co/koohack/Park3-8B-Base/tree/main",
+      "snippet": "koohack / Park3-8B-Base like 0 Text Generation Transformers Safetensors qwen3 conversational text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

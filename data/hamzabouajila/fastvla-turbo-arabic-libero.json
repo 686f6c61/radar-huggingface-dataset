@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "hamzabouajila/fastvla-turbo-arabic-libero",
+  "slug": "hamzabouajila-fastvla-turbo-arabic-libero",
+  "author": "hamzabouajila",
+  "url": "https://huggingface.co/hamzabouajila/fastvla-turbo-arabic-libero",
+  "created_at": "2026-11-06T19:20:01.000Z",
+  "updated_at": "2026-11-06T19:20:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "fastvla",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "fastvla",
+    "safetensors",
+    "fastvla_turbo",
+    "robotics",
+    "vla",
+    "openvla",
+    "fastvla-turbo",
+    "flow-matching",
+    "unsloth",
+    "spatial-compression",
+    "lora",
+    "triton",
+    "ar",
+    "en",
+    "dataset:hamzabouajila/ar-libero-10-image",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 204342890,
+  "storage_human": "204 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hamzabouajila/openvla-pusht-arabic · Hugging Face",
+      "url": "https://huggingface.co/hamzabouajila/openvla-pusht-arabic",
+      "snippet": "I trained a 7B-parameter Robot to understand Arabic for $0.48/hr. Stop renting H100s. FastVLA democratizes Vision-Language-Action (VLA) models by enabling real-time robotics reasoning on budget hardware (NVIDIA L4/T4). This model is fine-tuned specifically for the Arabic language, bridging the gap ..."
+    },
+    {
+      "title": "GitHub - BouajilaHamza/fastvla: This is project for faster optimized ...",
+      "url": "https://github.com/BouajilaHamza/FastVLA",
+      "snippet": "This is project for faster optimized VLA training and fine-tuning, mainly for limited resources environment - BouajilaHamza/fastvla"
+    }
+  ]
+}

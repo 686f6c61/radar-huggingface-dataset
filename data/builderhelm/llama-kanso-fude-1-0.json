@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "BuilderHelm/Llama-Kanso-Fude-1.0",
+  "slug": "builderhelm-llama-kanso-fude-1-0",
+  "author": "BuilderHelm",
+  "url": "https://huggingface.co/BuilderHelm/Llama-Kanso-Fude-1.0",
+  "created_at": "2026-11-06T18:39:28.000Z",
+  "updated_at": "2026-11-06T19:36:50.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "onnx",
+  "languages": [
+    "en",
+    "es",
+    "de",
+    "fr",
+    "pt",
+    "it",
+    "nl"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "Kanso",
+    "ZenVoice",
+    "Gemma3",
+    "On-Device",
+    "Dictation",
+    "Text Formatting",
+    "Punctuation Restoration",
+    "Truecasing",
+    "Disfluency Removal",
+    "Built with Llama",
+    "token-classification",
+    "en",
+    "es",
+    "de",
+    "fr",
+    "pt",
+    "it",
+    "nl",
+    "dataset:HuggingFaceTB/smoltalk",
+    "dataset:HuggingFaceFW/fineweb-2",
+    "dataset:facebook/voxpopuli",
+    "base_model:google/gemma-3-270m",
+    "base_model:finetune:google/gemma-3-270m",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 268109714,
+  "parameters_human": "268.1M",
+  "storage_bytes": 1965895268,
+  "storage_human": "2.0 GB",
+  "base_model": "google/gemma-3-270m",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BuilderHelm (BuilderHelm AI) - Hugging Face",
+      "url": "https://huggingface.co/BuilderHelm",
+      "snippet": "Hi, we're BuilderHelm 👋 We're an independent AI studio building small, personalized models and practical tools for everyday work. Our focus is private, on-device AI, efficient inference, and tools that keep people in control of their agents. We build in public and share our work through code, model releases, and reproducible benchmarks."
+    },
+    {
+      "title": "BuilderHelm (BuilderHelm AI) - Hugging Face",
+      "url": "https://huggingface.co/BuilderHelm/models",
+      "snippet": "20 Year Old Student • Indie Developer AI • Code • Ambitious Ideas"
+    }
+  ]
+}

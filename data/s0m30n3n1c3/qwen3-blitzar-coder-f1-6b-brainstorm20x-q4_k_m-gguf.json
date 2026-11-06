@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "S0m30n3N1c3/Qwen3-Blitzar-Coder-F1-6B-Brainstorm20x-Q4_K_M-GGUF",
+  "slug": "s0m30n3n1c3-qwen3-blitzar-coder-f1-6b-brainstorm20x-q4_k_m-gguf",
+  "author": "S0m30n3N1c3",
+  "url": "https://huggingface.co/S0m30n3N1c3/Qwen3-Blitzar-Coder-F1-6B-Brainstorm20x-Q4_K_M-GGUF",
+  "created_at": "2026-11-06T20:24:08.000Z",
+  "updated_at": "2026-11-06T20:24:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "merge",
+    "programming",
+    "code generation",
+    "code",
+    "coding",
+    "coder",
+    "chat",
+    "brainstorm",
+    "qwen",
+    "qwen3",
+    "qwencoder",
+    "brainstorm20x",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "en",
+    "base_model:DavidAU/Qwen3-Blitzar-Coder-F1-6B-Brainstorm20x",
+    "base_model:quantized:DavidAU/Qwen3-Blitzar-Coder-F1-6B-Brainstorm20x",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5940153600,
+  "parameters_human": "5.94B",
+  "storage_bytes": 3640209440,
+  "storage_human": "3.6 GB",
+  "base_model": "DavidAU/Qwen3-Blitzar-Coder-F1-6B-Brainstorm20x",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3-Blitzar-Coder-F1-6B-Brainstorm20x - Hugging Face",
+      "url": "https://huggingface.co/DavidAU/Qwen3-Blitzar-Coder-F1-6B-Brainstorm20x",
+      "snippet": "Qwen3-Blitzar-Coder-F1-6B-Brainstorm20x This repo contains the full precision source code, in \"safe tensors\" format to generate GGUFs, GPTQ, EXL2, AWQ, HQQ and other formats."
+    },
+    {
+      "title": "Qwen3-Blitzar-Coder-F1-6B-Brainstorm20x-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3-Blitzar-Coder-F1-6B-Brainstorm20x-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke's READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    }
+  ]
+}

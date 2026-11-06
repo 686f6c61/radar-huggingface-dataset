@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "timesmith/gemma-4-31B-it-qat-oQ4e-mtp",
+  "slug": "timesmith-gemma-4-31b-it-qat-oq4e-mtp",
+  "author": "timesmith",
+  "url": "https://huggingface.co/timesmith/gemma-4-31B-it-qat-oQ4e-mtp",
+  "created_at": "2026-11-06T14:21:09.000Z",
+  "updated_at": "2026-11-06T14:23:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "oq",
+    "quantized",
+    "mtp",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31742607472,
+  "parameters_human": "31.74B",
+  "storage_bytes": 19296679169,
+  "storage_human": "19.3 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-4-31B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-31B",
+      "snippet": "Transparency and Accountability This model card summarizes details on the models' architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem. Risks identified and ..."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    }
+  ]
+}

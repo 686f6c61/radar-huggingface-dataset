@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "maritaca-ai/S5-nano-FP8",
+  "slug": "maritaca-ai-s5-nano-fp8",
+  "author": "maritaca-ai",
+  "url": "https://huggingface.co/maritaca-ai/S5-nano-FP8",
+  "created_at": "2026-11-02T14:31:09.000Z",
+  "updated_at": "2026-11-02T17:31:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "pt",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "pt",
+    "en",
+    "base_model:maritaca-ai/S5-nano",
+    "base_model:quantized:maritaca-ai/S5-nano",
+    "license:apache-2.0",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 5660475878,
+  "storage_human": "5.7 GB",
+  "base_model": "maritaca-ai/S5-nano",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

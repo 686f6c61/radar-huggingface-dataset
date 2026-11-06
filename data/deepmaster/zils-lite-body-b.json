@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "deepmaster/zils-lite-body-b",
+  "slug": "deepmaster-zils-lite-body-b",
+  "author": "deepmaster",
+  "url": "https://huggingface.co/deepmaster/zils-lite-body-b",
+  "created_at": "2026-11-06T18:44:55.000Z",
+  "updated_at": "2026-11-06T18:45:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1706027688,
+  "storage_human": "1.7 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bmars8218/zils-lite-body-2 · Hugging Face",
+      "url": "https://huggingface.co/bmars8218/zils-lite-body-2",
+      "snippet": "zils-lite-body-2 A soup-pool body (language and vision weights) for the d3-lite pool of Zils (Bittensor subnet 127). It is evaluated on the pool's pinned chassis; the chassis supplies the answer layer, prompt and runtime."
+    },
+    {
+      "title": "GitHub - ooo-hq/zils-web: Zils decision-model website, research ...",
+      "url": "https://github.com/ooo-hq/zils-web",
+      "snippet": "The Next.js website for Zils decision models, public research, the inference playground, and the experimental customer training dashboard. The intended production domain is https://zils.ai. The model and subnet implementation lives in ooo-hq/zils. The Fez chat application remains a separate project ..."
+    }
+  ]
+}

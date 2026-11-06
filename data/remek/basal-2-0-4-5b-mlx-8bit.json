@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Remek/basal-2.0-4.5B-MLX-8bit",
+  "slug": "remek-basal-2-0-4-5b-mlx-8bit",
+  "author": "Remek",
+  "url": "https://huggingface.co/Remek/basal-2.0-4.5B-MLX-8bit",
+  "created_at": "2026-10-12T17:28:53.000Z",
+  "updated_at": "2026-11-06T14:18:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "pl",
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "typed-decisions",
+    "decision-making",
+    "classification",
+    "calibration",
+    "polish",
+    "decision-model",
+    "text-generation",
+    "conversational",
+    "pl",
+    "en",
+    "base_model:speakleash/Bielik-4.5B-v3.0-Instruct",
+    "base_model:quantized:speakleash/Bielik-4.5B-v3.0-Instruct",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 381,
+  "trending_score": 0,
+  "parameters": 4757260288,
+  "parameters_human": "4.76B",
+  "storage_bytes": 5179517796,
+  "storage_human": "5.2 GB",
+  "base_model": "speakleash/Bielik-4.5B-v3.0-Instruct",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "basal-2.0 - a Remek Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Remek/basal-20",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from Remek"
+    },
+    {
+      "title": "README.md · Remek/basal-2.0-4.5B-MLX-8bit at main - Hugging Face",
+      "url": "https://huggingface.co/Remek/basal-2.0-4.5B-MLX-8bit/blob/main/README.md",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

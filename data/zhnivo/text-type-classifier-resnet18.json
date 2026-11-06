@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Zhnivo/text-type-classifier-resnet18",
+  "slug": "zhnivo-text-type-classifier-resnet18",
+  "author": "Zhnivo",
+  "url": "https://huggingface.co/Zhnivo/text-type-classifier-resnet18",
+  "created_at": "2026-08-04T19:23:32.000Z",
+  "updated_at": "2026-11-06T15:02:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [
+    "ru",
+    "be",
+    "en",
+    "pl",
+    "de"
+  ],
+  "tags": [
+    "pytorch",
+    "resnet18",
+    "text-classification",
+    "handwritten",
+    "printed",
+    "document-analysis",
+    "htr",
+    "ocr",
+    "image-classification",
+    "ru",
+    "be",
+    "en",
+    "pl",
+    "de",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 89582166,
+  "storage_human": "90 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VItaldob/text-type-classifier-resnet18 · Hugging Face",
+      "url": "https://huggingface.co/VItaldob/text-type-classifier-resnet18",
+      "snippet": "A lightweight binary image classifier that distinguishes handwritten from printed text on cropped text-line images. Built as a preprocessing step for an HTR (Handwritten Text Recognition) pipeline, where scans mix typewritten/printed content with handwriting, and each type needs to be routed to a ..."
+    },
+    {
+      "title": "resnet18_text_classifier_final.pth · VItaldob/text-type-classifier ...",
+      "url": "https://huggingface.co/VItaldob/text-type-classifier-resnet18/blob/main/resnet18_text_classifier_final.pth",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

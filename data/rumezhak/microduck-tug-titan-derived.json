@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "rumezhak/microduck-tug-titan-derived",
+  "slug": "rumezhak-microduck-tug-titan-derived",
+  "author": "rumezhak",
+  "url": "https://huggingface.co/rumezhak/microduck-tug-titan-derived",
+  "created_at": "2026-11-06T14:35:18.000Z",
+  "updated_at": "2026-11-06T14:35:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "microduck-slot:walk",
+    "base_model:azukiq/microduck-titan-v1",
+    "base_model:finetune:azukiq/microduck-titan-v1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 895932,
+  "storage_human": "895932 B",
+  "base_model": "azukiq/microduck-titan-v1",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face is selling a cute $399 open source duck robot, Microduck",
+      "url": "https://techcrunch.com/2026/08/27/hugging-face-is-selling-a-cute-399-open-source-duck-robot-microduck/",
+      "snippet": "Hugging Face unveiled the Microduck on Thursday, a cute little duck-like robot that sells for $399 — and ships before Christmas. Clem Delangue, CEO of Hugging Face, said the Microduck is an ..."
+    },
+    {
+      "title": "rumezhak/microduck-tug-a1-seed5 · Hugging Face",
+      "url": "https://huggingface.co/rumezhak/microduck-tug-a1-seed5",
+      "snippet": "How to use rumezhak/microduck-tug-a1-seed5 with Microduck: # Replace SLOT with the slot specified in the model card (walk, stand, sitstand, ground_pick, kick_left, kick_right, roulade). sudo robotctl policy load SLOT rumezhak/microduck-tug-a1-seed5 ..."
+    }
+  ]
+}

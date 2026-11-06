@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "espnet/owsm_v4_base_102M",
+  "slug": "espnet-owsm_v4_base_102m",
+  "author": "espnet",
+  "url": "https://huggingface.co/espnet/owsm_v4_base_102M",
+  "created_at": "2025-02-06T05:01:43.000Z",
+  "updated_at": "2026-11-06T13:29:09.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "espnet",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "espnet",
+    "audio",
+    "automatic-speech-recognition",
+    "speech-translation",
+    "language-identification",
+    "multilingual",
+    "dataset:espnet/yodas_owsmv4",
+    "arxiv:2406.09282",
+    "arxiv:2401.16658",
+    "arxiv:2309.13876",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 181,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 409019144,
+  "storage_human": "409 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "espnet/owsm_v4_base_102M · Hugging Face",
+      "url": "https://huggingface.co/espnet/owsm_v4_base_102M",
+      "snippet": "Open Whisper-style Speech Model (OWSM) OWSM aims to develop fully open speech foundation models using publicly available data and open-source toolkits, including ESPnet. Inference examples can be found on our project page. The Gradio demo is here. OWSM v4 is the latest version in the OWSM series, which significantly outperforms OWSM v3.1 in LID and multilingual ASR. Additionally, OWSM v4 ..."
+    },
+    {
+      "title": "Update README.md · espnet/owsm_v4_base_102M at 1652139",
+      "url": "https://huggingface.co/espnet/owsm_v4_base_102M/commit/1652139ae2605c13b50e1c17d31e0be85aa05c7c",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

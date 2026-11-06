@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Nidhal101/MiniMax-M3.1-Flash-CLEER-k4",
+  "slug": "nidhal101-minimax-m3-1-flash-cleer-k4",
+  "author": "Nidhal101",
+  "url": "https://huggingface.co/Nidhal101/MiniMax-M3.1-Flash-CLEER-k4",
+  "created_at": "2026-11-06T18:28:28.000Z",
+  "updated_at": "2026-11-06T18:35:48.000Z",
+  "license": "minimax-community",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "minimax_m3_vl",
+    "custom_code",
+    "base_model:MiniMaxAI/MiniMax-M3.1-Flash",
+    "base_model:quantized:MiniMaxAI/MiniMax-M3.1-Flash",
+    "license:other",
+    "mxfp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20341371620,
+  "parameters_human": "20.34B",
+  "storage_bytes": 27112774098,
+  "storage_human": "27.1 GB",
+  "base_model": "MiniMaxAI/MiniMax-M3.1-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "minimax-m3.1-flash Model by Minimaxai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/minimaxai/minimax-m3.1-flash",
+      "snippet": "MiniMax-M3.1-Flash is a native multimodal mixture-of-experts model for coding, agentic workflows, computer use, and cybersecurity."
+    },
+    {
+      "title": "MiniMax M3.1 Flash — Fast, Low-Cost Agent Model | AI/TLDR",
+      "url": "https://ai-tldr.dev/models/minimax-m3-1-flash/",
+      "snippet": "MiniMax M3.1 Flash is the general release of MiniMax's M3.1 Flash model, announced on October 19, 2026. It follows MiniMax M3.1-Flash-Preview, which debuted in MiniMax Code on September 28, 2026 and was limited to the M Plan subscription."
+    }
+  ]
+}

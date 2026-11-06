@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "tapiocaTakeshi/apqb-bloch-filter-qwen3.8",
+  "slug": "tapiocatakeshi-apqb-bloch-filter-qwen3-8",
+  "author": "tapiocaTakeshi",
+  "url": "https://huggingface.co/tapiocaTakeshi/apqb-bloch-filter-qwen3.8",
+  "created_at": "2026-11-06T12:48:30.000Z",
+  "updated_at": "2026-11-06T12:48:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "qbnn",
+    "apqb",
+    "bloch-sphere",
+    "research-code",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alibaba Previews Qwen3.8-Max, a 2.4 Trillion-Parameter Multimodal Model ...",
+      "url": "https://www.marktechpost.com/2026/07/19/alibaba-previews-qwen3-8-max-a-2-4-trillion-parameter-multimodal-model-days-after-moonshots-kimi-k3-open-weight-launch/",
+      "snippet": "On July 19, Alibaba’s Qwen team previewed Qwen3.8-Max-Preview, the next flagship in the Qwen family. The research team describes it as a 2.4 trillion-parameter model, ‘second only to Fable 5’ among the systems it benchmarked. The preview is live now. The benchmark table, model card, and license are not. The July 19th 2026 announcement landed during the World AI Conference (WAIC) in ..."
+    }
+  ]
+}

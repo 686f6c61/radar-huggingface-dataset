@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Noname010101/media-extras",
+  "slug": "noname010101-media-extras",
+  "author": "Noname010101",
+  "url": "https://huggingface.co/Noname010101/media-extras",
+  "created_at": "2026-11-06T15:12:58.000Z",
+  "updated_at": "2026-11-06T15:13:58.000Z",
+  "license": "mixed-see-table",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "wan2.1",
+    "video-generation",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27823144347,
+  "storage_human": "27.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Hub for Image, Video & Audio | Media.io",
+      "url": "https://www.media.io/ai/models",
+      "snippet": "Media.io AI Model Hub Media.io brings leading AI models together in one online workflow, so you can create, edit, and compare results without jumping between different tools. Choose from models for AI video generation, image creation, photo editing, music, sound effects, lip sync, translation, and more — then pick the one that best fits your story, brand, budget, or creative style."
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "jrubiosainz/microduck-tug-fin5-7554b4e8",
+  "slug": "jrubiosainz-microduck-tug-fin5-7554b4e8",
+  "author": "jrubiosainz",
+  "url": "https://huggingface.co/jrubiosainz/microduck-tug-fin5-7554b4e8",
+  "created_at": "2026-11-06T13:35:31.000Z",
+  "updated_at": "2026-11-06T13:35:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "microduck-arena",
+    "base_model:RSanchez996/microduck-tug-competitive-v1",
+    "base_model:finetune:RSanchez996/microduck-tug-competitive-v1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 899421,
+  "storage_human": "899421 B",
+  "base_model": "RSanchez996/microduck-tug-competitive-v1",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jrubiosainz/microduck-tug-h5b-3976f431 · Hugging Face",
+      "url": "https://huggingface.co/jrubiosainz/microduck-tug-h5b-3976f431",
+      "snippet": "How to use jrubiosainz/microduck-tug-h5b-3976f431 with Microduck: # Replace SLOT with the slot specified in the model card (walk, stand, sitstand, ground_pick, kick ..."
+    },
+    {
+      "title": "GitHub - jrubiosainz/microduck",
+      "url": "https://github.com/jrubiosainz/microduck",
+      "snippet": "Contribute to jrubiosainz/microduck development by creating an account on GitHub."
+    }
+  ]
+}

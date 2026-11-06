@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "DarkGenius01/Intelligence_OS_1p5B-GGUF",
+  "slug": "darkgenius01-intelligence_os_1p5b-gguf",
+  "author": "DarkGenius01",
+  "url": "https://huggingface.co/DarkGenius01/Intelligence_OS_1p5B-GGUF",
+  "created_at": "2026-11-06T14:16:04.000Z",
+  "updated_at": "2026-11-06T14:16:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "mixture-of-experts",
+    "moe",
+    "base_model:quantized:shreyansh-programmer/Intelligence_OS_1p5B",
+    "text-generation",
+    "en",
+    "base_model:shreyansh-programmer/Intelligence_OS_1p5B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 718505984,
+  "parameters_human": "718.5M",
+  "storage_bytes": 1885575648,
+  "storage_human": "1.9 GB",
+  "base_model": "shreyansh-programmer/Intelligence_OS_1p5B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

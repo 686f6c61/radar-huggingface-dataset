@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "hencohen83/sherpa-onnx-qnn-android",
+  "slug": "hencohen83-sherpa-onnx-qnn-android",
+  "author": "hencohen83",
+  "url": "https://huggingface.co/hencohen83/sherpa-onnx-qnn-android",
+  "created_at": "2026-11-06T18:52:21.000Z",
+  "updated_at": "2026-11-06T18:52:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "sherpa-onnx",
+    "android",
+    "qnn",
+    "qualcomm",
+    "npu",
+    "aar",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 49268898,
+  "storage_human": "49 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qualcomm NPU (QNN, HTP) — sherpa 1.3 documentation",
+      "url": "https://k2-fsa.github.io/sherpa/onnx/qnn/index.html",
+      "snippet": "Qualcomm NPU (QNN, HTP) This section explains how to run sherpa-onnx on a Qualcomm NPU using QNN with the HTP backend. You’ll need a device equipped with a Qualcomm SM8350 processor or a newer, more powerful one, such as the SM8450, SM8475, SM8550, SM8650, SM8750, SM8850, and so on."
+    },
+    {
+      "title": "Android — sherpa 1.3 documentation - GitHub Pages",
+      "url": "https://k2-fsa.github.io/sherpa/onnx/android/index.html",
+      "snippet": "Android In this section, we describe how to build an Android app with sherpa-onnx."
+    }
+  ]
+}

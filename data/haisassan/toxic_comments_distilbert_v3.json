@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "haisassan/toxic_comments_distilbert_v3",
+  "slug": "haisassan-toxic_comments_distilbert_v3",
+  "author": "haisassan",
+  "url": "https://huggingface.co/haisassan/toxic_comments_distilbert_v3",
+  "created_at": "2026-11-06T17:03:26.000Z",
+  "updated_at": "2026-11-06T17:03:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832560,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "haisassan/toxic-comment-distilbert · Hugging Face",
+      "url": "https://huggingface.co/haisassan/toxic-comment-distilbert",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "haisassan (Haise S) - Hugging Face",
+      "url": "https://huggingface.co/haisassan",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 23 days ago ... published a model 23 days ago"
+    }
+  ]
+}

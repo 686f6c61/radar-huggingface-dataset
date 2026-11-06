@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "MiaoR1Zibing/MOSS-Image-heal-20261106-by-KBlueLeaf",
+  "slug": "miaor1zibing-moss-image-heal-20261106-by-kblueleaf",
+  "author": "MiaoR1Zibing",
+  "url": "https://huggingface.co/MiaoR1Zibing/MOSS-Image-heal-20261106-by-KBlueLeaf",
+  "created_at": "2026-11-06T13:45:02.000Z",
+  "updated_at": "2026-11-06T13:45:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "moss-image",
+    "fp16",
+    "comfyui",
+    "text-to-image",
+    "arxiv:2407.06723",
+    "base_model:OpenMOSS-Team/MOSS-Image-Base",
+    "base_model:finetune:OpenMOSS-Team/MOSS-Image-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5082308624,
+  "parameters_human": "5.08B",
+  "storage_bytes": 35908472744,
+  "storage_human": "35.9 GB",
+  "base_model": "OpenMOSS-Team/MOSS-Image-Base",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KBlueLeaf/MOSS-Image-heal · Hugging Face",
+      "url": "https://huggingface.co/KBlueLeaf/MOSS-Image-heal",
+      "snippet": "MOSS-Image-heal A full finetune of MOSS-Image-Base with a healed residual stream: the largest stream value is 3,083 (base: 58,411; fp16 max: 65,504), the stream RMS is 7.5x lower, and every weight element is within 64x its tensor's RMS (base: 349 elements above). The outputs stay close to the base model: flow loss 0.4289 vs 0.4280, velocity cosine 0.9983 on the probe set below. The transformer ..."
+    },
+    {
+      "title": "GitHub - OpenMOSS/MOSS-Image: Official repository for MOSS-Image, a 5B ...",
+      "url": "https://github.com/OpenMOSS/MOSS-Image",
+      "snippet": "MOSS-Image-FP16-fixed by KBlueLeaf provides FP16-compatible transformer weights for MOSS-Image-Base and MOSS-Image-SFT, using residual-stream rescaling to improve overflow headroom. Diffusers and ComfyUI formats are available; see the model card for loading instructions and adapter compatibility."
+    }
+  ]
+}

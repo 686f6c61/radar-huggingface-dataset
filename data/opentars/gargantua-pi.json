@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "OpenTARS/Gargantua-Pi",
+  "slug": "opentars-gargantua-pi",
+  "author": "OpenTARS",
+  "url": "https://huggingface.co/OpenTARS/Gargantua-Pi",
+  "created_at": "2026-11-06T20:33:32.000Z",
+  "updated_at": "2026-11-06T20:40:53.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "llama.cpp",
+  "languages": [
+    "pt",
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "gemma3",
+    "function-calling",
+    "tool-use",
+    "tiny",
+    "local",
+    "cpu",
+    "pt",
+    "en",
+    "base_model:google/functiongemma-270m-it",
+    "base_model:quantized:google/functiongemma-270m-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 268098176,
+  "parameters_human": "268.1M",
+  "storage_bytes": 299760864,
+  "storage_human": "300 MB",
+  "base_model": "google/functiongemma-270m-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - project-opentars/OpenTARS: Local AI assistant for Linux. Opens ...",
+      "url": "https://github.com/project-opentars/OpenTARS",
+      "snippet": "Local AI assistant for Linux. Opens apps, clicks buttons by name, types, searches the web, sees the screen and runs commands. 100% on your machine through Ollama, with its own trained model, Gargantua. - project-opentars/OpenTARS"
+    },
+    {
+      "title": "ProjectOpenTARS/Gargantua",
+      "url": "https://ollama.com/ProjectOpenTARS/Gargantua",
+      "snippet": "The official AI of openTARS, the 100% local assistant that controls your Linux desktop. Gargantua is a Qwen3 4B fine-tuned for one job: using openTARS tools the right way, on the first try."
+    }
+  ]
+}

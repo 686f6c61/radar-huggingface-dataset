@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-viggle-remake-swap-pruned-int8-convrot.safetensors-unet",
+  "slug": "runninghubai-rh-viggle-remake-swap-pruned-int8-convrot-safetensors-unet",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-viggle-remake-swap-pruned-int8-convrot.safetensors-unet",
+  "created_at": "2026-11-06T12:36:17.000Z",
+  "updated_at": "2026-11-06T12:48:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "unet",
+    "text-to-video",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20971045026,
+  "storage_human": "21.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Viggle-Animate - Hugging Face",
+      "url": "https://huggingface.co/Viggle/Viggle-Animate",
+      "snippet": "Viggle / Viggle-Animate like 1 Follow Viggle AI 1 Video-to-Video Diffusers Safetensors video-editing character-replacement distillation dmd License:minimax-h3-community-license Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "diffusion_models/minimax_h3_ref2va_viggle_pruned_int8_convrot ...",
+      "url": "https://huggingface.co/drbaph/Viggle-Animate-ComfyUI/blame/main/diffusion_models/minimax_h3_ref2va_viggle_pruned_int8_convrot.safetensors",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

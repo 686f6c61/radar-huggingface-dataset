@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "totz07/pneumonia-detector-densenet121",
+  "slug": "totz07-pneumonia-detector-densenet121",
+  "author": "totz07",
+  "url": "https://huggingface.co/totz07/pneumonia-detector-densenet121",
+  "created_at": "2026-11-06T18:40:07.000Z",
+  "updated_at": "2026-11-06T18:41:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31257719,
+  "storage_human": "31 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pneumonia Detection from Chest X-rays (CNN - DenseNet121)",
+      "url": "https://github.com/moazabeer/Pneumonia-Detection-from-Chest-X-rays-CNN---DenseNet121-/blob/main/README.md",
+      "snippet": "This project provides a sophisticated medical AI solution for the automated detection of Pneumonia from chest X-ray images. Utilizing the DenseNet121 architecture, known for its dense connectivity and efficient feature propagation, the model assists healthcare professionals by accurately classifying scans into \"Normal\" or \"Pneumonia\" categories."
+    },
+    {
+      "title": "GitHub - tamal0707/Phenumonia-detection-model-: Developed an AI-based ...",
+      "url": "https://github.com/tamal0707/Phenumonia-detection-model-",
+      "snippet": "Developed an AI-based Pneumonia Detection system using Deep Learning and DenseNet121 transfer learning to classify chest X-ray images as Normal or Pneumonia. Applied data augmentation and fine-tuning to improve model performance."
+    }
+  ]
+}

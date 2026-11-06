@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "iarmourgarb/ArCHer",
+  "slug": "iarmourgarb-archer",
+  "author": "iarmourgarb",
+  "url": "https://huggingface.co/iarmourgarb/ArCHer",
+  "created_at": "2026-11-06T18:04:26.000Z",
+  "updated_at": "2026-11-06T18:30:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "protein-language-model",
+    "remote-homology",
+    "homology-search",
+    "homology-retrieval",
+    "base_model:Rostlab/prot_t5_xl_half_uniref50-enc",
+    "base_model:finetune:Rostlab/prot_t5_xl_half_uniref50-enc",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1208040140,
+  "storage_human": "1.2 GB",
+  "base_model": "Rostlab/prot_t5_xl_half_uniref50-enc",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Archer - Honkai: Star Rail - V1 - Free AI LORA | TensorHub Art",
+      "url": "https://tensorhub.art/models/1006989570329333082",
+      "snippet": "Download Archer - Honkai: Star Rail - free LORA Illustrious AI model on TENSORHUB ART. ILLUSTRIOUS, ARCHER, HONKAI STAR RAIL. By Lineko"
+    },
+    {
+      "title": "Archer » VRModels - 3D Models for VR / AR and CG projects1",
+      "url": "https://vrmodels.store/avatars/25815-archer.html",
+      "snippet": "Model Archer (free), Platform PC, Full body Yes, Nsfw: Yes, VRModels - 3D Models for VR / AR and CG projects, Purchase includes: Quest + PC unity packages, Full SPP files for clothing and body, and a PSD file for the status tag :)Toggles & FeaturesEars move with facial gestures to add more to each expressionThree textures included with the package (Grey Wolf, Fox, and Striped Yeen styles)Hair ..."
+    }
+  ]
+}

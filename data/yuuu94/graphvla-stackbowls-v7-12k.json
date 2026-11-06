@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "yuuu94/GraphVLA-StackBowls-V7-12k",
+  "slug": "yuuu94-graphvla-stackbowls-v7-12k",
+  "author": "yuuu94",
+  "url": "https://huggingface.co/yuuu94/GraphVLA-StackBowls-V7-12k",
+  "created_at": "2026-11-06T13:15:10.000Z",
+  "updated_at": "2026-11-06T13:24:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "robotics",
+    "vision-language-action",
+    "graphvla",
+    "real-world",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9224200419,
+  "storage_human": "9.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yuuu94/GraphVLA-StackBowls-V7-4k · Hugging Face",
+      "url": "https://huggingface.co/yuuu94/GraphVLA-StackBowls-V7-4k",
+      "snippet": "GraphVLA V7 Stack Bowls — 4,000 steps Real-world dual-arm Stack Bowls model checkpoint at training step 4,000."
+    },
+    {
+      "title": "yuuu94/GraphVLA-V7-31527 · Hugging Face",
+      "url": "https://huggingface.co/yuuu94/GraphVLA-V7-31527",
+      "snippet": "GraphVLA V7 — step 31,527 Model and full four-rank DeepSpeed ZeRO-2 resume state, saved during an explicit graceful pause. V7 uses mask-coverage-weighted visual patch pooling. Requires matching custom V7 code; this is not an AutoModel checkpoint. No evaluation performance claim is made by this upload."
+    }
+  ]
+}

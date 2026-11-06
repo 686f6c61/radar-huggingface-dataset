@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "ankitanqm/research-audio-visual-learning",
+  "slug": "ankitanqm-research-audio-visual-learning",
+  "author": "ankitanqm",
+  "url": "https://huggingface.co/ankitanqm/research-audio-visual-learning",
+  "created_at": "2026-11-06T16:24:17.000Z",
+  "updated_at": "2026-11-06T16:24:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "audio-visual-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Audio-Visual Intelligence in Large Foundation Models",
+      "url": "https://www.microsoft.com/en-us/research/publication/audio-visual-intelligence-in-large-foundation-models/",
+      "snippet": "Audio-Visual Intelligence (AVI) has emerged as a central frontier in artificial intelligence, bridging auditory and visual modalities to enable machines that can perceive, generate, and interact in the multimodal real world. In the era of large foundation models, joint modeling of audio and vision has become increasingly crucial, i.e., not only for understanding but also […]"
+    },
+    {
+      "title": "AI learns how vision and sound are connected, without human ...",
+      "url": "https://news.mit.edu/2025/ai-learns-how-vision-and-sound-are-connected-without-human-intervention-0522",
+      "snippet": "AI learns how vision and sound are connected, without human intervention This new machine-learning model can match corresponding audio and visual data, which could someday help robots interact in the real world."
+    }
+  ]
+}

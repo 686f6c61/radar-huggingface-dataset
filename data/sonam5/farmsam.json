@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Sonam5/FarmSAM",
+  "slug": "sonam5-farmsam",
+  "author": "Sonam5",
+  "url": "https://huggingface.co/Sonam5/FarmSAM",
+  "created_at": "2026-11-06T15:56:39.000Z",
+  "updated_at": "2026-11-06T16:00:29.000Z",
+  "license": "sam-license",
+  "license_family": "unknown",
+  "pipeline_tag": "mask-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "knowledge-distillation",
+    "feature-distillation",
+    "sam3",
+    "video-object-tracking",
+    "multi-object-tracking",
+    "tinyvit",
+    "livestock",
+    "pigs",
+    "dairy-calves",
+    "arxiv:2604.27128",
+    "mask-generation",
+    "dataset:Sonam5/Calf-Play-Behavior-Dataset",
+    "base_model:timm/tiny_vit_21m_512.dist_in22k_ft_in1k",
+    "base_model:finetune:timm/tiny_vit_21m_512.dist_in22k_ft_in1k",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5208054434,
+  "storage_human": "5.2 GB",
+  "base_model": "timm/tiny_vit_21m_512.dist_in22k_ft_in1k",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sonam5 (Wangchuk) - Hugging Face",
+      "url": "https://huggingface.co/Sonam5",
+      "snippet": "User profile of Wangchuk on Hugging Face Your dairy-domain expert ready to help Sonam5 Feb 1"
+    },
+    {
+      "title": "Sonam5/Dairy_Intelligence at main - Hugging Face",
+      "url": "https://huggingface.co/spaces/Sonam5/Dairy_Intelligence/tree/main",
+      "snippet": "main Dairy_Intelligence Ctrl+K Ctrl+K 2 contributors History:10 commits Sonam5 Update app.py 6aac687 verified3 months ago .gitattributes Safe 1.52 kBDuplicate from gradio-templates/chatbot3 months ago README.md Safe 437 Bytesinitial commit3 months ago app.py Safe 3.12 kBUpdate app.py3 months ago requirements.txt Safe 39 BytesUpdate app.py and requirements.txt with Databricks endpoint ..."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "SAMSONTSENG/mocov3-multitask-experiments",
+  "slug": "samsontseng-mocov3-multitask-experiments",
+  "author": "SAMSONTSENG",
+  "url": "https://huggingface.co/SAMSONTSENG/mocov3-multitask-experiments",
+  "created_at": "2026-11-06T20:40:05.000Z",
+  "updated_at": "2026-11-06T20:40:11.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nathandupont/mocov3-multitask · Hugging Face",
+      "url": "https://huggingface.co/nathandupont/mocov3-multitask",
+      "snippet": "Mocov3 for Multitask Overview This repository is a compact, custom PyTorch implementation of Mocov3 for Multitask. The tiny configuration is intended for code review, smoke tests, and small controlled experiments rather than as a production-ready pretrained release."
+    },
+    {
+      "title": "Shtanaka/multitask · Hugging Face",
+      "url": "https://huggingface.co/Shtanaka/multitask",
+      "snippet": "Overview Working implementation of Mocov3 for Multitask using a tiny configuration. The repository focuses on transparent code and repeatable smoke tests; benchmark claims are deliberately omitted."
+    }
+  ]
+}

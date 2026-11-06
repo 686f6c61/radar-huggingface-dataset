@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen2.5-Coder-0.5B-Instruct-Uncensored-GGUF",
+  "slug": "mradermacher-qwen2-5-coder-0-5b-instruct-uncensored-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen2.5-Coder-0.5B-Instruct-Uncensored-GGUF",
+  "created_at": "2026-11-06T13:35:32.000Z",
+  "updated_at": "2026-11-06T13:39:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "code",
+    "codeqwen",
+    "chat",
+    "qwen",
+    "qwen-coder",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "reproducible",
+    "en",
+    "base_model:SelfCode/Qwen2.5-Coder-0.5B-Instruct-Uncensored",
+    "base_model:quantized:SelfCode/Qwen2.5-Coder-0.5B-Instruct-Uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 5400190336,
+  "storage_human": "5.4 GB",
+  "base_model": "SelfCode/Qwen2.5-Coder-0.5B-Instruct-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-Coder-0.5B-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5-Coder-7B-Instruct-abliterated-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen2.5-Coder-7B-Instruct-abliterated-GGUF",
+      "snippet": "mradermacher / Qwen2.5-Coder-7B-Instruct-abliterated-GGUF like 4 Transformers GGUF English chat abliterated uncensored conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

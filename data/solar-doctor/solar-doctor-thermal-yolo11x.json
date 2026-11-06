@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "solar-doctor/solar-doctor-thermal-yolo11x",
+  "slug": "solar-doctor-solar-doctor-thermal-yolo11x",
+  "author": "solar-doctor",
+  "url": "https://huggingface.co/solar-doctor/solar-doctor-thermal-yolo11x",
+  "created_at": "2026-11-06T14:13:18.000Z",
+  "updated_at": "2026-11-06T14:13:24.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "object-detection",
+    "thermal",
+    "infrared",
+    "solar",
+    "photovoltaic",
+    "yolo11",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 114395865,
+  "storage_human": "114 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ALLO SOLAR ® - Leader N°1 du photovoltaïque",
+      "url": "https://allo.solar/",
+      "snippet": "Optez pour l’énergie solaire avec ALLO SOLAR : solutions photovoltaïques sur mesure, performance optimale, installation DIY et …"
+    },
+    {
+      "title": "Solarchoc : Devenez producteur de vos économies d'énergie !",
+      "url": "https://www.solarchoc.com/",
+      "snippet": "Solarchoc c'est une large gamme de solutions solaires pour l’autoconsommation : Kits solaires de haute qualité pour une énergie …"
+    },
+    {
+      "title": "YOLO11m Model by Raman Deep - platform.ultralytics.com",
+      "url": "https://platform.ultralytics.com/raman-deep/solar1v/yolo11m",
+      "snippet": "YOLO11m model from the Solar1v project by Raman Deep. View training metrics, predictions, and deploy on Ultralytics Platform."
+    },
+    {
+      "title": "Solar Facility",
+      "url": "https://solarfacility.fr/",
+      "snippet": "Solar Facility Le confort du solaire, enfin accessible grâce à l'abonnement. À partir de 71 € TTC / mois, sans apport, sans crédit, …"
+    }
+  ]
+}

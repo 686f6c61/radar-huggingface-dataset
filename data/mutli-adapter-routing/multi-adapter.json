@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "mutli-adapter-routing/multi-adapter",
+  "slug": "mutli-adapter-routing-multi-adapter",
+  "author": "mutli-adapter-routing",
+  "url": "https://huggingface.co/mutli-adapter-routing/multi-adapter",
+  "created_at": "2026-11-06T12:50:43.000Z",
+  "updated_at": "2026-11-06T12:54:49.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "joblib",
+    "safetensors",
+    "lora",
+    "qlora",
+    "ties-merging",
+    "model-routing",
+    "llama-3.2",
+    "math",
+    "code",
+    "text-generation",
+    "base_model:meta-llama/Llama-3.2-3B",
+    "base_model:adapter:meta-llama/Llama-3.2-3B",
+    "license:llama3.2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 601903573,
+  "storage_human": "602 MB",
+  "base_model": "meta-llama/Llama-3.2-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Multi-Adapter Model Routing · AI-as-Code for multi-agent pipelines",
+      "url": "https://re-cinq.github.io/wave/guide/model-routing.html",
+      "snippet": "Multi-Adapter Model Routing Route different LLM models to different pipeline steps for cost optimization and provider resilience. Model Tier System Wave classifies pipeline steps into three complexity tiers based on persona and step characteristics:"
+    },
+    {
+      "title": "Route to Multiple Models and LoRA Adapters | llm-d",
+      "url": "https://llm-d.ai/docs/dev/operations/traffic/multi-model-routing",
+      "snippet": "Multi-Model Routing Overview Organizations often need to serve multiple large language models behind a single API endpoint. A chatbot application might use a Qwen model for conversational tasks, while a recommendation system uses DeepSeek for complex reasoning. Each base model may also have multiple Low-Rank Adaptation (LoRA) fine-tuned variants serving different use cases. Traditional path ..."
+    }
+  ]
+}

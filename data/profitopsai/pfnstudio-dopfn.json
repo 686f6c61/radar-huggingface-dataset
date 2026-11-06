@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "ProfitOpsAI/pfnstudio-dopfn",
+  "slug": "profitopsai-pfnstudio-dopfn",
+  "author": "ProfitOpsAI",
+  "url": "https://huggingface.co/ProfitOpsAI/pfnstudio-dopfn",
+  "created_at": "2026-11-06T13:47:40.000Z",
+  "updated_at": "2026-11-06T13:47:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pfnstudio",
+  "languages": [],
+  "tags": [
+    "pfnstudio",
+    "prior-fitted-network",
+    "tabular",
+    "arxiv:2506.06039",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 205636912,
+  "storage_human": "206 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "profitopsai/pfnstudio: Open-source toolkit - GitHub",
+      "url": "https://github.com/profitopsai/pfnstudio",
+      "snippet": "starters/fm-project/ — the starter project scaffold that pfnstudio init copies to create a new project. examples/ — end-to-end scripts and notebooks. 01_linear_regression.py trains a small PFN on the Bayesian linear regression prior in <10 minutes on CPU and verifies that the model matches the closed-form posterior mean."
+    },
+    {
+      "title": "profitopsai (ProfitOps.AI) / Repositories · GitHub",
+      "url": "https://github.com/profitopsai?tab=repositories",
+      "snippet": "pfnstudio Open-source toolkit + marketplace for prior-fitted foundation models (PFNs) Python"
+    }
+  ]
+}

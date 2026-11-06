@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "hencohen83/ivrit-whisper-large-v3-qnn-sm8750",
+  "slug": "hencohen83-ivrit-whisper-large-v3-qnn-sm8750",
+  "author": "hencohen83",
+  "url": "https://huggingface.co/hencohen83/ivrit-whisper-large-v3-qnn-sm8750",
+  "created_at": "2026-11-06T18:58:55.000Z",
+  "updated_at": "2026-11-06T19:05:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "he"
+  ],
+  "tags": [
+    "speech",
+    "asr",
+    "hebrew",
+    "whisper",
+    "sherpa-onnx",
+    "qnn",
+    "qualcomm",
+    "npu",
+    "snapdragon",
+    "automatic-speech-recognition",
+    "he",
+    "base_model:ivrit-ai/whisper-large-v3",
+    "base_model:finetune:ivrit-ai/whisper-large-v3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3277488128,
+  "storage_human": "3.3 GB",
+  "base_model": "ivrit-ai/whisper-large-v3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hencohen83/ivrit-whisper-large-v3-qnn-sm8750 · Hugging Face",
+      "url": "https://huggingface.co/hencohen83/ivrit-whisper-large-v3-qnn-sm8750",
+      "snippet": "Hebrew speech recognition on the Snapdragon 8 Elite (SM8750, Hexagon v79) NPU: ivrit-ai/whisper-large-v3 compiled to QNN context binaries (encoder and decoder) for sherpa-onnx, with QAIRT 2.40.0.251030. Model by ivrit.ai, fine-tuned from OpenAI's Whisper on Hebrew. Licensed Apache-2.0; this ..."
+    },
+    {
+      "title": "ivrit-ai/whisper-large-v3 · Hugging Face",
+      "url": "https://huggingface.co/ivrit-ai/whisper-large-v3",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

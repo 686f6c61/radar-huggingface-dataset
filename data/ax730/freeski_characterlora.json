@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "ax730/FreeSki_CharacterLoRA",
+  "slug": "ax730-freeski_characterlora",
+  "author": "ax730",
+  "url": "https://huggingface.co/ax730/FreeSki_CharacterLoRA",
+  "created_at": "2026-11-06T18:15:56.000Z",
+  "updated_at": "2026-11-06T18:20:59.000Z",
+  "license": "cc",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 201431592,
+  "storage_human": "201 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

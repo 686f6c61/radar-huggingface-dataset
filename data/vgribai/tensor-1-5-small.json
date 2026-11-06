@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "VGribAI/Tensor-1.5-small",
+  "slug": "vgribai-tensor-1-5-small",
+  "author": "VGribAI",
+  "url": "https://huggingface.co/VGribAI/Tensor-1.5-small",
+  "created_at": "2026-11-06T14:16:11.000Z",
+  "updated_at": "2026-11-06T14:31:57.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation",
+    "conversational",
+    "qwen2",
+    "from-scratch",
+    "english",
+    "en",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 50264960,
+  "parameters_human": "50.3M",
+  "storage_bytes": 100719008,
+  "storage_human": "101 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tensor by GribAI",
+      "url": "https://gribai.github.io/tensor-grib/",
+      "snippet": "GribAI is an early-stage startup building the Tensor family of language models. We specialize in distilling large-model capabilities into tiny footprints without breaking output quality."
+    },
+    {
+      "title": "VGribAI (GribAI) - Hugging Face",
+      "url": "https://huggingface.co/VGribAI/models",
+      "snippet": "AI & ML interests We are an early-stage startup building models for the sheer fun of it. Our model lineup is called Tensor."
+    }
+  ]
+}

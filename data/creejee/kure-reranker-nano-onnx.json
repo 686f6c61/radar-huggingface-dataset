@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "CreeJee/KURE-Reranker-nano-ONNX",
+  "slug": "creejee-kure-reranker-nano-onnx",
+  "author": "CreeJee",
+  "url": "https://huggingface.co/CreeJee/KURE-Reranker-nano-ONNX",
+  "created_at": "2026-11-06T13:55:59.000Z",
+  "updated_at": "2026-11-06T13:56:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "transformers.js",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "modernbert",
+    "text-classification",
+    "cross-encoder",
+    "reranker",
+    "text-ranking",
+    "ko",
+    "en",
+    "base_model:nlpai-lab/KURE-Reranker-nano",
+    "base_model:quantized:nlpai-lab/KURE-Reranker-nano",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 897217947,
+  "storage_human": "897 MB",
+  "base_model": "nlpai-lab/KURE-Reranker-nano",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nlpai-lab/KURE-Reranker-nano at main - Hugging Face",
+      "url": "https://huggingface.co/nlpai-lab/KURE-Reranker-nano/tree/main",
+      "snippet": "nlpai-lab / KURE-Reranker-nano Like 6 Follow NLP & AI - Korea University 158 Text Ranking sentence-transformers Safetensors Korean English modernbert cross-encoder reranker korean english text-embeddings-inference License:apache-2.0 Model card FilesFiles and versions xet Community 3 Deploy Copy to bucket new Use this model Libraries sentence-transformers How to use nlpai-lab/KURE-Reranker-nano ..."
+    },
+    {
+      "title": "nlpai-lab/KURE-Reranker-nano · Hugging Face",
+      "url": "https://huggingface.co/nlpai-lab/KURE-Reranker-nano",
+      "snippet": "KURE-Reranker-nano is a lightweight, approximately 150M-parameter Korean-English bilingual reranker. It jointly encodes a query and a candidate document and predicts a scalar relevance score."
+    }
+  ]
+}

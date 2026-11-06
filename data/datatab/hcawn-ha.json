@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "datatab/hcawn-ha",
+  "slug": "datatab-hcawn-ha",
+  "author": "datatab",
+  "url": "https://huggingface.co/datatab/hcawn-ha",
+  "created_at": "2026-11-06T18:17:29.000Z",
+  "updated_at": "2026-11-06T18:27:24.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "home-assistant",
+    "smart-home",
+    "home-automation",
+    "function-calling",
+    "tool-calling",
+    "intent-recognition",
+    "on-device",
+    "cpu",
+    "byte-level",
+    "small-language-model",
+    "hcawn",
+    "hcawn-architecture",
+    "text-generation",
+    "en",
+    "dataset:acon96/Home-Assistant-Requests-V2",
+    "base_model:datatab/hcawn-fc7",
+    "base_model:finetune:datatab/hcawn-fc7",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10322319,
+  "storage_human": "10 MB",
+  "base_model": "datatab/hcawn-fc7",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "datatab/hcawn-fc7 · Hugging Face",
+      "url": "https://huggingface.co/datatab/hcawn-fc7",
+      "snippet": "Text Generation model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "datatab (@DejanCugalj) / X",
+      "url": "https://x.com/DejanCugalj",
+      "snippet": "My team built hCAWN – a Zero-Signature Neural WAF that catches 0-days using pure math, running on just 200MB of VRAM. We have $0 for a bug bounty, but we have a Challenge for the community."
+    }
+  ]
+}

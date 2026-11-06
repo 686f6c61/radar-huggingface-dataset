@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "WalterWi/keras_regresion",
+  "slug": "walterwi-keras_regresion",
+  "author": "WalterWi",
+  "url": "https://huggingface.co/WalterWi/keras_regresion",
+  "created_at": "2026-11-06T15:28:30.000Z",
+  "updated_at": "2026-11-06T15:28:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-regression",
+  "library": "keras",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "keras",
+    "machine-learning",
+    "regression",
+    "linear-regression",
+    "educational-example",
+    "tabular-regression",
+    "es",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Build a Regression Model in Keras - Coursera AI Course.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/jbEmanuel/Build-a-Regression-Model-in-Keras---Coursera-AI-Course/blob/main/Build_a_Regression_Model_in_Keras_Coursera_AI_Course.ipynb",
+      "snippet": "Cement 0 Blast Furnace Slag 0 Fly Ash 0 Water 0 Superplasticizer 0 Coarse Aggregate 0 Fine Aggregate 0 Age 0 Strength 0 dtype: int64"
+    },
+    {
+      "title": "Regression Tutorial with the Keras Deep Learning Library in Python",
+      "url": "https://machinelearningmastery.com/regression-tutorial-keras-deep-learning-library-python/",
+      "snippet": "Keras is a deep learning library that wraps the efficient numerical libraries Theano and TensorFlow. In this post, you will discover how to develop and evaluate neural network models using Keras for a regression problem. After completing this step-by-step tutorial, you will know: How to load a CSV dataset and make it available to Keras […]"
+    }
+  ]
+}

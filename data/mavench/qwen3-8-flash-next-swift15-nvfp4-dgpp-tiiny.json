@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "MavenCH/Qwen3.8-Flash-Next-swift15-nvfp4-dgpp-Tiiny",
+  "slug": "mavench-qwen3-8-flash-next-swift15-nvfp4-dgpp-tiiny",
+  "author": "MavenCH",
+  "url": "https://huggingface.co/MavenCH/Qwen3.8-Flash-Next-swift15-nvfp4-dgpp-Tiiny",
+  "created_at": "2026-11-06T19:21:07.000Z",
+  "updated_at": "2026-11-06T19:33:28.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "dgpp",
+  "languages": [],
+  "tags": [
+    "dgpp",
+    "safetensors",
+    "qwen4_exp",
+    "nvfp4",
+    "quantized",
+    "qwen3_8",
+    "moe",
+    "dgx-spark",
+    "modelopt",
+    "text-generation",
+    "conversational",
+    "base_model:ukisai/Swift1.5-Qwen3.8-Flash-Next",
+    "base_model:quantized:ukisai/Swift1.5-Qwen3.8-Flash-Next",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 135249400176,
+  "storage_human": "135.2 GB",
+  "base_model": "ukisai/Swift1.5-Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kaushikvira/Qwen3.8-Flash-Next-swift15-nvfp4-dgpp · Hugging Face",
+      "url": "https://huggingface.co/kaushikvira/Qwen3.8-Flash-Next-swift15-nvfp4-dgpp",
+      "snippet": "An NVFP4 (ModelOpt format) checkpoint of ukisai/Swift1.5-Qwen3.8-Flash-Next, produced for the dgpp inference engine on 2× NVIDIA DGX Spark (GB10), TP=2 — the same format the nvidia/Qwen3.8-Flash-Next-NVFP4 release ships, so dgpp serves it without any engine changes."
+    },
+    {
+      "title": "kaushikvira/Qwen3.8-Flash-Next-swift15-nvfp4-dgpp at main",
+      "url": "https://huggingface.co/kaushikvira/Qwen3.8-Flash-Next-swift15-nvfp4-dgpp/tree/main",
+      "snippet": "kaushikvira / Qwen3.8-Flash-Next-swift15-nvfp4-dgpp Like 0 Text Generation Safetensors dgpp qwen4_exp nvfp4 quantized qwen3_8 Mixture of Experts dgx-spark modelopt conversational 8-bit precision License:swift-open-license-1.0 Model card FilesFiles and versions xet Community Copy to bucket new main Qwen3.8-Flash-Next-swift15-nvfp4-dgpp 135 GB Ctrl+K Ctrl+K 1 contributor History:10 commits ..."
+    }
+  ]
+}

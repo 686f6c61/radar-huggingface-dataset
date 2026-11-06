@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "ckuma/lugbara-english-translator-local",
+  "slug": "ckuma-lugbara-english-translator-local",
+  "author": "ckuma",
+  "url": "https://huggingface.co/ckuma/lugbara-english-translator-local",
+  "created_at": "2026-11-06T19:57:29.000Z",
+  "updated_at": "2026-11-06T19:58:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "lgg"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mt5",
+    "text2text-generation",
+    "translation",
+    "lugbara",
+    "low-resource",
+    "uganda",
+    "muni-university",
+    "en",
+    "lgg",
+    "base_model:google/mt5-base",
+    "base_model:finetune:google/mt5-base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 582401280,
+  "parameters_human": "582.4M",
+  "storage_bytes": 2350304631,
+  "storage_human": "2.4 GB",
+  "base_model": "google/mt5-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ckuma/lugbara-multilingual-translator · Hugging Face",
+      "url": "https://huggingface.co/ckuma/lugbara-multilingual-translator",
+      "snippet": "Instructions to use ckuma/lugbara-multilingual-translator with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use ckuma/lugbara-multilingual-translator with Transformers:"
+    },
+    {
+      "title": "10 Best LLM Tools To Run Models Locally (October 2026) - Unite.AI",
+      "url": "https://www.unite.ai/best-llm-tools-to-run-models-locally/",
+      "snippet": "This guide compares tools, not model intelligence. For downloadable model choices, see our guide to open-source and open-weight LLMs. Also distinguish local capability from local execution: many applications now offer cloud models, web search, or remote tools alongside on-device inference. Best Tools for Running LLMs Locally Compared"
+    }
+  ]
+}

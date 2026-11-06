@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ChadSaglam/swiss-bookkeeping-qwen-lora",
+  "slug": "chadsaglam-swiss-bookkeeping-qwen-lora",
+  "author": "ChadSaglam",
+  "url": "https://huggingface.co/ChadSaglam/swiss-bookkeeping-qwen-lora",
+  "created_at": "2026-10-21T13:05:39.000Z",
+  "updated_at": "2026-11-06T18:00:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "accounting",
+    "switzerland",
+    "lora",
+    "mlx",
+    "synthetic-data",
+    "conversational",
+    "dataset:ChadSaglam/swiss-sme-bookkeeping-dataset",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 151,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519622,
+  "storage_human": "1000 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ChadSaglam/swiss-bookkeeping-ai",
+      "url": "https://github.com/ChadSaglam/swiss-bookkeeping-ai/tree/main/",
+      "snippet": "Contribute to ChadSaglam/swiss-bookkeeping-ai development by creating an account on GitHub."
+    },
+    {
+      "title": "Swiss SME Bookkeeping AI - a ChadSaglam Collection",
+      "url": "https://huggingface.co/collections/ChadSaglam/swiss-sme-bookkeeping-ai",
+      "snippet": "Synthetic Swiss SME invoice dataset and a LoRA fine-tuned Qwen2.5-0.5B account suggester."
+    }
+  ]
+}

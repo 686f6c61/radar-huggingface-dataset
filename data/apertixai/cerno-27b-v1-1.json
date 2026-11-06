@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "apertixai/cerno-27b-v1.1",
+  "slug": "apertixai-cerno-27b-v1-1",
+  "author": "apertixai",
+  "url": "https://huggingface.co/apertixai/cerno-27b-v1.1",
+  "created_at": "2026-11-06T15:42:43.000Z",
+  "updated_at": "2026-11-06T15:43:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "cerno",
+    "system-one",
+    "typed-decisions",
+    "calibrated-probabilities",
+    "decision-index",
+    "fp8",
+    "read-twice",
+    "text-classification",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 29469742968,
+  "storage_human": "29.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Decision Index 0.3 public suite (37 benchmarks, 140,178 requests)",
+      "dataset": "Decision Index 0.3 public suite",
+      "metric": "public index, complete run",
+      "value": 69.73
+    }
+  ],
+  "sources": [
+    {
+      "title": "apertixai/cerno-27b · Hugging Face",
+      "url": "https://huggingface.co/apertixai/cerno-27b",
+      "snippet": "On the Decision Index 0.3 public suite this model is second of 145 entrants on the like-for-like basis and above Jev 1.13 on every reporting basis. The Cerno family Three sizes, one inference code path, state-of-the-art System One performance at each size on the Decision Index 0.3 public suite. The ..."
+    },
+    {
+      "title": "apertixai (Apertix AI) - Hugging Face",
+      "url": "https://huggingface.co/apertixai",
+      "snippet": "Recent Activity published a datasetabout 6 hours ago apertixai/cerno-decision-index published a modelabout 6 hours ago apertixai/cerno-4b published a modelabout 6 hours ago apertixai/cerno-9b View all activity"
+    }
+  ]
+}

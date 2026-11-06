@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "jongini/act_pick_cube",
+  "slug": "jongini-act_pick_cube",
+  "author": "jongini",
+  "url": "https://huggingface.co/jongini/act_pick_cube",
+  "created_at": "2026-11-06T17:20:56.000Z",
+  "updated_at": "2026-11-06T17:21:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:jongini/pick_cube",
+    "arxiv:2304.13705",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714848,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DebuggingByte/act_pick_cube · Hugging Face",
+      "url": "https://huggingface.co/DebuggingByte/act_pick_cube",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SEONGMIN1234/act_pick_cube · Hugging Face",
+      "url": "https://huggingface.co/SEONGMIN1234/act_pick_cube",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

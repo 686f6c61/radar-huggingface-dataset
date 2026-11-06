@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "kkk4oru/campplus-sv-zh-cn-16k-common-onnx",
+  "slug": "kkk4oru-campplus-sv-zh-cn-16k-common-onnx",
+  "author": "kkk4oru",
+  "url": "https://huggingface.co/kkk4oru/campplus-sv-zh-cn-16k-common-onnx",
+  "created_at": "2026-11-06T13:51:59.000Z",
+  "updated_at": "2026-11-06T13:52:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "speaker-embedding",
+    "speaker-diarization",
+    "speaker-recognition",
+    "onnxruntime",
+    "campplus",
+    "3d-speaker",
+    "audio-classification",
+    "arxiv:2303.00332",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28281138,
+  "storage_human": "28 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipédia, l'encyclopédie libre",
+      "url": "https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal",
+      "snippet": "Images de qualité sur Wikimédia Commons"
+    },
+    {
+      "title": "speech_campplus_sv_zh-cn_16k-common · Models",
+      "url": "https://www.modelscope.cn/models/iic/speech_campplus_sv_zh-cn_16k-common/summary",
+      "snippet": "模型简述 CAM++兼顾识别性能和推理效率，在公开的中文数据集CN-Celeb和英文数据集VoxCeleb上，相比主流的说话人识别模型ResNet34和ECAPA-TDNN，获得了更高的准确率，同时具有更快的推理速度。"
+    },
+    {
+      "title": "speech_campplus_sv_zh-cn_16k-common · Models",
+      "url": "https://www.modelscope.cn/models/iic/speech_campplus_sv_zh-cn_16k-common/",
+      "snippet": "speech_campplus_sv_zh-cn_16k-common - iic 在 ModelScope 开源的模型。CAM++是基于密集连接时延神经网络的说话人识别模型。相比于ResNet34和 ..."
+    }
+  ]
+}

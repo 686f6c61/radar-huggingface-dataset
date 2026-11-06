@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "aether-models/aether-kit-sd-turbo",
+  "slug": "aether-models-aether-kit-sd-turbo",
+  "author": "aether-models",
+  "url": "https://huggingface.co/aether-models/aether-kit-sd-turbo",
+  "created_at": "2026-11-06T15:23:41.000Z",
+  "updated_at": "2026-11-06T15:24:36.000Z",
+  "license": "stabilityai-ai-community",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "aether-kit",
+    "core-ai",
+    "text-to-image",
+    "base_model:stabilityai/sd-turbo",
+    "base_model:finetune:stabilityai/sd-turbo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5023617721,
+  "storage_human": "5.0 GB",
+  "base_model": "stabilityai/sd-turbo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Éther (mythologie) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/%C3%89ther_(mythologie)",
+      "snippet": "« Aether » redirige ici. Pour le jeu vidéo, voir Aether (jeu vidéo). Pour les articles homonymes, voir . ... Éther ou Æther est un dieu …"
+    },
+    {
+      "title": "aether-models (Aether Engine Models) - Hugging Face",
+      "url": "https://huggingface.co/aether-models",
+      "snippet": "Org profile for Aether Engine Models on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Aether (classical element) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Aether_(classical_element)",
+      "snippet": "In his aether model, Newton describes aether as a medium that \"flows\" continually downward toward the Earth's surface and is …"
+    },
+    {
+      "title": "GitHub - bubstackdev/aether-kit: AetherKit SDK",
+      "url": "https://github.com/bubstackdev/aether-kit",
+      "snippet": "Core AI still retains Metal memory each time a model's input shape changes, so the session reloads the model once the memory retained since load passes a budget (2 GiB by default)."
+    },
+    {
+      "title": "Aether — Your Personal Streaming Service for Apple Devices",
+      "url": "https://aetherplayer.com/",
+      "snippet": "Some signals are meant to be answered. Your films, shows and live channels, together in Aether. Connect Plex, Jellyfin, Emby or …"
+    }
+  ]
+}

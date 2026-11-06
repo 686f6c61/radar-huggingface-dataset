@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "aether-models/aether-kit-sd-turbo-ios",
+  "slug": "aether-models-aether-kit-sd-turbo-ios",
+  "author": "aether-models",
+  "url": "https://huggingface.co/aether-models/aether-kit-sd-turbo-ios",
+  "created_at": "2026-11-06T16:48:37.000Z",
+  "updated_at": "2026-11-06T16:53:24.000Z",
+  "license": "stabilityai-ai-community",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "aether-kit",
+    "core-ai",
+    "text-to-image",
+    "base_model:stabilityai/sd-turbo",
+    "base_model:finetune:stabilityai/sd-turbo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3192819669,
+  "storage_human": "3.2 GB",
+  "base_model": "stabilityai/sd-turbo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Éther (mythologie) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/%C3%89ther_(mythologie)",
+      "snippet": "« Aether » redirige ici. Pour le jeu vidéo, voir Aether (jeu vidéo). Pour les articles homonymes, voir . ... Éther ou Æther est un dieu …"
+    },
+    {
+      "title": "GitHub - bubstackdev/aether-kit: AetherKit SDK",
+      "url": "https://github.com/bubstackdev/aether-kit",
+      "snippet": "Everything that runs a model (Core AI, the *CoreAI products, the FoundationModels adapter) needs Apple silicon and macOS 27 or iOS 27 at runtime, and its declarations are @available (macOS 27, iOS 27, *) (deployment floor)."
+    },
+    {
+      "title": "Aether (classical element) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Aether_(classical_element)",
+      "snippet": "In his aether model, Newton describes aether as a medium that \"flows\" continually downward toward the Earth's surface and is …"
+    },
+    {
+      "title": "aether-models (Aether Engine Models) - Hugging Face",
+      "url": "https://huggingface.co/aether-models",
+      "snippet": "Org profile for Aether Engine Models on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Aether — Your Personal Streaming Service for Apple Devices",
+      "url": "https://aetherplayer.com/",
+      "snippet": "Some signals are meant to be answered. Your films, shows and live channels, together in Aether. Connect Plex, Jellyfin, Emby or …"
+    }
+  ]
+}

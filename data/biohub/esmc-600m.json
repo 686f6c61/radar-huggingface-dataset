@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "biohub/ESMC-600M",
+  "slug": "biohub-esmc-600m",
+  "author": "biohub",
+  "url": "https://huggingface.co/biohub/ESMC-600M",
+  "created_at": "2026-05-18T17:27:48.000Z",
+  "updated_at": "2026-11-06T18:40:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "esmc",
+    "fill-mask",
+    "biology",
+    "esm",
+    "protein",
+    "protein-language-model",
+    "protein-embeddings",
+    "masked-language-modeling",
+    "transfer-learning",
+    "variant-effect-prediction",
+    "protein-engineering",
+    "custom_code",
+    "en",
+    "license:mit",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 19,
+  "downloads_30d": 15922,
+  "trending_score": 0,
+  "parameters": 575036992,
+  "parameters_human": "575.0M",
+  "storage_bytes": 4600529004,
+  "storage_human": "4.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · biohub/ESMC-600M at main - Hugging Face",
+      "url": "https://huggingface.co/biohub/ESMC-600M/blob/main/README.md",
+      "snippet": "ESMC Model Details ESMC is a state-of-the-art protein language model that has learned the rules of protein biology from training on billions of protein sequences. ESMC provides representations of proteins enabling novel AI applications from therapeutic protein engineering to unlocking basic insights into protein biology across life."
+    },
+    {
+      "title": "ESMC Protein Language Model | Biohub Platform",
+      "url": "https://www.biohub.ai/models/esmc",
+      "snippet": "ESMC ESMC is the latest in the ESM family of protein language models, establishing a new frontier in representation learning for protein biology. Trained on billions of evolutionary sequences, it learns representations that reflect a mechanistic reduction of protein structure and function."
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "sajida12/bert-english-ner",
+  "slug": "sajida12-bert-english-ner",
+  "author": "sajida12",
+  "url": "https://huggingface.co/sajida12/bert-english-ner",
+  "created_at": "2026-11-06T05:04:47.000Z",
+  "updated_at": "2026-11-06T15:18:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 177268231,
+  "parameters_human": "177.3M",
+  "storage_bytes": 2836390209,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NER-BERT-AI-Model-using-annotated-corpus-ner - Hugging Face",
+      "url": "https://huggingface.co/AventIQ-AI/NER-BERT-AI-Model-using-annotated-corpus-ner",
+      "snippet": "🧠 NER-BERT-AI-Model-using-annotated-corpus-ner A BERT-based Named Entity Recognition (NER) model fine-tuned on the Entity Annotated Corpus. It classifies tokens in text into predefined entity types such as Person (PER), Organization (ORG), and Location (LOC). This model is well-suited for information extraction, resume parsing, and chatbot applications."
+    },
+    {
+      "title": "Named Entity Recognition with Hugging Face - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/data-science/named-entity-recognition-with-bert/",
+      "snippet": "Named Entity Recognition (NER) is an NLP task that identifies and classifies entities in text, such as people, organizations and locations. It helps systems automatically understand important information within sentences, even when language and context vary."
+    }
+  ]
+}

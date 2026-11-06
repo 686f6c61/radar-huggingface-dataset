@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "hubnemo/Qwen3-8B-ALoRA-MTP-dense-10k-r64-alpha256",
+  "slug": "hubnemo-qwen3-8b-alora-mtp-dense-10k-r64-alpha256",
+  "author": "hubnemo",
+  "url": "https://huggingface.co/hubnemo/Qwen3-8B-ALoRA-MTP-dense-10k-r64-alpha256",
+  "created_at": "2026-11-06T13:45:32.000Z",
+  "updated_at": "2026-11-06T13:46:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3333723282,
+  "storage_human": "3.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hubnemo/Qwen3-8B-ALoRA-MTP-dense-24k · Hugging Face",
+      "url": "https://huggingface.co/hubnemo/Qwen3-8B-ALoRA-MTP-dense-24k",
+      "snippet": "How to use hubnemo/Qwen3-8B-ALoRA-MTP-dense-24k with Transformers: ... Notebooks Google Colab Kaggle Model Card for Model ID Model Details Model Description Model Sources [optional] Uses Direct Use Downstream Use [optional] Out-of-Scope Use Bias, Risks, and Limitations Recommendations How to Get Started with the Model Training Details Training ..."
+    },
+    {
+      "title": "hubnemo/Qwen3-8B-ALoRA-MTP at main - Hugging Face",
+      "url": "https://huggingface.co/hubnemo/Qwen3-8B-ALoRA-MTP/tree/main",
+      "snippet": "Notebooks Google Colab Kaggle main Qwen3-8B-ALoRA-MTP 2.77 GB Ctrl+K Ctrl+K 1 contributor History:82 commits hubnemo HF Staff Upload folder using huggingface_hub be55f30 verifiedabout 5 hours ago checkpointUpload folder using huggingface_hubabout 5 hours ago .gitattributes Safe 1.63 kBUpload folder using huggingface_hubabout 5 hours ago README.md Safe 5.17 kBUpload modelabout 11 hours ago ..."
+    }
+  ]
+}

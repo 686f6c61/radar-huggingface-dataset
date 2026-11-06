@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "TUaxhuiax/filesystem-terminal-huggingface-k8s-7598-k9t3q-run-1046",
+  "slug": "tuaxhuiax-filesystem-terminal-huggingface-k8s-7598-k9t3q-run-1046",
+  "author": "TUaxhuiax",
+  "url": "https://huggingface.co/TUaxhuiax/filesystem-terminal-huggingface-k8s-7598-k9t3q-run-1046",
+  "created_at": "2026-11-06T19:05:32.000Z",
+  "updated_at": "2026-11-06T19:05:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "atlas",
+    "text-classification",
+    "semantic-search",
+    "run-1046",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8192,
+  "storage_human": "8192 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huggingface_terminal_filesystem_321_a7f3c9d2-consolidated",
+      "url": "https://huggingface.co/datasets/TUaxhuiax/huggingface_terminal_filesystem_321_a7f3c9d2-consolidated",
+      "snippet": "Dataset. Explore, preview and download it on Hugging Face."
+    },
+    {
+      "title": "Command Line Interface (CLI) - Hugging Face",
+      "url": "https://huggingface.co/docs/huggingface_hub/v1.1.2/guides/cli",
+      "snippet": "The huggingface_hub Python package comes with a built-in CLI called hf. This tool allows you to interact with the Hugging Face Hub directly from a terminal. For example, you can log in to your account, create a repository, upload and download files, etc. It also comes with handy features to ..."
+    }
+  ]
+}

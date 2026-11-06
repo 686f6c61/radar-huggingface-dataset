@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "WorkOffline/nomic-embed-text-v1.5-GGUF",
+  "slug": "workoffline-nomic-embed-text-v1-5-gguf",
+  "author": "WorkOffline",
+  "url": "https://huggingface.co/WorkOffline/nomic-embed-text-v1.5-GGUF",
+  "created_at": "2026-11-06T13:00:05.000Z",
+  "updated_at": "2026-11-06T13:00:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "workoffline-mirror",
+    "base_model:nomic-ai/nomic-embed-text-v1.5",
+    "base_model:quantized:nomic-ai/nomic-embed-text-v1.5",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "feature-extraction"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 136727040,
+  "parameters_human": "136.7M",
+  "storage_bytes": 146146432,
+  "storage_human": "146 MB",
+  "base_model": "nomic-ai/nomic-embed-text-v1.5",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nomic-ai/nomic-embed-text-v1.5-GGUF · Hugging Face",
+      "url": "https://huggingface.co/nomic-ai/nomic-embed-text-v1.5-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nomic-ai/nomic-embed-text-v1.5 · Hugging Face",
+      "url": "https://huggingface.co/nomic-ai/nomic-embed-text-v1.5",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

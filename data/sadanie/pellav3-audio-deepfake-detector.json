@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Sadanie/pellav3-audio-deepfake-detector",
+  "slug": "sadanie-pellav3-audio-deepfake-detector",
+  "author": "Sadanie",
+  "url": "https://huggingface.co/Sadanie/pellav3-audio-deepfake-detector",
+  "created_at": "2026-11-06T13:35:19.000Z",
+  "updated_at": "2026-11-06T13:35:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "audio",
+    "deepfake-detection",
+    "anti-spoofing",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6177206686,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · Sadanie/pellav2-audio-deepfake-detector at main",
+      "url": "https://huggingface.co/Sadanie/pellav2-audio-deepfake-detector/blob/main/README.md",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Pella Research — Audio Deepfake Detection",
+      "url": "https://pellaresearch.com/",
+      "snippet": "In August 2026, Podonos published an independent audio deepfake detection benchmark: 4,524 clips across six file formats, synthetic speech from about 25 modern voice cloning systems, scored blind against private labels."
+    }
+  ]
+}

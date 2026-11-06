@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "milleoakrey/fehvoices",
+  "slug": "milleoakrey-fehvoices",
+  "author": "milleoakrey",
+  "url": "https://huggingface.co/milleoakrey/fehvoices",
+  "created_at": "2024-11-01T00:18:02.000Z",
+  "updated_at": "2026-11-06T17:58:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2349511604,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

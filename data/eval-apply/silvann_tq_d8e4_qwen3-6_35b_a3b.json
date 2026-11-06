@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "eval-apply/silvann_tq_D8E4_qwen3.6_35b_a3b",
+  "slug": "eval-apply-silvann_tq_d8e4_qwen3-6_35b_a3b",
+  "author": "eval-apply",
+  "url": "https://huggingface.co/eval-apply/silvann_tq_D8E4_qwen3.6_35b_a3b",
+  "created_at": "2026-09-28T20:38:28.000Z",
+  "updated_at": "2026-11-06T15:13:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qwen3_5_moe",
+    "silvann",
+    "turboquant",
+    "quantized",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 106,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37769228549,
+  "storage_human": "37.8 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eval-apply/Qwen3.5-122B-A10B_silvann_tq_D8E4 · Hugging Face",
+      "url": "https://huggingface.co/eval-apply/Qwen3.5-122B-A10B_silvann_tq_D8E4",
+      "snippet": "Qwen3.5-122B-A10B_silvann_tq_D8E4 Qwen/Qwen3.5-122B-A10B, packed for the SiLVANN engine (the Eval-Apply GPU Interpreter and its neural network library): every routed expert's matrices at 4 bits a weight (TurboQuant, a per-row scale) and every other layer matrix — the attention and DeltaNet projections and the shared expert — at 8 bits, each rotated along its input axis with a blocked ..."
+    },
+    {
+      "title": "eval-apply/Qwen3.6-35B-A3B_silvann_tq_D8E4 · Hugging Face",
+      "url": "https://huggingface.co/eval-apply/Qwen3.6-35B-A3B_silvann_tq_D8E4",
+      "snippet": "Qwen3.6-35B-A3B_silvann_tq_D8E4 Qwen/Qwen3.6-35B-A3B, packed for the SiLVANN engine (the Eval-Apply GPU Interpreter and its neural network library): every routed expert's matrices at 4 bits a weight (TurboQuant, a per-row scale) and every other layer matrix — the attention and DeltaNet projections and the shared expert — at 8 bits, each rotated along its input axis with a blocked Hadamard ..."
+    }
+  ]
+}

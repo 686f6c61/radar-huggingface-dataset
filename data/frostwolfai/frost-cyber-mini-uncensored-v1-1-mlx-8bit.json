@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "FrostWolfAI/Frost-Cyber-Mini-Uncensored-v1.1-MLX-8bit",
+  "slug": "frostwolfai-frost-cyber-mini-uncensored-v1-1-mlx-8bit",
+  "author": "FrostWolfAI",
+  "url": "https://huggingface.co/FrostWolfAI/Frost-Cyber-Mini-Uncensored-v1.1-MLX-8bit",
+  "created_at": "2026-11-06T13:40:40.000Z",
+  "updated_at": "2026-11-06T13:44:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "spark2_5",
+    "8-bit",
+    "spark-x2.6",
+    "cybersecurity",
+    "uncensored",
+    "abliterated",
+    "agentic",
+    "tool-use",
+    "reasoning",
+    "on-device",
+    "local-llm",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "base_model:FrostWolfAI/Frost-Cyber-Mini-Uncensored-v1.1",
+    "base_model:quantized:FrostWolfAI/Frost-Cyber-Mini-Uncensored-v1.1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4112079360,
+  "parameters_human": "4.11B",
+  "storage_bytes": 4370716850,
+  "storage_human": "4.4 GB",
+  "base_model": "FrostWolfAI/Frost-Cyber-Mini-Uncensored-v1.1",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FrostWolfAI/Frost-Cyber-Mini-1.0 · Hugging Face",
+      "url": "https://huggingface.co/FrostWolfAI/Frost-Cyber-Mini-1.0",
+      "snippet": "Frost Cyber Mini 1.0 is an uncensored (abliterated) offensive-security model. Its safety filtering is substantially reduced and it will produce exploit code, payloads, and attacker tradecraft on request."
+    },
+    {
+      "title": "FrostWolfAI/Frost-Cyber-Mini-1.0-MLX-8bit · Hugging Face",
+      "url": "https://huggingface.co/FrostWolfAI/Frost-Cyber-Mini-1.0-MLX-8bit",
+      "snippet": "FrostWolfAI / Frost-Cyber-Mini-1.0-MLX-8bit Like 1 Text Generation MLX Safetensors English qwen3_5 qwen3.5 cybersecurity red-team offensive-security pentest abliterated 8-bit precision conversational License:cc-by-nc-sa-4.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    }
+  ]
+}

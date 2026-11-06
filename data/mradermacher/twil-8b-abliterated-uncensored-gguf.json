@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "mradermacher/TwIL-8B-Abliterated-Uncensored-GGUF",
+  "slug": "mradermacher-twil-8b-abliterated-uncensored-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/TwIL-8B-Abliterated-Uncensored-GGUF",
+  "created_at": "2026-11-06T15:29:32.000Z",
+  "updated_at": "2026-11-06T15:56:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Guilherme34/TwIL-8B-Abliterated-Uncensored",
+    "base_model:quantized:Guilherme34/TwIL-8B-Abliterated-Uncensored",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8791592960,
+  "parameters_human": "8.79B",
+  "storage_bytes": 78209093376,
+  "storage_human": "78.2 GB",
+  "base_model": "Guilherme34/TwIL-8B-Abliterated-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/TwIL-8B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/TwIL-8B-i1-GGUF",
+      "snippet": "mradermacher / TwIL-8B-i1-GGUF Like 0 Reinforcement Learning Transformers GGUF English granite granite-4.2 twil reasoning math code instruction-following grpo imatrix conversational License:webai-non-commercial-license-ver.-1.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    },
+    {
+      "title": "TwIL-8B-Abliterated-Uncensored-Q8_0-GGUF - Hugging Face",
+      "url": "https://huggingface.co/Guilherme34/TwIL-8B-Abliterated-Uncensored-Q8_0-GGUF",
+      "snippet": "Machine learning model with 9B parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

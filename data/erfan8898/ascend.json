@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "Erfan8898/ASCEND",
+  "slug": "erfan8898-ascend",
+  "author": "Erfan8898",
+  "url": "https://huggingface.co/Erfan8898/ASCEND",
+  "created_at": "2026-11-06T14:24:40.000Z",
+  "updated_at": "2026-11-06T14:24:40.000Z",
+  "license": "lppl-1.3c",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:lppl-1.3c",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepSeek Plans to Train Its Next-Generation Model on Huawei Ascend ...",
+      "url": "https://www.geopolitechs.org/p/deepseek-plans-to-train-its-next",
+      "snippet": "According to a report by STAR Market Daily, citing multiple industry sources, DeepSeek plans to use Huawei’s Ascend AI chips to pre-train its next-generation model, DeepSeek V5. This would mark a significant shift, as Ascend chips have previously been used primarily for inference rather than pre-training DeepSeek’s models."
+    },
+    {
+      "title": "VLLM-Ascend - Learn AI",
+      "url": "https://ai.miraheze.org/wiki/VLLM-Ascend",
+      "snippet": "The origins of vLLM-Ascend trace back to the broader challenge of running large language model inference workloads on hardware outside the NVIDIA ecosystem. By late 2024, vLLM had established itself as one of the dominant open-source LLM serving frameworks, with extensive support for NVIDIA GPUs through CUDA and growing but less mature support for AMD GPUs through ROCm. However, the framework ..."
+    }
+  ]
+}

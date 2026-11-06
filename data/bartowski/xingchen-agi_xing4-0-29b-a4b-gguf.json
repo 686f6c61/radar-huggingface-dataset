@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "bartowski/XingChen-AGI_Xing4.0-29B-A4B-GGUF",
+  "slug": "bartowski-xingchen-agi_xing4-0-29b-a4b-gguf",
+  "author": "bartowski",
+  "url": "https://huggingface.co/bartowski/XingChen-AGI_Xing4.0-29B-A4B-GGUF",
+  "created_at": "2026-11-06T17:31:45.000Z",
+  "updated_at": "2026-11-06T18:47:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:XingChen-AGI/Xing4.0-29B-A4B",
+    "base_model:quantized:XingChen-AGI/Xing4.0-29B-A4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31215031088,
+  "parameters_human": "31.22B",
+  "storage_bytes": 511970614304,
+  "storage_human": "512.0 GB",
+  "base_model": "XingChen-AGI/Xing4.0-29B-A4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XingChen-AGI/Xing4.0-29B-A4B · Hugging Face",
+      "url": "https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - XingChen-AGI/Xing4.0-29B-A4B",
+      "url": "https://github.com/XingChen-AGI/Xing4.0-29B-A4B",
+      "snippet": "FlagOS FlagOS is an open-source AI system software stack for large model training, inference, and deployment, with adaptation support for mainstream frameworks and hardware platforms. Xing4.0 has integrated mHC Triton-Ascend fused operators into MindFormers via FlagOS, with single-node 16-card training validation completed."
+    }
+  ]
+}

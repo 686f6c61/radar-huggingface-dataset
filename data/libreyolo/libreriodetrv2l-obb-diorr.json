@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "LibreYOLO/LibreRiODETRv2l-obb-diorr",
+  "slug": "libreyolo-libreriodetrv2l-obb-diorr",
+  "author": "LibreYOLO",
+  "url": "https://huggingface.co/LibreYOLO/LibreRiODETRv2l-obb-diorr",
+  "created_at": "2026-11-06T17:40:45.000Z",
+  "updated_at": "2026-11-06T17:40:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "libreyolo",
+  "languages": [],
+  "tags": [
+    "libreyolo",
+    "object-detection",
+    "oriented-object-detection",
+    "rio-detr",
+    "riodetrv2",
+    "dataset:DIOR-R",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 116552903,
+  "storage_human": "117 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - LibreYOLO/libreyolo: LibreYOLO is a MIT licensed open source ...",
+      "url": "https://github.com/LibreYOLO/libreyolo",
+      "snippet": "The code is written in free time. Training new models, such as LibreYOLO26 and MIT retrains of families with restrictive weights, costs rented GPU time, and the LibreYOLO Sponsorship Program pays for it. Companies get their logo here from $100 a month, and from $500 a month are named in every release and in the model card of every weight released while they sponsor. Hardware manufacturers can ..."
+    },
+    {
+      "title": "LibreYOLO documentation | LibreYOLO",
+      "url": "https://www.libreyolo.com/docs",
+      "snippet": "Install, train, evaluate and export every model in LibreYOLO, the MIT-licensed computer vision library. One API across detection, segmentation, pose, depth, OCR and more."
+    }
+  ]
+}

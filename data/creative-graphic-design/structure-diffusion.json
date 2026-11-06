@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "creative-graphic-design/structure-diffusion",
+  "slug": "creative-graphic-design-structure-diffusion",
+  "author": "creative-graphic-design",
+  "url": "https://huggingface.co/creative-graphic-design/structure-diffusion",
+  "created_at": "2026-11-05T11:36:41.000Z",
+  "updated_at": "2026-11-06T13:24:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "structured-diffusion-guidance",
+    "text-to-image",
+    "image-generation",
+    "en",
+    "arxiv:2212.05032",
+    "base_model:CompVis/stable-diffusion-v1-4",
+    "base_model:finetune:CompVis/stable-diffusion-v1-4",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "CompVis/stable-diffusion-v1-4",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text-to-image generation",
+      "dataset": "CPU parity fixture",
+      "metric": "Bit-exact CPU image comparison against reference images",
+      "value": 0
+    }
+  ],
+  "sources": [
+    {
+      "title": "From Noise to Images: The Creative Engine of AI - Diffusion Models",
+      "url": "https://www.linkedin.com/pulse/from-noise-images-creative-engine-ai-diffusion-models-vellanki-jl94e",
+      "snippet": "From AI art to product design, diffusion models are quietly powering the creative engine of modern AI. Let’s break down how they work — from scratch."
+    },
+    {
+      "title": "What Is a Diffusion Model? Complete AI Guide - vegavid.com",
+      "url": "https://vegavid.com/blog/diffusion-model",
+      "snippet": "Learn what a diffusion model is, how it works, its architecture, types, applications, benefits, challenges, and future in AI image generation."
+    }
+  ]
+}

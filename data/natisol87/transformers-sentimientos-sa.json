@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "natisol87/Transformers-sentimientos-SA",
+  "slug": "natisol87-transformers-sentimientos-sa",
+  "author": "natisol87",
+  "url": "https://huggingface.co/natisol87/Transformers-sentimientos-SA",
+  "created_at": "2026-11-06T18:01:27.000Z",
+  "updated_at": "2026-11-06T18:09:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "machine-learning",
+    "educational-example",
+    "es",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20546,
+  "parameters_human": "20546",
+  "storage_bytes": 86488,
+  "storage_human": "86488 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "natisol87 - GitHub",
+      "url": "https://github.com/natisol87",
+      "snippet": "Add an optional note Maximum 250 characters. Please don't include any personal information such as legal names or email addresses. Markdown supported. This note will be visible to only you. Block user chatbot-futbol chatbot-futbol Public Chat para interactuar con Gemini y una API de futbol Python"
+    }
+  ]
+}

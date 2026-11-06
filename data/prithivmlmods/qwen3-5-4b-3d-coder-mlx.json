@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "prithivMLmods/Qwen3.5-4B-3D-Coder-MLX",
+  "slug": "prithivmlmods-qwen3-5-4b-3d-coder-mlx",
+  "author": "prithivMLmods",
+  "url": "https://huggingface.co/prithivMLmods/Qwen3.5-4B-3D-Coder-MLX",
+  "created_at": "2026-11-06T13:47:35.000Z",
+  "updated_at": "2026-11-06T17:27:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "mlx-vlm",
+    "code",
+    "threejs",
+    "3d",
+    "preview",
+    "8-bit",
+    "bf16",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "dataset:ccore/ThreeJS-3D-Scenes",
+    "base_model:ccore/Qwen3.5-4B-3D-Coder",
+    "base_model:quantized:ccore/Qwen3.5-4B-3D-Coder",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 14235304181,
+  "storage_human": "14.2 GB",
+  "base_model": "ccore/Qwen3.5-4B-3D-Coder",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "prithivMLmods/Qwen3.5-4B-3D-Coder-GGUF · Hugging Face",
+      "url": "https://huggingface.co/prithivMLmods/Qwen3.5-4B-3D-Coder-GGUF",
+      "snippet": "Image-Text-to-Text model with 4B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "prithivMLmods/Qwen3.5-4B-3D-Coder-MTP-Repacked · Hugging Face",
+      "url": "https://huggingface.co/prithivMLmods/Qwen3.5-4B-3D-Coder-MTP-Repacked",
+      "snippet": "Qwen3.5-4B-3D-Coder is an early-preview independent fine-tune of Qwen3.5-4B by ccore, exploring general-purpose coding and interactive 3D scene generation using self-contained Three.js HTML and JavaScript."
+    }
+  ]
+}

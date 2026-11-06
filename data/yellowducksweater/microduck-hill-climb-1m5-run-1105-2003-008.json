@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "YellowDuckSweater/microduck-hill-climb-1m5-run-1105-2003-008",
+  "slug": "yellowducksweater-microduck-hill-climb-1m5-run-1105-2003-008",
+  "author": "YellowDuckSweater",
+  "url": "https://huggingface.co/YellowDuckSweater/microduck-hill-climb-1m5-run-1105-2003-008",
+  "created_at": "2026-11-06T15:56:21.000Z",
+  "updated_at": "2026-11-06T15:56:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5643325,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Helldave/microduck-hill-climb-1m5-run-1030-1952 · Hugging Face",
+      "url": "https://huggingface.co/Helldave/microduck-hill-climb-1m5-run-1030-1952",
+      "snippet": "How to use Helldave/microduck-hill-climb-1m5-run-1030-1952 with Microduck: # Replace SLOT with the slot specified in the model card (walk, stand, sitstand, ground_pick, kick_left, kick_right, roulade). sudo robotctl policy load SLOT Helldave/microduck-hill-climb-1m5-run-1030-1952 ..."
+    },
+    {
+      "title": "microduck-hill-climb-1m5-reference - Hugging Face",
+      "url": "https://huggingface.co/pollen-robotics/microduck-hill-climb-1m5-reference",
+      "snippet": "Pollen's reference for the Microduck Arena's 1.5 m Hill Climb: the hill_climb_1m5 challenge of microduck-challenges trained unchanged with its recipe (4096 envs, 3000 iterations, seed 1 ..."
+    }
+  ]
+}

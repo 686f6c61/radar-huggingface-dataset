@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "nm-testing/Qwen3-30B-A3B-NVFP4-e2e",
+  "slug": "nm-testing-qwen3-30b-a3b-nvfp4-e2e",
+  "author": "nm-testing",
+  "url": "https://huggingface.co/nm-testing/Qwen3-30B-A3B-NVFP4-e2e",
+  "created_at": "2026-10-30T18:26:18.000Z",
+  "updated_at": "2026-11-06T19:56:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_moe",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 64,
+  "trending_score": 0,
+  "parameters": 17446717920,
+  "parameters_human": "17.45B",
+  "storage_bytes": 54247335406,
+  "storage_human": "54.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nm-testing/Qwen3-30B-A3B-NVFP4-AWQ-e2e · Hugging Face",
+      "url": "https://huggingface.co/nm-testing/Qwen3-30B-A3B-NVFP4-AWQ-e2e",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nm-testing/Qwen3-30B-A3B-NVFP4-e2e · Hugging Face",
+      "url": "https://huggingface.co/nm-testing/Qwen3-30B-A3B-NVFP4-e2e",
+      "snippet": "Follow NM Testing 91 Safetensors qwen3_moe 8-bit precision compressed-tensors Model card Files Files and versions"
+    }
+  ]
+}

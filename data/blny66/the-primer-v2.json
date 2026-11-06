@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "blny66/the-primer-v2",
+  "slug": "blny66-the-primer-v2",
+  "author": "blny66",
+  "url": "https://huggingface.co/blny66/the-primer-v2",
+  "created_at": "2026-11-06T19:58:02.000Z",
+  "updated_at": "2026-11-06T19:58:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1019,
+  "storage_human": "1019 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meet PRIMER-V2: The world's first bicycle-riding Robot ... - Facebook",
+      "url": "https://www.facebook.com/playtolabs/videos/meet-primer-v2-the-worlds-first-bicycle-riding-robot-this-is-the-best-combinatio/440766738281922/",
+      "snippet": "Playto Labs Aug 31, 2024󰞋󱟠 󰟝 😱Meet PRIMER-V2: The world's first bicycle-riding Robot! 🤖 This is the best combination of advanced mechanical engineering and artificial intelligence. Witness this futuristic robotics that unfolds before your eyes🧐 #playtolabs #innovation #scifi #science #technology #roboticsforkids # ..."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Luni/Thinklite-27B-Heretic-EXL3",
+  "slug": "luni-thinklite-27b-heretic-exl3",
+  "author": "Luni",
+  "url": "https://huggingface.co/Luni/Thinklite-27B-Heretic-EXL3",
+  "created_at": "2026-11-06T16:42:48.000Z",
+  "updated_at": "2026-11-06T16:42:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "exllamav3",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "exllamav3",
+    "exl3",
+    "thinklite",
+    "reasoning",
+    "thinking",
+    "chain-of-thought",
+    "uncensored",
+    "heretic",
+    "ara",
+    "abliterated",
+    "conversational",
+    "text-generation",
+    "en",
+    "base_model:Luni/Thinklite-27B-Heretic",
+    "base_model:finetune:Luni/Thinklite-27B-Heretic",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 35425150693,
+  "storage_human": "35.4 GB",
+  "base_model": "Luni/Thinklite-27B-Heretic",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Luni/Qwen3.8-27B-Cold-Fusion-GAIN-Heretic-EXL3-4.0bpw · Hugging Face",
+      "url": "https://huggingface.co/Luni/Qwen3.8-27B-Cold-Fusion-GAIN-Heretic-EXL3-4.0bpw",
+      "snippet": "Luni / Qwen3.8-27B-Cold-Fusion-GAIN-Heretic-EXL3-4.0bpw Like 0 Text Generation Safetensors qwen3_5 exl3 exllamav3 quantized agentic coding conversational License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Qwen3.8-27B-Cold-Fusion-GAIN-Heretic-EXL3-4.0bpw Specifications"
+    },
+    {
+      "title": "Luni (LumiFumi) - Hugging Face",
+      "url": "https://huggingface.co/Luni",
+      "snippet": "Ok Claude, make this model like me, make no mistakes, do not hallucinate."
+    }
+  ]
+}

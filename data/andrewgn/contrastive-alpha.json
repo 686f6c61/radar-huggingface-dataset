@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "andrewgn/contrastive-alpha",
+  "slug": "andrewgn-contrastive-alpha",
+  "author": "andrewgn",
+  "url": "https://huggingface.co/andrewgn/contrastive-alpha",
+  "created_at": "2026-11-06T13:31:14.000Z",
+  "updated_at": "2026-11-06T13:31:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AndrewTorres/contrastive-alpha · Hugging Face",
+      "url": "https://huggingface.co/AndrewTorres/contrastive-alpha",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AndrewTorres/contrastive-alpha at main - Hugging Face",
+      "url": "https://huggingface.co/AndrewTorres/contrastive-alpha/tree/main",
+      "snippet": "AndrewTorres / contrastive-alpha Like 0 Safetensors PyTorch hybrid contrastive License:mit Model card FilesFiles and versions xet Community Copy to bucket new main contrastive-alpha 206 kB Ctrl+K Ctrl+K 1 contributor History:2 commits AndrewTorres Add train.py, README.md, config.json, training_args.json, model.safetensors 5a4e29b verifiedabout 7 hours ago .gitattributes Safe 1.52 kBinitial ..."
+    }
+  ]
+}

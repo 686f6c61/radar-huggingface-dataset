@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Smyark/Epstein-lora",
+  "slug": "smyark-epstein-lora",
+  "author": "Smyark",
+  "url": "https://huggingface.co/Smyark/Epstein-lora",
+  "created_at": "2026-11-06T19:57:30.000Z",
+  "updated_at": "2026-11-06T20:18:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "base_model:adapter:stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 885030852,
+  "parameters_human": "885.0M",
+  "storage_bytes": 3644230289,
+  "storage_human": "3.6 GB",
+  "base_model": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Epstein files show former UT professor used students to develop AI ...",
+      "url": "https://www.wuot.org/news/2026-02-05/epstein-files-show-former-ut-professor-used-students-to-develop-ai-tools-for-predatory-billionaire",
+      "snippet": "Dozens of emails involving a former UT professor and Jeffrey Epstein were released by the Department of Justice, revealing an effort funded by the disgraced financier to develop an AI-powered robot with facial recognition capabilities."
+    }
+  ]
+}

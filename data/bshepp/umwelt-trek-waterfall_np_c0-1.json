@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "bshepp/umwelt-trek-waterfall_np_C0.1",
+  "slug": "bshepp-umwelt-trek-waterfall_np_c0-1",
+  "author": "bshepp",
+  "url": "https://huggingface.co/bshepp/umwelt-trek-waterfall_np_C0.1",
+  "created_at": "2026-11-06T16:45:17.000Z",
+  "updated_at": "2026-11-06T17:11:45.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "silicon-dreaming",
+    "umwelt-trek",
+    "scene-model",
+    "logistic-regression",
+    "sensor-fusion",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - bshepp/bshepp: Brian Sheppard — physics, math, and AI, built ...",
+      "url": "https://github.com/bshepp/bshepp",
+      "snippet": "Brian Sheppard Physics, math, and AI — built in the open. I build tools and do research at the intersection of AI, scientific computing, and art. Most of it starts as a question I can't stop poking at and turns into code, a paper, or both."
+    },
+    {
+      "title": "bshepp (Brian Sheppard) - Hugging Face",
+      "url": "https://huggingface.co/bshepp/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a Space 1 day ago ... published a Space 1 day ago"
+    }
+  ]
+}

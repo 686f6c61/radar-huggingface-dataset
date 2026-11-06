@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "WalterWi/transformers_clas_texto",
+  "slug": "walterwi-transformers_clas_texto",
+  "author": "WalterWi",
+  "url": "https://huggingface.co/WalterWi/transformers_clas_texto",
+  "created_at": "2026-11-06T15:30:04.000Z",
+  "updated_at": "2026-11-06T15:30:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "machine-learning",
+    "educational-example",
+    "es",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20546,
+  "parameters_human": "20546",
+  "storage_bytes": 86488,
+  "storage_human": "86488 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What are Transformers in Artificial Intelligence?",
+      "url": "https://aws.amazon.com/what-is/transformers-in-artificial-intelligence/",
+      "snippet": "What is Transformers in Artificial Intelligence how and why businesses use Transformers in Artificial Intelligence, and how to use Transformers in Artificial Intelligence with AWS."
+    },
+    {
+      "title": "Transformer (deep learning) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Transformer_(deep_learning)",
+      "snippet": "The transformer model has been implemented in standard deep learning frameworks such as TensorFlow and PyTorch. Transformers is a library produced by Hugging Face that supplies transformer-based architectures and pretrained models."
+    }
+  ]
+}

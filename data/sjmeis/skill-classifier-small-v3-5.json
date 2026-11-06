@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "sjmeis/skill-classifier-small-v3.5",
+  "slug": "sjmeis-skill-classifier-small-v3-5",
+  "author": "sjmeis",
+  "url": "https://huggingface.co/sjmeis/skill-classifier-small-v3.5",
+  "created_at": "2026-11-03T06:53:23.000Z",
+  "updated_at": "2026-11-03T06:53:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 28764674,
+  "parameters_human": "28.8M",
+  "storage_bytes": 115072313,
+  "storage_human": "115 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sjmeis (Stephen Meisenbacher) - Hugging Face",
+      "url": "https://huggingface.co/sjmeis/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset 9 days ago ... published a dataset 13 days ago"
+    },
+    {
+      "title": "GitHub - featherless-ai/simple-jev: Turn any open model into a ...",
+      "url": "https://github.com/featherless-ai/simple-jev",
+      "snippet": "Simple Jev Project Use compatible open models from huggingface, for structured classification and scoring, without training a separate classifier head. Explore the demos, playground, and documentation at simple-jev.featherless.ai. Send shared context and a set of questions."
+    }
+  ]
+}

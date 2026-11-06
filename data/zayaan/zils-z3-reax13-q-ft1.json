@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Zayaan/zils-z3-reax13-q-ft1",
+  "slug": "zayaan-zils-z3-reax13-q-ft1",
+  "author": "Zayaan",
+  "url": "https://huggingface.co/Zayaan/zils-z3-reax13-q-ft1",
+  "created_at": "2026-11-06T20:00:16.000Z",
+  "updated_at": "2026-11-06T20:00:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "zils",
+    "decision-model",
+    "soup-body",
+    "base_model:decisionmodels/REAX-1.3",
+    "base_model:finetune:decisionmodels/REAX-1.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26085330160,
+  "parameters_human": "26.09B",
+  "storage_bytes": 52170802640,
+  "storage_human": "52.2 GB",
+  "base_model": "decisionmodels/REAX-1.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zils — Teach AI to make decisions your way.",
+      "url": "https://zils.ai/",
+      "snippet": "Zils Zils Teach AI to make decisions your way. Show Zils examples with the right answers. It trains a small model your app can use to sort requests, flag problems, or score matches."
+    },
+    {
+      "title": "zils-ai (Zils) - Hugging Face",
+      "url": "https://huggingface.co/zils-ai/models",
+      "snippet": "Org profile for Zils on Hugging Face, the AI community building the future."
+    }
+  ]
+}

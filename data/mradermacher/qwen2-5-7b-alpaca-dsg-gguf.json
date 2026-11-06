@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "mradermacher/qwen2.5-7b-alpaca-dsg-GGUF",
+  "slug": "mradermacher-qwen2-5-7b-alpaca-dsg-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/qwen2.5-7b-alpaca-dsg-GGUF",
+  "created_at": "2024-11-13T23:54:21.000Z",
+  "updated_at": "2026-11-06T18:07:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Zekunli/qwen2.5-7b-alpaca-dsg",
+    "base_model:quantized:Zekunli/qwen2.5-7b-alpaca-dsg",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 66,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 72578255776,
+  "storage_human": "72.6 GB",
+  "base_model": "Zekunli/qwen2.5-7b-alpaca-dsg",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/qwen2.5-7b-alpaca-dsg-GGUF downloads: daily history and ...",
+      "url": "https://modelpulse.ifsp.dev/model/mradermacher/qwen2.5-7b-alpaca-dsg-GGUF",
+      "snippet": "In the last 30 days it was downloaded 126 times (38 in the last 7 days), and 1,645 times in total. It ranks # 153,261 on the Hub by monthly downloads. It has 0 likes. It is a quantization of Zekunli/qwen2.5-7b-alpaca-dsg. Figures come from daily snapshots of the Hugging Face Hub and update every day."
+    },
+    {
+      "title": "mradermacher/Qwen-2.5-7B-GRA-Alpaca-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen-2.5-7B-GRA-Alpaca-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke's READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "eval-apply/silvann_tq_D4_qwen3.8_27b",
+  "slug": "eval-apply-silvann_tq_d4_qwen3-8_27b",
+  "author": "eval-apply",
+  "url": "https://huggingface.co/eval-apply/silvann_tq_D4_qwen3.8_27b",
+  "created_at": "2026-09-28T22:45:21.000Z",
+  "updated_at": "2026-11-06T15:13:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qwen3_5",
+    "silvann",
+    "turboquant",
+    "quantized",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 98,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15715391227,
+  "storage_human": "15.7 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eval-apply/silvann_tq_D4_qwen3.8_27b · Hugging Face",
+      "url": "https://huggingface.co/eval-apply/silvann_tq_D4_qwen3.8_27b",
+      "snippet": "Qwen/Qwen3.8-27B, packed for the SiLVANN engine (the Eval-Apply GPU Interpreter and its neural network library): every layer matrix at 4 bits a weight (TurboQuant, a per-row scale), each rotated along its input axis with a blocked Hadamard-and-signs rotation; the embedding and head at 8 bits; norms and other small tensors kept lossless. D4: dense 4 (the model has no experts). About 15 GB."
+    },
+    {
+      "title": "eval-apply (eval apply) - Hugging Face",
+      "url": "https://huggingface.co/eval-apply/models",
+      "snippet": "Recent Activity published a modelabout 14 hours ago eval-apply/GLM-5.3-Flash_silvann_tq_D4E4 updated a modelabout 19 hours ago eval-apply/GLM-5.3-Flash_silvann_tq_D4E4 published a modelabout 22 hours ago eval-apply/Qwen3.8-27B_silvann_tq_D4 View all activity"
+    }
+  ]
+}

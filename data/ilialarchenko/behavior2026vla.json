@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "IliaLarchenko/BEHAVIOR2026VLA",
+  "slug": "ilialarchenko-behavior2026vla",
+  "author": "IliaLarchenko",
+  "url": "https://huggingface.co/IliaLarchenko/BEHAVIOR2026VLA",
+  "created_at": "2026-11-06T16:05:09.000Z",
+  "updated_at": "2026-11-06T17:47:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "behavior",
+    "vision-language-action",
+    "flow-matching",
+    "dataset:behavior-1k/2026-challenge-demos",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10830716112,
+  "storage_human": "10.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IliaLarchenko (Ilia Larchenko) · GitHub",
+      "url": "https://github.com/IliaLarchenko",
+      "snippet": "AI/ML leader and independent robotics researcher. NeurIPS BEHAVIOR '25 winner · ICRA LeHome '26: 1st sim / 2nd real · Kaggle top-20 · Director at Agoda - IliaLarchenko"
+    },
+    {
+      "title": "IliaLarchenko (Ilia Larchenko) - Hugging Face",
+      "url": "https://huggingface.co/IliaLarchenko",
+      "snippet": "I am a Data Science Director with a diverse technical and business background. I live in Bangkok and work in Agoda, where I lead multiple DS and ML teams. I was an active Kaggler in TOP-20 of a glo..."
+    }
+  ]
+}

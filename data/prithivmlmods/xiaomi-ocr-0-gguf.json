@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "prithivMLmods/Xiaomi-OCR-0-GGUF",
+  "slug": "prithivmlmods-xiaomi-ocr-0-gguf",
+  "author": "prithivMLmods",
+  "url": "https://huggingface.co/prithivMLmods/Xiaomi-OCR-0-GGUF",
+  "created_at": "2026-10-07T18:22:41.000Z",
+  "updated_at": "2026-10-30T16:03:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "llama-cpp",
+    "ocr",
+    "document-parsing",
+    "document-understanding",
+    "visual-question-answering",
+    "key-information-extraction",
+    "vision-language-model",
+    "multimodal",
+    "xiaomi",
+    "seerray",
+    "image-text-to-text",
+    "en",
+    "base_model:xiaomi-research/Xiaomi-OCR-0",
+    "base_model:quantized:xiaomi-research/Xiaomi-OCR-0",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 17,
+  "downloads_30d": 37986,
+  "trending_score": 11,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 5487587776,
+  "storage_human": "5.5 GB",
+  "base_model": "xiaomi-research/Xiaomi-OCR-0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · prithivMLmods/Xiaomi-OCR-0-GGUF at main",
+      "url": "https://huggingface.co/prithivMLmods/Xiaomi-OCR-0-GGUF/blob/main/README.md",
+      "snippet": "prithivMLmods / Xiaomi-OCR-0-GGUF Like 2 Image-Text-to-Text Transformers GGUF English text-generation-inference llama-cpp ocr document-parsing document-understanding visual-question-answering key-information-extraction vision-language-model multimodal xiaomi seerray conversational License:apache-2.0 Model card FilesFiles and versions xet ..."
+    },
+    {
+      "title": "Xiaomi-OCR-0 GGUF - GitHub",
+      "url": "https://github.com/xzl01/Xiaomi-OCR-0-GGUF",
+      "snippet": "Xiaomi-OCR-0 GGUF GGUF quantizations of Xiaomi-OCR-0 for llama.cpp, with reproducible conversion scripts and measured accuracy/speed/memory results. Xiaomi-OCR-0 is a 0.8B vision-language model for unified document parsing and OCR-centric understanding."
+    }
+  ]
+}

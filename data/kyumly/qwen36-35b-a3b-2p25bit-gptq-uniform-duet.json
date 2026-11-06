@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "kyumly/qwen36-35b-a3b-2p25bit-gptq-uniform-duet",
+  "slug": "kyumly-qwen36-35b-a3b-2p25bit-gptq-uniform-duet",
+  "author": "kyumly",
+  "url": "https://huggingface.co/kyumly/qwen36-35b-a3b-2p25bit-gptq-uniform-duet",
+  "created_at": "2026-11-06T14:57:21.000Z",
+  "updated_at": "2026-11-06T14:58:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "quantized",
+    "gptq",
+    "low-bit",
+    "moe",
+    "qat",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16557225222,
+  "storage_human": "16.6 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B, mrminjae/qwen36-35b-a3b-2p25bit-gptq-uniform-packed",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kyumly/qwen36-35b-a3b-2p10bit-duet · Hugging Face",
+      "url": "https://huggingface.co/kyumly/qwen36-35b-a3b-2p10bit-duet",
+      "snippet": "Qwen3.6-35B-A3B — 2.10-bit routed experts, packed, DUET QAT This checkpoint starts from the 2.10-bit post-training-quantized model mrminjae/qwen36-35b-a3b-2p10bit-genans-lowbit and fine-tunes its routed-expert codes with DUET, a quantization-aware training method that has no master weights."
+    }
+  ]
+}

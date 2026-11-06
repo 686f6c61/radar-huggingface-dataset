@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "amartya16/Agastya-RAG-2B",
+  "slug": "amartya16-agastya-rag-2b",
+  "author": "amartya16",
+  "url": "https://huggingface.co/amartya16/Agastya-RAG-2B",
+  "created_at": "2026-11-06T18:33:44.000Z",
+  "updated_at": "2026-11-06T18:33:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amartya Sai Andra · Portfolio",
+      "url": "https://andralabs.org/",
+      "snippet": "Retrieval · AI · 2026 Agastya RAG Inspired by IBM's STAIR pipeline, Agastya RAG uses a single thinking process for fast, high-efficiency gold-leaf retrieval on one 8GB GPU."
+    }
+  ]
+}

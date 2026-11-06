@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "BravoRobots/microduck-indoor-object-search-rl",
+  "slug": "bravorobots-microduck-indoor-object-search-rl",
+  "author": "BravoRobots",
+  "url": "https://huggingface.co/BravoRobots/microduck-indoor-object-search-rl",
+  "created_at": "2026-11-06T17:33:47.000Z",
+  "updated_at": "2026-11-06T17:43:51.000Z",
+  "license": "mixed-apache-2.0-and-cc-by-nc-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "pytorch",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "pytorch",
+    "onnx",
+    "robotics",
+    "microduck",
+    "mujoco",
+    "ppo",
+    "simulation",
+    "reinforcement-learning",
+    "en",
+    "es",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 71263255,
+  "storage_human": "71 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - LuoBoxiaolifeidao/microduck_rl",
+      "url": "https://github.com/LuoBoxiaolifeidao/microduck_rl",
+      "snippet": "Every main task has a Backlash twin that trains on a model with ±1° of gear play (2° total) in series with each of the 14 servo joints: insert -Backlash before MicroDuck in the task id, e.g. Mjlab-Velocity-Flat-Backlash-MicroDuck. The backlash is modeled properly for sim2real: each servo gets an unactuated passive_<joint>_backlash hinge, and because the real encoder sits on the output side ..."
+    },
+    {
+      "title": "GitHub - pollen-robotics/microduck_rl: RL training environments for ...",
+      "url": "https://github.com/pollen-robotics/microduck_rl",
+      "snippet": "RL training environments for Microduck (mjlab). Contribute to pollen-robotics/microduck_rl development by creating an account on GitHub."
+    }
+  ]
+}

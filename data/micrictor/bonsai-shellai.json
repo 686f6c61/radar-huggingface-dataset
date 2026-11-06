@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "micrictor/bonsai-shellai",
+  "slug": "micrictor-bonsai-shellai",
+  "author": "micrictor",
+  "url": "https://huggingface.co/micrictor/bonsai-shellai",
+  "created_at": "2026-11-06T13:21:00.000Z",
+  "updated_at": "2026-11-06T13:28:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "gemma4",
+    "pruning",
+    "shell",
+    "text-generation",
+    "en",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:quantized:google/gemma-4-E2B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4498808355,
+  "parameters_human": "4.50B",
+  "storage_bytes": 1926811424,
+  "storage_human": "1.9 GB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - micrictor/shellai",
+      "url": "https://github.com/micrictor/shellai",
+      "snippet": "Blog post Shellai (pronounced shellay) is a command-line interface for getting AI assistance without network calls or a separate interface. It's built around the idea that I should be able to, in my terminal, simply type ai, do this thing and have it generate the command for me. Shellai uses local small-language models (SLMs) to fulfill user requests. Your data stays on your machine. Unlike ..."
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=shellai",
+      "snippet": "Models 2 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: shellai Clear all"
+    }
+  ]
+}

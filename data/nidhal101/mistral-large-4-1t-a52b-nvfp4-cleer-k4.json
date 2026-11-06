@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "Nidhal101/Mistral-Large-4-1T-A52B-NVFP4-CLEER-k4",
+  "slug": "nidhal101-mistral-large-4-1t-a52b-nvfp4-cleer-k4",
+  "author": "Nidhal101",
+  "url": "https://huggingface.co/Nidhal101/Mistral-Large-4-1T-A52B-NVFP4-CLEER-k4",
+  "created_at": "2026-11-06T18:32:17.000Z",
+  "updated_at": "2026-11-06T18:35:52.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:mistralai/Mistral-Large-4-1T-A52B-NVFP4",
+    "base_model:finetune:mistralai/Mistral-Large-4-1T-A52B-NVFP4",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 49152937228,
+  "storage_human": "49.2 GB",
+  "base_model": "mistralai/Mistral-Large-4-1T-A52B-NVFP4",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unsloth/Mistral-Large-4-1T-A52B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Mistral-Large-4-1T-A52B-NVFP4",
+      "snippet": "Mistral Large 4 is our largest and most capable model to date: a 1 trillion-parameter natively multimodal Mixture-of-Experts model with 49 billion active parameters per token (52 billion including embeddings and output layers), trained from scratch on 3,800 NVIDIA Grace Blackwell GPUs in Mistral's ..."
+    },
+    {
+      "title": "nativ-community/Mistral-Large-4-1T-A52B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/nativ-community/Mistral-Large-4-1T-A52B-NVFP4",
+      "snippet": "Original Mistral Large 4 NVFP4 weights, hosted by Nativ Community. A multimodal Mixture-of-Experts model for text and image understanding, reasoning, coding, and tool use. The weights retain Mistral's original precision and packing: NVFP4 experts, FP8 dense layers, and a bundled BF16 DSpark draft ..."
+    }
+  ]
+}

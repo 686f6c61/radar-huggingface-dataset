@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "BuilderHelm/Llama-Kanso-Sumi-1.0",
+  "slug": "builderhelm-llama-kanso-sumi-1-0",
+  "author": "BuilderHelm",
+  "url": "https://huggingface.co/BuilderHelm/Llama-Kanso-Sumi-1.0",
+  "created_at": "2026-11-06T18:15:20.000Z",
+  "updated_at": "2026-11-06T19:36:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "onnx",
+  "languages": [
+    "en",
+    "es",
+    "de",
+    "fr",
+    "pt",
+    "it",
+    "nl"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "Kanso",
+    "ZenVoice",
+    "mmBERT",
+    "On-Device",
+    "Dictation",
+    "Text Formatting",
+    "Punctuation Restoration",
+    "Truecasing",
+    "Disfluency Removal",
+    "Built with Llama",
+    "token-classification",
+    "en",
+    "es",
+    "de",
+    "fr",
+    "pt",
+    "it",
+    "nl",
+    "dataset:HuggingFaceTB/smoltalk",
+    "dataset:HuggingFaceFW/fineweb-2",
+    "dataset:facebook/voxpopuli",
+    "base_model:jhu-clsp/mmBERT-small",
+    "base_model:finetune:jhu-clsp/mmBERT-small",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 140500626,
+  "parameters_human": "140.5M",
+  "storage_bytes": 1060821358,
+  "storage_human": "1.1 GB",
+  "base_model": "jhu-clsp/mmBERT-small",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BuilderHelm (BuilderHelm AI) - Hugging Face",
+      "url": "https://huggingface.co/BuilderHelm",
+      "snippet": "Hi, we're BuilderHelm 👋 We're an independent AI studio building small, personalized models and practical tools for everyday work. Our focus is private, on-device AI, efficient inference, and tools that keep people in control of their agents. We build in public and share our work through code, model releases, and reproducible benchmarks."
+    },
+    {
+      "title": "BuilderHelm/Kanso-Satori-1.0 at main - Hugging Face",
+      "url": "https://huggingface.co/BuilderHelm/Kanso-Satori-1.0/tree/main",
+      "snippet": "BuilderHelm / Kanso-Satori-1.0 Like 0 Follow BuilderHelm AI 1 Text Generation MLX Safetensors qwen3 kanso zenvoice dictation text-formatting dwq conversational 4-bit precision License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

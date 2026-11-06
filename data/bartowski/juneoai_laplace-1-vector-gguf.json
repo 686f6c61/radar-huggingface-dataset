@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "bartowski/JuneoAI_Laplace-1-Vector-GGUF",
+  "slug": "bartowski-juneoai_laplace-1-vector-gguf",
+  "author": "bartowski",
+  "url": "https://huggingface.co/bartowski/JuneoAI_Laplace-1-Vector-GGUF",
+  "created_at": "2026-11-06T19:30:31.000Z",
+  "updated_at": "2026-11-06T19:35:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "decision-making",
+    "agents",
+    "agent-safety",
+    "causal-inference",
+    "consequence-prediction",
+    "on-device",
+    "custom_code",
+    "laplace",
+    "juneo",
+    "text-generation",
+    "base_model:JuneoAI/Laplace-1-Vector",
+    "base_model:quantized:JuneoAI/Laplace-1-Vector",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4112079360,
+  "parameters_human": "4.11B",
+  "storage_bytes": 62600070080,
+  "storage_human": "62.6 GB",
+  "base_model": "JuneoAI/Laplace-1-Vector",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bartowski (Bartowski) – Models - Hugging Face",
+      "url": "https://huggingface.co/bartowski/models",
+      "snippet": "Research Engineer at arcee.ai and official model curator for lmstudio.ai, showcasing models and contributions on Hugging Face."
+    },
+    {
+      "title": "bartowski (Bartowski) - Hugging Face",
+      "url": "https://huggingface.co/bartowski",
+      "snippet": "Senior Machine Learning Engineer at RedHat Per-tensor layout maps for GGUF quantization"
+    }
+  ]
+}

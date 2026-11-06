@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "tom986/legislatura-7b-v2-MLC",
+  "slug": "tom986-legislatura-7b-v2-mlc",
+  "author": "tom986",
+  "url": "https://huggingface.co/tom986/legislatura-7b-v2-MLC",
+  "created_at": "2026-11-06T13:54:26.000Z",
+  "updated_at": "2026-11-06T13:55:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4284263424,
+  "storage_human": "4.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tom986/legislatura-7b-v20261105-1821-MLC · Hugging Face",
+      "url": "https://huggingface.co/tom986/legislatura-7b-v20261105-1821-MLC",
+      "snippet": "Machine learning model. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "ununununununununununununununununununun/wan2.1-t2v-1.3b-phi-lattice-v2",
+  "slug": "ununununununununununununununununununun-wan2-1-t2v-1-3b-phi-lattice-v2",
+  "author": "ununununununununununununununununununun",
+  "url": "https://huggingface.co/ununununununununununununununununununun/wan2.1-t2v-1.3b-phi-lattice-v2",
+  "created_at": "2026-11-06T14:20:12.000Z",
+  "updated_at": "2026-11-06T14:27:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "wan2.1",
+    "text-to-video",
+    "video-generation",
+    "phi-lattice",
+    "phi-lattice-v2",
+    "quantization",
+    "base_model:Wan-AI/Wan2.1-T2V-1.3B-Diffusers",
+    "base_model:finetune:Wan-AI/Wan2.1-T2V-1.3B-Diffusers",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1418996800,
+  "parameters_human": "1.42B",
+  "storage_bytes": 3644116765,
+  "storage_human": "3.6 GB",
+  "base_model": "Wan-AI/Wan2.1-T2V-1.3B-Diffusers",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wan-AI/Wan2.1-T2V-14B · Hugging Face",
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B",
+      "snippet": "Text-to-Video model with 14B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Wan-AI/Wan2.1-T2V-1.3B · Hugging Face",
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "gacoro/03-keras-regresion",
+  "slug": "gacoro-03-keras-regresion",
+  "author": "gacoro",
+  "url": "https://huggingface.co/gacoro/03-keras-regresion",
+  "created_at": "2026-11-06T16:27:11.000Z",
+  "updated_at": "2026-11-06T16:27:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Build a Regression Model in Keras - Coursera AI Course.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/jbEmanuel/Build-a-Regression-Model-in-Keras---Coursera-AI-Course/blob/main/Build_a_Regression_Model_in_Keras_Coursera_AI_Course.ipynb",
+      "snippet": "Cement 0 Blast Furnace Slag 0 Fly Ash 0 Water 0 Superplasticizer 0 Coarse Aggregate 0 Fine Aggregate 0 Age 0 Strength 0 dtype: int64"
+    },
+    {
+      "title": "regression.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/keras/regression.ipynb",
+      "snippet": "Training a model with tf.keras typically starts by defining the model architecture. Use a tf.keras.Sequential model, which represents a sequence of steps. There are two steps in your single-variable linear regression model: Normalize the 'Horsepower' input features using the tf.keras.layers.Normalization preprocessing layer."
+    }
+  ]
+}

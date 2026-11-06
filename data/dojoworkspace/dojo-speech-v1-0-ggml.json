@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "DojoWorkspace/Dojo-Speech-v1.0-ggml",
+  "slug": "dojoworkspace-dojo-speech-v1-0-ggml",
+  "author": "DojoWorkspace",
+  "url": "https://huggingface.co/DojoWorkspace/Dojo-Speech-v1.0-ggml",
+  "created_at": "2026-11-06T15:14:36.000Z",
+  "updated_at": "2026-11-06T15:18:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "whisper.cpp",
+  "languages": [],
+  "tags": [
+    "whisper.cpp",
+    "whisper",
+    "ggml",
+    "speech-recognition",
+    "dojo",
+    "automatic-speech-recognition",
+    "base_model:openai/whisper-base.en",
+    "base_model:finetune:openai/whisper-base.en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3871613183,
+  "storage_human": "3.9 GB",
+  "base_model": "openai/whisper-tiny.en, openai/whisper-base.en, openai/whisper-small.en, openai/whisper-medium.en, openai/whisper-large-v3-turbo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HeyDojo AI — Stop Prompting. Start Talking.",
+      "url": "https://heydojo.ai/",
+      "snippet": "HeyDojo and Dojo Workspace What is Dojo Workspace? Dojo Workspace is a voice-first, model-agnostic AI workspace for coding, research, media, and automation. You talk naturally and put your choice of AI models to work across one or two coordinated agent lanes — Dojo Solo and Dojo Duo."
+    }
+  ]
+}

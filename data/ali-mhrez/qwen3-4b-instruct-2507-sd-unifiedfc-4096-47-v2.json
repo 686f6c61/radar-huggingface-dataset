@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-4096-47-v2",
+  "slug": "ali-mhrez-qwen3-4b-instruct-2507-sd-unifiedfc-4096-47-v2",
+  "author": "Ali-Mhrez",
+  "url": "https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-4096-47-v2",
+  "created_at": "2026-11-05T13:28:43.000Z",
+  "updated_at": "2026-11-06T18:29:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "unsloth",
+    "base_model:unsloth/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:unsloth/Qwen3-4B-Instruct-2507",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1013554766,
+  "storage_human": "1.0 GB",
+  "base_model": "unsloth/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-4096-44-v2 at main",
+      "url": "https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-4096-44-v2/tree/main",
+      "snippet": "Instructions to use Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-4096-44-v2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-4096-44-v2 with Transformers:"
+    },
+    {
+      "title": "Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-4096-44 · Hugging Face",
+      "url": "https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-4096-44",
+      "snippet": "Model Card for Qwen3-4B-Instruct-2507-SD-UnifiedFC-4096-44 This model is a fine-tuned version of unsloth/Qwen3-4B-Instruct-2507. It has been trained using TRL."
+    }
+  ]
+}

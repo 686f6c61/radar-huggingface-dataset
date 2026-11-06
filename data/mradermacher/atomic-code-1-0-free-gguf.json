@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Atomic-Code-1.0-Free-GGUF",
+  "slug": "mradermacher-atomic-code-1-0-free-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Atomic-Code-1.0-Free-GGUF",
+  "created_at": "2026-11-06T13:40:32.000Z",
+  "updated_at": "2026-11-06T13:52:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "code",
+    "unsloth",
+    "qlora",
+    "qwen2.5-coder",
+    "es",
+    "base_model:Korzadi/Atomic-Code-1.0-Free",
+    "base_model:quantized:Korzadi/Atomic-Code-1.0-Free",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 58451764928,
+  "storage_human": "58.5 GB",
+  "base_model": "Korzadi/Atomic-Code-1.0-Free",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "10 Open-Source No-Code AI Platforms for Building LLM Apps, RAG Systems ...",
+      "url": "https://www.marktechpost.com/2026/07/18/10-open-source-no-code-ai-platforms-for-building-llm-apps-rag-systems-and-ai-agents/",
+      "snippet": "Introduction Building an LLM application no longer requires wiring orchestration code by hand. A class of open-source platforms now exposes retrieval, agents, and workflows through visual canvases, web UIs, and plain-English prompts. These tools let developers prototype in minutes and self-host for data control. This article reviews ten open-source projects across three jobs: building LLM apps ..."
+    },
+    {
+      "title": "mradermacher/Aurora-Code-1-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Aurora-Code-1-i1-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

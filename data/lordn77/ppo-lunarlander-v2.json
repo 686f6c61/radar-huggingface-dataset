@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "LordN77/ppo-LunarLander-v2",
+  "slug": "lordn77-ppo-lunarlander-v2",
+  "author": "LordN77",
+  "url": "https://huggingface.co/LordN77/ppo-LunarLander-v2",
+  "created_at": "2026-11-06T19:40:18.000Z",
+  "updated_at": "2026-11-06T19:56:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v2",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ppo",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 151077,
+  "storage_human": "151077 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "janvi-ai/ppo-LunarLander-v2 · Hugging Face",
+      "url": "https://huggingface.co/janvi-ai/ppo-LunarLander-v2",
+      "snippet": "Instructions to use janvi-ai/ppo-LunarLander-v2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries stable-baselines3 How to use janvi-ai/ppo-LunarLander-v2 with stable-baselines3: ... Notebooks Google Colab Kaggle PPO LunarLander-v2 Environment Training Details Evaluation Results Model ..."
+    },
+    {
+      "title": "deep-rl-unit1-ppo-LunarLander-v2-20261105 - Hugging Face",
+      "url": "https://huggingface.co/poplolioi11/deep-rl-unit1-ppo-LunarLander-v2-20261105",
+      "snippet": "Reinforcement Learning model. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

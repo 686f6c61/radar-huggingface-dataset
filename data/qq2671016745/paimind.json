@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "qq2671016745/paimind",
+  "slug": "qq2671016745-paimind",
+  "author": "qq2671016745",
+  "url": "https://huggingface.co/qq2671016745/paimind",
+  "created_at": "2026-11-06T15:47:47.000Z",
+  "updated_at": "2026-11-06T15:54:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 327338,
+  "storage_human": "327338 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PaiMind",
+      "url": "https://paimind.ai/",
+      "snippet": "Paimind is a Fintech-AI solution. It consists of a powerful AI-driven engine, that leverages algorithms and ML models to improve Personal Financial Management."
+    },
+    {
+      "title": "PaiMind Sandbox",
+      "url": "https://sandbox.paimind.ai/",
+      "snippet": "PaiMind - Predictive Deposit Activation Engine Predictive Deposit Activation Engine Behavioral AI-powered sandbox analyzing customer transaction data to generate savings predictions, behavioral insights, and activation recommendations for mid-sized banks."
+    }
+  ]
+}

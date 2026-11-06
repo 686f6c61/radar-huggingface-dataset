@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "markab/rpn-gpt-lightning-NVFP4",
+  "slug": "markab-rpn-gpt-lightning-nvfp4",
+  "author": "markab",
+  "url": "https://huggingface.co/markab/rpn-gpt-lightning-NVFP4",
+  "created_at": "2026-11-06T19:18:50.000Z",
+  "updated_at": "2026-11-06T19:19:55.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nemotron_h",
+    "text-generation",
+    "forth",
+    "rpn",
+    "nemotron",
+    "math",
+    "arithmetic",
+    "nvfp4",
+    "modelopt",
+    "conversational",
+    "en",
+    "dataset:markab/rpn-gpt-data",
+    "base_model:markab/rpn-gpt-lightning",
+    "base_model:quantized:markab/rpn-gpt-lightning",
+    "license:other",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32913266240,
+  "parameters_human": "32.91B",
+  "storage_bytes": 22875766664,
+  "storage_human": "22.9 GB",
+  "base_model": "markab/rpn-gpt-lightning",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nvidia’s Nemotron 3.5 Lightning Bets on Fast, Efficient AI Agents",
+      "url": "https://creati.ai/ai-news/2026-08-11/nvidias-nemotron-3-5-lightning-bets-on-fast-efficient-ai-agents/",
+      "snippet": "Nvidia has released Nemotron 3.5 Lightning, an open-weight reasoning model designed to make AI agent workloads faster and cheaper to run rather than maximize performance on every intelligence benchmark."
+    },
+    {
+      "title": "NVIDIA Nemotron 3.5 Lightning: Local Agent Inference Guide",
+      "url": "https://intuitionlabs.ai/articles/nvidia-nemotron-3-5-lightning-local-agent-inference",
+      "snippet": "A 2026 analyst guide to NVIDIA Nemotron 3.5 Lightning for local AI agent inference: architecture, GPU and DGX Spark hardware requirements, vendor versus independent benchmark data, and cost comparisons against cloud LLM inference."
+    }
+  ]
+}

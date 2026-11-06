@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "ShadyAdham0/smollm3-3b-sft-gsm8k",
+  "slug": "shadyadham0-smollm3-3b-sft-gsm8k",
+  "author": "ShadyAdham0",
+  "url": "https://huggingface.co/ShadyAdham0/smollm3-3b-sft-gsm8k",
+  "created_at": "2026-11-06T15:37:46.000Z",
+  "updated_at": "2026-11-06T15:38:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "smollm3",
+    "text-generation",
+    "sft",
+    "trl",
+    "peft",
+    "qlora",
+    "smol-course",
+    "gsm8k",
+    "dataset:openai/gsm8k",
+    "dataset:meta-math/MetaMathQA",
+    "base_model:HuggingFaceTB/SmolLM3-3B-Base",
+    "base_model:finetune:HuggingFaceTB/SmolLM3-3B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3075098624,
+  "parameters_human": "3.08B",
+  "storage_bytes": 6409344990,
+  "storage_human": "6.4 GB",
+  "base_model": "HuggingFaceTB/SmolLM3-3B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HuggingFaceTB/SmolLM3-3B · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B",
+      "snippet": "Text Generation model with 3B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "HuggingFaceTB/SmolLM3-3B-Base · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B-Base",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

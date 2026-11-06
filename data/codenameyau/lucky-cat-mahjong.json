@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "codenameyau/lucky-cat-mahjong",
+  "slug": "codenameyau-lucky-cat-mahjong",
+  "author": "codenameyau",
+  "url": "https://huggingface.co/codenameyau/lucky-cat-mahjong",
+  "created_at": "2026-11-06T13:40:07.000Z",
+  "updated_at": "2026-11-06T13:55:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mahjong",
+    "hong-kong-mahjong",
+    "game-ai",
+    "self-play",
+    "reinforcement-learning",
+    "dataset:codenameyau/lucky-cat-mahjong-games",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - codenameyau/lucky-cat-mahjong",
+      "url": "https://github.com/codenameyau/lucky-cat-mahjong",
+      "snippet": "Logo & branding — Uses logo.png with a red-forward color palette matching the Lucky Cat brand Services — Large events, office workshops, business collaborations, and private lessons Editable rates — Pricing table managed via Pages CMS Customizable style guide — Fonts, primary/secondary colors, and accent colors all editable in the CMS Instagram — Links to @luckycat.mahjong"
+    },
+    {
+      "title": "lucky-cat-mahjong/README.md at master · codenameyau/lucky-cat ... - GitHub",
+      "url": "https://github.com/codenameyau/lucky-cat-mahjong/blob/master/README.md",
+      "snippet": "Lucky Cat Mahjong's Website. Contribute to codenameyau/lucky-cat-mahjong development by creating an account on GitHub."
+    }
+  ]
+}

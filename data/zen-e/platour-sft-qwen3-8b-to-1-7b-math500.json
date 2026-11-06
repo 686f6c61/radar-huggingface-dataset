@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "zen-E/PLatour-SFT-Qwen3-8B-to-1.7B-MATH500",
+  "slug": "zen-e-platour-sft-qwen3-8b-to-1-7b-math500",
+  "author": "zen-E",
+  "url": "https://huggingface.co/zen-E/PLatour-SFT-Qwen3-8B-to-1.7B-MATH500",
+  "created_at": "2026-11-06T20:48:13.000Z",
+  "updated_at": "2026-11-06T20:50:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:2611.06976",
+    "platour",
+    "safetensors",
+    "custom-loader",
+    "dataset:zen-E/PLatour-Qwen3-Data",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 939526824,
+  "storage_human": "940 MB",
+  "base_model": "Qwen/Qwen3-8B, Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PLatour - a zen-E Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/zen-E/platour",
+      "snippet": "PLatour model and dataset releases. Dataset preview; model releases will be added later."
+    },
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "Text Generation model with 8B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

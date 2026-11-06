@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "abdulaziz01/team-103-trust",
+  "slug": "abdulaziz01-team-103-trust",
+  "author": "abdulaziz01",
+  "url": "https://huggingface.co/abdulaziz01/team-103-trust",
+  "created_at": "2026-11-06T17:57:26.000Z",
+  "updated_at": "2026-11-06T17:57:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "tags": [
+    "safetensors",
+    "modernbert",
+    "qai-hf-hackathon-2026",
+    "ai-governance",
+    "qatar",
+    "arabic",
+    "text-classification",
+    "en",
+    "ar",
+    "dataset:abdulaziz01/team-103-trust-evidence-data",
+    "base_model:jhu-clsp/mmBERT-small",
+    "base_model:finetune:jhu-clsp/mmBERT-small",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 140643461,
+  "parameters_human": "140.6M",
+  "storage_bytes": 596951298,
+  "storage_human": "597 MB",
+  "base_model": "jhu-clsp/mmBERT-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "abdulaziz01 (Abdulaziz) - Hugging Face",
+      "url": "https://huggingface.co/abdulaziz01",
+      "snippet": "Given two images the model will tell what changed. abdulaziz01 Aug 10, 2025. Sleeping . Delay Pred. 👀. Predict response delay for military communications"
+    },
+    {
+      "title": "trustmodel.ai - Mandatory Infrastructure for AI Trust, Safety & Compliance",
+      "url": "https://trustmodel.ai/",
+      "snippet": "Independent AI trust ratings, validation, and compliance infrastructure for enterprises. Evaluate, monitor, and secure AI systems before deployment."
+    }
+  ]
+}

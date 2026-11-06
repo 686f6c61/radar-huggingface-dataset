@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "Alibejaoui/omnia_videos",
+  "slug": "alibejaoui-omnia_videos",
+  "author": "Alibejaoui",
+  "url": "https://huggingface.co/Alibejaoui/omnia_videos",
+  "created_at": "2026-11-06T16:21:32.000Z",
+  "updated_at": "2026-11-06T16:21:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Omni Video - AI Video Generator | Text & Image to Video Online",
+      "url": "https://www.omni-video.app/",
+      "snippet": "Create professional AI videos with Omni Video. Turn text and images into high-quality video clips online with a fast, simple, and reliable creative workflow."
+    },
+    {
+      "title": "Omni AI: 50+ AI Models, One Subscription",
+      "url": "https://www.omniai.io/",
+      "snippet": "Create content, research ideas, and produce video with 50+ AI models and expert personas. One login, one subscription, one place to grow faster."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Nidhal101/A.X-K2-NVFP4-CLEER-k8",
+  "slug": "nidhal101-a-x-k2-nvfp4-cleer-k8",
+  "author": "Nidhal101",
+  "url": "https://huggingface.co/Nidhal101/A.X-K2-NVFP4-CLEER-k8",
+  "created_at": "2026-11-06T18:29:51.000Z",
+  "updated_at": "2026-11-06T18:35:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "axk2",
+    "base_model:skt/A.X-K2-NVFP4",
+    "base_model:quantized:skt/A.X-K2-NVFP4",
+    "license:apache-2.0",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 36265499360,
+  "parameters_human": "36.27B",
+  "storage_bytes": 29441009323,
+  "storage_human": "29.4 GB",
+  "base_model": "skt/A.X-K2-NVFP4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nidhal101 (Nidhal Jegham) - Hugging Face",
+      "url": "https://huggingface.co/Nidhal101",
+      "snippet": "Sort: Recently updated Nidhal101/Kimi-K2.6-FP8-BLOCK-pruned-8experts 33B•Updated Aug 5• 11"
+    },
+    {
+      "title": "Nidhal101/Kimi-K2.6-FP8-BLOCK-pruned-8experts · Hugging Face",
+      "url": "https://huggingface.co/Nidhal101/Kimi-K2.6-FP8-BLOCK-pruned-8experts",
+      "snippet": "Nidhal101 / Kimi-K2.6-FP8-BLOCK-pruned-8experts like 0 Safetensors kimi_k25 custom_code compressed-tensors Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 2 Safetensors Model size 33B params Tensor type F32 · BF16 · F8_E4M3 · Chat template Files info Inference Providers NEW This model isn't deployed by any Inference Provider.🙋Ask for ..."
+    }
+  ]
+}

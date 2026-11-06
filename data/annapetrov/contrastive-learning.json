@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "annapetrov/contrastive-learning",
+  "slug": "annapetrov-contrastive-learning",
+  "author": "annapetrov",
+  "url": "https://huggingface.co/annapetrov/contrastive-learning",
+  "created_at": "2026-11-06T15:39:23.000Z",
+  "updated_at": "2026-11-06T15:39:28.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "contrastive-learning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Contrastive learning - Learn AI",
+      "url": "https://ai.miraheze.org/wiki/Contrastive_learning",
+      "snippet": "Contrastive learning is a machine learning paradigm in which a model learns to produce meaningful representations of data by comparing pairs or groups of samples and distinguishing similar items from dissimilar ones. Rather than relying on manually assigned labels as in supervised learning, contrastive learning trains models to recognize which data points share underlying structure and which ..."
+    }
+  ]
+}

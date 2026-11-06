@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-krea2-lora-xhs-lora",
+  "slug": "runninghubai-rh-krea2-lora-xhs-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-krea2-lora-xhs-lora",
+  "created_at": "2026-11-06T13:26:04.000Z",
+  "updated_at": "2026-11-06T13:27:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "image-text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 470345584,
+  "storage_human": "470 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunningHubAI/rh-krea2-r-lokr-lora · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-krea2-r-lokr-lora",
+      "snippet": "It is especially suitable for generation tasks requiring style features, structured layouts, and complex spatial relationships (such as style transfer), as well as scenarios where model size needs to be significantly reduced in resource-constrained environments. Recently found a great AI image and video generation tool RunningHub!"
+    },
+    {
+      "title": "RunningHubAI/rh-krea2-ai-lora · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-krea2-ai-lora",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

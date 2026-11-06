@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "alobroke/few-shot-data-labeler-distilbert",
+  "slug": "alobroke-few-shot-data-labeler-distilbert",
+  "author": "alobroke",
+  "url": "https://huggingface.co/alobroke/few-shot-data-labeler-distilbert",
+  "created_at": "2026-11-06T14:06:03.000Z",
+  "updated_at": "2026-11-06T14:11:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66958086,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267844872,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - alobroke/few_short_data_labeler",
+      "url": "https://github.com/alobroke/few_short_data_labeler",
+      "snippet": "It combines Few-Shot Learning with Groq and DistilBERT fine-tuning to compare two approaches to automated text classification. The application also includes confidence estimation, model evaluation, synthetic data generation, and label noise analysis."
+    }
+  ]
+}

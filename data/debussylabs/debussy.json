@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "debussylabs/debussy",
+  "slug": "debussylabs-debussy",
+  "author": "debussylabs",
+  "url": "https://huggingface.co/debussylabs/debussy",
+  "created_at": "2026-11-06T15:38:34.000Z",
+  "updated_at": "2026-11-06T15:38:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "decision-model",
+    "safety",
+    "guardrail",
+    "tool-calling",
+    "calibration",
+    "abstention",
+    "gguf",
+    "cpu",
+    "text-classification",
+    "en",
+    "dataset:nvidia/When2Call",
+    "dataset:allenai/wildguardmix",
+    "dataset:TIGER-Lab/MMLU-Pro",
+    "dataset:ArtificialAnalysis/AA-Omniscience-Public-v1.1",
+    "base_model:IFM/K2-Horizon-7B-GGUF",
+    "base_model:finetune:IFM/K2-Horizon-7B-GGUF",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "unsloth/Qwen3.5-4B-GGUF, IFM/K2-Horizon-7B-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Debussy - AI Music Composition",
+      "url": "https://debussy.app/",
+      "snippet": "Create unique, atmospheric music compositions with AI. Describe a feeling, get a piece of music."
+    }
+  ]
+}

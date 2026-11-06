@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Omaralghamdiette/multitask",
+  "slug": "omaralghamdiette-multitask",
+  "author": "Omaralghamdiette",
+  "url": "https://huggingface.co/Omaralghamdiette/multitask",
+  "created_at": "2026-11-06T19:15:20.000Z",
+  "updated_at": "2026-11-06T19:15:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Omaralghamdiette/mixer-multitask11 · Hugging Face",
+      "url": "https://huggingface.co/Omaralghamdiette/mixer-multitask11",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Omaralghamdiette (خالد منصور) - Hugging Face",
+      "url": "https://huggingface.co/Omaralghamdiette",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 9 hours ago ... published a model about 9 hours ago"
+    }
+  ]
+}

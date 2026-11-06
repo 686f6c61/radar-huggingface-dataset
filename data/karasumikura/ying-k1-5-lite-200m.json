@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Karasumikura/Ying-K1.5-Lite-200M",
+  "slug": "karasumikura-ying-k1-5-lite-200m",
+  "author": "Karasumikura",
+  "url": "https://huggingface.co/Karasumikura/Ying-K1.5-Lite-200M",
+  "created_at": "2026-11-03T20:21:05.000Z",
+  "updated_at": "2026-11-06T17:09:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mm200",
+    "feature-extraction",
+    "ying-k1.5",
+    "chinese",
+    "base",
+    "from-scratch",
+    "text-generation",
+    "custom_code",
+    "zh",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 57,
+  "trending_score": 0,
+  "parameters": 210210560,
+  "parameters_human": "210.2M",
+  "storage_bytes": 420970422,
+  "storage_human": "421 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Karasumikura/Ying-K2-Lite-200M · Hugging Face",
+      "url": "https://huggingface.co/Karasumikura/Ying-K2-Lite-200M",
+      "snippet": "Karasumikura / Ying-K2-Lite-200M Like 0 Text Generation Transformers Safetensors Chinese English mm200 feature-extraction ying-k2 chinese base from-scratch custom_code License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    },
+    {
+      "title": "Karasumikura/Ying-K1-Lite-200M-base · Hugging Face",
+      "url": "https://huggingface.co/Karasumikura/Ying-K1-Lite-200M-base",
+      "snippet": "Karasumikura / Ying-K1-Lite-200M-base Like 0 Transformers Safetensors Chinese mm200 chinese small-language-model dense from-scratch base License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    }
+  ]
+}

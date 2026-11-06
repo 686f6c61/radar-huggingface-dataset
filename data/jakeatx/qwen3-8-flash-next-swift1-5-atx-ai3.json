@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "jakeatx/qwen3.8-flash-next-Swift1.5-ATX-AI3",
+  "slug": "jakeatx-qwen3-8-flash-next-swift1-5-atx-ai3",
+  "author": "jakeatx",
+  "url": "https://huggingface.co/jakeatx/qwen3.8-flash-next-Swift1.5-ATX-AI3",
+  "created_at": "2026-11-06T07:29:06.000Z",
+  "updated_at": "2026-11-06T15:01:41.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "quantized",
+    "qwen3.8",
+    "swift-1.5",
+    "flash-next",
+    "mtp",
+    "24gb",
+    "12gb",
+    "text-generation",
+    "base_model:ukisai/Swift1.5-Qwen3.8-Flash-Next",
+    "base_model:quantized:ukisai/Swift1.5-Qwen3.8-Flash-Next",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 176943899520,
+  "parameters_human": "176.94B",
+  "storage_bytes": 80114445888,
+  "storage_human": "80.1 GB",
+  "base_model": "ukisai/Swift1.5-Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8 Flash-Next - a jakeatx Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/jakeatx/qwen38-flash-next",
+      "snippet": "All our Qwen3.8 Flash-Next quants and drafters for llamAmpere."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "In this release we are opening the weights of Qwen3.8-Flash-Next, a multimodal MoE model that also serves as an early preview of the architecture used in Qwen4. It plays the same role that Qwen3-Next played for Qwen3.5: the hybrid Gated DeltaNet + Gated Attention design introduced at that time has ..."
+    }
+  ]
+}

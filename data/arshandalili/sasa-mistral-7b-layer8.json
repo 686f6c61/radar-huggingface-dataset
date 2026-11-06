@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "arshandalili/sasa-mistral-7b-layer8",
+  "slug": "arshandalili-sasa-mistral-7b-layer8",
+  "author": "arshandalili",
+  "url": "https://huggingface.co/arshandalili/sasa-mistral-7b-layer8",
+  "created_at": "2026-11-06T13:46:52.000Z",
+  "updated_at": "2026-11-06T13:47:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "saelens",
+  "languages": [],
+  "tags": [
+    "saelens",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1073889608,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mistral 7B",
+      "url": "https://mistral.ai/news/announcing-mistral-7b/",
+      "snippet": "The best 7B model to date, Apache 2.0 Mistral 7B uses a sliding window attention (SWA) mechanism (Child et al., Beltagy et al.), in which each layer attends to the previous 4,096 hidden states. The main improvement, and reason for which this was initially investigated, is a linear compute cost of O (sliding_window.seq_len). In practice, changes made to FlashAttention and xFormers yield a 2x ..."
+    },
+    {
+      "title": "Mistral 7B - arXiv.org",
+      "url": "https://arxiv.org/html/2310.06825",
+      "snippet": "Abstract We introduce Mistral 7B, a 7–billion-parameter language model engineered for superior performance and efficiency. Mistral 7B outperforms the best open 13B model (Llama 2) across all evaluated benchmarks, and the best released 34B model (Llama 1) in reasoning, mathematics, and code generation."
+    }
+  ]
+}

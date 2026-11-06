@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "Salih5400/se-primer-v2-eval-failure",
+  "slug": "salih5400-se-primer-v2-eval-failure",
+  "author": "Salih5400",
+  "url": "https://huggingface.co/Salih5400/se-primer-v2-eval-failure",
+  "created_at": "2026-11-06T19:49:08.000Z",
+  "updated_at": "2026-11-06T19:51:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "evaluation-failure",
+    "no-model-artifact",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Salih5400/se-primer-odev: YZM301 - GitHub",
+      "url": "https://github.com/Salih5400/se-primer-odev/tree/main",
+      "snippet": "Sunucu ve eval betiği Node.js sözdizimi kontrolünden geçti; 20 eval girdisi JSON olarak doğrulandı. AI Studio'da sentetik tutor sorusu gönderildi; Gemini 429 RESOURCE_EXHAUSTED döndürdü, arayüz yedek yanıtı gösterdi ve yükleme durumu kapandı. 20 model yanıtı değerlendirmesi henüz yapılmadı."
+    },
+    {
+      "title": "AI Benchmarks: 744 LLM Evaluations Ranked (November 2026)",
+      "url": "https://benchlm.ai/benchmarks",
+      "snippet": "Explore 744 AI benchmarks across knowledge, coding, math, reasoning, decision models, agentic, and more. See leaderboards, methodology, and papers for each benchmark."
+    }
+  ]
+}

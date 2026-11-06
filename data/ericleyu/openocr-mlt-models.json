@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "ericleyu/openocr-mlt-models",
+  "slug": "ericleyu-openocr-mlt-models",
+  "author": "ericleyu",
+  "url": "https://huggingface.co/ericleyu/openocr-mlt-models",
+  "created_at": "2026-11-04T07:11:23.000Z",
+  "updated_at": "2026-11-06T15:11:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "ocr",
+    "multilingual",
+    "onnx",
+    "scriptmoe",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 213794128,
+  "storage_human": "214 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ericleyu/openocr-mlt-models at main - Hugging Face",
+      "url": "https://huggingface.co/ericleyu/openocr-mlt-models/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ericleyu/openocr-mlt-models · Hugging Face",
+      "url": "https://huggingface.co/ericleyu/openocr-mlt-models",
+      "snippet": "The archive contains 40 files: recognition graphs, shared weights, a character dictionary, a model manifest, and the detector. The CUDA Prefill stage uses 33 partitioned graphs with shared weights. The Python package selects the CPU or CUDA execution path. Replace the image path with an existing ..."
+    }
+  ]
+}

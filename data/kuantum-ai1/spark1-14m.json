@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Kuantum-ai1/Spark1-14M",
+  "slug": "kuantum-ai1-spark1-14m",
+  "author": "Kuantum-ai1",
+  "url": "https://huggingface.co/Kuantum-ai1/Spark1-14M",
+  "created_at": "2026-11-06T13:52:19.000Z",
+  "updated_at": "2026-11-06T14:01:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama",
+    "causal-lm",
+    "english-only",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14310432,
+  "parameters_human": "14.3M",
+  "storage_bytes": 23314432,
+  "storage_human": "23 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MuseSpark1 Mus - ai.meta.com",
+      "url": "https://ai.meta.com/static-resource/muse-spark-1-1-evaluation-report",
+      "snippet": "In this report, we present Muse Spark 1.1’s evaluation profile, including its performance capabilities and its safety under Meta’s Advanced AI Scaling Framework. We conduct evaluations across the catastrophic risk domains specified by the Advanced AI Scaling Framework: Chemical and Biological, Cybersecurity, and Loss of Control. We also discuss the model behavior of Muse Spark 1.1, its ..."
+    }
+  ]
+}

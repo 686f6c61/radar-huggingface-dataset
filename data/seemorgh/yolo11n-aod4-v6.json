@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Seemorgh/yolo11n-aod4-v6",
+  "slug": "seemorgh-yolo11n-aod4-v6",
+  "author": "Seemorgh",
+  "url": "https://huggingface.co/Seemorgh/yolo11n-aod4-v6",
+  "created_at": "2026-10-22T18:07:24.000Z",
+  "updated_at": "2026-11-06T13:01:27.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "ultralytics",
+    "yolov11",
+    "object-detection",
+    "airborne-objects",
+    "en",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 53,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5585792,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Seemorgh/yolo11n-aod4-v6 · Hugging Face",
+      "url": "https://huggingface.co/Seemorgh/yolo11n-aod4-v6",
+      "snippet": "YOLO11n airborne-object detector — AOD4 v6 Recovered four-class checkpoint: airplane, bird, drone, helicopter. Architecture: Ultralytics YOLO11n; checkpoint version metadata: 8.4.87. This is a historical training artifact, not a field-validated detector."
+    },
+    {
+      "title": "YOLO11n AOD4 v6 — airborne-object detector - GitHub",
+      "url": "https://github.com/Seemorghdev/yolo11n-aod4-v6",
+      "snippet": "A reviewed archival release of a recovered Ultralytics YOLO11n checkpoint for four airborne-object classes: airplane, bird, drone, and helicopter. The checkpoint, original model card, license text, provenance notes, and sanitized notebooks are mirrored under release/."
+    }
+  ]
+}

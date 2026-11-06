@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "bdsaglam/Qwen3.5-4B-ArgGYM-GRPO-step60",
+  "slug": "bdsaglam-qwen3-5-4b-arggym-grpo-step60",
+  "author": "bdsaglam",
+  "url": "https://huggingface.co/bdsaglam/Qwen3.5-4B-ArgGYM-GRPO-step60",
+  "created_at": "2026-11-06T15:27:45.000Z",
+  "updated_at": "2026-11-06T15:37:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "grpo",
+    "reinforcement-learning",
+    "argumentation",
+    "verl",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 9332636078,
+  "storage_human": "9.3 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen/qwen3.5-4b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.5-4b",
+      "snippet": "Qwen3.5 4B Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility. This is a 4B parameter dense model, supporting a native context length of 262,144 tokens. Highlights Unified Vision-Language Foundation."
+    },
+    {
+      "title": "Qwen3.5 4B by Qwen | Model Library | Modal",
+      "url": "https://modal.com/library/qwen/qwen3-5-4b",
+      "snippet": "Qwen3.5 4B Qwen3.5 4B is a dense 4B-parameter vision-language model in Qwen's natively multimodal Qwen3.5 family, with thinking mode on by default, a 262K-token context extensible to 1M with YaRN, 201-language coverage, and open weights under Apache 2.0."
+    }
+  ]
+}

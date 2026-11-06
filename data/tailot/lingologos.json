@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "tailot/LingoLOGOS",
+  "slug": "tailot-lingologos",
+  "author": "tailot",
+  "url": "https://huggingface.co/tailot/LingoLOGOS",
+  "created_at": "2026-11-06T20:44:18.000Z",
+  "updated_at": "2026-11-06T20:44:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tailot/universal-upscale-distilled · Hugging Face",
+      "url": "https://huggingface.co/tailot/universal-upscale-distilled",
+      "snippet": "This is the distilled variant. The non-distilled model — one arbitrary-scale checkpoint that handles any factor from 2x to 9.2x — lives at tailot/universal-upscale. Use that one when you need a free scale factor; use this one when you want a tiny, fast, fixed 9x model that runs anywhere ONNX Runtime runs."
+    },
+    {
+      "title": "Tailot · Claridad organizacional con IA",
+      "url": "https://tailot.ai/",
+      "snippet": "Tailot convierte entrevistas, documentacion, procesos y evidencia operativa en claridad organizacional, madurez medible y oportunidades priorizadas."
+    }
+  ]
+}

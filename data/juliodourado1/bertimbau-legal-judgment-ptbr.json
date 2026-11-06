@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "juliodourado1/bertimbau-legal-judgment-ptbr",
+  "slug": "juliodourado1-bertimbau-legal-judgment-ptbr",
+  "author": "juliodourado1",
+  "url": "https://huggingface.co/juliodourado1/bertimbau-legal-judgment-ptbr",
+  "created_at": "2026-11-06T16:46:34.000Z",
+  "updated_at": "2026-11-06T16:47:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "legal",
+    "legal-judgment-prediction",
+    "portuguese",
+    "bertimbau",
+    "brazil",
+    "pt",
+    "dataset:joelniklaus/brazilian_court_decisions",
+    "base_model:neuralmind/bert-base-portuguese-cased",
+    "base_model:finetune:neuralmind/bert-base-portuguese-cased",
+    "license:mit",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108925443,
+  "parameters_human": "108.9M",
+  "storage_bytes": 435725300,
+  "storage_human": "436 MB",
+  "base_model": "neuralmind/bert-base-portuguese-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Legal Judgment Prediction",
+      "dataset": "Brazilian Court Decisions (TJAL)",
+      "metric": "F1 (macro)",
+      "value": 0.6821
+    },
+    {
+      "task": "Legal Judgment Prediction",
+      "dataset": "Brazilian Court Decisions (TJAL)",
+      "metric": null,
+      "value": 0.7383
+    }
+  ],
+  "sources": [
+    {
+      "title": "5.1. BERTimbau — A Semantic Search System For Supremo Tribunal de ...",
+      "url": "https://rufimelo99.github.io/SemanticSearchSystemForSTJ/Content/05-LegalLanguageModel/BERTimbau.html",
+      "snippet": "5.1. BERTimbau Despite the existence of multilingual BERT models trained on multiple languages, there was an effort to train monolingual BERT models on single languages. BERTimbau is a BERT model pretrained specifically for the Portuguese language. Both BERT-Base ($12$ layers, $768$ hidden dimension, $12$ attention heads, and $110$ M parameters) and BERT-Large ($24$ layers, $1024$ hidden ..."
+    },
+    {
+      "title": "rufimelo/Legal-BERTimbau-base · Hugging Face",
+      "url": "https://huggingface.co/rufimelo/Legal-BERTimbau-base",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

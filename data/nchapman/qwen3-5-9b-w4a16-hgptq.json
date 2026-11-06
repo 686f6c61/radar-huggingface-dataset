@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "nchapman/Qwen3.5-9B-W4A16-HGPTQ",
+  "slug": "nchapman-qwen3-5-9b-w4a16-hgptq",
+  "author": "nchapman",
+  "url": "https://huggingface.co/nchapman/Qwen3.5-9B-W4A16-HGPTQ",
+  "created_at": "2026-11-06T04:30:11.000Z",
+  "updated_at": "2026-11-06T18:50:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "gptq",
+    "hadamard",
+    "quip",
+    "w4a16",
+    "compressed-tensors",
+    "vllm",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 16199956811,
+  "storage_human": "16.2 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nchapman/Qwen3.5-9B-W4A16-HGPTQ-g64 · Hugging Face",
+      "url": "https://huggingface.co/nchapman/Qwen3.5-9B-W4A16-HGPTQ-g64",
+      "snippet": "Instructions to use nchapman/Qwen3.5-9B-W4A16-HGPTQ-g64 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use nchapman/Qwen3.5-9B-W4A16-HGPTQ-g64 with Transformers:"
+    },
+    {
+      "title": "nchapman/Qwen3.5-9B-W4A16-GPTQ · Hugging Face",
+      "url": "https://huggingface.co/nchapman/Qwen3.5-9B-W4A16-GPTQ",
+      "snippet": "INT4 weight-only quantization of Qwen/Qwen3.5-9B, produced with llm-compressor. Targets NVIDIA Ampere and newer (e.g. RTX 3090 Ti, 24 GB) — served by vLLM via Marlin/pack-quantized INT4 kernels. Also runs on Blackwell/GB-class GPUs ..."
+    }
+  ]
+}

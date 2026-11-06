@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "aether-models/krea-2-turbo-aether-kit",
+  "slug": "aether-models-krea-2-turbo-aether-kit",
+  "author": "aether-models",
+  "url": "https://huggingface.co/aether-models/krea-2-turbo-aether-kit",
+  "created_at": "2026-11-06T17:52:33.000Z",
+  "updated_at": "2026-11-06T18:03:40.000Z",
+  "license": "krea-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "aether-kit",
+    "core-ai",
+    "text-to-image",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:finetune:krea/Krea-2-Turbo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33551774109,
+  "storage_human": "33.6 GB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Éther (mythologie) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/%C3%89ther_(mythologie)",
+      "snippet": "« Aether » redirige ici. Pour le jeu vidéo, voir Aether (jeu vidéo). Pour les articles homonymes, voir . ... Éther ou Æther est un dieu …"
+    },
+    {
+      "title": "Krea 2 Turbo by Krea — AI Image Generator | Krea",
+      "url": "https://www.krea.ai/models/krea-2-turbo",
+      "snippet": "Fastest medium quality Krea 2 model. The fastest Krea 2 model. Best for quickly iterating on expressive illustrations. Generate with Krea 2 Turbo on Krea, compare quality settings, and ship production-ready images faster."
+    },
+    {
+      "title": "Aether (classical element) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Aether_(classical_element)",
+      "snippet": "In his aether model, Newton describes aether as a medium that \"flows\" continually downward toward the Earth's surface and is …"
+    },
+    {
+      "title": "Krea 2 Turbo - Krea",
+      "url": "https://www.krea.ai/docs/user-guide/features/krea-2-turbo",
+      "snippet": "Krea 2 Turbo is the fastest Krea 2 model, built for low-cost iteration on expressive illustrations, style-driven concepts, and rapid visual exploration."
+    },
+    {
+      "title": "Aether — Your Personal Streaming Service for Apple Devices",
+      "url": "https://aetherplayer.com/",
+      "snippet": "Some signals are meant to be answered. Your films, shows and live channels, together in Aether. Connect Plex, Jellyfin, Emby or …"
+    }
+  ]
+}

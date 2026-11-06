@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "HomiG/gemma-4-E4B-it-litert-lm-fp16-rope512",
+  "slug": "homig-gemma-4-e4b-it-litert-lm-fp16-rope512",
+  "author": "HomiG",
+  "url": "https://huggingface.co/HomiG/gemma-4-E4B-it-litert-lm-fp16-rope512",
+  "created_at": "2026-11-06T14:04:44.000Z",
+  "updated_at": "2026-11-06T14:05:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "gemma4",
+    "on-device",
+    "base_model:litert-community/gemma-4-E4B-it-litert-lm",
+    "base_model:finetune:litert-community/gemma-4-E4B-it-litert-lm",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3660726272,
+  "storage_human": "3.7 GB",
+  "base_model": "litert-community/gemma-4-E4B-it-litert-lm",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "litert-community/gemma-4-E4B-it-litert-lm - Hugging Face",
+      "url": "https://huggingface.co/litert-community/gemma-4-E4B-it-litert-lm",
+      "snippet": "This model card provides the Gemma 4 E4B model in a way that is ready for deployment on Android, iOS, Desktop, IoT and Web. Gemma is a family of lightweight, state-of-the-art open models from Google, built from the same research and technology used to create the Gemini models. This particular Gemma ..."
+    },
+    {
+      "title": "publicsh/gemma-4-E4B-it-litert-lm · Hugging Face",
+      "url": "https://huggingface.co/publicsh/gemma-4-E4B-it-litert-lm",
+      "snippet": "This model card provides the Gemma 4 E4B model in a way that is ready for deployment on Android, iOS, Desktop, IoT and Web. Gemma is a family of lightweight, state-of-the-art open models from Google, built from the same research and technology used to create the Gemini models. This particular Gemma ..."
+    }
+  ]
+}

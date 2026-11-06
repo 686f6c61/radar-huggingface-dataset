@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "naami3/behavior26-pi05-radio",
+  "slug": "naami3-behavior26-pi05-radio",
+  "author": "naami3",
+  "url": "https://huggingface.co/naami3/behavior26-pi05-radio",
+  "created_at": "2026-11-06T02:42:50.000Z",
+  "updated_at": "2026-11-06T02:53:03.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "vla",
+    "pi0.5",
+    "behavior-1k",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6176154196,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BEHAVIOR-1K-challenge-2026/configs/pi05_turning_on_radio.yaml ... - GitHub",
+      "url": "https://github.com/ganstadao/BEHAVIOR-1K-challenge-2026/blob/main/configs/pi05_turning_on_radio.yaml",
+      "snippet": "Contribute to ganstadao/BEHAVIOR-1K-challenge-2026 development by creating an account on GitHub."
+    },
+    {
+      "title": "VivekChandra/pi05-behavior-2026-dexterity · Hugging Face",
+      "url": "https://huggingface.co/VivekChandra/pi05-behavior-2026-dexterity",
+      "snippet": "π0.5 for the 2026 BEHAVIOR Challenge — team Dexterity A π0.5 vision-language-action policy fine-tuned with openpi (JAX) on the official 2026 BEHAVIOR Challenge demonstrations: 100 long-horizon household tasks with the Galaxea R1 Pro robot in OmniGibson. This is checkpoint step 135,199, the model behind our challenge submission."
+    }
+  ]
+}

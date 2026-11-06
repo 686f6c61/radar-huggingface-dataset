@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "amitreddy/clip-finetuned",
+  "slug": "amitreddy-clip-finetuned",
+  "author": "amitreddy",
+  "url": "https://huggingface.co/amitreddy/clip-finetuned",
+  "created_at": "2026-11-06T16:55:32.000Z",
+  "updated_at": "2026-11-06T16:55:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vinluvie/clip-finetuned · Hugging Face",
+      "url": "https://huggingface.co/vinluvie/clip-finetuned",
+      "snippet": "clip-finetuned This model is a fine-tuned version of openai/clip-vit-base-patch32 on the imagefolder dataset. It achieves the following results on the evaluation set: Loss: 3.5183 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training hyperparameters The following ..."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "thanhphuong97/XTTS-v2",
+  "slug": "thanhphuong97-xtts-v2",
+  "author": "thanhphuong97",
+  "url": "https://huggingface.co/thanhphuong97/XTTS-v2",
+  "created_at": "2026-11-06T16:42:56.000Z",
+  "updated_at": "2026-11-06T16:42:57.000Z",
+  "license": "coqui-public-model-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "coqui",
+  "languages": [],
+  "tags": [
+    "coqui",
+    "text-to-speech",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2086199391,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "elfathrelystate-ai/XTTS-v2: - GitHub",
+      "url": "https://github.com/elfathrelystate-ai/XTTS-v2",
+      "snippet": "🐸💬 - a deep learning toolkit for Text-to-Speech, battle-tested in research and production - elfathrelystate-ai/XTTS-v2"
+    },
+    {
+      "title": "XTTS-v2 — TTS Model",
+      "url": "https://ttsmodels.com/models/xtts-v2/",
+      "snippet": "XTTS-v2: Multilingual voice cloning with only 6 seconds of audio. Learn about its focus, availability, and use cases."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "maritaca-ai/S5-nano-GGUF",
+  "slug": "maritaca-ai-s5-nano-gguf",
+  "author": "maritaca-ai",
+  "url": "https://huggingface.co/maritaca-ai/S5-nano-GGUF",
+  "created_at": "2026-11-02T14:31:36.000Z",
+  "updated_at": "2026-11-06T00:01:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [
+    "pt",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "pt",
+    "en",
+    "base_model:maritaca-ai/S5-nano",
+    "base_model:quantized:maritaca-ai/S5-nano",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 16732069856,
+  "storage_human": "16.7 GB",
+  "base_model": "maritaca-ai/S5-nano",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

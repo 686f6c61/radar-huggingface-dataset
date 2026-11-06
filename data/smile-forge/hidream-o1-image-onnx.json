@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "smile-forge/hidream-o1-image-onnx",
+  "slug": "smile-forge-hidream-o1-image-onnx",
+  "author": "smile-forge",
+  "url": "https://huggingface.co/smile-forge/hidream-o1-image-onnx",
+  "created_at": "2026-10-14T20:03:17.000Z",
+  "updated_at": "2026-11-06T18:50:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "hidream",
+    "text-to-image",
+    "image-editing",
+    "image-to-image",
+    "base_model:HiDream-ai/HiDream-O1-Image",
+    "base_model:quantized:HiDream-ai/HiDream-O1-Image",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26388951058,
+  "storage_human": "26.4 GB",
+  "base_model": "HiDream-ai/HiDream-O1-Image",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "smile-forge/hidream-o1-image-onnx · Hugging Face",
+      "url": "https://huggingface.co/smile-forge/hidream-o1-image-onnx",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - HiDream-ai/HiDream-O1-Image · GitHub",
+      "url": "https://github.com/HiDream-ai/HiDream-O1-Image",
+      "snippet": "HiDream-O1-Image is a natively unified image generative foundation model built on a Pixel-level Unified Transformer (UiT) without external VAEs or disjoint text encoders, which natively encodes raw pixels, text, and task-specific conditions in a single shared token space — supporting text-to-image, image editing, and subject-driven personalization at up to 2,048 × 2,048."
+    }
+  ]
+}

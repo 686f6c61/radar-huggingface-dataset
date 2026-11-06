@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "SKOPION-Intelligence/skopion-verdict-27b-v21.0-omni-prover",
+  "slug": "skopion-intelligence-skopion-verdict-27b-v21-0-omni-prover",
+  "author": "SKOPION-Intelligence",
+  "url": "https://huggingface.co/SKOPION-Intelligence/skopion-verdict-27b-v21.0-omni-prover",
+  "created_at": "2026-11-06T12:49:40.000Z",
+  "updated_at": "2026-11-06T12:49:41.000Z",
+  "license": "skopion-sovereign-kritis-audit-license-v1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "de",
+    "pl"
+  ],
+  "tags": [
+    "transformers",
+    "skopion",
+    "skopion-verdict",
+    "v21-omni-prover",
+    "formal-verification",
+    "lean4",
+    "zk-stark",
+    "llm-as-a-judge",
+    "reward-model",
+    "kritis",
+    "nato-stanag",
+    "nis2",
+    "eu-ai-act",
+    "post-quantum-cryptography",
+    "conformal-prediction",
+    "text-classification",
+    "en",
+    "de",
+    "pl",
+    "license:other",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Strict-118 External Decision, Formal Proving & Judge Benchmark Matrix (120 Suites / 35,340 evaluations)",
+      "dataset": "SKOPION-Verdict-Bench-120Suites",
+      "metric": "Strict-118 External Mean Accuracy (%)",
+      "value": 99.27
+    },
+    {
+      "task": "Strict-118 External Decision, Formal Proving & Judge Benchmark Matrix (120 Suites / 35,340 evaluations)",
+      "dataset": "SKOPION-Verdict-Bench-120Suites",
+      "metric": "Wave-18 Lean-4/Z3/TLA+ Formal Proving, Wave-19 zk-STARK Confidential & Wave-20 Byzantine BFT (%)",
+      "value": 100
+    }
+  ],
+  "sources": [
+    {
+      "title": "SKOPION-Intelligence/skopion-verdict-27b-v15.0-native · Hugging Face",
+      "url": "https://huggingface.co/SKOPION-Intelligence/skopion-verdict-27b-v15.0-native",
+      "snippet": "1 Text Classification Transformers English German Polish skopion skopion-verdict llm-as-a-judge reward-model decision-model kritis nis2 eu-ai-act post-quantum-cryptography conformal-prediction edge-ai Eval Results (legacy) License:skopion-sovereign-kritis-audit-license-v1.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket ..."
+    },
+    {
+      "title": "SKOPION Intelligence - GitHub",
+      "url": "https://github.com/SKOPION-Intelligence/",
+      "snippet": "Executive Summary (SKOPION Verdict v15.0 Native-Sovereign) SKOPION Intelligence develops SKOPION Verdict, a sovereign European family of deterministic decision, reward, and compliance judge models (4B, 9B, 27B, and System 1.5 Speculative Cascade Committee) engineered for:"
+    }
+  ]
+}

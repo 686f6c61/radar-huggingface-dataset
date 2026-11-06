@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "hansjio/tsektxt-roberta-tagalog",
+  "slug": "hansjio-tsektxt-roberta-tagalog",
+  "author": "hansjio",
+  "url": "https://huggingface.co/hansjio/tsektxt-roberta-tagalog",
+  "created_at": "2026-07-04T01:55:08.000Z",
+  "updated_at": "2026-11-06T19:56:10.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "tl",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "misinformation-detection",
+    "fake-news",
+    "filipino",
+    "tagalog",
+    "taglish",
+    "tl",
+    "en",
+    "base_model:jcblaise/roberta-tagalog-base",
+    "base_model:finetune:jcblaise/roberta-tagalog-base",
+    "license:cc-by-sa-4.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 32,
+  "trending_score": 0,
+  "parameters": 109083650,
+  "parameters_human": "109.1M",
+  "storage_bytes": 872723297,
+  "storage_human": "873 MB",
+  "base_model": "jcblaise/roberta-tagalog-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jcblaise/roberta-tagalog-base · Hugging Face",
+      "url": "https://huggingface.co/jcblaise/roberta-tagalog-base",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jcblaise/roberta-tagalog-base - Hugging Face Hub Package Sec... - Socket",
+      "url": "https://socket.dev/huggingface/package/jcblaise/roberta-tagalog-base",
+      "snippet": "RoBERTa Tagalog Base Tagalog RoBERTa trained as an improvement over our previous Tagalog pretrained Transformers. Trained with TLUnified, a newer, larger, more topically-varied pretraining corpus for Filipino. This model is part of a larger research project. We open-source the model to allow greater usage within the Filipino NLP community."
+    }
+  ]
+}

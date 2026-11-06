@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "FreakinFrick/aegyptus-librarian-e2b-litert-lm",
+  "slug": "freakinfrick-aegyptus-librarian-e2b-litert-lm",
+  "author": "FreakinFrick",
+  "url": "https://huggingface.co/FreakinFrick/aegyptus-librarian-e2b-litert-lm",
+  "created_at": "2026-11-06T13:18:29.000Z",
+  "updated_at": "2026-11-06T13:19:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "litert-lm",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "litert-lm",
+    "webgpu",
+    "egyptology",
+    "citation",
+    "dpo",
+    "text-generation",
+    "en",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:finetune:google/gemma-4-E2B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2840989440,
+  "storage_human": "2.8 GB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiteRT-LM - Gemma Documentation",
+      "url": "https://gemma.ai/deployment/litert/",
+      "snippet": "Run Gemma 4 on-device with LiteRT-LM — CLI install, prebuilt .litertlm weights, and exporting your own fine-tune."
+    },
+    {
+      "title": "LiteRT-LM - Google's Edge LLM Inference Framework | AI/TLDR",
+      "url": "https://ai-tldr.dev/tools/litert-lm/",
+      "snippet": "LiteRT-LM is Google's orchestration layer for running large language models on top of LiteRT, the on-device runtime that succeeded TensorFlow Lite. Where LiteRT executes a model graph, LiteRT-LM handles everything an LLM needs around it — prompt handling, decoding, KV cache, speculative decoding and tool calling — so an application can hold ..."
+    }
+  ]
+}

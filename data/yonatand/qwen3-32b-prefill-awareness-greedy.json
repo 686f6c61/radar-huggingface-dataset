@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "YonatanD/qwen3-32b-prefill-awareness-greedy",
+  "slug": "yonatand-qwen3-32b-prefill-awareness-greedy",
+  "author": "YonatanD",
+  "url": "https://huggingface.co/YonatanD/qwen3-32b-prefill-awareness-greedy",
+  "created_at": "2026-11-06T13:21:12.000Z",
+  "updated_at": "2026-11-06T13:55:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "prefill-awareness",
+    "tamper-detection",
+    "text-generation",
+    "conversational",
+    "dataset:databricks/databricks-dolly-15k",
+    "base_model:Qwen/Qwen3-32B",
+    "base_model:adapter:Qwen/Qwen3-32B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 548414638,
+  "storage_human": "548 MB",
+  "base_model": "Qwen/Qwen3-32B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-32B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-32B",
+      "snippet": "Text Generation model with 33B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "qwen3-32b | Model Catalog | Microsoft Foundry",
+      "url": "https://ai.azure.com/catalog/models/qwen3-32b",
+      "snippet": "Qwen3-32B is a large language model from the Qwen3 series. It features 32.8 billion parameters, a 131K token context window, support for 100+ languages, and hybrid thinking modes allowing switching between deep reasoning and fast responses. It demonstrates strong performance in reasoning, instruction-following, and agent capabilities."
+    }
+  ]
+}

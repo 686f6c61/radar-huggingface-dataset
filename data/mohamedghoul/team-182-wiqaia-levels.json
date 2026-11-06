@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mohamedghoul/team-182-wiqaia-levels",
+  "slug": "mohamedghoul-team-182-wiqaia-levels",
+  "author": "mohamedghoul",
+  "url": "https://huggingface.co/mohamedghoul/team-182-wiqaia-levels",
+  "created_at": "2026-11-06T20:08:26.000Z",
+  "updated_at": "2026-11-06T20:13:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "qai-hf-hackathon-2026",
+    "data-classification",
+    "guardrails",
+    "arabic",
+    "transformers.js",
+    "ar",
+    "en",
+    "dataset:mohamedghoul/team-182-wiqaia-levels",
+    "base_model:intfloat/multilingual-e5-small",
+    "base_model:quantized:intfloat/multilingual-e5-small",
+    "license:mit",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 117655685,
+  "parameters_human": "117.7M",
+  "storage_bytes": 1076817973,
+  "storage_human": "1.1 GB",
+  "base_model": "intfloat/multilingual-e5-small",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "Wiqaia-Levels (test",
+      "metric": "macro-F1",
+      "value": 0.765
+    },
+    {
+      "task": null,
+      "dataset": "Wiqaia-Levels (test",
+      "metric": null,
+      "value": 0.77
+    }
+  ],
+  "sources": []
+}

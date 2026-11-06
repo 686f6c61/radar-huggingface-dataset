@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "ongilLabs/edu-v1",
+  "slug": "ongillabs-edu-v1",
+  "author": "ongilLabs",
+  "url": "https://huggingface.co/ongilLabs/edu-v1",
+  "created_at": "2025-11-16T00:23:51.000Z",
+  "updated_at": "2026-11-06T19:01:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "sentence-similarity",
+    "retrieval",
+    "education",
+    "en",
+    "base_model:BAAI/bge-base-en-v1.5",
+    "base_model:finetune:BAAI/bge-base-en-v1.5",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 109482240,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437951328,
+  "storage_human": "438 MB",
+  "base_model": "BAAI/bge-base-en-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ongilLabs (Ongil Labs) - Hugging Face",
+      "url": "https://huggingface.co/ongilLabs/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 3 days ago ... updated a Space 3 days ago ... published a Space 3 days ago"
+    },
+    {
+      "title": "ongilLabs (Ongil Labs) - Hugging Face",
+      "url": "https://huggingface.co/ongilLabs/spaces",
+      "snippet": "Education and Technology updated a model 3 days ago updated a Space 3 days ago"
+    }
+  ]
+}

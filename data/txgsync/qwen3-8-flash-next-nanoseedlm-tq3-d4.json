@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "txgsync/Qwen3.8-Flash-Next-NanoSeedLM-TQ3-D4",
+  "slug": "txgsync-qwen3-8-flash-next-nanoseedlm-tq3-d4",
+  "author": "txgsync",
+  "url": "https://huggingface.co/txgsync/Qwen3.8-Flash-Next-NanoSeedLM-TQ3-D4",
+  "created_at": "2026-11-06T10:15:55.000Z",
+  "updated_at": "2026-11-06T10:24:50.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "trellis",
+  "languages": [],
+  "tags": [
+    "trellis",
+    "safetensors",
+    "qwen4_exp",
+    "qwen3.8-flash-next",
+    "moe",
+    "nanoseedlm",
+    "nslm",
+    "cuda",
+    "metal",
+    "research-preview",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:2406.11235",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 56687443859,
+  "parameters_human": "56.69B",
+  "storage_bytes": 91633790317,
+  "storage_human": "91.6 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "txgsync/Qwen3.8-Flash-Next-NanoSeedLM-P4 at main",
+      "url": "https://huggingface.co/txgsync/Qwen3.8-Flash-Next-NanoSeedLM-P4/tree/main",
+      "snippet": "Like 0 Image-Text-to-Text MLX Safetensors qwen4_exp qwen3.8-flash-next Mixture of Experts mlx-vlm omlx apple-silicon custom_code research-preview seedlm nanoseedlm nslm lfsr seeds conversational 4-bit precision arxiv:2410.10714 License:qwen-community-1.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model Libraries"
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability:"
+    }
+  ]
+}

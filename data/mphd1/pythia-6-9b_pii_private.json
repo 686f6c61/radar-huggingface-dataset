@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "mphd1/pythia-6.9b_pii_private",
+  "slug": "mphd1-pythia-6-9b_pii_private",
+  "author": "mphd1",
+  "url": "https://huggingface.co/mphd1/pythia-6.9b_pii_private",
+  "created_at": "2026-11-06T14:40:17.000Z",
+  "updated_at": "2026-11-06T14:45:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "generated_from_trainer",
+    "base_model:EleutherAI/pythia-6.9b",
+    "base_model:finetune:EleutherAI/pythia-6.9b",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6857302016,
+  "parameters_human": "6.86B",
+  "storage_bytes": 27429259472,
+  "storage_human": "27.4 GB",
+  "base_model": "EleutherAI/pythia-6.9b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mphd1/pythia-6.9b_pqa_private · Hugging Face",
+      "url": "https://huggingface.co/mphd1/pythia-6.9b_pqa_private",
+      "snippet": "Instructions to use mphd1/pythia-6.9b_pqa_private with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use mphd1/pythia-6.9b_pqa_private with Transformers:"
+    },
+    {
+      "title": "EleutherAI/pythia-6.9b · Hugging Face",
+      "url": "https://huggingface.co/EleutherAI/pythia-6.9b",
+      "snippet": "The Pythia Scaling Suite is a collection of models developed to facilitate interpretability research (see paper). It contains two sets of eight models of sizes 70M, 160M, 410M, 1B, 1.4B, 2.8B, 6.9B, and 12B. For each size, there are two models: one trained on the Pile, and one trained on the Pile after the dataset has been globally deduplicated. All 8 model sizes are trained on the exact same ..."
+    }
+  ]
+}

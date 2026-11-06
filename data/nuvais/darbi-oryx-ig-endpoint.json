@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "nuvais/darbi-oryx-ig-endpoint",
+  "slug": "nuvais-darbi-oryx-ig-endpoint",
+  "author": "nuvais",
+  "url": "https://huggingface.co/nuvais/darbi-oryx-ig-endpoint",
+  "created_at": "2026-11-06T18:31:29.000Z",
+  "updated_at": "2026-11-06T18:31:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "inference-endpoints",
+    "custom-handler",
+    "darbi",
+    "text-to-image",
+    "base_model:QCRI/Fanar-2-Oryx-IG",
+    "base_model:finetune:QCRI/Fanar-2-Oryx-IG",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "black-forest-labs/FLUX.1-schnell, QCRI/Fanar-2-Oryx-IG",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "External models - Databricks on AWS",
+      "url": "https://docs.databricks.com/aws/en/machine-learning/foundation-models/external-models/",
+      "snippet": "You can now configure AI Gateway on model serving endpoints that serve external models. AI Gateway brings governance, monitoring, and production readiness to these model serving endpoints. See AI governance with Unity Gateway. External models are third-party models hosted outside of Databricks."
+    },
+    {
+      "title": "Oryx: Advances in Multimodal AI Systems - emergentmind.com",
+      "url": "https://www.emergentmind.com/topics/oryx",
+      "snippet": "Oryx advances state-of-the-art AI by integrating vision-language, sequence modeling, MARL, and culturally informed multimodal evaluation across fields."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "phuctahong/nanogpt-gpt-mha-b-attnres-353m-job16602999-step100000",
+  "slug": "phuctahong-nanogpt-gpt-mha-b-attnres-353m-job16602999-step100000",
+  "author": "phuctahong",
+  "url": "https://huggingface.co/phuctahong/nanogpt-gpt-mha-b-attnres-353m-job16602999-step100000",
+  "created_at": "2026-11-06T17:15:23.000Z",
+  "updated_at": "2026-11-06T17:16:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "nanogptpro",
+    "nanogpt",
+    "fineweb-edu",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 353608704,
+  "parameters_human": "353.6M",
+  "storage_bytes": 1414467848,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "phuctahong/nanogpt-gpt-mha-rope-353m-job9178007-step100000 · Hugging Face",
+      "url": "https://huggingface.co/phuctahong/nanogpt-gpt-mha-rope-353m-job9178007-step100000",
+      "snippet": "phuctahong/nanogpt-gpt-mha-rope-353m-job9178007-step100000 NanoGPT Pro checkpoint uploaded from the princeton-pli/Nanogpt W&B project."
+    },
+    {
+      "title": "phuctahong (Hong Ta) - Hugging Face",
+      "url": "https://huggingface.co/phuctahong",
+      "snippet": "phuctahong/nanogpt-ddl2-gpt-mha-rope-cc-ec-lambda-weighted-accelerated-353m-job9180154-step100000 ... phuctahong/nanogpt-ddl-gpt-mha-rope-tc-accelerated-354m-job9488955-step100000"
+    }
+  ]
+}

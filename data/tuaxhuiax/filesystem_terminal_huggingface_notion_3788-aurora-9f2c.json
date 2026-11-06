@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "TUaxhuiax/filesystem_terminal_huggingface_notion_3788-aurora-9f2c",
+  "slug": "tuaxhuiax-filesystem_terminal_huggingface_notion_3788-aurora-9f2c",
+  "author": "TUaxhuiax",
+  "url": "https://huggingface.co/TUaxhuiax/filesystem_terminal_huggingface_notion_3788-aurora-9f2c",
+  "created_at": "2026-11-06T19:19:28.000Z",
+  "updated_at": "2026-11-06T19:19:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "aurora",
+    "text-generation",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 65536,
+  "storage_human": "65536 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huggingface_terminal_filesystem_321_a7f3c9d2-orion",
+      "url": "https://huggingface.co/datasets/TUaxhuiax/huggingface_terminal_filesystem_321_a7f3c9d2-orion",
+      "snippet": "Dataset. Explore, preview and download it on Hugging Face."
+    }
+  ]
+}

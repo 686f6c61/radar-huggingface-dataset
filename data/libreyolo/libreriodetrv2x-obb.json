@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "LibreYOLO/LibreRiODETRv2x-obb",
+  "slug": "libreyolo-libreriodetrv2x-obb",
+  "author": "LibreYOLO",
+  "url": "https://huggingface.co/LibreYOLO/LibreRiODETRv2x-obb",
+  "created_at": "2026-11-06T17:41:17.000Z",
+  "updated_at": "2026-11-06T17:41:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "libreyolo",
+  "languages": [],
+  "tags": [
+    "libreyolo",
+    "object-detection",
+    "oriented-object-detection",
+    "rio-detr",
+    "riodetrv2",
+    "dataset:DOTA",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 263577821,
+  "storage_human": "264 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LibreYOLO/LibreRTDETRv2x-obb at main - Hugging Face",
+      "url": "https://huggingface.co/LibreYOLO/LibreRTDETRv2x-obb/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LibreYOLO/LibreRTDETRv2x-obb · Hugging Face",
+      "url": "https://huggingface.co/LibreYOLO/LibreRTDETRv2x-obb",
+      "snippet": "LibreRTDETRv2x-obb RT-DETRv2-X oriented-object detector trained on DOTA 1.0 and converted for LibreYOLO. Source The architecture is derived from RicePasteM/RiO-DETR at commit 22d5232a4e0df6ac4bc26ed1c8aac8b4060449c7. The official checkpoint comes from RicePasteM/RT-DETR-OBB at revision f376e9dcedfb9a47a21ac71ef61ad99f8b545698."
+    }
+  ]
+}

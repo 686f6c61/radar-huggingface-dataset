@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "iamtalharazzaq/Qwen3.5-9B-NVFP4-W4A16-EdgeLLM",
+  "slug": "iamtalharazzaq-qwen3-5-9b-nvfp4-w4a16-edgellm",
+  "author": "iamtalharazzaq",
+  "url": "https://huggingface.co/iamtalharazzaq/Qwen3.5-9B-NVFP4-W4A16-EdgeLLM",
+  "created_at": "2026-11-06T16:35:08.000Z",
+  "updated_at": "2026-11-06T16:35:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "nvfp4",
+    "modelopt",
+    "tensorrt-edgellm",
+    "jetson-thor",
+    "quantized",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10548588272,
+  "parameters_human": "10.55B",
+  "storage_bytes": 9040365357,
+  "storage_human": "9.0 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iamtalharazzaq/Qwen3.5-9B-NVFP4-onnx at main - Hugging Face",
+      "url": "https://huggingface.co/iamtalharazzaq/Qwen3.5-9B-NVFP4-onnx/tree/main",
+      "snippet": "6 languages qwen3.5 nvfp4 nvidia quantization model-optimization multimodal 9B License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket main Qwen3.5-9B-NVFP4-onnx 13.5 GB Ctrl+K Ctrl+K 1 contributor History:6 commits iamtalharazzaq Create Readme.md fae415d verifiedabout 9 hours ago checkpointUpload folder using ..."
+    },
+    {
+      "title": "iamtalharazzaq/Qwen3.5-9B-NVFP4-onnx · Hugging Face",
+      "url": "https://huggingface.co/iamtalharazzaq/Qwen3.5-9B-NVFP4-onnx",
+      "snippet": "An NVFP4-quantized ONNX export of Qwen3.5-9B, optimized for NVIDIA inference and deployment ..."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "tanepiper/termite-command-4b",
+  "slug": "tanepiper-termite-command-4b",
+  "author": "tanepiper",
+  "url": "https://huggingface.co/tanepiper/termite-command-4b",
+  "created_at": "2026-11-06T17:41:33.000Z",
+  "updated_at": "2026-11-06T17:49:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "shell",
+    "safety",
+    "termite",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:quantized:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 4280403488,
+  "storage_human": "4.3 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - tanepiper/termite: Use local language and decision models to ...",
+      "url": "https://github.com/tanepiper/termite",
+      "snippet": "Use local language and decision models to generate complex shell commands with confidence - tanepiper/termite"
+    },
+    {
+      "title": "tanepiper (Tane Piper) · GitHub",
+      "url": "https://github.com/tanepiper",
+      "snippet": "Software Engineering Leader @ Inter @IKEA Systems BV - tanepiper"
+    }
+  ]
+}

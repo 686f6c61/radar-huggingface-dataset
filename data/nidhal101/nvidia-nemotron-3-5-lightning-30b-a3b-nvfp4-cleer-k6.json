@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "Nidhal101/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-CLEER-k6",
+  "slug": "nidhal101-nvidia-nemotron-3-5-lightning-30b-a3b-nvfp4-cleer-k6",
+  "author": "Nidhal101",
+  "url": "https://huggingface.co/Nidhal101/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-CLEER-k6",
+  "created_at": "2026-11-06T16:33:53.000Z",
+  "updated_at": "2026-11-06T16:36:05.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "nemotron_h",
+    "cleer",
+    "energy-benchmarking",
+    "moe",
+    "pruned",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
+    "license:other",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3690230492,
+  "parameters_human": "3.69B",
+  "storage_bytes": 3362948186,
+  "storage_human": "3.4 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 - Hugging Face",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
+      "snippet": "The post-training data has a cutoff date of May 2026. What is Nemotron? NVIDIA Nemotron™ is a family of open models with open weights, training data, and recipes, delivering leading efficiency and accuracy for building specialized AI agents. Description NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 is a large language model (LLM) trained by NVIDIA."
+    },
+    {
+      "title": "nemotron-3.5-lightning-30b-a3b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b/modelcard",
+      "snippet": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 is a large language model (LLM) trained by NVIDIA. The model employs a hybrid Mixture-of-Experts architecture, utilizing interleaved Mamba-2 and MoE layers, along with select Attention layers. The Lightning 3.5 model is released alongside a number of speculative decoding methods for faster text ..."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Waqf-AI/arabic-modernbert-unified",
+  "slug": "waqf-ai-arabic-modernbert-unified",
+  "author": "Waqf-AI",
+  "url": "https://huggingface.co/Waqf-AI/arabic-modernbert-unified",
+  "created_at": "2026-11-06T16:02:54.000Z",
+  "updated_at": "2026-11-06T16:08:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "fill-mask",
+    "arabic",
+    "encoder",
+    "masked-language-modeling",
+    "natural-language-inference",
+    "retrieval",
+    "extractive-qa",
+    "ar",
+    "dataset:epfml/FineWeb2-HQ",
+    "dataset:csebuetnlp/xlsum",
+    "dataset:google-research-datasets/tydiqa",
+    "dataset:oddadmix/nawah-dialect-data",
+    "dataset:ieasybooks-org/waqfeya-library",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32790144,
+  "parameters_human": "32.8M",
+  "storage_bytes": 133698289,
+  "storage_human": "134 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Waqf-AI/arabic-berthash-v2 · Hugging Face",
+      "url": "https://huggingface.co/Waqf-AI/arabic-berthash-v2",
+      "snippet": "Waqf-AI / arabic-berthash-v2 Like 0 Follow Waqf AI 14 Fill-Mask Transformers Safetensors Arabic bert_hash_v2 bert arabic masked-language-modeling encoder custom_code berthash research License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    },
+    {
+      "title": "Waqf-AI (Waqf AI) - Hugging Face",
+      "url": "https://huggingface.co/Waqf-AI/models",
+      "snippet": "Team members 2 Waqf-AI's models5 Sort: Recently updated Waqf-AI/arabic-splade-efficient 0.1B•Updated about 15 hours ago• 3 • 1"
+    }
+  ]
+}

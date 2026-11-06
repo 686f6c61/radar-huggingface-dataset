@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "dougalldeepmind/2026-11-06-qwen36-0-da-tools-15-b",
+  "slug": "dougalldeepmind-2026-11-06-qwen36-0-da-tools-15-b",
+  "author": "dougalldeepmind",
+  "url": "https://huggingface.co/dougalldeepmind/2026-11-06-qwen36-0-da-tools-15-b",
+  "created_at": "2026-11-06T13:30:05.000Z",
+  "updated_at": "2026-11-06T13:31:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1295140182,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2026-11-05-am-qwen36-0-da-tools-15-canary - Hugging Face",
+      "url": "https://huggingface.co/datasets/dougalldeepmind/2026-11-05-am-qwen36-0-da-tools-15-canary",
+      "snippet": "Dataset. Explore, preview and download it on Hugging Face."
+    },
+    {
+      "title": "dougalldeepmind/2026-09-29-qwen36-0-da-tools-15-canary · Hugging Face",
+      "url": "https://huggingface.co/dougalldeepmind/2026-09-29-qwen36-0-da-tools-15-canary",
+      "snippet": "LoRA SFT adapter — recipe sft on mixture da-tools-15-canary (qwen36, seed 0)"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "alphyreal/badqwenmerge",
+  "slug": "alphyreal-badqwenmerge",
+  "author": "alphyreal",
+  "url": "https://huggingface.co/alphyreal/badqwenmerge",
+  "created_at": "2026-11-06T17:04:37.000Z",
+  "updated_at": "2026-11-06T17:29:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916586750,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alphyreal/badqwenmerge · Hugging Face",
+      "url": "https://huggingface.co/alphyreal/badqwenmerge",
+      "snippet": "alphyreal / badqwenmerge Like 0 Image-Text-to-Text Transformers Safetensors qwen3_5_moe conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    }
+  ]
+}

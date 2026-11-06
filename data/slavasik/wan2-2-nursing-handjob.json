@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Slavasik/wan2.2-nursing-handjob",
+  "slug": "slavasik-wan2-2-nursing-handjob",
+  "author": "Slavasik",
+  "url": "https://huggingface.co/Slavasik/wan2.2-nursing-handjob",
+  "created_at": "2026-11-06T16:22:51.000Z",
+  "updated_at": "2026-11-06T16:22:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "nsfw",
+    "not-for-all-audiences",
+    "image-text-to-video",
+    "base_model:Wan-AI/Wan2.2-I2V-A14B-Diffusers",
+    "base_model:adapter:Wan-AI/Wan2.2-I2V-A14B-Diffusers",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 157162700,
+  "storage_human": "157 MB",
+  "base_model": "Wan-AI/Wan2.2-I2V-A14B-Diffusers",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aisha-AI-Official/wan2.2-nursing-handjob · Hugging Face",
+      "url": "https://huggingface.co/Aisha-AI-Official/wan2.2-nursing-handjob",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Nursing Handjob [Real] | Wan 2.2 I2V - v1.0 [high] | Wan Video LoRA ...",
+      "url": "https://civitai.red/models/2466470/nursing-handjob-real-or-wan-22-i2v",
+      "snippet": "0 Updated: Mar 26, 2026 concept scene porn nursing handjob cut to action handjob v1.0 [high] Live training tests Create"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "OmTheLast/LlamaJEE-4B-ONNX-WebGPU",
+  "slug": "omthelast-llamajee-4b-onnx-webgpu",
+  "author": "OmTheLast",
+  "url": "https://huggingface.co/OmTheLast/LlamaJEE-4B-ONNX-WebGPU",
+  "created_at": "2026-11-06T13:45:18.000Z",
+  "updated_at": "2026-11-06T13:49:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "webgpu",
+    "qwen3.5",
+    "lora",
+    "jee",
+    "experimental",
+    "base_model:mlx-community/Qwen3.5-4B-4bit",
+    "base_model:adapter:mlx-community/Qwen3.5-4B-4bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3084423078,
+  "storage_human": "3.1 GB",
+  "base_model": "mlx-community/Qwen3.5-4B-4bit",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Run the Laya Decision Model Entirely in Your Browser with ONNX ...",
+      "url": "https://aiintoai.vercel.app/how-to/how-to-run-laya-decision-model-in-browser-onnx-webgpu",
+      "snippet": "Store downloaded ONNX weights in the browser’s CacheStorage or IndexedDB to prevent re-downloading across user sessions. Check navigator.gpu before launching sessions: if WebGPU is available, single-question decision latency drops to 25-35ms on consumer hardware."
+    },
+    {
+      "title": "GitHub - r4ai/laya-web: Laya typed decisions in the browser with ONNX ...",
+      "url": "https://github.com/r4ai/laya-web",
+      "snippet": "Client-side inference runtime for Laya-MLX decision models in browsers and Node.js, powered by ONNX Runtime Web (WebGPU and WebAssembly SIMD). Run inference inside a Web Worker to keep the UI thread responsive. Serve model assets and ONNX Runtime Web Wasm binaries from your static file server (see ..."
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Ty-Perez/test_umap",
+  "slug": "ty-perez-test_umap",
+  "author": "Ty-Perez",
+  "url": "https://huggingface.co/Ty-Perez/test_umap",
+  "created_at": "2026-11-06T19:11:02.000Z",
+  "updated_at": "2026-11-06T19:12:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "umap",
+    "embeddings",
+    "dimensionality-reduction",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 154002157,
+  "storage_human": "154 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ty-Perez (Ty Perez) - Hugging Face",
+      "url": "https://huggingface.co/Ty-Perez/datasets",
+      "snippet": "Ty-Perez 3 Follow jdsan's profile pictureF555's profile pictureamorehead's profile picture 3 followers · 9 following"
+    },
+    {
+      "title": "Ty-Perez/ct-scd-amp20 · Hugging Face",
+      "url": "https://huggingface.co/Ty-Perez/ct-scd-amp20",
+      "snippet": "Ty-Perez / ct-scd-amp20 Like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    }
+  ]
+}

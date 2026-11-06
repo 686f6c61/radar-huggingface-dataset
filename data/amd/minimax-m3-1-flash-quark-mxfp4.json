@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "amd/MiniMax-M3.1-Flash-Quark-MXFP4",
+  "slug": "amd-minimax-m3-1-flash-quark-mxfp4",
+  "author": "amd",
+  "url": "https://huggingface.co/amd/MiniMax-M3.1-Flash-Quark-MXFP4",
+  "created_at": "2026-10-18T13:07:47.000Z",
+  "updated_at": "2026-11-06T12:47:00.000Z",
+  "license": "minimax-community",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "minimax_m3_vl",
+    "custom_code",
+    "base_model:MiniMaxAI/MiniMax-M3.1-Flash",
+    "base_model:quantized:MiniMaxAI/MiniMax-M3.1-Flash",
+    "license:other",
+    "8-bit",
+    "quark",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 1843,
+  "trending_score": 0,
+  "parameters": 220490854016,
+  "parameters_human": "220.49B",
+  "storage_bytes": 239501757658,
+  "storage_human": "239.5 GB",
+  "base_model": "MiniMaxAI/MiniMax-M3.1-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "amd/MiniMax-M3.1-Flash-Quark-MXFP4 · Hugging Face",
+      "url": "https://huggingface.co/amd/MiniMax-M3.1-Flash-Quark-MXFP4",
+      "snippet": "Like 0 Follow AMD 3.41k Safetensors minimax_m3_vl custom_code 8-bit precision quark License:minimax-community Model card FilesFiles and versions xet Community Copy to bucket new Model Overview Model serving vLLM SGLang Accuracy Reproduction Model Quantization Accuracy Reproduction Evaluation Accuracy Reproduction Others Experimental MXFP4 ..."
+    },
+    {
+      "title": "amd/MiniMax-M3.1-Flash-Quark-MXFP4 at main - Hugging Face",
+      "url": "https://huggingface.co/amd/MiniMax-M3.1-Flash-Quark-MXFP4/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

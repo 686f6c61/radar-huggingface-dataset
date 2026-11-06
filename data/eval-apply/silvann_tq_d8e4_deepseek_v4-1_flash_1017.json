@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "eval-apply/silvann_tq_D8E4_deepseek_v4.1_flash_1017",
+  "slug": "eval-apply-silvann_tq_d8e4_deepseek_v4-1_flash_1017",
+  "author": "eval-apply",
+  "url": "https://huggingface.co/eval-apply/silvann_tq_D8E4_deepseek_v4.1_flash_1017",
+  "created_at": "2026-10-19T10:23:26.000Z",
+  "updated_at": "2026-11-06T15:15:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deepseek_v41",
+    "silvann",
+    "turboquant",
+    "quantized",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "license:mit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 72,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 778396759073,
+  "storage_human": "778.4 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "silvann_tq_D8E4_deepseek_v4.1_flash_1017 - Hugging Face",
+      "url": "https://huggingface.co/eval-apply/silvann_tq_D8E4_deepseek_v4.1_flash_1017",
+      "snippet": "silvann_tq_D8E4_deepseek_v4.1_flash_1017 DeepSeek-V4.1-Flash-1017 by DeepSeek, packed for the SiLVANN engine (the Eval-Apply GPU Interpreter and its neural network library): every weight matrix rotated along its input axis with a blocked Hadamard-and-signs rotation and quantised with a per-row scale (TurboQuant); norms, routers, the hyper-connection maps, the attention sinks and other small ..."
+    },
+    {
+      "title": "DeepSeek V4.1 Flash 1017 | Model, Playground & API",
+      "url": "https://deepseekv41flash.com/",
+      "snippet": "DeepSeek V4.1 Flash 1017 is the October 17, 2026 update to the V4.1 Flash model. It improves on the September release across reasoning, coding, agent, and visual evaluations reported by DeepSeek."
+    }
+  ]
+}

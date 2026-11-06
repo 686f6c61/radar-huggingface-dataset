@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "RyanMei/PerLA",
+  "slug": "ryanmei-perla",
+  "author": "RyanMei",
+  "url": "https://huggingface.co/RyanMei/PerLA",
+  "created_at": "2026-11-06T17:50:24.000Z",
+  "updated_at": "2026-11-06T17:54:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "3d",
+    "point-cloud",
+    "scannet",
+    "3d-question-answering",
+    "3d-dense-captioning",
+    "arxiv:2411.19774",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 959737040,
+  "storage_human": "960 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Perla - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/691fdac9e083592a0f44e6cabddb394c",
+      "snippet": "Explore Perla model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "GitHub - gfmei/PerLA: The official repository of [CVPR2025] PerLA ...",
+      "url": "https://github.com/gfmei/PerLA",
+      "snippet": "The examples use local model directories under outputs/models/. Obtain the weights and tokenizers for facebook/opt-1.3b and CH3COOK/bert-base-embedding, and adjust --vocab and --qformer_vocab to their locations. A detector-only checkpoint initializes training; evaluation requires a trained PerLA captioner checkpoint."
+    }
+  ]
+}

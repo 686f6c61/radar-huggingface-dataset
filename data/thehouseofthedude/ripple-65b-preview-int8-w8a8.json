@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "TheHouseOfTheDude/Ripple-65B-Preview-INT8-W8A8",
+  "slug": "thehouseofthedude-ripple-65b-preview-int8-w8a8",
+  "author": "TheHouseOfTheDude",
+  "url": "https://huggingface.co/TheHouseOfTheDude/Ripple-65B-Preview-INT8-W8A8",
+  "created_at": "2026-11-06T12:37:28.000Z",
+  "updated_at": "2026-11-06T12:52:13.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "ricursive",
+    "text-generation",
+    "conversational",
+    "compressed-tensors",
+    "PTQ",
+    "w8a8",
+    "int8",
+    "mixed-precision",
+    "autotrain",
+    "quantized",
+    "custom_code",
+    "en",
+    "base_model:ricursiveAI/Ripple-65B-Preview",
+    "base_model:quantized:ricursiveAI/Ripple-65B-Preview",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 61007815760,
+  "parameters_human": "61.01B",
+  "storage_bytes": 65830550224,
+  "storage_human": "65.8 GB",
+  "base_model": "ricursiveAI/Ripple-65B-Preview",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ripple-65B Preview — Open-Weight Coding Model: Benchmarks",
+      "url": "https://ai-tldr.dev/models/ripple-65b-preview/",
+      "snippet": "What is Ripple-65B Preview? Ripple-65B Preview is the first open-weight model from Ricursive Intelligence, published on Hugging Face on November 4, 2026 under the Apache 2.0 license."
+    },
+    {
+      "title": "Ripple-65B Released: New US Open-Weight SOTA in Agentic Coding",
+      "url": "https://todayforai.com/en/items/art-6cc45fe0-cc2",
+      "snippet": "Ricursive Intelligence releases Ripple-65B Preview, a general-purpose open-weight model pretrained on 12 trillion tokens. Achieving 80.52 on TerminalBench 2.1, it surpasses larger models like Reflection Beam to set a new US open-weight state-of-the-art in agentic coding."
+    }
+  ]
+}

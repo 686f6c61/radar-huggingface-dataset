@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "MohammadGholizadeh/Qwen2.5-7B-Instruct-cat-gen1-s42",
+  "slug": "mohammadgholizadeh-qwen2-5-7b-instruct-cat-gen1-s42",
+  "author": "MohammadGholizadeh",
+  "url": "https://huggingface.co/MohammadGholizadeh/Qwen2.5-7B-Instruct-cat-gen1-s42",
+  "created_at": "2026-05-29T14:16:14.000Z",
+  "updated_at": "2026-11-06T19:52:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 588406278,
+  "storage_human": "588 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen2.5-7B-Instruct-owl-gen3-s44 - Hugging Face",
+      "url": "https://huggingface.co/MohammadGholizadeh/Qwen2.5-7B-Instruct-owl-gen3-s44",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MohammadGholizadeh / Qwen2.5-7B-Instruct-cat-gen1-s42",
+      "url": "https://protectai.com/insights/models/MohammadGholizadeh/Qwen2.5-7B-Instruct-cat-gen1-s42/04702e7bd575c73e22941f0a09b43a67153a00bb/overview",
+      "snippet": "Discover potential threats in the MohammadGholizadeh / Qwen2.5-7B-Instruct-cat-gen1-s42 model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Protect AI."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "phyloforfun/lm3_landmark_detector__yolo26x_pose_640_canonical",
+  "slug": "phyloforfun-lm3_landmark_detector__yolo26x_pose_640_canonical",
+  "author": "phyloforfun",
+  "url": "https://huggingface.co/phyloforfun/lm3_landmark_detector__yolo26x_pose_640_canonical",
+  "created_at": "2026-11-06T16:13:35.000Z",
+  "updated_at": "2026-11-06T16:28:53.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "keypoint-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "onnx",
+    "openvino",
+    "leafmachine3",
+    "yolo26",
+    "herbarium",
+    "leaf",
+    "pose-estimation",
+    "keypoint-detection",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 847594920,
+  "storage_human": "848 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=leafmachine3",
+      "snippet": "phyloforfun/lm3_landmark_detector__yolo26x_pose_640 Keypoint Detection •Updated about 3 hours ago• 28"
+    }
+  ]
+}

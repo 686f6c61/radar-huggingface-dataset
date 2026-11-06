@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "markab/rpn-gpt-lightning-MLX-8bit",
+  "slug": "markab-rpn-gpt-lightning-mlx-8bit",
+  "author": "markab",
+  "url": "https://huggingface.co/markab/rpn-gpt-lightning-MLX-8bit",
+  "created_at": "2026-11-06T19:21:27.000Z",
+  "updated_at": "2026-11-06T19:24:56.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "nemotron_h",
+    "forth",
+    "rpn",
+    "nemotron",
+    "math",
+    "arithmetic",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:markab/rpn-gpt-data",
+    "base_model:markab/rpn-gpt-lightning",
+    "base_model:quantized:markab/rpn-gpt-lightning",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31577935872,
+  "parameters_human": "31.58B",
+  "storage_bytes": 33577041034,
+  "storage_human": "33.6 GB",
+  "base_model": "markab/rpn-gpt-lightning",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - dwstevens/lightning-mlx: The fastest local AI engine for ...",
+      "url": "https://github.com/dwstevens/lightning-mlx",
+      "snippet": "More Model Benchmarks The models below use the same benchmark positioning as upstream Rapid-MLX: Mac Studio M3 Ultra, Apple MLX backend, and tok/s as decode throughput."
+    }
+  ]
+}

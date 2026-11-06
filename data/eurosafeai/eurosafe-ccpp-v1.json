@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "EuroSafeAI/EuroSafe-CCPP-v1",
+  "slug": "eurosafeai-eurosafe-ccpp-v1",
+  "author": "EuroSafeAI",
+  "url": "https://huggingface.co/EuroSafeAI/EuroSafe-CCPP-v1",
+  "created_at": "2026-11-06T02:00:53.000Z",
+  "updated_at": "2026-11-06T15:49:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safety",
+    "guardrail",
+    "constitutional-classifiers",
+    "activation-probe",
+    "jailbreak-detection",
+    "text-classification",
+    "en",
+    "arxiv:2601.04603",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2097576,
+  "storage_human": "2 MB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EuroSafeAI — Making AI Safe for Humanity",
+      "url": "https://safe.eu/",
+      "snippet": "We identify seven failure modes through which AI poses risks to social systems — from belief homogenization and epistemic floods to power concentration and normative centralization — and argue that AI safety must complement model-level benchmarks with system-level evaluation that captures these aggregate institutional effects."
+    },
+    {
+      "title": "EuroSafeAI — Making AI Safe for Humanity",
+      "url": "https://safe.eu/index",
+      "snippet": "EuroSafeAI is a nonprofit AI safety organization led by Prof. Zhijing Jin, working on misuse, misalignment, and risks to democracy."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "bcnmoreno/intern-few-shot-multimodal",
+  "slug": "bcnmoreno-intern-few-shot-multimodal",
+  "author": "bcnmoreno",
+  "url": "https://huggingface.co/bcnmoreno/intern-few-shot-multimodal",
+  "created_at": "2026-11-06T18:15:39.000Z",
+  "updated_at": "2026-11-06T18:15:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "few-shot-multimodal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Multimodal AI: The Best Open-Source Vision Language Models in 2026",
+      "url": "https://www.bentoml.com/blog/multimodal-ai-a-guide-to-open-source-vision-language-models",
+      "snippet": "Multimodal AI: The Best Open-Source Vision Language Models in 2026 Explore the top open-source VLMs and find answers to some FAQs about them."
+    },
+    {
+      "title": "Multimodal Large Models in Few-Shot Learning Scenarios",
+      "url": "https://www.researchgate.net/publication/396722371_Multimodal_Large_Models_in_Few-Shot_Learning_Scenarios",
+      "snippet": "Download Citation | On Jul 26, 2025, Hanyu Wei and others published Multimodal Large Models in Few-Shot Learning Scenarios | Find, read and cite all the research you need on ResearchGate"
+    }
+  ]
+}

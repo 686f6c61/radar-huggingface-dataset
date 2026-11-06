@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "mradermacher/TwIL-8B-Abliterated-Uncensored-i1-GGUF",
+  "slug": "mradermacher-twil-8b-abliterated-uncensored-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/TwIL-8B-Abliterated-Uncensored-i1-GGUF",
+  "created_at": "2026-11-06T15:55:48.000Z",
+  "updated_at": "2026-11-06T15:55:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2993720,
+  "parameters_human": "3.0M",
+  "storage_bytes": 12054880,
+  "storage_human": "12 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Abliterated Models — Open-Weight LLMs With Refusals Removed",
+      "url": "https://www.abliteratedmodels.org/",
+      "snippet": "Abliterated Models Abliterated Models is an index of abliterated AI: open-weight LLMs with refusal behaviour removed from their weights, for security teams. Every model here is uncensored — it answers prompts a normal AI refuses. All 956 are free to download from Hugging Face, and each page shows what the model was built from, how big it is, the hardware it needs and its licence."
+    },
+    {
+      "title": "webAI Releases TwIL-8B, an 8.8B Reasoning Model Scoring 98.2 on MATH-500",
+      "url": "https://www.marktechpost.com/2026/11/04/webai-twil-8b-reasoning-model/",
+      "snippet": "webAI’s TwIL-8B is an 8.8B open-weights reasoning model scoring 98.2 on MATH-500 and running locally in 4.98 GiB."
+    }
+  ]
+}

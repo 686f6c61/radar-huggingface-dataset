@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "alikup-ai/bytes-per-token",
+  "slug": "alikup-ai-bytes-per-token",
+  "author": "alikup-ai",
+  "url": "https://huggingface.co/alikup-ai/bytes-per-token",
+  "created_at": "2026-11-06T13:15:40.000Z",
+  "updated_at": "2026-11-06T13:16:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "tinyml",
+    "microcontroller",
+    "esp32",
+    "esp32-s3",
+    "edge-ai",
+    "quantization",
+    "int4",
+    "tinystories",
+    "text-generation",
+    "en",
+    "dataset:roneneldan/TinyStories",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 56157408,
+  "storage_human": "56 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free AI Token Counter - GPT, Claude & Gemini Token Calculator - MiniWebtool",
+      "url": "https://miniwebtool.com/ai-token-counter/",
+      "snippet": "AI Token Counter - Estimate how much model context your prompt may use with MiniWebtool’s AI Token Counter. Counts update while you type, alongside a token visualization and word and character totals; estimates cover several popular model families."
+    },
+    {
+      "title": "Track model usage - Databricks on AWS",
+      "url": "https://docs.databricks.com/aws/en/ai-gateway/usage-tracking",
+      "snippet": "Track model usage Monitor usage for Unity Gateway services with the system.ai_gateway.usage system table. It captures requests to model services, model provider services, and MCP services from various sources, including AI Query, coding agents, Databricks Apps, AI Playground, and other applications. Usage records include requester and service details, response status, model token usage and ..."
+    }
+  ]
+}

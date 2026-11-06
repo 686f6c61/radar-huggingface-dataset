@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "beamster/Qwen3.8-Flash-Next-Sushi-2bpw",
+  "slug": "beamster-qwen3-8-flash-next-sushi-2bpw",
+  "author": "beamster",
+  "url": "https://huggingface.co/beamster/Qwen3.8-Flash-Next-Sushi-2bpw",
+  "created_at": "2026-09-28T12:22:23.000Z",
+  "updated_at": "2026-11-06T12:51:26.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen4_exp",
+    "sushi",
+    "exl3",
+    "apple-silicon",
+    "moe",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 1823,
+  "trending_score": 0,
+  "parameters": 21142110099,
+  "parameters_human": "21.14B",
+  "storage_bytes": 69569149186,
+  "storage_human": "69.6 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "beamster/Qwen3.8-Flash-Next-Sushi-2.6bpw · Hugging Face",
+      "url": "https://huggingface.co/beamster/Qwen3.8-Flash-Next-Sushi-2.6bpw",
+      "snippet": "beamster / Qwen3.8-Flash-Next-Sushi-2.6bpw Like 15 Image-Text-to-Text Safetensors qwen4_exp sushi exl3 apple-silicon Mixture of Experts conversational 8-bit precision License:qwen-community-1.0 Model card FilesFiles and versions xet Community Copy to bucket new Qwen3.8-Flash-Next-Sushi-2.6bpw Run it on a 64 GB Mac Memory Quality Hard questions ..."
+    },
+    {
+      "title": "beamster/Qwen3.8-Flash-Next-Sushi-3bpw · Hugging Face",
+      "url": "https://huggingface.co/beamster/Qwen3.8-Flash-Next-Sushi-3bpw",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

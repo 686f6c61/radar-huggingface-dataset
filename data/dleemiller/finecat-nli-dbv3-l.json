@@ -1,0 +1,135 @@
+{
+  "schema": 1,
+  "id": "dleemiller/finecat-nli-dbv3-l",
+  "slug": "dleemiller-finecat-nli-dbv3-l",
+  "author": "dleemiller",
+  "url": "https://huggingface.co/dleemiller/finecat-nli-dbv3-l",
+  "created_at": "2026-11-05T00:17:04.000Z",
+  "updated_at": "2026-11-06T13:32:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "deberta-v2",
+    "cross-encoder",
+    "reranker",
+    "generated_from_trainer",
+    "deberta",
+    "deberta-v3",
+    "mnli",
+    "snli",
+    "anli",
+    "nli",
+    "natural-language-inference",
+    "zero-shot-classification",
+    "text-classification",
+    "hallucination-detection",
+    "rag",
+    "fact-checking",
+    "groundedness",
+    "knowledge-distillation",
+    "en",
+    "dataset:dleemiller/FineCat-NLI",
+    "dataset:dleemiller/FineCat-NLI-Reason",
+    "base_model:microsoft/deberta-v3-large",
+    "base_model:finetune:microsoft/deberta-v3-large",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 435064835,
+  "parameters_human": "435.1M",
+  "storage_bytes": 1741375790,
+  "storage_human": "1.7 GB",
+  "base_model": "microsoft/deberta-v3-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Natural Language Inference",
+      "dataset": "FineCat-NLI (test)",
+      "metric": "Accuracy",
+      "value": 0.8495
+    },
+    {
+      "task": "Natural Language Inference",
+      "dataset": "MultiNLI (validation matched)",
+      "metric": "Accuracy",
+      "value": 0.9254
+    },
+    {
+      "task": "Natural Language Inference",
+      "dataset": "MultiNLI (validation mismatched)",
+      "metric": "Accuracy",
+      "value": 0.9224
+    },
+    {
+      "task": "Natural Language Inference",
+      "dataset": "SNLI (test)",
+      "metric": "Accuracy",
+      "value": 0.9375
+    },
+    {
+      "task": "Natural Language Inference",
+      "dataset": "ANLI round 1 (test)",
+      "metric": "Accuracy",
+      "value": 0.812
+    },
+    {
+      "task": "Natural Language Inference",
+      "dataset": "ANLI round 2 (test)",
+      "metric": "Accuracy",
+      "value": 0.695
+    },
+    {
+      "task": "Natural Language Inference",
+      "dataset": "ANLI round 3 (test)",
+      "metric": "Accuracy",
+      "value": 0.6192
+    },
+    {
+      "task": "Natural Language Inference",
+      "dataset": "WANLI (test)",
+      "metric": "Accuracy",
+      "value": 0.7688
+    },
+    {
+      "task": "Natural Language Inference",
+      "dataset": "LingNLI (validation)",
+      "metric": "Accuracy",
+      "value": 0.8946
+    },
+    {
+      "task": "Natural Language Inference",
+      "dataset": "45-dataset NLI / zero-shot / grounding benchmark (macro average)",
+      "metric": "Macro accuracy",
+      "value": 0.8217
+    }
+  ],
+  "sources": [
+    {
+      "title": "dleemiller/finecat-nli-l · Hugging Face",
+      "url": "https://huggingface.co/dleemiller/finecat-nli-l",
+      "snippet": "FineCat-NLI Large Overview This model is a fine-tune of the excellent tasksource/ModernBERT-large-nli, trained on the dleemiller/FineCat-NLI dataset—a compilation of several high-quality NLI data sources with quality screening and reduction of easy samples in the training split."
+    },
+    {
+      "title": "dleemiller/finecat-nli-dbv3-m · Hugging Face",
+      "url": "https://huggingface.co/dleemiller/finecat-nli-dbv3-m",
+      "snippet": "This model is a fine-tune of microsoft/deberta-v3-base, trained on the dleemiller/FineCat-NLI-Reason dataset, a compilation of several high-quality NLI data sources with quality screening and reduction of easy samples in the training split. Also includes additional NLI, fact verification and long document sources (2.05M pairs in total)."
+    }
+  ]
+}

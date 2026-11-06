@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "EdwardHsu0412/prompt-clarity-llama3",
+  "slug": "edwardhsu0412-prompt-clarity-llama3",
+  "author": "EdwardHsu0412",
+  "url": "https://huggingface.co/EdwardHsu0412/prompt-clarity-llama3",
+  "created_at": "2026-10-28T04:36:02.000Z",
+  "updated_at": "2026-11-06T19:23:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 144,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 25622314048,
+  "storage_human": "25.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EdwardHsu0412/prompt-clarity-llama3 · Hugging Face",
+      "url": "https://huggingface.co/EdwardHsu0412/prompt-clarity-llama3",
+      "snippet": "Machine learning model with 8B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Llama3 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/llama3",
+      "snippet": "Overview The Llama3 model was proposed in Introducing Meta Llama 3: The most capable openly available LLM to date by the meta AI team. The abstract from the blogpost is the following: Today, we’re excited to share the first two models of the next generation of Llama, Meta Llama 3, available for broad use. This release features pretrained and instruction-fine-tuned language models with 8B and ..."
+    }
+  ]
+}

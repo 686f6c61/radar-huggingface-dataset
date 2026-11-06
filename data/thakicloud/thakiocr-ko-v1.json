@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ThakiCloud/ThakiOCR-KO-v1",
+  "slug": "thakicloud-thakiocr-ko-v1",
+  "author": "ThakiCloud",
+  "url": "https://huggingface.co/ThakiCloud/ThakiOCR-KO-v1",
+  "created_at": "2026-11-06T13:06:21.000Z",
+  "updated_at": "2026-11-06T13:06:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "ocr",
+    "korean",
+    "lora",
+    "handwriting",
+    "research-preview",
+    "image-text-to-text",
+    "ko",
+    "base_model:ATH-MaaS/OvisOCR3",
+    "base_model:adapter:ATH-MaaS/OvisOCR3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25587104,
+  "storage_human": "26 MB",
+  "base_model": "ATH-MaaS/OvisOCR3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ThakiOCR A: We Released Our Own 2.13M-Parameter Korean-English OCR",
+      "url": "https://thakicloud.com/tech-blog/en/research/thakiocr-a-small-korean-english-line-ocr/",
+      "snippet": "We published ThakiOCR A, a Korean-English OCR model that ThakiCloud trained from scratch, on Hugging Face as ThakiOCR-KOEN-V1-Dense. It has 2.13M parameters, and both code and weights are Apache-2.0."
+    },
+    {
+      "title": "ThakiOCR A: 213만 파라미터 자체 한국어·영어 OCR을 공개했습니다",
+      "url": "https://thakicloud.com/tech-blog/ko/research/thakiocr-a-small-korean-english-line-ocr/",
+      "snippet": "ThakiCloud가 처음부터 직접 학습한 한국어·영어 OCR 모델 ThakiOCR A를 Hugging Face에 ThakiOCR-KOEN-V1-Dense 라는 이름으로 공개했습니다. 파라미터는 213만 개이고 코드와 가중치 모두 Apache-2.0 라이선스입니다."
+    }
+  ]
+}

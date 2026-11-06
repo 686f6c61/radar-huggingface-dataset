@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "marwanaymenn/smollm2-1.7b-gsm8k-sft",
+  "slug": "marwanaymenn-smollm2-1-7b-gsm8k-sft",
+  "author": "marwanaymenn",
+  "url": "https://huggingface.co/marwanaymenn/smollm2-1.7b-gsm8k-sft",
+  "created_at": "2026-11-06T14:47:58.000Z",
+  "updated_at": "2026-11-06T14:48:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 72402153,
+  "storage_human": "72 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HuggingFaceTB/SmolLM2-1.7B · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SmolLM2 - a HuggingFaceTB Collection",
+      "url": "https://huggingface.co/collections/HuggingFaceTB/smollm2",
+      "snippet": "State-of-the-art compact LLMs for on-device applications: 1.7B, 360M, 135M"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "Chungulus/Qwen3.5-4B-GLB-3D-Coder-Q8_0-GGUF",
+  "slug": "chungulus-qwen3-5-4b-glb-3d-coder-q8_0-gguf",
+  "author": "Chungulus",
+  "url": "https://huggingface.co/Chungulus/Qwen3.5-4B-GLB-3D-Coder-Q8_0-GGUF",
+  "created_at": "2026-11-06T14:07:34.000Z",
+  "updated_at": "2026-11-06T14:07:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3_5",
+    "threejs",
+    "glb",
+    "code",
+    "image-text-to-text",
+    "conversational",
+    "base_model:ccore/Qwen3.5-4B-GLB-3D-Coder",
+    "base_model:quantized:ccore/Qwen3.5-4B-GLB-3D-Coder",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 5157972672,
+  "storage_human": "5.2 GB",
+  "base_model": "ccore/Qwen3.5-4B-GLB-3D-Coder",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OxBee/Qwen3.5-4B-GLB-3D-Coder · Hugging Face",
+      "url": "https://huggingface.co/OxBee/Qwen3.5-4B-GLB-3D-Coder",
+      "snippet": "Duplicated from ccore/Qwen3.5-4B-GLB-3D-Coder OxBee / Qwen3.5-4B-GLB-3D-Coder Like 0 Text Generation GGUF English qwen3_5 code threejs 3d glb godot preview conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    },
+    {
+      "title": "sekkit/Qwen3.5-4B-GLB-3D-Coder at main - Hugging Face",
+      "url": "https://huggingface.co/sekkit/Qwen3.5-4B-GLB-3D-Coder/tree/main",
+      "snippet": "Like 0 Text Generation GGUF English qwen3_5 code threejs 3d glb godot preview conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "nfa04/u2netp-onnx",
+  "slug": "nfa04-u2netp-onnx",
+  "author": "nfa04",
+  "url": "https://huggingface.co/nfa04/u2netp-onnx",
+  "created_at": "2026-11-06T13:42:59.000Z",
+  "updated_at": "2026-11-06T13:43:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "salient-object-detection",
+    "background-removal",
+    "u2net",
+    "image-segmentation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4574861,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "skillsafe-ai/u2netp · Hugging Face",
+      "url": "https://huggingface.co/skillsafe-ai/u2netp",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "u2netp.onnx · Heliosoph/u2net-onnx at main - Hugging Face",
+      "url": "https://huggingface.co/Heliosoph/u2net-onnx/blob/main/u2netp.onnx",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Vatra-Neuron-1.5B-GGUF",
+  "slug": "mradermacher-vatra-neuron-1-5b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Vatra-Neuron-1.5B-GGUF",
+  "created_at": "2026-11-06T13:45:43.000Z",
+  "updated_at": "2026-11-06T13:52:16.000Z",
+  "license": "vatra-license-v1",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "id"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "code",
+    "coding-assistant",
+    "livecodebench",
+    "reasoning",
+    "python",
+    "competitive-programming",
+    "en",
+    "id",
+    "base_model:VATRA-AI/Vatra-Neuron-1.5B",
+    "base_model:quantized:VATRA-AI/Vatra-Neuron-1.5B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 14206903680,
+  "storage_human": "14.2 GB",
+  "base_model": "VATRA-AI/Vatra-Neuron-1.5B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/1.5B-v2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/1.5B-v2-GGUF",
+      "snippet": "Feel free to request them by opening a Community Discussion. Usage If you are unsure how to use GGUF files, refer to one of TheBloke's READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/models",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    }
+  ]
+}

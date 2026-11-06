@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "plitip/team-qh-091-safesite",
+  "slug": "plitip-team-qh-091-safesite",
+  "author": "plitip",
+  "url": "https://huggingface.co/plitip/team-qh-091-safesite",
+  "created_at": "2026-11-06T15:44:12.000Z",
+  "updated_at": "2026-11-06T18:09:13.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "qai-hf-hackathon-2026",
+    "object-detection",
+    "yolo",
+    "yolo26",
+    "construction-safety",
+    "ppe-detection",
+    "dataset:keremberke/hard-hat-detection",
+    "dataset:keremberke/construction-safety-object-detection",
+    "dataset:Francesco/construction-safety-gsnvb",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40635082,
+  "storage_human": "41 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "safesiteai.com | Construction & Property Site Security",
+      "url": "https://www.safesiteai.com/",
+      "snippet": "SAFESITE White Label program For Private Security. Modernize your security practices with SAFESITE. The ultimate detect, deter, and response system to prevent crime and eliminate persistent, unwanted activity. Leverage AI technology to 10x your security personnel presence."
+    },
+    {
+      "title": "GitHub - FAbdullah17/SafeSite-AI",
+      "url": "https://github.com/FAbdullah17/SafeSite-AI",
+      "snippet": "Real-Time Construction Safety Monitoring via Cascaded AI Architecture SafeSite AI is an intelligent safety monitoring system designed for construction environments. By combining the speed of local computer vision with the contextual reasoning of cloud-based Large Language Models (LLMs), it provides an automated, reliable safety net for site workers."
+    }
+  ]
+}

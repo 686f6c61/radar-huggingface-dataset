@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "yosifelessawi/estimation-hybrid-v4",
+  "slug": "yosifelessawi-estimation-hybrid-v4",
+  "author": "yosifelessawi",
+  "url": "https://huggingface.co/yosifelessawi/estimation-hybrid-v4",
+  "created_at": "2026-11-06T16:14:29.000Z",
+  "updated_at": "2026-11-06T16:14:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "reinforcement-learning",
+    "card-games",
+    "estimation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6595913,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YosifElessawi - GitHub",
+      "url": "https://github.com/YosifElessawi",
+      "snippet": "Data Science, Machine Learning and Frontend dev. YosifElessawi has 8 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

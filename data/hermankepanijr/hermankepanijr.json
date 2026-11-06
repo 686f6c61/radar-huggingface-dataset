@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "hermankepanijr/hermankepanijr",
+  "slug": "hermankepanijr-hermankepanijr",
+  "author": "hermankepanijr",
+  "url": "https://huggingface.co/hermankepanijr/hermankepanijr",
+  "created_at": "2026-10-20T08:09:00.000Z",
+  "updated_at": "2026-11-06T12:59:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hermankepanijr/hermankepanijr · Hugging Face",
+      "url": "https://huggingface.co/hermankepanijr/hermankepanijr",
+      "snippet": "hermankepanijr / hermankepanijr Like 0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "hermankepanijr/hermankepanijr at main - Hugging Face",
+      "url": "https://huggingface.co/hermankepanijr/hermankepanijr/tree/main",
+      "snippet": "hermankepanijr / hermankepanijr Like 0 Model card FilesFiles and versions xet Community Copy to bucket new main hermankepanijr 2.01 kB Ctrl+K Ctrl+K 1 contributor History:3 commits hermankepanijr Update README.md 03d35e2 verifiedabout 13 hours ago .gitattributes Safe 1.52 kBinitial commitabout 13 hours ago README.md 487 BytesUpdate README ..."
+    }
+  ]
+}

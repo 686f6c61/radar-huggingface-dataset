@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "Rexxxxxtxx/ecommerce-emotion-classifier",
+  "slug": "rexxxxxtxx-ecommerce-emotion-classifier",
+  "author": "Rexxxxxtxx",
+  "url": "https://huggingface.co/Rexxxxxtxx/ecommerce-emotion-classifier",
+  "created_at": "2026-11-06T20:13:14.000Z",
+  "updated_at": "2026-11-06T20:13:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "emotionclassifier · PyPI",
+      "url": "https://pypi.org/project/emotionclassifier/",
+      "snippet": "emotionclassifier is a Python package designed to classify emotions in text using various pre-trained models from Hugging Face's Transformers library. This package provides a user-friendly interface for emotion classification, along with tools for data preprocessing, visualization, fine-tuning, and integration with popular data platforms."
+    },
+    {
+      "title": "Maverick98/EcommerceClassifier · Hugging Face",
+      "url": "https://huggingface.co/Maverick98/EcommerceClassifier",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

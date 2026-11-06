@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "natisol87/PyTorch-casas-SA",
+  "slug": "natisol87-pytorch-casas-sa",
+  "author": "natisol87",
+  "url": "https://huggingface.co/natisol87/PyTorch-casas-SA",
+  "created_at": "2026-11-06T17:58:45.000Z",
+  "updated_at": "2026-11-06T17:59:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-regression",
+  "library": "pytorch",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "machine-learning",
+    "regression",
+    "linear-regression",
+    "educational-example",
+    "tabular-regression",
+    "es",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4,
+  "parameters_human": "4",
+  "storage_bytes": 160,
+  "storage_human": "160 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "natisol87/PyTorch-casas-SA · Hugging Face",
+      "url": "https://huggingface.co/natisol87/PyTorch-casas-SA",
+      "snippet": "natisol87 / PyTorch-casas-SA Like 0 Tabular Regression PyTorch Safetensors Spanish machine-learning regression linear-regression educational-example License:mit Model card FilesFiles and versions xet Community Copy to bucket Regresión lineal con PyTorch: precio de una casa Descripción del modelo Objetivo Datos de entrenamiento Entrenamiento ..."
+    }
+  ]
+}

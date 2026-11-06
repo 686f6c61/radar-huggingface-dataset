@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "HerrLei/gemma-2b-finetune",
+  "slug": "herrlei-gemma-2b-finetune",
+  "author": "HerrLei",
+  "url": "https://huggingface.co/HerrLei/gemma-2b-finetune",
+  "created_at": "2026-11-06T17:46:26.000Z",
+  "updated_at": "2026-11-06T17:47:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "keras-hub",
+  "languages": [],
+  "tags": [
+    "keras-hub",
+    "text-generation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5017173651,
+  "storage_human": "5.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma Model Family - Gemma Documentation",
+      "url": "https://gemma.ai/models/",
+      "snippet": "The family has two halves. A mainline generation — Gemma 1 through Gemma 4 — is the general purpose model most people want. Around each generation sits a set of variants: the same architecture retrained or restructured for one job, like embeddings, safety classification or vision-language tasks."
+    },
+    {
+      "title": "Gemma model fine-tuning - Gemma Documentation",
+      "url": "https://gemma.ai/tuning/",
+      "snippet": "Fine-tuning a generative artificial intelligence (AI) model such as Gemma modifies the behavior of the model."
+    }
+  ]
+}

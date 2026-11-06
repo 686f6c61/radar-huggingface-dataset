@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "Z-Jafari/bert-fa-base-uncased-finetuned-PersianQuAD-val-80",
+  "slug": "z-jafari-bert-fa-base-uncased-finetuned-persianquad-val-80",
+  "author": "Z-Jafari",
+  "url": "https://huggingface.co/Z-Jafari/bert-fa-base-uncased-finetuned-PersianQuAD-val-80",
+  "created_at": "2026-11-06T12:50:15.000Z",
+  "updated_at": "2026-11-06T13:13:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "question-answering",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "question-answering",
+    "generated_from_trainer",
+    "base_model:HooshvareLab/bert-fa-base-uncased",
+    "base_model:finetune:HooshvareLab/bert-fa-base-uncased",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 162252290,
+  "parameters_human": "162.3M",
+  "storage_bytes": 4543232841,
+  "storage_human": "4.5 GB",
+  "base_model": "HooshvareLab/bert-fa-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Z-Jafari/bert-fa-base-uncased-finetuned-PersianQuAD_Factoid_Test ...",
+      "url": "https://huggingface.co/Z-Jafari/bert-fa-base-uncased-finetuned-PersianQuAD_Factoid_Test-matched-ANS_LEN",
+      "snippet": "Instructions to use Z-Jafari/bert-fa-base-uncased-finetuned-PersianQuAD_Factoid_Test-matched-ANS_LEN with libraries, inference providers, notebooks, and local apps."
+    },
+    {
+      "title": "Base-Models-Finetuned-on-PersianQuAD - a Z-Jafari Collection",
+      "url": "https://huggingface.co/collections/Z-Jafari/base-models-finetuned-on-persianquad",
+      "snippet": "Base models finetuned with PersianQuAD and baseline dataset PersianQuAD."
+    }
+  ]
+}

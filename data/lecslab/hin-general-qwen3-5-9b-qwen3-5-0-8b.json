@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "lecslab/hin-general-Qwen3.5-9B-Qwen3.5-0.8B",
+  "slug": "lecslab-hin-general-qwen3-5-9b-qwen3-5-0-8b",
+  "author": "lecslab",
+  "url": "https://huggingface.co/lecslab/hin-general-Qwen3.5-9B-Qwen3.5-0.8B",
+  "created_at": "2026-11-06T15:55:56.000Z",
+  "updated_at": "2026-11-06T15:56:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 1524816933,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lecslab/npi-general-Qwen3.5-9B-Qwen3.5-0.8B · Hugging Face",
+      "url": "https://huggingface.co/lecslab/npi-general-Qwen3.5-9B-Qwen3.5-0.8B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lecslab/que-general-Qwen3.5-9B-Qwen3.5-0.8B · Hugging Face",
+      "url": "https://huggingface.co/lecslab/que-general-Qwen3.5-9B-Qwen3.5-0.8B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

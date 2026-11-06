@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "Veronikyos/llm-course-hw3-tinyllamma-qlora",
+  "slug": "veronikyos-llm-course-hw3-tinyllamma-qlora",
+  "author": "Veronikyos",
+  "url": "https://huggingface.co/Veronikyos/llm-course-hw3-tinyllamma-qlora",
+  "created_at": "2026-11-06T16:53:49.000Z",
+  "updated_at": "2026-11-06T16:53:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AlexPalych/llm-course-hw3-tinyllama-qlora · Hugging Face",
+      "url": "https://huggingface.co/AlexPalych/llm-course-hw3-tinyllama-qlora",
+      "snippet": "AlexPalych / llm-course-hw3-tinyllama-qlora like 0 Text Generation Transformers Safetensors llama conversational text-generation-inference 4-bit precision bitsandbytes arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "How to Fine-Tune an LLM With LoRA: 12 Steps [2026]",
+      "url": "https://tech-insider.org/how-to-fine-tune-llm-lora-2026/",
+      "snippet": "Fine-tune an open-source LLM with LoRA and QLoRA in 12 steps: setup, dataset prep, training, evaluation, and deployment with real 2026 GPU pricing."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "dwr-ight/clip-generation",
+  "slug": "dwr-ight-clip-generation",
+  "author": "dwr-ight",
+  "url": "https://huggingface.co/dwr-ight/clip-generation",
+  "created_at": "2026-11-06T18:55:46.000Z",
+  "updated_at": "2026-11-06T18:55:52.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CLIP (Contrastive Language-Image Pretraining) - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/clip-contrastive-language-image-pretraining/",
+      "snippet": "CLIP (Contrastive Language-Image Pretraining) is a multimodal AI model that learns the relationship between images and text. By training on image–text pairs, it can understand visual content through natural language descriptions and perform image recognition without task-specific training."
+    },
+    {
+      "title": "dwr-ight/clip-classification · Hugging Face",
+      "url": "https://huggingface.co/dwr-ight/clip-classification",
+      "snippet": "dwr-ight / clip-classification Like 0 Safetensors PyTorch clip classification License:bsd-3-clause Model card FilesFiles and versions xet Community Copy to bucket new CLIP for Classification Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    }
+  ]
+}

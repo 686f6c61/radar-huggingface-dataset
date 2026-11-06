@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "VedaVachan/kcat-km-v16",
+  "slug": "vedavachan-kcat-km-v16",
+  "author": "VedaVachan",
+  "url": "https://huggingface.co/VedaVachan/kcat-km-v16",
+  "created_at": "2026-11-06T16:14:23.000Z",
+  "updated_at": "2026-11-06T16:33:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "safetensors",
+    "biology",
+    "enzyme-kinetics",
+    "lightgbm",
+    "pytorch",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1241752428,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VedaVachan (Vangala Vedavachan Reddy) - Hugging Face",
+      "url": "https://huggingface.co/VedaVachan/models",
+      "snippet": "VedaVachan's models2 Sort: Recently updated VedaVachan/kcat-km-v2 Updated about 10 hours ago"
+    },
+    {
+      "title": "Kinetic Predictor",
+      "url": "https://predictor.openkinetics.org/",
+      "snippet": "Kinetic Predictor predicts enzyme kinetic parameters (kcat, Km) for enzyme–substrate pairs using machine-learning models."
+    }
+  ]
+}

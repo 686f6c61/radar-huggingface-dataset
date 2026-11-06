@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "aether-models/aether-kit-flux2-klein-4b",
+  "slug": "aether-models-aether-kit-flux2-klein-4b",
+  "author": "aether-models",
+  "url": "https://huggingface.co/aether-models/aether-kit-flux2-klein-4b",
+  "created_at": "2026-11-06T15:24:37.000Z",
+  "updated_at": "2026-11-06T15:27:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "aether-kit",
+    "core-ai",
+    "text-to-image",
+    "base_model:black-forest-labs/FLUX.2-klein-4B",
+    "base_model:finetune:black-forest-labs/FLUX.2-klein-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7932804308,
+  "storage_human": "7.9 GB",
+  "base_model": "black-forest-labs/FLUX.2-klein-4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Éther (mythologie) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/%C3%89ther_(mythologie)",
+      "snippet": "« Aether » redirige ici. Pour le jeu vidéo, voir Aether (jeu vidéo). Pour les articles homonymes, voir . ... Éther ou Æther est un dieu …"
+    },
+    {
+      "title": "aether-models/flux2-klein-4b · Hugging Face",
+      "url": "https://huggingface.co/aether-models/flux2-klein-4b",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Aether (classical element) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Aether_(classical_element)",
+      "snippet": "In his aether model, Newton describes aether as a medium that \"flows\" continually downward toward the Earth's surface and is …"
+    },
+    {
+      "title": "aether-models/flux2-klein-4b at main - Hugging Face",
+      "url": "https://huggingface.co/aether-models/flux2-klein-4b/tree/main",
+      "snippet": "aether-models / flux2-klein-4b Like 0 Follow Aether Engine Models 1 Text-to-Image aether core-ai apple macos ios License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main flux2-klein-4b 15.7 GB Ctrl+K Ctrl+K 1 contributor History:7 commits zakkeown Attach 2 verification file (s) to flux2-klein-4b@49ab3f4 (aether publish --records-only) 930427e verified6 days ..."
+    },
+    {
+      "title": "Aether — Your Personal Streaming Service for Apple Devices",
+      "url": "https://aetherplayer.com/",
+      "snippet": "Some signals are meant to be answered. Your films, shows and live channels, together in Aether. Connect Plex, Jellyfin, Emby or …"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "huggingtime12/Qwen3-1.7B-PhoMT-GRPO-BLEU-COMET-draft",
+  "slug": "huggingtime12-qwen3-1-7b-phomt-grpo-bleu-comet-draft",
+  "author": "huggingtime12",
+  "url": "https://huggingface.co/huggingtime12/Qwen3-1.7B-PhoMT-GRPO-BLEU-COMET-draft",
+  "created_at": "2026-09-03T05:24:53.000Z",
+  "updated_at": "2026-11-06T13:51:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:huggingtime12/Qwen3-1.7B-PhoMT-SFT-Merged",
+    "base_model:adapter:huggingtime12/Qwen3-1.7B-PhoMT-SFT-Merged",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1683820087,
+  "storage_human": "1.7 GB",
+  "base_model": "huggingtime12/Qwen3-1.7B-PhoMT-SFT-Merged",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huggingtime12 (minh)",
+      "url": "https://huggingface.co/huggingtime12",
+      "snippet": "User profile of minh on Hugging Face"
+    },
+    {
+      "title": "huggingtime12/Qwen3_1.7_PhoMT_GRPO_BLEU_r64 · Hugging Face",
+      "url": "https://huggingface.co/huggingtime12/Qwen3_1.7_PhoMT_GRPO_BLEU_r64",
+      "snippet": "huggingtime12 / Qwen3_1.7_PhoMT_GRPO_BLEU_r64 Like 0 PEFT Safetensors Transformers grpo lora trl arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

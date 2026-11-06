@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "juanml82/roleplay-Xing4.0-29B-gguf",
+  "slug": "juanml82-roleplay-xing4-0-29b-gguf",
+  "author": "juanml82",
+  "url": "https://huggingface.co/juanml82/roleplay-Xing4.0-29B-gguf",
+  "created_at": "2026-11-06T12:49:06.000Z",
+  "updated_at": "2026-11-06T12:57:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "roleplay",
+    "conversational",
+    "Xing",
+    "MoE",
+    "Telechat",
+    "Ascend",
+    "zh",
+    "en",
+    "base_model:hunter-P/roleplay-Xing4.0-29B",
+    "base_model:finetune:hunter-P/roleplay-Xing4.0-29B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "hunter-P/roleplay-Xing4.0-29B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hunter-P/roleplay-Xing4.0-29B at main - Hugging Face",
+      "url": "https://huggingface.co/hunter-P/roleplay-Xing4.0-29B/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "XingChen-AGI/Xing4.0-29B-A4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B-GGUF",
+      "snippet": "Text Generation model with 31B parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

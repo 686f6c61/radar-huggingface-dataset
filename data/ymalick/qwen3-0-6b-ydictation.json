@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "ymalick/qwen3-0.6b-ydictation",
+  "slug": "ymalick-qwen3-0-6b-ydictation",
+  "author": "ymalick",
+  "url": "https://huggingface.co/ymalick/qwen3-0.6b-ydictation",
+  "created_at": "2026-11-06T12:52:36.000Z",
+  "updated_at": "2026-11-06T12:54:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "qwen",
+    "speech-to-text",
+    "asr-correction",
+    "llama.cpp",
+    "gguf",
+    "text-generation",
+    "conversational",
+    "fr",
+    "base_model:Qwen/Qwen3-0.6B-Base",
+    "base_model:finetune:Qwen/Qwen3-0.6B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1203557434,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3-0.6B-Base",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-0.6B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-0.6B",
+      "snippet": "Text Generation model with 0.8B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Qwen3 Tutorial: Run 0.6B to 235B LLMs Locally — AI Tutorial",
+      "url": "https://aiindigo.com/tutorials/getting-started-with-qwen3-deploying-efficient-llms-from-0-6b-to-235b",
+      "snippet": "Getting Started with Qwen3: Deploying Efficient LLMs from 0.6B to 235B Learn how to select, download, and run Qwen3 models using Hugging Face Transformers and vLLM, covering both edge devices and high-performance enterprise inference."
+    }
+  ]
+}

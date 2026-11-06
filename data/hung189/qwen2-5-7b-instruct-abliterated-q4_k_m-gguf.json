@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Hung189/Qwen2.5-7B-Instruct-abliterated-Q4_K_M-GGUF",
+  "slug": "hung189-qwen2-5-7b-instruct-abliterated-q4_k_m-gguf",
+  "author": "Hung189",
+  "url": "https://huggingface.co/Hung189/Qwen2.5-7B-Instruct-abliterated-Q4_K_M-GGUF",
+  "created_at": "2026-11-06T14:49:19.000Z",
+  "updated_at": "2026-11-06T14:49:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "base_model:Hung189/Qwen2.5-7B-Instruct-abliterated",
+    "base_model:quantized:Hung189/Qwen2.5-7B-Instruct-abliterated",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 1929900032,
+  "storage_human": "1.9 GB",
+  "base_model": "Hung189/Qwen2.5-7B-Instruct-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huihui-ai/Qwen2.5-7B-Instruct-abliterated-v2 · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Qwen2.5-7B-Instruct-abliterated-v2",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5-7B-Instruct-abliterated-v2-GGUF - Hugging Face",
+      "url": "https://huggingface.co/QuantFactory/Qwen2.5-7B-Instruct-abliterated-v2-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

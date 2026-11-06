@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "GoodnotesLtd/wespeaker-resnet221-lm-coreml",
+  "slug": "goodnotesltd-wespeaker-resnet221-lm-coreml",
+  "author": "GoodnotesLtd",
+  "url": "https://huggingface.co/GoodnotesLtd/wespeaker-resnet221-lm-coreml",
+  "created_at": "2026-11-06T18:19:26.000Z",
+  "updated_at": "2026-11-06T18:19:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "speaker-recognition",
+    "wespeaker",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 116099646,
+  "storage_human": "116 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · Wespeaker/wespeaker-voxceleb-resnet221-LM at main",
+      "url": "https://huggingface.co/Wespeaker/wespeaker-voxceleb-resnet221-LM/blob/main/README.md",
+      "snippet": "wespeaker-voxceleb-resnet221-LM / README.md chengdongliang initial commit da14fa7 verified 5 months ago"
+    },
+    {
+      "title": "Wespeaker/wespeaker-voxceleb-resnet221-LM at main - Hugging Face",
+      "url": "https://huggingface.co/Wespeaker/wespeaker-voxceleb-resnet221-LM/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

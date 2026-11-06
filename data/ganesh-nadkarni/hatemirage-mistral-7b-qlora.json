@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Ganesh-Nadkarni/hatemirage-mistral-7b-qlora",
+  "slug": "ganesh-nadkarni-hatemirage-mistral-7b-qlora",
+  "author": "Ganesh-Nadkarni",
+  "url": "https://huggingface.co/Ganesh-Nadkarni/hatemirage-mistral-7b-qlora",
+  "created_at": "2026-11-06T15:50:25.000Z",
+  "updated_at": "2026-11-06T16:04:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "text-generation",
+    "hate-speech",
+    "faux-hate",
+    "code-mixed",
+    "hatemirage",
+    "mistral",
+    "conversational",
+    "en",
+    "hi",
+    "arxiv:2603.02684",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 340787324,
+  "storage_human": "341 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mistral 7B",
+      "url": "https://mistral.ai/news/announcing-mistral-7b/",
+      "snippet": "The best 7B model to date, Apache 2.0 Mistral 7B uses a sliding window attention (SWA) mechanism (Child et al., Beltagy et al.), in which each layer attends to the previous 4,096 hidden states. The main improvement, and reason for which this was initially investigated, is a linear compute cost of O (sliding_window.seq_len). In practice, changes made to FlashAttention and xFormers yield a 2x ..."
+    },
+    {
+      "title": "Mistral 7B Explained: Towards More Efficient Language Models",
+      "url": "https://towardsdatascience.com/mistral-7b-explained-towards-more-efficient-language-models-7f9c6e6b7251/",
+      "snippet": "A comparison showing BERT's focus on Natural Language Understanding (NLU) versus Mistral 7B's, more common, focus on Natural Language Generation (NLG). Image by author. 1.3 - Mistral 7B as an Efficient LLM The Trend Towards Larger Models: As previously mentioned, there has been a trend in the development of LLMs to improve performance by increasing model size. The general idea is that a larger ..."
+    }
+  ]
+}

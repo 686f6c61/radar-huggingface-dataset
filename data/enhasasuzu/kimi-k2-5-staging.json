@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "enhasasuzu/Kimi-K2.5-staging",
+  "slug": "enhasasuzu-kimi-k2-5-staging",
+  "author": "enhasasuzu",
+  "url": "https://huggingface.co/enhasasuzu/Kimi-K2.5-staging",
+  "created_at": "2026-11-06T01:06:51.000Z",
+  "updated_at": "2026-11-06T01:06:51.000Z",
+  "license": "modified-mit",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "kimi_k25",
+    "feature-extraction",
+    "compressed-tensors",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "arxiv:2602.02276",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kimi K2.5 | Open Visual Agentic Model for Real Work",
+      "url": "https://www.kimi.ai/ai-models/kimi-k2-5",
+      "snippet": "Kimi K2.5: AI That Sees, Codes, and Works Like an Expert Discover Kimi K2.5, a powerful open source multimodal model built for real-world work. It turns text and visuals into production-ready code, powers agent swarm workflows, and delivers expert-level results through a single unified model."
+    },
+    {
+      "title": "Kimi AI Models: See What Each One Can Do",
+      "url": "https://www.kimi.ai/ai-models/",
+      "snippet": "Explore Kimi's latest AI models, compare their capabilities and strengths, and find the right model for coding, research, creation, and complex work."
+    }
+  ]
+}

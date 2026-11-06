@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "BugByte14/Qwen3.5-9B-Q8_0-GGUF",
+  "slug": "bugbyte14-qwen3-5-9b-q8_0-gguf",
+  "author": "BugByte14",
+  "url": "https://huggingface.co/BugByte14/Qwen3.5-9B-Q8_0-GGUF",
+  "created_at": "2026-11-06T19:56:14.000Z",
+  "updated_at": "2026-11-06T19:56:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 9786060544,
+  "storage_human": "9.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bartowski/Qwen_Qwen3.5-9B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/Qwen_Qwen3.5-9B-GGUF",
+      "snippet": "Image-Text-to-Text model with 9B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Qwen3.5 9b - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/qwen3-5-9b.html",
+      "snippet": "Download Qwen3.5 9b GGUF model. 18.9 GB, 1,288,271 downloads, 963 likes."
+    }
+  ]
+}

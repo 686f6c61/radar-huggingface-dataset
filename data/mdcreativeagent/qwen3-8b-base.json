@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "mdcreativeagent/Qwen3-8B-Base",
+  "slug": "mdcreativeagent-qwen3-8b-base",
+  "author": "mdcreativeagent",
+  "url": "https://huggingface.co/mdcreativeagent/Qwen3-8B-Base",
+  "created_at": "2026-11-06T13:17:09.000Z",
+  "updated_at": "2026-11-06T13:17:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:2505.09388",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16381516776,
+  "storage_human": "16.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-8B-Base · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B-Base",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Chen-Oliver/qwen3-8b-base: Qwen3-8B-Base in pytorch",
+      "url": "https://github.com/Chen-Oliver/qwen3-8b-base",
+      "snippet": "A simple from scratch PyTorch implementation of the Qwen/Qwen3-8B-Base model, using pre-trained weights from Hugging Face. The Qwen3 line of models contains both Dense and Mixture of Expert Models. All models in this line utilize Grouped Query Attention. Qwen3-8B, like its smaller siblings (0.6B, 1 ..."
+    }
+  ]
+}

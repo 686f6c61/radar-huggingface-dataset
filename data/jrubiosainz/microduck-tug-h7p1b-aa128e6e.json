@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "jrubiosainz/microduck-tug-h7p1b-aa128e6e",
+  "slug": "jrubiosainz-microduck-tug-h7p1b-aa128e6e",
+  "author": "jrubiosainz",
+  "url": "https://huggingface.co/jrubiosainz/microduck-tug-h7p1b-aa128e6e",
+  "created_at": "2026-11-06T19:07:25.000Z",
+  "updated_at": "2026-11-06T19:07:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "microduck-arena",
+    "base_model:azukiq/microduck-titan-v1",
+    "base_model:quantized:azukiq/microduck-titan-v1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 910894,
+  "storage_human": "910894 B",
+  "base_model": "azukiq/microduck-titan-v1, greecree/microduck-tug-of-war-tug-super-v11",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - jrubiosainz/microduck",
+      "url": "https://github.com/jrubiosainz/microduck",
+      "snippet": "Contribute to jrubiosainz/microduck development by creating an account on GitHub."
+    },
+    {
+      "title": "jrubiosainz/microduck-tug-h5b-3976f431 · Hugging Face",
+      "url": "https://huggingface.co/jrubiosainz/microduck-tug-h5b-3976f431",
+      "snippet": "How to use jrubiosainz/microduck-tug-h5b-3976f431 with Microduck: # Replace SLOT with the slot specified in the model card (walk, stand, sitstand, ground_pick, kick ..."
+    }
+  ]
+}

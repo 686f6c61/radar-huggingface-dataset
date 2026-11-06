@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "markab/rpn-gpt-lightning-Forth",
+  "slug": "markab-rpn-gpt-lightning-forth",
+  "author": "markab",
+  "url": "https://huggingface.co/markab/rpn-gpt-lightning-Forth",
+  "created_at": "2026-11-06T19:20:08.000Z",
+  "updated_at": "2026-11-06T19:20:31.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "forth_lightning",
+    "text-generation",
+    "forth",
+    "rpn",
+    "nemotron",
+    "math",
+    "arithmetic",
+    "custom_code",
+    "conversational",
+    "en",
+    "dataset:markab/rpn-gpt-data",
+    "base_model:markab/rpn-gpt-lightning",
+    "base_model:finetune:markab/rpn-gpt-lightning",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3699548224,
+  "parameters_human": "3.70B",
+  "storage_bytes": 7416197388,
+  "storage_human": "7.4 GB",
+  "base_model": "markab/rpn-gpt-lightning",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

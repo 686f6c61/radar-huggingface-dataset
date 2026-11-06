@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ngqtrung/M3OPD-Teacher-Video-9B",
+  "slug": "ngqtrung-m3opd-teacher-video-9b",
+  "author": "ngqtrung",
+  "url": "https://huggingface.co/ngqtrung/M3OPD-Teacher-Video-9B",
+  "created_at": "2026-11-06T15:41:04.000Z",
+  "updated_at": "2026-11-06T15:45:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "multimodal-reasoning",
+    "on-policy-distillation",
+    "reinforcement-learning",
+    "conversational",
+    "dataset:ngqtrung/M3OPD-SFT-1.35M",
+    "dataset:ngqtrung/M3OPD-RL-193K",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18832530374,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ngqtrung/Qwen3.5-9B-MOPD-SFT-vid · Hugging Face",
+      "url": "https://huggingface.co/ngqtrung/Qwen3.5-9B-MOPD-SFT-vid",
+      "snippet": "Domain SFT teacher for the vid domain of the MOPD project (multi-teacher on-policy distillation for 8-9B vision-language models). Domain: video understanding (temporal, long video, reasoning)."
+    },
+    {
+      "title": "Video-MOPD: Multi-Teacher On-Policy Distillation for Video Understanding",
+      "url": "https://www.emergentmind.com/papers/2609.09300",
+      "snippet": "Video understanding demands a convergence of complementary capabilities across perception, temporal understanding, and complex reasoning, which are difficult to jointly optimize within a single model. We introduce Video-MOPD-8B, an open-weight model dedicated to video understanding tasks. To fundamentally enhance its capabilities, we conduct targeted reinforcement learning (RL) optimization ..."
+    }
+  ]
+}

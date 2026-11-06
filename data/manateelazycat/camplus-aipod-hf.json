@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "manateelazycat/CAMPlus-AIPod-HF",
+  "slug": "manateelazycat-camplus-aipod-hf",
+  "author": "manateelazycat",
+  "url": "https://huggingface.co/manateelazycat/CAMPlus-AIPod-HF",
+  "created_at": "2026-11-06T12:41:55.000Z",
+  "updated_at": "2026-11-06T13:09:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 701676245,
+  "storage_human": "702 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "docs/api-contract.md · manateelazycat/Nemotron-3-Diarization-AIPod-HF ...",
+      "url": "https://huggingface.co/manateelazycat/Nemotron-3-Diarization-AIPod-HF/blob/main/docs/api-contract.md",
+      "snippet": "manateelazycat / Nemotron-3-Diarization-AIPod-HF Like 0 Voice Activity Detection GGUF speaker-diarization aipod nvidia-jetson License:openmdw-1.1 Model card FilesFiles and versions xet Community Copy to bucket main Nemotron-3-Diarization-AIPod-HF / docs /api-contract.md manateelazycat Publish Nemotron 3 Diarization AI Pod final bc0c77a ..."
+    },
+    {
+      "title": "evidence/public-huggingface-model-runtime.json · manateelazycat ...",
+      "url": "https://huggingface.co/manateelazycat/Nemotron-3.5-Bolt-E4B-AIPod-HF/blob/main/evidence/public-huggingface-model-runtime.json",
+      "snippet": "manateelazycat / Nemotron-3.5-Bolt-E4B-AIPod-HF Like 0 Text Generation GGUF English Chinese imatrix conversational License:openmdw-1.1 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    }
+  ]
+}
