@@ -5,7 +5,7 @@
   "author": "ddalcu",
   "url": "https://huggingface.co/ddalcu/DeepSeek-V4.1-Flash-1017-MLX-Serve-iQ-MLX-3.0bpw",
   "created_at": "2026-10-18T20:07:26.000Z",
-  "updated_at": "2026-10-29T05:18:02.000Z",
+  "updated_at": "2026-11-05T20:17:38.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,11 +32,11 @@
     "region:us"
   ],
   "likes": 16,
-  "downloads_30d": 2854,
+  "downloads_30d": 3048,
   "trending_score": 11,
   "parameters": 66715052754,
   "parameters_human": "66.72B",
-  "storage_bytes": 649503664249,
+  "storage_bytes": 649503940773,
   "storage_human": "649.5 GB",
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [

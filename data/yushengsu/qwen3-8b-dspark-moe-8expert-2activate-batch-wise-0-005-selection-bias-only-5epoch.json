@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "yushengsu/qwen3-8b-dspark-moe-8expert-2activate-batch-wise-0.005-selection-bias-only-5epoch",
+  "slug": "yushengsu-qwen3-8b-dspark-moe-8expert-2activate-batch-wise-0-005-selection-bias-only-5epoch",
+  "author": "yushengsu",
+  "url": "https://huggingface.co/yushengsu/qwen3-8b-dspark-moe-8expert-2activate-batch-wise-0.005-selection-bias-only-5epoch",
+  "created_at": "2026-11-03T22:18:51.000Z",
+  "updated_at": "2026-11-06T00:12:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "sglang",
+  "languages": [],
+  "tags": [
+    "sglang",
+    "safetensors",
+    "speculative-decoding",
+    "dspark",
+    "mixture-of-experts",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3889269758,
+  "storage_human": "3.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "Microguy1/StereoCrafter-DUPLI",
+  "slug": "microguy1-stereocrafter-dupli",
+  "author": "Microguy1",
+  "url": "https://huggingface.co/Microguy1/StereoCrafter-DUPLI",
+  "created_at": "2026-11-05T22:17:00.000Z",
+  "updated_at": "2026-11-05T22:17:01.000Z",
+  "license": "license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "arxiv:2409.07447",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1524625962,
+  "parameters_human": "1.52B",
+  "storage_bytes": 3049441596,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

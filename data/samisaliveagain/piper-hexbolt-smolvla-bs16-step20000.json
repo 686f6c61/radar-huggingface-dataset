@@ -5,7 +5,7 @@
   "author": "Samisaliveagain",
   "url": "https://huggingface.co/Samisaliveagain/piper-hexbolt-smolvla-bs16-step20000",
   "created_at": "2026-10-20T18:09:42.000Z",
-  "updated_at": "2026-10-20T18:12:35.000Z",
+  "updated_at": "2026-11-06T02:03:45.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "robotics",
@@ -20,6 +20,8 @@
     "imitation-learning",
     "step-20000",
     "batch-size-16",
+    "robot-arm-agilex-piper",
+    "checkpoint-step-20000",
     "dataset:Samisaliveagain/piper-hexagonal-bolt-insertion-100-demos-v1",
     "region:us"
   ],

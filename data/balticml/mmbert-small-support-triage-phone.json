@@ -5,7 +5,7 @@
   "author": "balticml",
   "url": "https://huggingface.co/balticml/mmbert-small-support-triage-phone",
   "created_at": "2026-11-05T14:55:14.000Z",
-  "updated_at": "2026-11-05T14:55:25.000Z",
+  "updated_at": "2026-11-05T23:17:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",

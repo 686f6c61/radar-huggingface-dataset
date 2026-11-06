@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "sensenova/SenseNova-U1.5-8B-MoT-TailSteer",
+  "slug": "sensenova-sensenova-u1-5-8b-mot-tailsteer",
+  "author": "sensenova",
+  "url": "https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT-TailSteer",
+  "created_at": "2026-11-04T19:29:21.000Z",
+  "updated_at": "2026-11-06T04:23:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "neo_chat",
+    "feature-extraction",
+    "tailsteer",
+    "image-editing",
+    "text-to-image",
+    "any-to-any",
+    "custom_code",
+    "base_model:sensenova/SenseNova-U1.5-8B-MoT",
+    "base_model:finetune:sensenova/SenseNova-U1.5-8B-MoT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 17532854464,
+  "parameters_human": "17.53B",
+  "storage_bytes": 35084722242,
+  "storage_human": "35.1 GB",
+  "base_model": "sensenova/SenseNova-U1.5-8B-MoT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SenseNova - Multimodal AI Model Platform",
+      "url": "https://www.sensenova.ai/",
+      "snippet": "SenseNova is a multimodal AI platform by SenseTime, offering AI capabilities for enterprises worldwide."
+    },
+    {
+      "title": "日日新 - 商汤科技大模型平台 | SenseNova",
+      "url": "https://www.sensenova.cn/",
+      "snippet": "商汤通过12个模拟评测、8款机器人的系统研究，尝试回答具身智能问题，并同步开源日日新 SenseNova-RoboRSI 框架与27B具身模 …"
+    },
+    {
+      "title": "GitHub - OpenSenseNova/SenseNova-U1: SenseNova-U series: …",
+      "url": "https://github.com/OpenSenseNova/SenseNova-U1",
+      "snippet": "Apr 27, 2026 · The fastest way to experience SenseNova-U1 is through SenseNova-Studio — a 🆓 free online playground where you …"
+    },
+    {
+      "title": "SenseNova-U1.5: Towards Native Unified Visual Intelligence",
+      "url": "https://arxiv.org/abs/2609.11929",
+      "snippet": "Sep 10, 2026 · We launch SenseNova-U1.5, an 8B-MoT native unified multimodal model that understands, reasons about, and …"
+    },
+    {
+      "title": "[2605.12500] SenseNova-U1: Unifying Multimodal Understanding and ...",
+      "url": "https://arxiv.org/abs/2605.12500",
+      "snippet": "May 12, 2026 · Hence, we introduce SenseNova-U1, a native unified multimodal paradigm built upon NEO-unify, in which …"
+    }
+  ]
+}

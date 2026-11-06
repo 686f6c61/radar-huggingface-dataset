@@ -5,7 +5,7 @@
   "author": "LiquidAI",
   "url": "https://huggingface.co/LiquidAI/LFM3-1.7B-MLX-8bit",
   "created_at": "2026-10-27T03:35:04.000Z",
-  "updated_at": "2026-11-03T07:40:45.000Z",
+  "updated_at": "2026-11-05T19:33:08.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -59,7 +59,7 @@
     "region:us"
   ],
   "likes": 13,
-  "downloads_30d": 4915,
+  "downloads_30d": 5300,
   "trending_score": 12,
   "parameters": 1728801536,
   "parameters_human": "1.73B",

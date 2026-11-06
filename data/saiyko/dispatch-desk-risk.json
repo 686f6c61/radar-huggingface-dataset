@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "saiyko/dispatch-desk-risk",
+  "slug": "saiyko-dispatch-desk-risk",
+  "author": "saiyko",
+  "url": "https://huggingface.co/saiyko/dispatch-desk-risk",
+  "created_at": "2026-11-06T00:10:59.000Z",
+  "updated_at": "2026-11-06T00:12:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "onnx",
+    "tabular-classification",
+    "education",
+    "game",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 593,
+  "storage_human": "593 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

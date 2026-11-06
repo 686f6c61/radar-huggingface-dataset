@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "rumezhak/microduck-sock-heist-composite-v6",
+  "slug": "rumezhak-microduck-sock-heist-composite-v6",
+  "author": "rumezhak",
+  "url": "https://huggingface.co/rumezhak/microduck-sock-heist-composite-v6",
+  "created_at": "2026-11-05T23:01:32.000Z",
+  "updated_at": "2026-11-05T23:02:30.000Z",
+  "license": "`",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "microduck-arena",
+    "robotics",
+    "base_model:jrubiosainz/microduck-sock-heist-6m-wr1n-3f7c858c",
+    "base_model:merge:jrubiosainz/microduck-sock-heist-6m-wr1n-3f7c858c",
+    "base_model:rumezhak/microduck-sock-heist-composite-v5",
+    "base_model:merge:rumezhak/microduck-sock-heist-composite-v5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1211562,
+  "storage_human": "1 MB",
+  "base_model": "rumezhak/microduck-sock-heist-composite-v5, jrubiosainz/microduck-sock-heist-6m-wr1n-3f7c858c",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

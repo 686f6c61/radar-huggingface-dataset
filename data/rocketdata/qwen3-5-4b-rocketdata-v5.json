@@ -5,7 +5,7 @@
   "author": "RocketData",
   "url": "https://huggingface.co/RocketData/Qwen3.5-4B-rocketdata-v5",
   "created_at": "2026-11-05T06:07:43.000Z",
-  "updated_at": "2026-11-05T06:10:11.000Z",
+  "updated_at": "2026-11-05T07:52:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 1,
   "trending_score": 0,
   "parameters": 4659865088,
   "parameters_human": "4.66B",

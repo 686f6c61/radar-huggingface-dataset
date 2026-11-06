@@ -5,7 +5,7 @@
   "author": "AtomicChat",
   "url": "https://huggingface.co/AtomicChat/Ripple-65B-Preview-GGUF",
   "created_at": "2026-11-04T21:11:26.000Z",
-  "updated_at": "2026-11-05T02:10:21.000Z",
+  "updated_at": "2026-11-05T02:42:43.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,13 +28,13 @@
     "region:us",
     "imatrix"
   ],
-  "likes": 32,
+  "likes": 35,
   "downloads_30d": 1668,
-  "trending_score": 32,
+  "trending_score": 35,
   "parameters": 64782689360,
   "parameters_human": "64.78B",
-  "storage_bytes": 549770446464,
-  "storage_human": "549.8 GB",
+  "storage_bytes": 568263838816,
+  "storage_human": "568.3 GB",
   "base_model": "ricursiveAI/Ripple-65B-Preview",
   "formats": [
     "gguf"

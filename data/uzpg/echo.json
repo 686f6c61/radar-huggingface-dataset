@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "uzpg/echo",
+  "slug": "uzpg-echo",
+  "author": "uzpg",
+  "url": "https://huggingface.co/uzpg/echo",
+  "created_at": "2026-10-16T00:28:38.000Z",
+  "updated_at": "2026-11-05T22:56:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "writing",
+    "style-imitation",
+    "base_model:moonshotai/Kimi-K3",
+    "base_model:adapter:moonshotai/Kimi-K3",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 941203806,
+  "storage_human": "941 MB",
+  "base_model": "moonshotai/Kimi-K3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

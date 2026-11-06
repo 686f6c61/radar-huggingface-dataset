@@ -5,9 +5,9 @@
   "author": "anyantudre",
   "url": "https://huggingface.co/anyantudre/moore-tts-kokoro",
   "created_at": "2026-10-25T10:22:11.000Z",
-  "updated_at": "2026-10-25T10:23:16.000Z",
-  "license": "apache-2.0",
-  "license_family": "oss",
+  "updated_at": "2026-11-05T19:52:57.000Z",
+  "license": "cc-by-nc-4.0",
+  "license_family": "non-commercial",
   "pipeline_tag": "text-to-speech",
   "library": null,
   "languages": [
@@ -23,7 +23,7 @@
     "voice-cloning",
     "base_model:hexgrad/Kokoro-82M",
     "base_model:finetune:hexgrad/Kokoro-82M",
-    "license:apache-2.0",
+    "license:cc-by-nc-4.0",
     "region:us"
   ],
   "likes": 1,

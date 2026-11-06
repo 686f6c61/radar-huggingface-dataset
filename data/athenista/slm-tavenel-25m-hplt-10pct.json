@@ -5,7 +5,7 @@
   "author": "athenista",
   "url": "https://huggingface.co/athenista/slm-tavenel-25m-hplt-10pct",
   "created_at": "2026-10-27T20:14:37.000Z",
-  "updated_at": "2026-10-28T17:43:04.000Z",
+  "updated_at": "2026-11-05T08:52:56.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -35,11 +35,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 351,
+  "downloads_30d": 354,
   "trending_score": 0,
   "parameters": 25723648,
   "parameters_human": "25.7M",
-  "storage_bytes": 102918296,
+  "storage_bytes": 103054531,
   "storage_human": "103 MB",
   "base_model": "athenista/slm-tavenel-25m",
   "formats": [

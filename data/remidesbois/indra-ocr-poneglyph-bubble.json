@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "Remidesbois/indra-ocr-poneglyph-bubble",
+  "slug": "remidesbois-indra-ocr-poneglyph-bubble",
+  "author": "Remidesbois",
+  "url": "https://huggingface.co/Remidesbois/indra-ocr-poneglyph-bubble",
+  "created_at": "2026-11-05T22:06:11.000Z",
+  "updated_at": "2026-11-05T22:06:15.000Z",
+  "license": "indra-ocr-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "onnx",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "onnx",
+    "ocr",
+    "manga",
+    "indra-ocr",
+    "image-to-text",
+    "fr",
+    "base_model:datalab-to/indra-ocr",
+    "base_model:quantized:datalab-to/indra-ocr",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5432109,
+  "storage_human": "5 MB",
+  "base_model": "datalab-to/indra-ocr",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

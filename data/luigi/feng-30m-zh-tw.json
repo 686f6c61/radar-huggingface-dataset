@@ -5,7 +5,7 @@
   "author": "Luigi",
   "url": "https://huggingface.co/Luigi/feng-30m-zh-tw",
   "created_at": "2026-11-03T23:46:20.000Z",
-  "updated_at": "2026-11-04T00:49:13.000Z",
+  "updated_at": "2026-11-05T08:18:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -35,12 +35,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 329,
+  "downloads_30d": 435,
   "trending_score": 0,
   "parameters": 29429184,
   "parameters_human": "29.4M",
-  "storage_bytes": 119460184,
-  "storage_human": "119 MB",
+  "storage_bytes": 356624367,
+  "storage_human": "357 MB",
   "base_model": "jiaheng0815/feng-30m",
   "formats": [
     "safetensors"

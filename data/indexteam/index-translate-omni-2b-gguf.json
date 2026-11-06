@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "IndexTeam/Index-Translate-omni-2B-GGUF",
+  "slug": "indexteam-index-translate-omni-2b-gguf",
+  "author": "IndexTeam",
+  "url": "https://huggingface.co/IndexTeam/Index-Translate-omni-2B-GGUF",
+  "created_at": "2026-11-05T08:17:07.000Z",
+  "updated_at": "2026-11-05T23:24:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "llama.cpp",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "index-translate",
+    "multimodal",
+    "translation",
+    "image-to-text",
+    "automatic-speech-recognition",
+    "zh",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2390384448,
+  "parameters_human": "2.39B",
+  "storage_bytes": 23438519424,
+  "storage_human": "23.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "quanda-bench-test/fd1961d-default_LDS_lds_subset_1",
+  "slug": "quanda-bench-test-fd1961d-default_lds_lds_subset_1",
+  "author": "quanda-bench-test",
+  "url": "https://huggingface.co/quanda-bench-test/fd1961d-default_LDS_lds_subset_1",
+  "created_at": "2026-04-05T09:43:00.000Z",
+  "updated_at": "2026-11-05T21:19:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 44426,
+  "parameters_human": "44426",
+  "storage_bytes": 356896,
+  "storage_human": "356896 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

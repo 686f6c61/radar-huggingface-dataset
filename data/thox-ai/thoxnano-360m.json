@@ -5,7 +5,7 @@
   "author": "Thox-ai",
   "url": "https://huggingface.co/Thox-ai/ThoxNano-360M",
   "created_at": "2026-08-11T11:17:47.000Z",
-  "updated_at": "2026-11-01T15:54:56.000Z",
+  "updated_at": "2026-11-05T04:09:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -38,7 +38,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 1832,
+  "downloads_30d": 1875,
   "trending_score": 0,
   "parameters": 361821120,
   "parameters_human": "361.8M",

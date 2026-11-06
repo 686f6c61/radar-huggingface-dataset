@@ -5,7 +5,7 @@
   "author": "ModernoTech",
   "url": "https://huggingface.co/ModernoTech/Nova-Core",
   "created_at": "2026-11-04T07:09:55.000Z",
-  "updated_at": "2026-11-04T19:51:01.000Z",
+  "updated_at": "2026-11-05T03:55:18.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "imatrix"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 88,
   "trending_score": 0,
   "parameters": 4647450147,
   "parameters_human": "4.65B",

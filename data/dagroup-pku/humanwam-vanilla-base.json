@@ -5,7 +5,7 @@
   "author": "DAGroup-PKU",
   "url": "https://huggingface.co/DAGroup-PKU/HumanWAM-Vanilla-Base",
   "created_at": "2026-11-05T10:59:22.000Z",
-  "updated_at": "2026-11-05T11:07:51.000Z",
+  "updated_at": "2026-11-06T00:35:22.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "robotics",
@@ -20,6 +20,7 @@
     "pretraining",
     "en",
     "dataset:DAGroup-PKU/Open-HumanScale-50K",
+    "arxiv:2611.06817",
     "region:us"
   ],
   "likes": 0,

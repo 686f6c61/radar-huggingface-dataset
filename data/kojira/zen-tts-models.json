@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "kojira/zen-tts-models",
+  "slug": "kojira-zen-tts-models",
+  "author": "kojira",
+  "url": "https://huggingface.co/kojira/zen-tts-models",
+  "created_at": "2026-11-06T02:56:10.000Z",
+  "updated_at": "2026-11-06T02:56:18.000Z",
+  "license": "zen-tts-models-voice-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "text-to-speech",
+    "japanese",
+    "zen-tts",
+    "ja",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27650016,
+  "storage_human": "28 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "Damilya/qwen3-8b-rest",
+  "slug": "damilya-qwen3-8b-rest",
+  "author": "Damilya",
+  "url": "https://huggingface.co/Damilya/qwen3-8b-rest",
+  "created_at": "2026-09-09T14:50:49.000Z",
+  "updated_at": "2026-11-05T22:44:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 32774456218,
+  "storage_human": "32.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

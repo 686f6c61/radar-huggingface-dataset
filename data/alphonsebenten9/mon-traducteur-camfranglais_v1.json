@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "Alphonsebenten9/mon-traducteur-camfranglais_V1",
+  "slug": "alphonsebenten9-mon-traducteur-camfranglais_v1",
+  "author": "Alphonsebenten9",
+  "url": "https://huggingface.co/Alphonsebenten9/mon-traducteur-camfranglais_V1",
+  "created_at": "2026-11-06T01:07:38.000Z",
+  "updated_at": "2026-11-06T01:22:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "t5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 60506624,
+  "parameters_human": "60.5M",
+  "storage_bytes": 242041896,
+  "storage_human": "242 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

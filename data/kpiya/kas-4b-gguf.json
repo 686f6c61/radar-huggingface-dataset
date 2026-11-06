@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "kpiya/kas-4b-GGUF",
+  "slug": "kpiya-kas-4b-gguf",
+  "author": "kpiya",
+  "url": "https://huggingface.co/kpiya/kas-4b-GGUF",
+  "created_at": "2026-11-06T01:49:59.000Z",
+  "updated_at": "2026-11-06T02:01:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3",
+    "text-generation",
+    "base_model:kpiya/kas-4b",
+    "base_model:quantized:kpiya/kas-4b",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 14828971840,
+  "storage_human": "14.8 GB",
+  "base_model": "kpiya/kas-4b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

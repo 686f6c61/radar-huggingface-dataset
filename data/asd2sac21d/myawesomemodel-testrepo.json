@@ -4,8 +4,8 @@
   "slug": "asd2sac21d-myawesomemodel-testrepo",
   "author": "ASD2SAC21D",
   "url": "https://huggingface.co/ASD2SAC21D/MyAwesomeModel-TestRepo",
-  "created_at": "2026-10-28T19:25:16.000Z",
-  "updated_at": "2026-10-28T19:25:36.000Z",
+  "created_at": "2026-11-05T05:24:23.000Z",
+  "updated_at": "2026-11-05T05:25:16.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 178,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -31,8 +31,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-10-30T10:08:13.198Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

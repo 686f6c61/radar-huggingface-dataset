@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "halilgokdal/mirror-mlx-community-Qwen3.5-9B-MLX-4bit",
+  "slug": "halilgokdal-mirror-mlx-community-qwen3-5-9b-mlx-4bit",
+  "author": "halilgokdal",
+  "url": "https://huggingface.co/halilgokdal/mirror-mlx-community-Qwen3.5-9B-MLX-4bit",
+  "created_at": "2026-11-05T23:38:45.000Z",
+  "updated_at": "2026-11-05T23:39:47.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "mirror",
+    "coreml",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 5970210415,
+  "storage_human": "6.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "commaai",
   "url": "https://huggingface.co/commaai/openpilot_driving_models",
   "created_at": "2026-09-18T00:08:24.000Z",
-  "updated_at": "2026-10-29T08:03:21.000Z",
+  "updated_at": "2026-11-05T05:20:08.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 7078250008,
-  "storage_human": "7.1 GB",
+  "storage_bytes": 7846999900,
+  "storage_human": "7.8 GB",
   "base_model": null,
   "formats": [
     "onnx"

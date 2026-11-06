@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "alfonsodlg/rapidocr-spanish",
+  "slug": "alfonsodlg-rapidocr-spanish",
+  "author": "alfonsodlg",
+  "url": "https://huggingface.co/alfonsodlg/rapidocr-spanish",
+  "created_at": "2026-11-06T00:39:33.000Z",
+  "updated_at": "2026-11-06T01:01:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnxruntime",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "ocr",
+    "text-recognition",
+    "rapidocr",
+    "paddleocr",
+    "spanish",
+    "es",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15432410,
+  "storage_human": "15 MB",
+  "base_model": "PaddlePaddle/PP-OCRv5_latin_mobile_rec",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

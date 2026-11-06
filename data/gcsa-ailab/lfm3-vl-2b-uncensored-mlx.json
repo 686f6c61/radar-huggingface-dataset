@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "GCSA-AiLab/LFM3-VL-2B-Uncensored-MLX",
+  "slug": "gcsa-ailab-lfm3-vl-2b-uncensored-mlx",
+  "author": "GCSA-AiLab",
+  "url": "https://huggingface.co/GCSA-AiLab/LFM3-VL-2B-Uncensored-MLX",
+  "created_at": "2026-11-05T09:35:26.000Z",
+  "updated_at": "2026-11-06T02:45:50.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "lfm3_vl",
+    "abliterix",
+    "edge",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:LiquidAI/LFM3-VL-2B",
+    "base_model:quantized:LiquidAI/LFM3-VL-2B",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1918181888,
+  "parameters_human": "1.92B",
+  "storage_bytes": 9206218584,
+  "storage_human": "9.2 GB",
+  "base_model": "LiquidAI/LFM3-VL-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

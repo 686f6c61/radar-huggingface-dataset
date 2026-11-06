@@ -5,7 +5,7 @@
   "author": "Alex995647",
   "url": "https://huggingface.co/Alex995647/loras-minimax-h3",
   "created_at": "2026-09-04T23:06:07.000Z",
-  "updated_at": "2026-11-05T02:07:15.000Z",
+  "updated_at": "2026-11-05T07:17:45.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,7 +20,7 @@
     "base_model:adapter:MiniMaxAI/MiniMax-H3",
     "region:us"
   ],
-  "likes": 17,
+  "likes": 18,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

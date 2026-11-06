@@ -5,7 +5,7 @@
   "author": "RegalInvader",
   "url": "https://huggingface.co/RegalInvader/Marco-Nano-Instruct-GGUF",
   "created_at": "2026-10-28T13:44:03.000Z",
-  "updated_at": "2026-10-29T05:07:52.000Z",
+  "updated_at": "2026-11-05T22:49:02.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -91,7 +91,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 1474,
+  "downloads_30d": 1487,
   "trending_score": 0,
   "parameters": 8001454080,
   "parameters_human": "8.00B",

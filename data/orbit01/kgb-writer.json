@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "orbit01/kgb-writer",
+  "slug": "orbit01-kgb-writer",
+  "author": "orbit01",
+  "url": "https://huggingface.co/orbit01/kgb-writer",
+  "created_at": "2026-10-15T23:53:13.000Z",
+  "updated_at": "2026-11-05T23:21:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "korean",
+    "travel",
+    "distillation",
+    "text-generation",
+    "conversational",
+    "ko",
+    "base_model:kakaocorp/kanana-1.5-8b-instruct-2505",
+    "base_model:adapter:kakaocorp/kanana-1.5-8b-instruct-2505",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 31,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 520707244,
+  "storage_human": "521 MB",
+  "base_model": "kakaocorp/kanana-1.5-8b-instruct-2505",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

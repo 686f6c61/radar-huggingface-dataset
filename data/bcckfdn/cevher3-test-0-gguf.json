@@ -5,7 +5,7 @@
   "author": "bcckfdn",
   "url": "https://huggingface.co/bcckfdn/cevher3-test-0-GGUF",
   "created_at": "2026-11-05T16:42:47.000Z",
-  "updated_at": "2026-11-05T16:44:41.000Z",
+  "updated_at": "2026-11-05T20:21:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -35,8 +35,8 @@
   "trending_score": 0,
   "parameters": 1607660288,
   "parameters_human": "1.61B",
-  "storage_bytes": 7067331328,
-  "storage_human": "7.1 GB",
+  "storage_bytes": 14134662656,
+  "storage_human": "14.1 GB",
   "base_model": "bcckfdn/cevher3-test-0",
   "formats": [
     "gguf"

@@ -5,7 +5,7 @@
   "author": "EladY",
   "url": "https://huggingface.co/EladY/captor",
   "created_at": "2026-11-04T05:12:56.000Z",
-  "updated_at": "2026-11-04T05:13:03.000Z",
+  "updated_at": "2026-11-05T05:32:33.000Z",
   "license": "mixed-see-card",
   "license_family": "unknown",
   "pipeline_tag": "image-segmentation",
@@ -17,6 +17,7 @@
     "open-vocabulary-segmentation",
     "computational-pathology",
     "training-free",
+    "arxiv:2611.05599",
     "license:other",
     "region:us"
   ],

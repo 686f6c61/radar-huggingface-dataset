@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Atefa/acilde-primer-v2-pilot",
+  "slug": "atefa-acilde-primer-v2-pilot",
+  "author": "Atefa",
+  "url": "https://huggingface.co/Atefa/acilde-primer-v2-pilot",
+  "created_at": "2026-11-06T00:13:55.000Z",
+  "updated_at": "2026-11-06T00:14:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "tabular-classification",
+  "library": "sklearn",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "sklearn",
+    "onnx",
+    "tabular-classification",
+    "education",
+    "tr",
+    "arxiv:1810.03993",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 775,
+  "storage_human": "775 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

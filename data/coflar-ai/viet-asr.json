@@ -5,7 +5,7 @@
   "author": "coflar-ai",
   "url": "https://huggingface.co/coflar-ai/viet-asr",
   "created_at": "2026-11-04T09:05:16.000Z",
-  "updated_at": "2026-11-05T03:13:53.000Z",
+  "updated_at": "2026-11-05T08:33:17.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -31,8 +31,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 379299679,
-  "storage_human": "379 MB",
+  "storage_bytes": 81535880,
+  "storage_human": "82 MB",
   "base_model": null,
   "formats": [
     "onnx"

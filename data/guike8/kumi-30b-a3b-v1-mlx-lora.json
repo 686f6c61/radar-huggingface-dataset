@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "guike8/Kumi-30B-A3B-v1-MLX-LoRA",
+  "slug": "guike8-kumi-30b-a3b-v1-mlx-lora",
+  "author": "guike8",
+  "url": "https://huggingface.co/guike8/Kumi-30B-A3B-v1-MLX-LoRA",
+  "created_at": "2026-11-06T00:40:36.000Z",
+  "updated_at": "2026-11-06T00:40:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "lora",
+    "qwen3_coder",
+    "tool-use",
+    "kumi",
+    "experimental",
+    "text-generation",
+    "en",
+    "base_model:mlx-community/Qwen3-Coder-30B-A3B-Instruct-4bit",
+    "base_model:adapter:mlx-community/Qwen3-Coder-30B-A3B-Instruct-4bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26759782,
+  "storage_human": "27 MB",
+  "base_model": "mlx-community/Qwen3-Coder-30B-A3B-Instruct-4bit",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

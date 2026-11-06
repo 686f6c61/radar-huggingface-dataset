@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "qikp/humanizer-135m-sft-GGUF",
+  "slug": "qikp-humanizer-135m-sft-gguf",
+  "author": "qikp",
+  "url": "https://huggingface.co/qikp/humanizer-135m-sft-GGUF",
+  "created_at": "2026-11-05T21:10:17.000Z",
+  "updated_at": "2026-11-05T21:10:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "base_model:qikp/humanizer-135m-sft",
+    "base_model:quantized:qikp/humanizer-135m-sft",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 270886176,
+  "storage_human": "271 MB",
+  "base_model": "qikp/humanizer-135m-sft",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

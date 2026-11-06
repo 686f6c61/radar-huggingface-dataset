@@ -57,10 +57,11 @@
     "base_model:finetune:LiquidAI/LFM3-1.7B-Base",
     "license:other",
     "eval-results",
+    "endpoints_compatible",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 28,
   "trending_score": 0,
   "parameters": 1728801536,
   "parameters_human": "1.73B",

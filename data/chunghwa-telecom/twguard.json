@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "chunghwa-telecom/twguard",
+  "slug": "chunghwa-telecom-twguard",
+  "author": "chunghwa-telecom",
+  "url": "https://huggingface.co/chunghwa-telecom/twguard",
+  "created_at": "2026-04-17T10:16:07.000Z",
+  "updated_at": "2026-11-06T02:34:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "guardrail",
+    "safeguard",
+    "taiwan",
+    "traditional_chinese",
+    "guard",
+    "safety",
+    "security",
+    "conversational",
+    "zh",
+    "arxiv:2604.16542",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 78694632,
+  "storage_human": "79 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

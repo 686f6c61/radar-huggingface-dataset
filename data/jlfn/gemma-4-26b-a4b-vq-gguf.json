@@ -5,7 +5,7 @@
   "author": "Jlfn",
   "url": "https://huggingface.co/Jlfn/gemma-4-26b-a4b-vq-gguf",
   "created_at": "2026-11-04T22:22:51.000Z",
-  "updated_at": "2026-11-04T22:23:38.000Z",
+  "updated_at": "2026-11-05T20:17:50.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -37,7 +37,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 93,
   "trending_score": 0,
   "parameters": 738197504,
   "parameters_human": "738.2M",

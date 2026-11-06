@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "lujihong/omni-parser-onnx",
+  "slug": "lujihong-omni-parser-onnx",
+  "author": "lujihong",
+  "url": "https://huggingface.co/lujihong/omni-parser-onnx",
+  "created_at": "2026-11-06T02:07:01.000Z",
+  "updated_at": "2026-11-06T02:08:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "omniparser",
+    "yolo11",
+    "ui-detection",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 80933221,
+  "storage_human": "81 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

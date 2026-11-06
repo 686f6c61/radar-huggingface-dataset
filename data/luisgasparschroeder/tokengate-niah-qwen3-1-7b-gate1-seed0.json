@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "luisgasparschroeder/tokengate-niah-qwen3-1.7b-gate1-seed0",
+  "slug": "luisgasparschroeder-tokengate-niah-qwen3-1-7b-gate1-seed0",
+  "author": "luisgasparschroeder",
+  "url": "https://huggingface.co/luisgasparschroeder/tokengate-niah-qwen3-1.7b-gate1-seed0",
+  "created_at": "2026-11-06T00:23:53.000Z",
+  "updated_at": "2026-11-06T01:11:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tokengate",
+    "niah",
+    "vllm",
+    "arxiv:2610.26754",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3666878597,
+  "storage_human": "3.7 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

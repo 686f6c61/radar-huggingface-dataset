@@ -5,7 +5,7 @@
   "author": "agentionai",
   "url": "https://huggingface.co/agentionai/Qwen3.8-Flash-Next-Gyro-abliterated-Huihui-GGUF",
   "created_at": "2026-10-01T22:41:25.000Z",
-  "updated_at": "2026-10-29T11:55:07.000Z",
+  "updated_at": "2026-11-05T20:11:01.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -27,13 +27,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 50,
+  "likes": 51,
   "downloads_30d": 778304,
   "trending_score": 12,
-  "parameters": 176943899520,
-  "parameters_human": "176.94B",
-  "storage_bytes": 415528024224,
-  "storage_human": "415.5 GB",
+  "parameters": 125743653760,
+  "parameters_human": "125.74B",
+  "storage_bytes": 536703713760,
+  "storage_human": "536.7 GB",
   "base_model": "huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated, huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-v2-GGUF",
   "formats": [
     "gguf"

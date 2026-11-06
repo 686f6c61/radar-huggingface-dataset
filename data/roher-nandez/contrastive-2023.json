@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "roher-nandez/contrastive-2023",
+  "slug": "roher-nandez-contrastive-2023",
+  "author": "roher-nandez",
+  "url": "https://huggingface.co/roher-nandez/contrastive-2023",
+  "created_at": "2026-11-06T00:55:34.000Z",
+  "updated_at": "2026-11-06T00:55:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Leejh123e/Hand-LLM",
+  "slug": "leejh123e-hand-llm",
+  "author": "Leejh123e",
+  "url": "https://huggingface.co/Leejh123e/Hand-LLM",
+  "created_at": "2026-11-06T04:05:40.000Z",
+  "updated_at": "2026-11-06T04:19:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "hand-written-weights",
+    "weight-space-programming",
+    "no-training",
+    "chatbot",
+    "infini-gram",
+    "text-generation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2286673,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -4,8 +4,8 @@
   "slug": "dsad12dsa-myawesomemodel-testrepo",
   "author": "DSAD12DSA",
   "url": "https://huggingface.co/DSAD12DSA/MyAwesomeModel-TestRepo",
-  "created_at": "2026-10-30T01:53:18.000Z",
-  "updated_at": "2026-10-30T01:53:30.000Z",
+  "created_at": "2026-11-05T14:14:23.000Z",
+  "updated_at": "2026-11-05T14:28:42.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -31,8 +31,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-10-31T09:52:40.113Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -5,7 +5,7 @@
   "author": "Dongkkka",
   "url": "https://huggingface.co/Dongkkka/GR00T-N1.7-PaperTowelBasket-895-896-907-912-RightArm8-150k-20261105",
   "created_at": "2026-11-05T00:53:38.000Z",
-  "updated_at": "2026-11-05T00:53:44.000Z",
+  "updated_at": "2026-11-06T02:01:58.000Z",
   "license": "nvidia-open-model-license",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "transformers",
+    "safetensors",
     "robotics",
     "gr00t",
     "lerobot",
@@ -28,10 +29,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 428326,
-  "storage_human": "428326 B",
+  "storage_bytes": 95649441759,
+  "storage_human": "95.6 GB",
   "base_model": "nvidia/GR00T-N1.7-3B",
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

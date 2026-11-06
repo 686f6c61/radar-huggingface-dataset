@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "FirstPrinciplesLabs/quark_quantized_weight_only-Q8_0",
+  "slug": "firstprincipleslabs-quark_quantized_weight_only-q8_0",
+  "author": "FirstPrinciplesLabs",
+  "url": "https://huggingface.co/FirstPrinciplesLabs/quark_quantized_weight_only-Q8_0",
+  "created_at": "2026-11-02T14:17:41.000Z",
+  "updated_at": "2026-11-05T16:10:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "physics",
+    "science",
+    "reasoning",
+    "math",
+    "text-generation",
+    "en",
+    "base_model:FirstPrinciplesLabs/quark",
+    "base_model:quantized:FirstPrinciplesLabs/quark",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 10707764672,
+  "storage_human": "10.7 GB",
+  "base_model": "FirstPrinciplesLabs/quark",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

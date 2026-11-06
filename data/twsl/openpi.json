@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "twsl/openpi",
+  "slug": "twsl-openpi",
+  "author": "twsl",
+  "url": "https://huggingface.co/twsl/openpi",
+  "created_at": "2026-11-05T14:51:07.000Z",
+  "updated_at": "2026-11-05T20:48:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 65634831480,
+  "storage_human": "65.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

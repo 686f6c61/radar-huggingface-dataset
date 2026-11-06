@@ -5,9 +5,9 @@
   "author": "anyantudre",
   "url": "https://huggingface.co/anyantudre/moore-tts-pocket",
   "created_at": "2026-10-25T00:08:31.000Z",
-  "updated_at": "2026-10-25T00:47:42.000Z",
-  "license": "cc-by-4.0",
-  "license_family": "oss",
+  "updated_at": "2026-11-05T19:52:53.000Z",
+  "license": "cc-by-nc-4.0",
+  "license_family": "non-commercial",
   "pipeline_tag": "text-to-speech",
   "library": null,
   "languages": [
@@ -24,7 +24,7 @@
     "voice-cloning",
     "base_model:kyutai/pocket-tts",
     "base_model:finetune:kyutai/pocket-tts",
-    "license:cc-by-4.0",
+    "license:cc-by-nc-4.0",
     "region:us"
   ],
   "likes": 1,

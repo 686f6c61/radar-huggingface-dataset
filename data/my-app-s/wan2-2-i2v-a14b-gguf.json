@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "my-app-s/Wan2.2-I2V-A14B-GGUF",
+  "slug": "my-app-s-wan2-2-i2v-a14b-gguf",
+  "author": "my-app-s",
+  "url": "https://huggingface.co/my-app-s/Wan2.2-I2V-A14B-GGUF",
+  "created_at": "2026-11-05T20:55:13.000Z",
+  "updated_at": "2026-11-05T20:55:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "image-to-video",
+    "en",
+    "zh",
+    "base_model:Wan-AI/Wan2.2-I2V-A14B",
+    "base_model:quantized:Wan-AI/Wan2.2-I2V-A14B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14288901184,
+  "parameters_human": "14.29B",
+  "storage_bytes": 232195136022,
+  "storage_human": "232.2 GB",
+  "base_model": "Wan-AI/Wan2.2-I2V-A14B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

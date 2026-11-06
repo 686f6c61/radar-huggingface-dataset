@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "nm-testing/Phi-3-mini-4k-instruct-kv_cache_default_phi3-e2e",
+  "slug": "nm-testing-phi-3-mini-4k-instruct-kv_cache_default_phi3-e2e",
+  "author": "nm-testing",
+  "url": "https://huggingface.co/nm-testing/Phi-3-mini-4k-instruct-kv_cache_default_phi3-e2e",
+  "created_at": "2026-07-24T23:49:56.000Z",
+  "updated_at": "2026-11-05T21:09:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "phi3",
+    "custom_code",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 70,
+  "trending_score": 0,
+  "parameters": 3821079616,
+  "parameters_human": "3.82B",
+  "storage_bytes": 61138008715,
+  "storage_human": "61.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

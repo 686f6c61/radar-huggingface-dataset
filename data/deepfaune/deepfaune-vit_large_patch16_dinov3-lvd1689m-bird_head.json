@@ -5,7 +5,7 @@
   "author": "DeepFaune",
   "url": "https://huggingface.co/DeepFaune/deepfaune-vit_large_patch16_dinov3.lvd1689m-bird_head",
   "created_at": "2026-11-05T12:22:32.000Z",
-  "updated_at": "2026-11-05T12:23:36.000Z",
+  "updated_at": "2026-11-05T12:52:48.000Z",
   "license": "cc-by-sa-4.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -13,7 +13,7 @@
   "languages": [],
   "tags": [
     "base_model:DeepFaune/deepfaune-vit_large_patch16_dinov3.lvd1689m",
-    "base_model:finetune:DeepFaune/deepfaune-vit_large_patch16_dinov3.lvd1689m",
+    "base_model:adapter:DeepFaune/deepfaune-vit_large_patch16_dinov3.lvd1689m",
     "license:cc-by-sa-4.0",
     "region:us"
   ],

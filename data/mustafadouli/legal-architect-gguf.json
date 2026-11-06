@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "mustafadouli/legal-architect-gguf",
+  "slug": "mustafadouli-legal-architect-gguf",
+  "author": "mustafadouli",
+  "url": "https://huggingface.co/mustafadouli/legal-architect-gguf",
+  "created_at": "2026-11-05T22:01:09.000Z",
+  "updated_at": "2026-11-05T22:01:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4683073696,
+  "storage_human": "4.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

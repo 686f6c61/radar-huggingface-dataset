@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mattwang123/chrononauts-3b-2023-01-agent",
+  "slug": "mattwang123-chrononauts-3b-2023-01-agent",
+  "author": "mattwang123",
+  "url": "https://huggingface.co/mattwang123/chrononauts-3b-2023-01-agent",
+  "created_at": "2026-11-06T02:38:56.000Z",
+  "updated_at": "2026-11-06T02:39:46.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "open_lm",
+    "feature-extraction",
+    "chrononauts",
+    "temporal",
+    "time-locked",
+    "search-agent",
+    "retrieval-augmented",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2796096000,
+  "parameters_human": "2.80B",
+  "storage_bytes": 5592232864,
+  "storage_human": "5.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

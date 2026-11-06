@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "iburakyilmaz/se-primer-kotu-son",
+  "slug": "iburakyilmaz-se-primer-kotu-son",
+  "author": "iburakyilmaz",
+  "url": "https://huggingface.co/iburakyilmaz/se-primer-kotu-son",
+  "created_at": "2026-11-05T20:50:45.000Z",
+  "updated_at": "2026-11-05T20:52:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "onnx",
+    "tabular-classification",
+    "education",
+    "game",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 653,
+  "storage_human": "653 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

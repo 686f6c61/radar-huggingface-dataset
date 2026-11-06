@@ -5,7 +5,7 @@
   "author": "TheEmperor2",
   "url": "https://huggingface.co/TheEmperor2/muse-shield-glimmer-er-v3a",
   "created_at": "2026-11-05T01:44:21.000Z",
-  "updated_at": "2026-11-05T01:46:29.000Z",
+  "updated_at": "2026-11-05T07:32:14.000Z",
   "license": "muse-glimmer-base-model-terms",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 22,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

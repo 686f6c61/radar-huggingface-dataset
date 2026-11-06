@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "RSanchez996/microduck-sock-heist-6m-v3-g-calibrated-late-turn",
+  "slug": "rsanchez996-microduck-sock-heist-6m-v3-g-calibrated-late-turn",
+  "author": "RSanchez996",
+  "url": "https://huggingface.co/RSanchez996/microduck-sock-heist-6m-v3-g-calibrated-late-turn",
+  "created_at": "2026-11-05T21:14:33.000Z",
+  "updated_at": "2026-11-05T21:14:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5674174,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Disney gave Nightmare Before Christmas an incredible 4K upgrade",
+      "url": "https://www.polygon.com/23849120/nightmare-before-christmas-4k-bluray-review/",
+      "snippet": "Aug 28, 2023 · Nearly three years later, Disney has released 4K HDR restorations of time-tested classic Cinderella and modern …"
+    }
+  ]
+}

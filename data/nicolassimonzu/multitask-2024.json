@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "nicolassimonzu/multitask-2024",
+  "slug": "nicolassimonzu-multitask-2024",
+  "author": "nicolassimonzu",
+  "url": "https://huggingface.co/nicolassimonzu/multitask-2024",
+  "created_at": "2026-11-06T03:33:36.000Z",
+  "updated_at": "2026-11-06T03:33:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

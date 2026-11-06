@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "torch-pointcloud/pct.modelnet40.strawberry-eat-mango",
+  "slug": "torch-pointcloud-pct-modelnet40-strawberry-eat-mango",
+  "author": "torch-pointcloud",
+  "url": "https://huggingface.co/torch-pointcloud/pct.modelnet40.strawberry-eat-mango",
+  "created_at": "2026-11-05T21:02:43.000Z",
+  "updated_at": "2026-11-05T21:02:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "torch-pointcloud",
+  "languages": [],
+  "tags": [
+    "torch-pointcloud",
+    "safetensors",
+    "point-cloud",
+    "3d",
+    "pytorch",
+    "pct",
+    "classification",
+    "dataset:modelnet40",
+    "arxiv:2012.09688",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2885096,
+  "parameters_human": "2.9M",
+  "storage_bytes": 11551064,
+  "storage_human": "12 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "ModelNet40",
+      "metric": "OA",
+      "value": 93.27
+    },
+    {
+      "task": null,
+      "dataset": "ModelNet40",
+      "metric": "mAcc",
+      "value": 89.99
+    }
+  ],
+  "sources": []
+}

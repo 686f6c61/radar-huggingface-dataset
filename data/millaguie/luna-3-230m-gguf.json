@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "millaguie/Luna-3-230m-GGUF",
+  "slug": "millaguie-luna-3-230m-gguf",
+  "author": "millaguie",
+  "url": "https://huggingface.co/millaguie/Luna-3-230m-GGUF",
+  "created_at": "2026-11-05T22:10:17.000Z",
+  "updated_at": "2026-11-05T22:10:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "text-generation",
+    "base_model:Aobangaming/Luna-3-230m",
+    "base_model:quantized:Aobangaming/Luna-3-230m",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 228829440,
+  "parameters_human": "228.8M",
+  "storage_bytes": 864005920,
+  "storage_human": "864 MB",
+  "base_model": "Aobangaming/Luna-3-230m",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

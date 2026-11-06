@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "laion/clap2-large-audioxl-s1B",
+  "slug": "laion-clap2-large-audioxl-s1b",
+  "author": "laion",
+  "url": "https://huggingface.co/laion/clap2-large-audioxl-s1B",
+  "created_at": "2026-10-26T09:27:16.000Z",
+  "updated_at": "2026-11-06T01:10:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "open_clip",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "open_clip",
+    "safetensors",
+    "clap2",
+    "audio",
+    "clap",
+    "contrastive",
+    "audio-text-retrieval",
+    "zero-shot-audio-classification",
+    "feature-extraction",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": 340073856,
+  "parameters_human": "340.1M",
+  "storage_bytes": 2720650672,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

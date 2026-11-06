@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "torch-pointcloud/point-mae-base.shapenetpart.yatian-pang",
+  "slug": "torch-pointcloud-point-mae-base-shapenetpart-yatian-pang",
+  "author": "torch-pointcloud",
+  "url": "https://huggingface.co/torch-pointcloud/point-mae-base.shapenetpart.yatian-pang",
+  "created_at": "2026-08-28T18:07:39.000Z",
+  "updated_at": "2026-11-05T21:02:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "torch-pointcloud",
+  "languages": [],
+  "tags": [
+    "torch-pointcloud",
+    "safetensors",
+    "point-cloud",
+    "3d",
+    "pytorch",
+    "point-mae",
+    "segmentation",
+    "dataset:shapenetpart",
+    "arxiv:2203.06604",
+    "base_model:torch-pointcloud/point-mae-base.pretrain.yatian-pang",
+    "base_model:finetune:torch-pointcloud/point-mae-base.pretrain.yatian-pang",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 27071794,
+  "parameters_human": "27.1M",
+  "storage_bytes": 108306424,
+  "storage_human": "108 MB",
+  "base_model": "torch-pointcloud/point-mae-base.pretrain.yatian-pang",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "ShapeNetPart",
+      "metric": "ins_mIoU",
+      "value": 86.2
+    },
+    {
+      "task": null,
+      "dataset": "ShapeNetPart",
+      "metric": "cls_mIoU",
+      "value": 84.22
+    }
+  ],
+  "sources": []
+}

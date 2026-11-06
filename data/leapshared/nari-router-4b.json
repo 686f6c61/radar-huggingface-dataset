@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "leapshared/nari-router-4b",
+  "slug": "leapshared-nari-router-4b",
+  "author": "leapshared",
+  "url": "https://huggingface.co/leapshared/nari-router-4b",
+  "created_at": "2026-10-19T17:21:48.000Z",
+  "updated_at": "2026-11-06T04:17:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "sysone",
+    "feature-extraction",
+    "decision-model",
+    "classification",
+    "router",
+    "korean",
+    "custom_code",
+    "ko",
+    "base_model:blackmallangcow/nari-decision-4b",
+    "base_model:finetune:blackmallangcow/nari-decision-4b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 44,
+  "trending_score": 0,
+  "parameters": 4216792578,
+  "parameters_human": "4.22B",
+  "storage_bytes": 25387159299,
+  "storage_human": "25.4 GB",
+  "base_model": "blackmallangcow/nari-decision-4b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

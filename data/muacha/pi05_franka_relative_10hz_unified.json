@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "muacha/pi05_franka_relative_10hz_unified",
+  "slug": "muacha-pi05_franka_relative_10hz_unified",
+  "author": "muacha",
+  "url": "https://huggingface.co/muacha/pi05_franka_relative_10hz_unified",
+  "created_at": "2026-11-02T13:46:59.000Z",
+  "updated_at": "2026-11-06T00:45:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "franka",
+    "dataset:yuan1119/many_tasks_rgbdp_10fps_d435if_mu_comp",
+    "dataset:yuan1119/many_tasks_rgbdp_10fps_d455old_mu_comp",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3616757520,
+  "parameters_human": "3.62B",
+  "storage_bytes": 59784758104,
+  "storage_human": "59.8 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

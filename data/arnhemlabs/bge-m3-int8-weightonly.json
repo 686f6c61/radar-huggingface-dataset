@@ -5,7 +5,7 @@
   "author": "arnhemlabs",
   "url": "https://huggingface.co/arnhemlabs/bge-m3-int8-weightonly",
   "created_at": "2026-11-05T04:21:47.000Z",
-  "updated_at": "2026-11-05T04:22:48.000Z",
+  "updated_at": "2026-11-05T04:51:46.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",

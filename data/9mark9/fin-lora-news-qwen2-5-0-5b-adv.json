@@ -5,7 +5,7 @@
   "author": "9mark9",
   "url": "https://huggingface.co/9mark9/fin-lora-news-qwen2.5-0.5b-adv",
   "created_at": "2026-10-10T19:07:25.000Z",
-  "updated_at": "2026-11-02T22:05:06.000Z",
+  "updated_at": "2026-11-05T12:16:47.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

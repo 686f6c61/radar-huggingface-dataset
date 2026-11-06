@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "Guilherme34/TwIL-8B-Abliterated-Uncensored",
+  "slug": "guilherme34-twil-8b-abliterated-uncensored",
+  "author": "Guilherme34",
+  "url": "https://huggingface.co/Guilherme34/TwIL-8B-Abliterated-Uncensored",
+  "created_at": "2026-11-05T22:48:31.000Z",
+  "updated_at": "2026-11-05T22:55:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "granite",
+    "base_model:webAI-Official/TwIL-8B",
+    "base_model:finetune:webAI-Official/TwIL-8B",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8791592960,
+  "parameters_human": "8.79B",
+  "storage_bytes": 17583227728,
+  "storage_human": "17.6 GB",
+  "base_model": "webAI-Official/TwIL-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

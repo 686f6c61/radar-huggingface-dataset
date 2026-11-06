@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "aijohnsonziv/retrieval",
+  "slug": "aijohnsonziv-retrieval",
+  "author": "aijohnsonziv",
+  "url": "https://huggingface.co/aijohnsonziv/retrieval",
+  "created_at": "2026-11-06T04:16:41.000Z",
+  "updated_at": "2026-11-06T04:16:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

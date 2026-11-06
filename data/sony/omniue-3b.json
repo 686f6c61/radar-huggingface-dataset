@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Sony/OmniUE-3B",
+  "slug": "sony-omniue-3b",
+  "author": "Sony",
+  "url": "https://huggingface.co/Sony/OmniUE-3B",
+  "created_at": "2026-11-05T03:08:52.000Z",
+  "updated_at": "2026-11-06T01:56:58.000Z",
+  "license": "mixed",
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "qwen2_5_omni_thinker",
+    "text-generation",
+    "multimodal-embedding",
+    "any-to-any-retrieval",
+    "text-image-retrieval",
+    "video-retrieval",
+    "audio-retrieval",
+    "qwen2.5-omni",
+    "feature-extraction",
+    "en",
+    "arxiv:2608.27044",
+    "base_model:Qwen/Qwen2.5-Omni-3B",
+    "base_model:finetune:Qwen/Qwen2.5-Omni-3B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11380910781,
+  "storage_human": "11.4 GB",
+  "base_model": "Qwen/Qwen2.5-Omni-3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sony France | Actualités sur les technologies | Électronique ...",
+      "url": "https://www.sony.fr/",
+      "snippet": "Découvrez les produits de haute qualité Sony et la technologie qui les anime. Obtenez un accès instantané à notre magasin et à …"
+    },
+    {
+      "title": "Sony Store Online | Sony FR",
+      "url": "https://www.sony.fr/store/",
+      "snippet": "Sony vous recommande vivement de toujours installer la dernière mise à jour de votre appareil dès que possible après sa …"
+    },
+    {
+      "title": "Sony — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Sony",
+      "snippet": "Sony Corporate comprend plus de cent sociétés à travers le monde, dont Sony France SA, Sony Corporation of America, Sony …"
+    },
+    {
+      "title": "PlayStation®5 | Play Has No Limits (Le jeu n'a pas de limites ...",
+      "url": "https://www.playstation.com/fr-fr/ps5/",
+      "snippet": "Sony peut publier des mises à jour logicielles nécessaires à la conformité du produit si besoin. Ces mises à jour sont compatibles …"
+    }
+  ]
+}

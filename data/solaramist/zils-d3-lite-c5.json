@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "SolaraMist/zils-d3-lite-c5",
+  "slug": "solaramist-zils-d3-lite-c5",
+  "author": "SolaraMist",
+  "url": "https://huggingface.co/SolaraMist/zils-d3-lite-c5",
+  "created_at": "2026-11-06T01:36:44.000Z",
+  "updated_at": "2026-11-06T01:37:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "zils",
+    "d3-lite",
+    "base_model:vllm-sr/d3-lite",
+    "base_model:finetune:vllm-sr/d3-lite",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1707072248,
+  "storage_human": "1.7 GB",
+  "base_model": "vllm-sr/d3-lite, zils-ai/jiwo-0.8b-full",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

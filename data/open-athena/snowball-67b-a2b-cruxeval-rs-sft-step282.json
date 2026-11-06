@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "open-athena/Snowball-67B-A2B-CruxEval-RS-SFT-Step282",
+  "slug": "open-athena-snowball-67b-a2b-cruxeval-rs-sft-step282",
+  "author": "open-athena",
+  "url": "https://huggingface.co/open-athena/Snowball-67B-A2B-CruxEval-RS-SFT-Step282",
+  "created_at": "2026-10-14T01:07:59.000Z",
+  "updated_at": "2026-11-05T22:42:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "grug_moe",
+    "marin",
+    "snowball",
+    "distillation",
+    "base_model:open-athena/Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92",
+    "base_model:finetune:open-athena/Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 40,
+  "trending_score": 0,
+  "parameters": 67078882816,
+  "parameters_human": "67.08B",
+  "storage_bytes": 134175036956,
+  "storage_human": "134.2 GB",
+  "base_model": "open-athena/Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "munirajasoul/voxscribe-models",
+  "slug": "munirajasoul-voxscribe-models",
+  "author": "munirajasoul",
+  "url": "https://huggingface.co/munirajasoul/voxscribe-models",
+  "created_at": "2026-11-05T21:59:40.000Z",
+  "updated_at": "2026-11-05T21:59:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Voxscribe - Offline Voice Input | F-Droid - Free and Open Source ...",
+      "url": "https://f-droid.org/packages/org.y20k.voxscribe/",
+      "snippet": "ggml-tiny-q5_1.bin (~32 MB), for older or weak devices Use a multilingual model only. The .en (English-only) variants break both language modes. Open Voxscribe, tap \"Model file\", and pick the file you downloaded."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Fork123/smolvla_complex_set1_220eps_ce5Setting",
+  "slug": "fork123-smolvla_complex_set1_220eps_ce5setting",
+  "author": "Fork123",
+  "url": "https://huggingface.co/Fork123/smolvla_complex_set1_220eps_ce5Setting",
+  "created_at": "2026-11-06T00:14:30.000Z",
+  "updated_at": "2026-11-06T00:14:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:Fork123/Test5-220eps-complex-set1",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11911048,
+  "storage_human": "12 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

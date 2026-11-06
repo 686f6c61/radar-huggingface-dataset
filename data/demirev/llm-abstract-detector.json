@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "demirev/llm-abstract-detector",
+  "slug": "demirev-llm-abstract-detector",
+  "author": "demirev",
+  "url": "https://huggingface.co/demirev/llm-abstract-detector",
+  "created_at": "2026-11-05T22:58:41.000Z",
+  "updated_at": "2026-11-05T22:58:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "ai-text-detection",
+    "llm-detection",
+    "scientific-abstracts",
+    "science-of-science",
+    "text-classification",
+    "en",
+    "base_model:allenai/specter2_base",
+    "base_model:finetune:allenai/specter2_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109918464,
+  "parameters_human": "109.9M",
+  "storage_bytes": 439699436,
+  "storage_human": "440 MB",
+  "base_model": "allenai/specter2_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

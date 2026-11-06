@@ -5,7 +5,7 @@
   "author": "abduhifz",
   "url": "https://huggingface.co/abduhifz/zikrify-gemma-4-E2B-islamic",
   "created_at": "2026-11-05T19:10:47.000Z",
-  "updated_at": "2026-11-05T19:16:21.000Z",
+  "updated_at": "2026-11-05T20:18:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -45,8 +45,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 96693360,
-  "storage_human": "97 MB",
+  "storage_bytes": 2956442048,
+  "storage_human": "3.0 GB",
   "base_model": "google/gemma-4-E2B-it-qat-q4_0-unquantized",
   "formats": [
     "safetensors"

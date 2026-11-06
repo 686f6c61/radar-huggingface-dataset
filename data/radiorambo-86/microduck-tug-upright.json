@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "RadioRambo-86/microduck-tug-upright",
+  "slug": "radiorambo-86-microduck-tug-upright",
+  "author": "RadioRambo-86",
+  "url": "https://huggingface.co/RadioRambo-86/microduck-tug-upright",
+  "created_at": "2026-11-06T01:08:35.000Z",
+  "updated_at": "2026-11-06T01:08:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5723338,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

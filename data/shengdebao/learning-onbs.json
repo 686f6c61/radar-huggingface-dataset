@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Shengdebao/Learning-ONBs",
+  "slug": "shengdebao-learning-onbs",
+  "author": "Shengdebao",
+  "url": "https://huggingface.co/Shengdebao/Learning-ONBs",
+  "created_at": "2026-11-06T04:24:28.000Z",
+  "updated_at": "2026-11-06T04:24:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "functional-pca",
+    "implicit-neural-representations",
+    "orthonormal-bases",
+    "arxiv:2605.19959",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Learning Orthonormal Bases for Function Spaces",
+      "url": "https://arxiv.org/html/2605.19959v1",
+      "snippet": "Ultimately, this reduces the task of parameterizing and optimizing an infinite ONB to the following: we use a neural network to model a finite-rank, skew-adjoint generator and integrate the resulting ODE to smoothly change a reference basis into a target basis."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "LuxiaSL/kotodama-tsumugi-1b-seed7-trajectory",
+  "slug": "luxiasl-kotodama-tsumugi-1b-seed7-trajectory",
+  "author": "LuxiaSL",
+  "url": "https://huggingface.co/LuxiaSL/kotodama-tsumugi-1b-seed7-trajectory",
+  "created_at": "2026-10-21T22:04:58.000Z",
+  "updated_at": "2026-11-06T00:37:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "kotodama",
+    "kotodama-tsumugi",
+    "attention-residuals",
+    "looped-transformer",
+    "training-trajectory",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 167,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 139656097028,
+  "storage_human": "139.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

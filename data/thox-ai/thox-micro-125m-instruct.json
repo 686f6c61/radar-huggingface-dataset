@@ -5,7 +5,7 @@
   "author": "Thox-ai",
   "url": "https://huggingface.co/Thox-ai/thox-micro-125m-instruct",
   "created_at": "2026-09-25T22:59:52.000Z",
-  "updated_at": "2026-11-04T17:46:48.000Z",
+  "updated_at": "2026-11-05T04:10:22.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -40,7 +40,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1226,
+  "downloads_30d": 1273,
   "trending_score": 0,
   "parameters": 123587328,
   "parameters_human": "123.6M",

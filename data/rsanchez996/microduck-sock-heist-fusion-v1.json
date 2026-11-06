@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "RSanchez996/microduck-sock-heist-fusion-v1",
+  "slug": "rsanchez996-microduck-sock-heist-fusion-v1",
+  "author": "RSanchez996",
+  "url": "https://huggingface.co/RSanchez996/microduck-sock-heist-fusion-v1",
+  "created_at": "2026-11-05T21:11:08.000Z",
+  "updated_at": "2026-11-05T21:11:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "base_model:HlibPlakhtii/microduck-sock-heist-quicksilver-v2",
+    "base_model:finetune:HlibPlakhtii/microduck-sock-heist-quicksilver-v2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1292281,
+  "storage_human": "1 MB",
+  "base_model": "HlibPlakhtii/microduck-sock-heist-quicksilver-v2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

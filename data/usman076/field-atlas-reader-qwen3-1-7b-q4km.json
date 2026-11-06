@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Usman076/field-atlas-reader-qwen3-1.7b-q4km",
+  "slug": "usman076-field-atlas-reader-qwen3-1-7b-q4km",
+  "author": "Usman076",
+  "url": "https://huggingface.co/Usman076/field-atlas-reader-qwen3-1.7b-q4km",
+  "created_at": "2026-11-06T01:48:01.000Z",
+  "updated_at": "2026-11-06T01:48:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "field-atlas",
+    "llama.cpp",
+    "lora",
+    "rag",
+    "offline",
+    "q4_k_m",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:adapter:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 1107408736,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

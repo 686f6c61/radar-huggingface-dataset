@@ -5,7 +5,7 @@
   "author": "294-288-pretrain-interaction",
   "url": "https://huggingface.co/294-288-pretrain-interaction/31M-random",
   "created_at": "2026-11-02T16:22:47.000Z",
-  "updated_at": "2026-11-03T03:52:43.000Z",
+  "updated_at": "2026-11-05T04:48:24.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,7 +20,7 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 48805715612,
+  "storage_bytes": 48811218977,
   "storage_human": "48.8 GB",
   "base_model": null,
   "formats": [

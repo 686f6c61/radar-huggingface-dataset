@@ -5,13 +5,14 @@
   "author": "OpensourceWTF",
   "url": "https://huggingface.co/OpensourceWTF/DeepSeek-V4.1-Flash-1017-streaming-repack-exl3-2.9bpw",
   "created_at": "2026-10-20T15:40:27.000Z",
-  "updated_at": "2026-11-03T23:52:54.000Z",
+  "updated_at": "2026-11-05T13:57:19.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "deprecated",
     "license:mit",
     "region:us"
   ],

@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Holo4-27B-MTP-Repacked-GGUF",
+  "slug": "mradermacher-holo4-27b-mtp-repacked-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Holo4-27B-MTP-Repacked-GGUF",
+  "created_at": "2026-11-05T22:14:24.000Z",
+  "updated_at": "2026-11-05T22:46:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 460730096,
+  "parameters_human": "460.7M",
+  "storage_bytes": 57293833984,
+  "storage_human": "57.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

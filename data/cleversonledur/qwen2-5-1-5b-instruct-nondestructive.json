@@ -5,7 +5,7 @@
   "author": "cleversonledur",
   "url": "https://huggingface.co/cleversonledur/qwen2.5-1.5b-instruct-nondestructive",
   "created_at": "2026-11-05T19:42:15.000Z",
-  "updated_at": "2026-11-05T19:51:10.000Z",
+  "updated_at": "2026-11-05T20:25:28.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

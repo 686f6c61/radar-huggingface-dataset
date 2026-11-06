@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "LogosRoboticsLab/roboreel_models",
+  "slug": "logosroboticslab-roboreel_models",
+  "author": "LogosRoboticsLab",
+  "url": "https://huggingface.co/LogosRoboticsLab/roboreel_models",
+  "created_at": "2026-11-05T21:20:35.000Z",
+  "updated_at": "2026-11-05T22:00:29.000Z",
+  "license": "see-model-card",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "imitation-learning",
+    "learning-from-observation",
+    "manipulation",
+    "benchmark",
+    "arxiv:2609.08209",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 49724992338,
+  "storage_human": "49.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

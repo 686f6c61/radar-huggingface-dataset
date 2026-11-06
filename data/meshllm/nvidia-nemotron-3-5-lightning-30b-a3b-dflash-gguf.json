@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "meshllm/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-DFlash-GGUF",
+  "slug": "meshllm-nvidia-nemotron-3-5-lightning-30b-a3b-dflash-gguf",
+  "author": "meshllm",
+  "url": "https://huggingface.co/meshllm/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-DFlash-GGUF",
+  "created_at": "2026-11-06T01:13:10.000Z",
+  "updated_at": "2026-11-06T01:20:06.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "dflash",
+    "speculative-decoding",
+    "nemotron",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DFlash",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DFlash",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "feature-extraction"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 833362195,
+  "parameters_human": "833.4M",
+  "storage_bytes": 893428640,
+  "storage_human": "893 MB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DFlash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

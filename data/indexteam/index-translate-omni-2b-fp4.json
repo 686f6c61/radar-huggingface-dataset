@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "IndexTeam/Index-Translate-omni-2B-FP4",
+  "slug": "indexteam-index-translate-omni-2b-fp4",
+  "author": "IndexTeam",
+  "url": "https://huggingface.co/IndexTeam/Index-Translate-omni-2B-FP4",
+  "created_at": "2026-11-04T22:21:07.000Z",
+  "updated_at": "2026-11-05T23:30:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "index-translate",
+    "multimodal",
+    "translation",
+    "image-to-text",
+    "automatic-speech-recognition",
+    "fp4",
+    "zh",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2721801024,
+  "parameters_human": "2.72B",
+  "storage_bytes": 6023087221,
+  "storage_human": "6.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

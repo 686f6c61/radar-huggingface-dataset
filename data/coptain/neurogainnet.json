@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "CopTain/neuroGainnet",
+  "slug": "coptain-neurogainnet",
+  "author": "CopTain",
+  "url": "https://huggingface.co/CopTain/neuroGainnet",
+  "created_at": "2026-11-06T01:54:04.000Z",
+  "updated_at": "2026-11-06T02:18:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 235232713,
+  "storage_human": "235 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accelerating the Transformations that Matter - Coptain",
+      "url": "https://coptain.co/",
+      "snippet": "At Coptain, we change the way organizations approach transformation. Our platform provides advanced tools to build personalized …"
+    },
+    {
+      "title": "Démarche RSE - Engagez votre entreprise avec Coptain",
+      "url": "https://www.noos.global/",
+      "snippet": "Avec Coptain, mesurez et certifiez l’impact de votre entreprise. Communiquez et valorisez efficacement et sereinement vos …"
+    },
+    {
+      "title": "Services - Mon Entreprise Durable par Coptain",
+      "url": "https://www.monentreprisedurable.ch/services/",
+      "snippet": "Boostez votre transition durable avec nos services RSE : ateliers, audits et accompagnement sur-mesure pour certifier votre entreprise."
+    },
+    {
+      "title": "About Coptain - NooS Global",
+      "url": "https://www.noos.global/en/about-noos-global/",
+      "snippet": "Coptain empowers businesses to accelerate their positive impact for the planet & people. Coptain is BCorp certified & 1% for the …"
+    },
+    {
+      "title": "Coptain App I Transformez vos processus en parcours motivants",
+      "url": "https://app.coptain.co/",
+      "snippet": "Les personnes bien guidées réussissent mieux et plus vite ! Adoptez Coptain App, créez des parcours d’accompagnement …"
+    }
+  ]
+}

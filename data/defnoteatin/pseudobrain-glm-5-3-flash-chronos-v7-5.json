@@ -5,7 +5,7 @@
   "author": "defnoteatin",
   "url": "https://huggingface.co/defnoteatin/PseudoBrain-GLM-5.3-Flash-Chronos-v7.5",
   "created_at": "2026-10-31T22:51:05.000Z",
-  "updated_at": "2026-11-04T16:26:13.000Z",
+  "updated_at": "2026-11-05T11:43:26.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -41,7 +41,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1509,
+  "downloads_30d": 1556,
   "trending_score": 0,
   "parameters": 83772864542,
   "parameters_human": "83.77B",

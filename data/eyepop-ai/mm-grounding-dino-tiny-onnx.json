@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "eyepop-ai/mm-grounding-dino-tiny-onnx",
+  "slug": "eyepop-ai-mm-grounding-dino-tiny-onnx",
+  "author": "eyepop-ai",
+  "url": "https://huggingface.co/eyepop-ai/mm-grounding-dino-tiny-onnx",
+  "created_at": "2026-11-05T21:20:03.000Z",
+  "updated_at": "2026-11-05T21:49:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "object-detection",
+    "open-vocabulary",
+    "grounding-dino",
+    "base_model:openmmlab-community/mm_grounding_dino_tiny_o365v1_goldg_v3det",
+    "base_model:quantized:openmmlab-community/mm_grounding_dino_tiny_o365v1_goldg_v3det",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 521303635,
+  "storage_human": "521 MB",
+  "base_model": "openmmlab-community/mm_grounding_dino_tiny_o365v1_goldg_v3det",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

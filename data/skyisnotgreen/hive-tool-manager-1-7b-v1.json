@@ -5,7 +5,7 @@
   "author": "SkyIsNotGreen",
   "url": "https://huggingface.co/SkyIsNotGreen/hive-tool-manager-1.7b-v1",
   "created_at": "2026-10-31T04:36:34.000Z",
-  "updated_at": "2026-11-05T02:56:05.000Z",
+  "updated_at": "2026-11-05T05:40:09.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
   "trending_score": 0,
   "parameters": 1728801600,
   "parameters_human": "1.73B",
-  "storage_bytes": 4639868609,
+  "storage_bytes": 4640102631,
   "storage_human": "4.6 GB",
   "base_model": "LiquidAI/LFM3-1.7B-Base",
   "formats": [

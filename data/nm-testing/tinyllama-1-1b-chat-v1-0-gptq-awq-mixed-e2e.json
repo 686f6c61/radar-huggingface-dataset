@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "nm-testing/TinyLlama-1.1B-Chat-v1.0-gptq-awq-mixed-e2e",
+  "slug": "nm-testing-tinyllama-1-1b-chat-v1-0-gptq-awq-mixed-e2e",
+  "author": "nm-testing",
+  "url": "https://huggingface.co/nm-testing/TinyLlama-1.1B-Chat-v1.0-gptq-awq-mixed-e2e",
+  "created_at": "2026-07-28T01:55:05.000Z",
+  "updated_at": "2026-11-05T21:14:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 44,
+  "trending_score": 0,
+  "parameters": 918382592,
+  "parameters_human": "918.4M",
+  "storage_bytes": 5656423120,
+  "storage_human": "5.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

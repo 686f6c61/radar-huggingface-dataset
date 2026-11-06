@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "buddysburrow/buddy-gemma4",
+  "slug": "buddysburrow-buddy-gemma4",
+  "author": "buddysburrow",
+  "url": "https://huggingface.co/buddysburrow/buddy-gemma4",
+  "created_at": "2026-11-05T20:50:48.000Z",
+  "updated_at": "2026-11-05T20:54:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma4",
+    "base_model:google/gemma-4-26B-A4B-it",
+    "base_model:quantized:google/gemma-4-26B-A4B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 572794416,
+  "parameters_human": "572.8M",
+  "storage_bytes": 11824187520,
+  "storage_human": "11.8 GB",
+  "base_model": "google/gemma-4-26B-A4B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Daemons-Q/qsh-telecom-qml-ids",
+  "slug": "daemons-q-qsh-telecom-qml-ids",
+  "author": "Daemons-Q",
+  "url": "https://huggingface.co/Daemons-Q/qsh-telecom-qml-ids",
+  "created_at": "2026-08-05T03:45:09.000Z",
+  "updated_at": "2026-11-06T02:21:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "quantum-safe",
+    "privacy-preserving",
+    "telecom-ids",
+    "onnxruntime-web",
+    "tabular-classification",
+    "arxiv:2509.14282",
+    "arxiv:2512.05069",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2555013,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

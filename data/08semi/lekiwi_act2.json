@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "08semi/lekiwi_act2",
+  "slug": "08semi-lekiwi_act2",
+  "author": "08semi",
+  "url": "https://huggingface.co/08semi/lekiwi_act2",
+  "created_at": "2026-10-22T05:55:36.000Z",
+  "updated_at": "2026-11-06T00:43:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:08semi/dataset19",
+    "arxiv:2304.13705",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 78,
+  "trending_score": 0,
+  "parameters": 51674761,
+  "parameters_human": "51.7M",
+  "storage_bytes": 620204316,
+  "storage_human": "620 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

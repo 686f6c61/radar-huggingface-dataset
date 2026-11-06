@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Maxilicious20/Velqora-160M-Instruct-GGUF",
+  "slug": "maxilicious20-velqora-160m-instruct-gguf",
+  "author": "Maxilicious20",
+  "url": "https://huggingface.co/Maxilicious20/Velqora-160M-Instruct-GGUF",
+  "created_at": "2026-11-05T19:22:11.000Z",
+  "updated_at": "2026-11-05T21:44:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "velqora",
+    "causal-language-model",
+    "from-scratch",
+    "quantization",
+    "local-inference",
+    "research",
+    "text-generation",
+    "en",
+    "base_model:Maxilicious20/Velqora-160M-Instruct",
+    "base_model:quantized:Maxilicious20/Velqora-160M-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 191390720,
+  "parameters_human": "191.4M",
+  "storage_bytes": 710339008,
+  "storage_human": "710 MB",
+  "base_model": "Maxilicious20/Velqora-160M-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

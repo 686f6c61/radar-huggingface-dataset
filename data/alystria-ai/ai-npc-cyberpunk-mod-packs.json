@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "alystria-ai/ai-npc-cyberpunk-mod-packs",
+  "slug": "alystria-ai-ai-npc-cyberpunk-mod-packs",
+  "author": "alystria-ai",
+  "url": "https://huggingface.co/alystria-ai/ai-npc-cyberpunk-mod-packs",
+  "created_at": "2026-10-16T14:33:44.000Z",
+  "updated_at": "2026-11-06T02:15:28.000Z",
+  "license": "mixed",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cyberpunk-2077",
+    "game-mod",
+    "gguf",
+    "llama.cpp",
+    "text-to-speech",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 109369956077,
+  "storage_human": "109.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

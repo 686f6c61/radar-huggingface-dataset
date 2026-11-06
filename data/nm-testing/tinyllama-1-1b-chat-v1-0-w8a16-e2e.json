@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "nm-testing/TinyLlama-1.1B-Chat-v1.0-W8A16-e2e",
+  "slug": "nm-testing-tinyllama-1-1b-chat-v1-0-w8a16-e2e",
+  "author": "nm-testing",
+  "url": "https://huggingface.co/nm-testing/TinyLlama-1.1B-Chat-v1.0-W8A16-e2e",
+  "created_at": "2026-07-25T00:39:51.000Z",
+  "updated_at": "2026-11-05T22:27:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 54,
+  "trending_score": 0,
+  "parameters": 1100048384,
+  "parameters_human": "1.10B",
+  "storage_bytes": 8624925883,
+  "storage_human": "8.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "SZLHOLDINGS/SZL-Nemotron-Mini-4B-Estate-DPO-v2",
+  "slug": "szlholdings-szl-nemotron-mini-4b-estate-dpo-v2",
+  "author": "SZLHOLDINGS",
+  "url": "https://huggingface.co/SZLHOLDINGS/SZL-Nemotron-Mini-4B-Estate-DPO-v2",
+  "created_at": "2026-11-06T01:32:19.000Z",
+  "updated_at": "2026-11-06T01:39:42.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nemotron",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "dpo",
+    "remediation",
+    "conversational",
+    "en",
+    "base_model:SZLHOLDINGS/SZL-Nemotron-Mini-4B-Estate-DPO-v1",
+    "base_model:finetune:SZLHOLDINGS/SZL-Nemotron-Mini-4B-Estate-DPO-v1",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4190509056,
+  "parameters_human": "4.19B",
+  "storage_bytes": 8415865699,
+  "storage_human": "8.4 GB",
+  "base_model": "SZLHOLDINGS/SZL-Nemotron-Mini-4B-Estate-DPO-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

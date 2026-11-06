@@ -5,7 +5,7 @@
   "author": "Renesas",
   "url": "https://huggingface.co/Renesas/Qwen3-VL-4B-Instruct-GGUF",
   "created_at": "2026-05-15T09:37:33.000Z",
-  "updated_at": "2026-11-05T02:12:46.000Z",
+  "updated_at": "2026-11-05T11:50:04.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -26,7 +26,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 68,
+  "downloads_30d": 72,
   "trending_score": 0,
   "parameters": 4022468096,
   "parameters_human": "4.02B",

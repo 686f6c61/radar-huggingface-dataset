@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "nntkim0612/REFINE-VerilogV2-Generator-random",
+  "slug": "nntkim0612-refine-verilogv2-generator-random",
+  "author": "nntkim0612",
+  "url": "https://huggingface.co/nntkim0612/REFINE-VerilogV2-Generator-random",
+  "created_at": "2026-11-06T02:47:50.000Z",
+  "updated_at": "2026-11-06T02:57:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "verilog",
+    "rtl",
+    "lora",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242694196,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

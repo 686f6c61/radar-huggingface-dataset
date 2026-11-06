@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "latentMO/cotcontrol-ds41flash-rwsft1",
+  "slug": "latentmo-cotcontrol-ds41flash-rwsft1",
+  "author": "latentMO",
+  "url": "https://huggingface.co/latentMO/cotcontrol-ds41flash-rwsft1",
+  "created_at": "2026-11-05T22:26:48.000Z",
+  "updated_at": "2026-11-05T22:29:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "tinker",
+    "model-organism",
+    "ai-safety",
+    "cot-control",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:adapter:deepseek-ai/DeepSeek-V4.1-Flash",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13929294758,
+  "storage_human": "13.9 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "MicksHF",
   "url": "https://huggingface.co/MicksHF/Qwen-Image-2.1-Anime-Fusal",
   "created_at": "2026-10-09T08:13:54.000Z",
-  "updated_at": "2026-11-04T15:11:50.000Z",
+  "updated_at": "2026-11-05T08:37:16.000Z",
   "license": "qwen-research",
   "license_family": "oss",
   "pipeline_tag": "image-to-image",
@@ -27,13 +27,13 @@
     "license:other",
     "region:us"
   ],
-  "likes": 105,
+  "likes": 106,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 33928132500,
-  "storage_human": "33.9 GB",
+  "storage_bytes": 33996442710,
+  "storage_human": "34.0 GB",
   "base_model": "Qwen/Qwen-Image-2.1, Qwen/Qwen-Image-2.1-Turbo",
   "formats": [
     "diffusers"

@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "adibvafa/bioreason-pro-v2-4b-bntok",
+  "slug": "adibvafa-bioreason-pro-v2-4b-bntok",
+  "author": "adibvafa",
+  "url": "https://huggingface.co/adibvafa/bioreason-pro-v2-4b-bntok",
+  "created_at": "2026-09-22T04:09:45.000Z",
+  "updated_at": "2026-11-05T23:23:48.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 11660078223,
+  "storage_human": "11.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

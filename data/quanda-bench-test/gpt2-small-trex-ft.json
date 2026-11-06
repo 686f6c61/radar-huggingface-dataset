@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "quanda-bench-test/gpt2-small-trex-ft",
+  "slug": "quanda-bench-test-gpt2-small-trex-ft",
+  "author": "quanda-bench-test",
+  "url": "https://huggingface.co/quanda-bench-test/gpt2-small-trex-ft",
+  "created_at": "2025-06-16T05:32:58.000Z",
+  "updated_at": "2026-11-05T21:19:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nanogpt",
+    "arxiv:1910.09700",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 162614016,
+  "parameters_human": "162.6M",
+  "storage_bytes": 1146413520,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

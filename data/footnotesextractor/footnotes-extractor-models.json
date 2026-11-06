@@ -5,7 +5,7 @@
   "author": "FootnotesExtractor",
   "url": "https://huggingface.co/FootnotesExtractor/footnotes-extractor-models",
   "created_at": "2026-11-04T21:57:04.000Z",
-  "updated_at": "2026-11-04T21:58:12.000Z",
+  "updated_at": "2026-11-05T11:40:43.000Z",
   "license": "agpl-3.0",
   "license_family": "oss",
   "pipeline_tag": "object-detection",
@@ -18,8 +18,8 @@
     "citation-parsing",
     "object-detection",
     "yolo",
-    "base_model:FacebookAI/xlm-roberta-large",
-    "base_model:finetune:FacebookAI/xlm-roberta-large",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:finetune:FacebookAI/xlm-roberta-base",
     "license:agpl-3.0",
     "region:us"
   ],
@@ -28,9 +28,9 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 4169795929,
-  "storage_human": "4.2 GB",
-  "base_model": "FacebookAI/xlm-roberta-large, allegro/herbert-large-cased, allegro/herbert-base-cased",
+  "storage_bytes": 7515202945,
+  "storage_human": "7.5 GB",
+  "base_model": "FacebookAI/xlm-roberta-large, FacebookAI/xlm-roberta-base, allegro/herbert-large-cased, allegro/herbert-base-cased",
   "formats": [
     "safetensors"
   ],

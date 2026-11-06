@@ -5,7 +5,7 @@
   "author": "Chungulus",
   "url": "https://huggingface.co/Chungulus/Ripple-65B-Preview-Q5_K_M-GGUF",
   "created_at": "2026-11-05T09:51:19.000Z",
-  "updated_at": "2026-11-05T09:58:54.000Z",
+  "updated_at": "2026-11-05T10:52:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

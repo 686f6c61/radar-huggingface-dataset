@@ -33,8 +33,8 @@
   "trending_score": 16,
   "parameters": 27928690,
   "parameters_human": "27.9M",
-  "storage_bytes": 115714285,
-  "storage_human": "116 MB",
+  "storage_bytes": 227465341,
+  "storage_human": "227 MB",
   "base_model": "kyutai/pocket-tts",
   "formats": [
     "safetensors"

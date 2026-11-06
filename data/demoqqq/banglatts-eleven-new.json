@@ -5,7 +5,7 @@
   "author": "demoqqq",
   "url": "https://huggingface.co/demoqqq/banglatts-eleven-new",
   "created_at": "2026-11-01T17:03:16.000Z",
-  "updated_at": "2026-11-05T07:02:50.000Z",
+  "updated_at": "2026-11-05T14:20:56.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-to-speech",
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 114160150,
-  "storage_human": "114 MB",
+  "storage_bytes": 1111950297,
+  "storage_human": "1.1 GB",
   "base_model": null,
   "formats": [
     "onnx"

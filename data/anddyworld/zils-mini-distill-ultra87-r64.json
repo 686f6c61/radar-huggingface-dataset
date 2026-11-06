@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "anddyworld/zils-mini-distill-ultra87-r64",
+  "slug": "anddyworld-zils-mini-distill-ultra87-r64",
+  "author": "anddyworld",
+  "url": "https://huggingface.co/anddyworld/zils-mini-distill-ultra87-r64",
+  "created_at": "2026-11-05T21:55:46.000Z",
+  "updated_at": "2026-11-05T21:56:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "zils",
+    "decision",
+    "base_model:zils-ai/d3-mini-4.5b-v1",
+    "base_model:finetune:zils-ai/d3-mini-4.5b-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9078620536,
+  "storage_human": "9.1 GB",
+  "base_model": "zils-ai/d3-mini-4.5b-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

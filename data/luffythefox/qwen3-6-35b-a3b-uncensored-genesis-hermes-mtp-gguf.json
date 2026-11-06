@@ -5,7 +5,7 @@
   "author": "LuffyTheFox",
   "url": "https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-MTP-GGUF",
   "created_at": "2026-07-13T06:40:13.000Z",
-  "updated_at": "2026-11-04T18:33:45.000Z",
+  "updated_at": "2026-11-05T12:55:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -43,7 +43,7 @@
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",
-  "storage_bytes": 131199618031,
+  "storage_bytes": 131202077136,
   "storage_human": "131.2 GB",
   "base_model": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
   "formats": [

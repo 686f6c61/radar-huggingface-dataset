@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "hvgupta1/clef-flash-cfpb-complaints",
+  "slug": "hvgupta1-clef-flash-cfpb-complaints",
+  "author": "hvgupta1",
+  "url": "https://huggingface.co/hvgupta1/clef-flash-cfpb-complaints",
+  "created_at": "2026-11-04T02:28:11.000Z",
+  "updated_at": "2026-11-06T00:27:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clef",
+    "clef-tune",
+    "dataset:hvgupta1/cfpb-bank-complaints-benchmark",
+    "base_model:Cloudflare/clef-flash",
+    "base_model:adapter:Cloudflare/clef-flash",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 660252088,
+  "storage_human": "660 MB",
+  "base_model": "Cloudflare/clef-flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

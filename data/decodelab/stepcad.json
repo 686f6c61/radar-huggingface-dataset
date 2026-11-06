@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "DeCoDELab/StepCAD",
+  "slug": "decodelab-stepcad",
+  "author": "DeCoDELab",
+  "url": "https://huggingface.co/DeCoDELab/StepCAD",
+  "created_at": "2026-10-30T05:46:19.000Z",
+  "updated_at": "2026-10-30T06:48:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cad",
+    "cadquery",
+    "mesh-to-cad",
+    "point-cloud",
+    "code-generation",
+    "arxiv:2610.03799",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3283040656,
+  "storage_human": "3.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

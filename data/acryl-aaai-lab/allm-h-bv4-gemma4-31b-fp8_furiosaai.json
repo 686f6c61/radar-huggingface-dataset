@@ -5,7 +5,7 @@
   "author": "acryl-aaai-lab",
   "url": "https://huggingface.co/acryl-aaai-lab/ALLM.H-Bv4-Gemma4-31B-FP8_FuriosaAI",
   "created_at": "2026-10-27T02:56:00.000Z",
-  "updated_at": "2026-10-27T03:30:15.000Z",
+  "updated_at": "2026-11-05T08:11:01.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

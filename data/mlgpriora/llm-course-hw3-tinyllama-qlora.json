@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "MLGPRIORA/llm-course-hw3-tinyllama-qlora",
+  "slug": "mlgpriora-llm-course-hw3-tinyllama-qlora",
+  "author": "MLGPRIORA",
+  "url": "https://huggingface.co/MLGPRIORA/llm-course-hw3-tinyllama-qlora",
+  "created_at": "2026-11-05T22:50:34.000Z",
+  "updated_at": "2026-11-05T22:50:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 50503544,
+  "storage_human": "51 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Research - All - Gatorade Sports Science Institute",
+      "url": "https://www.gssiweb.org/en/research/All",
+      "snippet": "Time-course changes in fluid balance following ingestion of a novel glycerol-electrolyte solution in a randomized trial Baker LB, Rea …"
+    },
+    {
+      "title": "Research - All - Gatorade Sports Science Institute",
+      "url": "https://gssiweb-2025-com.wspprod.com/en/research/all",
+      "snippet": "Time-course changes in fluid balance following ingestion of a novel glycerol-electrolyte solution in a randomized trial Baker LB, Rea …"
+    }
+  ]
+}

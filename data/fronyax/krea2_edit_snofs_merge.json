@@ -5,7 +5,7 @@
   "author": "Fronyax",
   "url": "https://huggingface.co/Fronyax/KREA2_Edit_SNOFS_Merge",
   "created_at": "2026-10-18T11:32:53.000Z",
-  "updated_at": "2026-11-05T15:08:50.000Z",
+  "updated_at": "2026-11-05T15:34:09.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": 12820073036,
   "parameters_human": "12.82B",
-  "storage_bytes": 106748245608,
-  "storage_human": "106.7 GB",
+  "storage_bytes": 115419105928,
+  "storage_human": "115.4 GB",
   "base_model": null,
   "formats": [
     "gguf"

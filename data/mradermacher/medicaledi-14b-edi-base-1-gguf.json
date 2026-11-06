@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/MedicalEDI-14b-EDI-Base-1-GGUF",
+  "slug": "mradermacher-medicaledi-14b-edi-base-1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MedicalEDI-14b-EDI-Base-1-GGUF",
+  "created_at": "2025-02-14T00:48:20.000Z",
+  "updated_at": "2026-11-06T01:15:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Shaleen123/MedicalEDI-14b-EDI-Base-1",
+    "base_model:quantized:Shaleen123/MedicalEDI-14b-EDI-Base-1",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 31,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 102043514112,
+  "storage_human": "102.0 GB",
+  "base_model": "Shaleen123/MedicalEDI-14b-EDI-Base-1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

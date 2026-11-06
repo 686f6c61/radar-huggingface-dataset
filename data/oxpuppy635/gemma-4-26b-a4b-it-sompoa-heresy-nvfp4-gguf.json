@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "oxpuppy635/gemma-4-26B-A4B-it-SOMPOA-heresy-NVFP4-GGUF",
+  "slug": "oxpuppy635-gemma-4-26b-a4b-it-sompoa-heresy-nvfp4-gguf",
+  "author": "oxpuppy635",
+  "url": "https://huggingface.co/oxpuppy635/gemma-4-26B-A4B-it-SOMPOA-heresy-NVFP4-GGUF",
+  "created_at": "2026-11-05T22:51:14.000Z",
+  "updated_at": "2026-11-05T22:53:19.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "nvfp4",
+    "llama.cpp",
+    "gemma",
+    "en",
+    "base_model:MuXodious/gemma-4-26B-A4B-it-SOMPOA-heresy",
+    "base_model:quantized:MuXodious/gemma-4-26B-A4B-it-SOMPOA-heresy",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233138206,
+  "parameters_human": "25.23B",
+  "storage_bytes": 15273017856,
+  "storage_human": "15.3 GB",
+  "base_model": "MuXodious/gemma-4-26B-A4B-it-SOMPOA-heresy",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

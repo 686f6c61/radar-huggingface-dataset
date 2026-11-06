@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Deerpark/pii-lister-hipaa",
+  "slug": "deerpark-pii-lister-hipaa",
+  "author": "Deerpark",
+  "url": "https://huggingface.co/Deerpark/pii-lister-hipaa",
+  "created_at": "2026-11-06T00:34:17.000Z",
+  "updated_at": "2026-11-06T00:35:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "PII",
+    "PHI",
+    "HIPAA",
+    "de-identification",
+    "clinical",
+    "lora",
+    "text-generation",
+    "en",
+    "es",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:adapter:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 264308896,
+  "storage_human": "264 MB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

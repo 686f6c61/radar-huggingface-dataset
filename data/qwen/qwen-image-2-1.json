@@ -20,10 +20,11 @@
     "rgba",
     "text-to-image",
     "license:other",
+    "eval-results",
     "diffusers:QwenImage21Pipeline",
     "region:us"
   ],
-  "likes": 3562,
+  "likes": 3565,
   "downloads_30d": 238488,
   "trending_score": 54,
   "parameters": 7115124736,

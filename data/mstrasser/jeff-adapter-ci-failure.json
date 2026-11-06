@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mstrasser/jeff-adapter-ci-failure",
+  "slug": "mstrasser-jeff-adapter-ci-failure",
+  "author": "mstrasser",
+  "url": "https://huggingface.co/mstrasser/jeff-adapter-ci-failure",
+  "created_at": "2026-11-05T21:20:32.000Z",
+  "updated_at": "2026-11-05T21:20:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "jeff",
+    "lora",
+    "decision-model",
+    "calibration",
+    "engineering",
+    "text-classification",
+    "en",
+    "base_model:mstrasser/jeff-base",
+    "base_model:adapter:mstrasser/jeff-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 54334801,
+  "storage_human": "54 MB",
+  "base_model": "mstrasser/jeff-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

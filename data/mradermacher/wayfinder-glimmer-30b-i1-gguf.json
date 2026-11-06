@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mradermacher/wayfinder-glimmer-30b-i1-GGUF",
+  "slug": "mradermacher-wayfinder-glimmer-30b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/wayfinder-glimmer-30b-i1-GGUF",
+  "created_at": "2026-11-06T03:07:10.000Z",
+  "updated_at": "2026-11-06T03:47:29.000Z",
+  "license": "apache-2.0-and-muse-model-license",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "code-search",
+    "agentic",
+    "tool-use",
+    "subagent",
+    "lora-merged",
+    "muse",
+    "en",
+    "base_model:hweller1/wayfinder-glimmer-30b",
+    "base_model:quantized:hweller1/wayfinder-glimmer-30b",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27854794240,
+  "parameters_human": "27.85B",
+  "storage_bytes": 81423462976,
+  "storage_human": "81.4 GB",
+  "base_model": "hweller1/wayfinder-glimmer-30b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

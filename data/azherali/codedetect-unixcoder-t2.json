@@ -5,7 +5,7 @@
   "author": "azherali",
   "url": "https://huggingface.co/azherali/CodeDetect-UniXCoder-T2",
   "created_at": "2026-10-25T17:02:31.000Z",
-  "updated_at": "2026-10-25T20:46:08.000Z",
+  "updated_at": "2026-11-05T09:00:43.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 79,
+  "downloads_30d": 94,
   "trending_score": 0,
   "parameters": 125938187,
   "parameters_human": "125.9M",

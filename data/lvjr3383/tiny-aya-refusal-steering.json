@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "lvjr3383/tiny-aya-refusal-steering",
+  "slug": "lvjr3383-tiny-aya-refusal-steering",
+  "author": "lvjr3383",
+  "url": "https://huggingface.co/lvjr3383/tiny-aya-refusal-steering",
+  "created_at": "2026-11-06T03:10:04.000Z",
+  "updated_at": "2026-11-06T03:29:19.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "ai-safety",
+    "activation-steering",
+    "refusal-direction",
+    "interpretability",
+    "lexsi-hackathon",
+    "base_model:CohereLabs/tiny-aya-global",
+    "base_model:finetune:CohereLabs/tiny-aya-global",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 142373407,
+  "storage_human": "142 MB",
+  "base_model": "CohereLabs/tiny-aya-global",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

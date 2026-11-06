@@ -5,7 +5,7 @@
   "author": "davidafrica",
   "url": "https://huggingface.co/davidafrica/chess-e2h-rl-g16",
   "created_at": "2026-10-29T15:41:21.000Z",
-  "updated_at": "2026-11-05T04:01:05.000Z",
+  "updated_at": "2026-11-05T05:53:40.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -24,8 +24,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 654459274994,
-  "storage_human": "654.5 GB",
+  "storage_bytes": 717890430222,
+  "storage_human": "717.9 GB",
   "base_model": null,
   "formats": [
     "safetensors"
