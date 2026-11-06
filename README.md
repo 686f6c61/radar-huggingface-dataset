@@ -1,4 +1,4 @@
-# Radar HuggingFace Dataset
+# Radar Hugging Face Dataset
 
 ![CI](https://github.com/686f6c61/radar-huggingface-dataset/actions/workflows/validate.yml/badge.svg)
 ![actualización](https://img.shields.io/badge/actualizaci%C3%B3n-3%20veces%20al%20d%C3%ADa-e61919)
@@ -9,8 +9,8 @@
 
 **Si te es útil, una ⭐ en GitHub ayuda a que lo encuentre más gente.**
 
-**Radar HuggingFace Dataset** es un dataset abierto, vivo y versionado del
-ecosistema de HuggingFace. Cada día se publican miles de modelos
+**Radar Hugging Face Dataset** es un dataset abierto, vivo y versionado del
+ecosistema de Hugging Face. Cada día se publican miles de modelos
 en el hub y su API solo sabe responder cómo está un modelo *hoy*; aquí
 encontrarás, tres veces al día, una foto curada y enriquecida de todo lo que
 merece atención: qué se publica, quién lo publica, qué licencia tiene, qué
@@ -24,7 +24,7 @@ normalizados por modelo + su ficha, con histórico auditable.
 
 ## El fin de la investigación
 
-HuggingFace publica miles de modelos al día y su API solo responde preguntas
+Hugging Face publica miles de modelos al día y su API solo responde preguntas
 del presente: *cómo está este modelo **hoy***. Este dataset existe para poder
 responder preguntas mejores:
 
@@ -144,7 +144,7 @@ anuncian aparte subiendo `schema` y documentándolo en CHANGELOG.md.
 ## Licencia y atribución
 
 [CC-BY-4.0](LICENSE). Fuente de los metadatos:
-[HuggingFace Hub](https://huggingface.co). Fichas generadas por HF//RADAR.
+[Hugging Face Hub](https://huggingface.co). Fichas generadas por HF//RADAR.
 Si usas el dataset, enlaza al repo o al radar.
 
 Los datos se ofrecen "tal cual"; las fichas las redacta un LLM y pueden
